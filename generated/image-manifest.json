@@ -1,0 +1,129 @@
+{
+  "generated": 1,
+  "failed": 0,
+  "images": {
+    "generated": 1,
+    "failed": 0,
+    "images": {
+      "generated": 10,
+      "failed": 0,
+      "images": {
+        "generated": 5,
+        "failed": 0,
+        "images": {
+          "generated": 5,
+          "failed": 0,
+          "images": {
+            "generated": 3,
+            "failed": 0,
+            "images": {
+              "generated": 8,
+              "failed": 0,
+              "images": {
+                "hero-product": {
+                  "local": "generated\\hero-product.webp"
+                },
+                "product-a": {
+                  "local": "generated\\product-a.webp"
+                },
+                "product-b": {
+                  "local": "generated\\product-b.webp"
+                },
+                "product-c": {
+                  "local": "generated\\product-c.webp"
+                },
+                "print-detail": {
+                  "local": "generated\\print-detail.webp"
+                },
+                "factory-line": {
+                  "local": "generated\\factory-line.webp"
+                },
+                "solution-edu": {
+                  "local": "generated\\solution-edu.webp"
+                },
+                "solution-proto": {
+                  "local": "generated\\solution-proto.webp"
+                }
+              },
+              "blog-cover-print-farm": {
+                "local": "generated\\blog-cover-print-farm.webp"
+              },
+              "blog-cover-multi-color": {
+                "local": "generated\\blog-cover-multi-color.webp"
+              },
+              "hero-product-v2": {
+                "local": "generated\\hero-product-v2.webp"
+              }
+            },
+            "hero-product-v3": {
+              "local": "generated\\hero-product-v3.webp"
+            },
+            "sub-hero-right-1": {
+              "local": "generated\\sub-hero-right-1.webp"
+            },
+            "sub-hero-right-2": {
+              "local": "generated\\sub-hero-right-2.webp"
+            },
+            "blog-cover-maintenance": {
+              "local": "generated\\blog-cover-maintenance.webp"
+            },
+            "blog-cover-ai-slicer": {
+              "local": "generated\\blog-cover-ai-slicer.webp"
+            }
+          },
+          "hero-b2b-v4": {
+            "local": "generated\\hero-b2b-v4.webp"
+          },
+          "blog-diagram-print-farm": {
+            "local": "generated\\blog-diagram-print-farm.webp"
+          },
+          "blog-diagram-multicolor": {
+            "local": "generated\\blog-diagram-multicolor.webp"
+          },
+          "blog-diagram-maintenance": {
+            "local": "generated\\blog-diagram-maintenance.webp"
+          },
+          "blog-diagram-ai-slicer": {
+            "local": "generated\\blog-diagram-ai-slicer.webp"
+          }
+        },
+        "sub-products-v2": {
+          "local": "generated\\sub-products-v2.webp"
+        },
+        "sub-about-v2": {
+          "local": "generated\\sub-about-v2.webp"
+        },
+        "sub-solutions-v2": {
+          "local": "generated\\sub-solutions-v2.webp"
+        },
+        "sub-contact-v2": {
+          "local": "generated\\sub-contact-v2.webp"
+        },
+        "sub-blog-v2": {
+          "local": "generated\\sub-blog-v2.webp"
+        },
+        "blog-diagram-print-farm-2": {
+          "local": "generated\\blog-diagram-print-farm-2.webp"
+        },
+        "blog-diagram-multicolor-2": {
+          "local": "generated\\blog-diagram-multicolor-2.webp"
+        },
+        "blog-diagram-maintenance-2": {
+          "local": "generated\\blog-diagram-maintenance-2.webp"
+        },
+        "blog-diagram-ai-slicer-2": {
+          "local": "generated\\blog-diagram-ai-slicer-2.webp"
+        },
+        "cta-bg": {
+          "local": "generated\\cta-bg.webp"
+        }
+      },
+      "hero-v5": {
+        "local": "generated\\hero-v5.webp"
+      }
+    },
+    "hero-v6": {
+      "local": "generated\\hero-v6.webp"
+    }
+  }
+}

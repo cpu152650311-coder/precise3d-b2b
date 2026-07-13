@@ -1,0 +1,59 @@
+<!-- Header Block — Precise3D -->
+<header class="site-header" id="header">
+  <div class="container header-inner">
+    <a href="/" class="logo">
+      <img src="/generated/logo.webp" alt="Precise3D" width="140" height="32">
+    </a>
+    <nav class="nav-main" aria-label="Main navigation">
+      <a href="/products/">Products</a>
+      <a href="/solutions/">Solutions</a>
+      <a href="/about/">About</a>
+      <a href="/blog/">Blog</a>
+    </nav>
+    <div class="header-actions">
+      <a href="/contact/" class="btn btn-primary">Request Quote</a>
+    </div>
+    <button class="mobile-toggle" aria-label="Toggle menu" id="mobileToggle">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<style>
+.site-header{
+  position:sticky;top:0;z-index:100;
+  background:rgba(11,17,32,.85);
+  backdrop-filter:blur(12px);
+  -webkit-backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--color-border);
+}
+.header-inner{
+  display:flex;align-items:center;justify-content:space-between;
+  height:64px;gap:var(--space-8);
+}
+.logo{flex-shrink:0}
+.logo img{display:block}
+.nav-main{display:flex;gap:var(--space-6)}
+.nav-main a{
+  color:var(--color-text-muted);
+  font-size:var(--text-sm);font-weight:500;
+  transition:color var(--duration-fast);
+}
+.nav-main a:hover,.nav-main a.active{color:var(--color-text)}
+.header-actions{flex-shrink:0}
+.mobile-toggle{
+  display:none;flex-direction:column;gap:5px;
+  background:none;border:none;cursor:pointer;
+  padding:var(--space-2);
+}
+.mobile-toggle span{
+  display:block;width:24px;height:2px;
+  background:var(--color-text);
+  border-radius:2px;
+  transition:all var(--duration-fast);
+}
+@media(max-width:768px){
+  .nav-main,.header-actions{display:none}
+  .mobile-toggle{display:flex}
+}
+</style>

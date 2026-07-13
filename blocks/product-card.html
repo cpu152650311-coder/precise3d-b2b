@@ -1,0 +1,37 @@
+<!-- Product Card Block — Precise3D -->
+<article class="card product-card fade-up">
+  <div class="product-img">
+    <img src="/generated/PRODUCT_IMG" alt="PRODUCT_NAME" loading="lazy">
+  </div>
+  <div class="product-info">
+    <span class="badge">PRODUCT_TIER</span>
+    <h3 class="h3">PRODUCT_NAME</h3>
+    <p class="product-desc">PRODUCT_DESC</p>
+    <ul class="product-specs">
+      <li><span class="spec-label">Build Volume</span> <span class="spec-value">SPEC_VOLUME</span></li>
+      <li><span class="spec-label">Max Speed</span> <span class="spec-value">SPEC_SPEED</span></li>
+      <li><span class="spec-label">Nozzle Temp</span> <span class="spec-value">SPEC_TEMP</span></li>
+    </ul>
+    <a href="/contact/" class="btn btn-outline" style="width:100%;justify-content:center">Request Spec Sheet</a>
+  </div>
+</article>
+
+<style>
+.product-card{overflow:hidden;padding:0}
+.product-img{aspect-ratio:4/3;background:var(--color-surface2);overflow:hidden}
+.product-img img{width:100%;height:100%;object-fit:cover}
+.product-info{padding:var(--space-6)}
+.product-info .badge{margin-bottom:var(--space-3)}
+.product-info h3{margin-bottom:var(--space-2)}
+.product-desc{color:var(--color-text-muted);font-size:var(--text-sm);margin-bottom:var(--space-5);line-height:1.6}
+.product-specs{
+  list-style:none;display:flex;flex-direction:column;gap:var(--space-3);
+  margin-bottom:var(--space-6);
+  padding-block:var(--space-5);
+  border-top:1px solid var(--color-border);
+  border-bottom:1px solid var(--color-border);
+}
+.product-specs li{display:flex;justify-content:space-between;font-size:var(--text-sm)}
+.spec-label{color:var(--color-text-dim)}
+.spec-value{color:var(--color-text);font-weight:600;font-family:var(--font-mono);font-size:var(--text-xs)}
+</style>

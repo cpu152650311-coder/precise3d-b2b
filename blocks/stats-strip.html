@@ -1,0 +1,42 @@
+<!-- Stats Strip Block — Precise3D -->
+<section class="section stats-strip" id="stats">
+  <div class="container">
+    <div class="stats-grid grid-4">
+      <div class="stat-item fade-up">
+        <div class="stat-number" data-target="50">0</div>
+        <div class="stat-label">Countries Served</div>
+      </div>
+      <div class="stat-item fade-up">
+        <div class="stat-number" data-target="200">0</div>
+        <div class="stat-label">Distribution Partners</div>
+      </div>
+      <div class="stat-item fade-up">
+        <div class="stat-number" data-target="15">0</div>
+        <div class="stat-label">Years Experience</div>
+      </div>
+      <div class="stat-item fade-up">
+        <div class="stat-number" data-target="99.7">0</div>
+        <div class="stat-label">% On-Time Delivery</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+.stats-strip{
+  background:linear-gradient(135deg,var(--color-surface),var(--color-bg));
+  border-top:1px solid var(--color-border);
+  border-bottom:1px solid var(--color-border);
+}
+.stat-item{text-align:center;padding:var(--space-8)}
+.stat-number{
+  font-size:var(--text-5xl);font-weight:700;
+  color:var(--color-accent-glow);
+  line-height:1.1;margin-bottom:var(--space-2);
+  font-family:var(--font-mono);
+}
+.stat-label{color:var(--color-text-muted);font-size:var(--text-sm)}
+@media(max-width:768px){
+  .stat-number{font-size:var(--text-4xl)}
+}
+</style>

@@ -1,0 +1,73 @@
+{
+  "project": "Precise3D B2B 3D Printer Export",
+  "pages": [
+    "index.html",
+    "products/index.html",
+    "about/index.html",
+    "solutions/index.html",
+    "contact/index.html",
+    "blog/index.html"
+  ],
+  "criteria": [
+    {
+      "id": "zero-cdn",
+      "rule": "Zero CDN — no external font, image, or JS resources from third-party domains",
+      "check": "grep for http:// https:// in all .html and .css files — only internal /generated/ paths allowed"
+    },
+    {
+      "id": "body-content-min",
+      "rule": "Every page body has ≥ 500 characters of visible text content",
+      "check": "Strip HTML tags from each page, count visible characters"
+    },
+    {
+      "id": "js-intersection-observer",
+      "rule": "All JS animation uses forEach(el => obs.observe(el)) pattern",
+      "check": "Search for IntersectionObserver usage in all .html files"
+    },
+    {
+      "id": "image-refs-match-manifest",
+      "rule": "All <img src> references match entries in generated/image-manifest.json",
+      "check": "Extract all src attributes, compare against manifest keys"
+    },
+    {
+      "id": "images-local-webp",
+      "rule": "All images are local .webp format under /generated/",
+      "check": "Verify all img src end with .webp and start with /generated/"
+    },
+    {
+      "id": "blog-exists",
+      "rule": "/blog/index.html exists with valid HTML structure",
+      "check": "File exists and contains <html>, <head>, <body> tags"
+    },
+    {
+      "id": "contact-form-fields",
+      "rule": "Contact form contains only name, email, message fields — no extra fields",
+      "check": "Inspect form inputs in contact/index.html"
+    },
+    {
+      "id": "nav-links-functional",
+      "rule": "All navigation links point to valid pages, not anchors",
+      "check": "Extract all <a href> in nav, verify each target file exists"
+    },
+    {
+      "id": "unique-meta",
+      "rule": "Each page has unique <title> and <meta description>",
+      "check": "Compare title and description across all pages"
+    },
+    {
+      "id": "page-count",
+      "rule": "At least 6 pages (index + 5 subpages)",
+      "check": "Count .html files excluding blocks/"
+    },
+    {
+      "id": "cta-per-page",
+      "rule": "Every page has ≥ 1 real CTA (button or link to /contact/)",
+      "check": "Search for href=/contact/ and btn-primary in each page"
+    },
+    {
+      "id": "design-tokens-linked",
+      "rule": "Every page links to /design-tokens.css",
+      "check": "grep for design-tokens.css in all page <link> tags"
+    }
+  ]
+}

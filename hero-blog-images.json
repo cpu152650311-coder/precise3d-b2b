@@ -1,0 +1,34 @@
+{
+  "images": [
+    {
+      "id": "hero-b2b-v4",
+      "subject": "Professional B2B industrial photography style: three modern consumer 3D printers lined up on a dark reflective surface in a clean studio, each printer slightly angled to show the product line range — one large enclosed professional model, one mid-size open frame, one compact entry model — dramatic but soft overhead lighting, cool blue and steel gray tones, the composition conveys precision manufacturing at scale, a subtle world map or global network lines visible in the dark background suggesting global export capability, no people, no text, premium dark industrial aesthetic, wide product-line composition",
+      "width": 1024,
+      "height": 1024
+    },
+    {
+      "id": "blog-diagram-print-farm",
+      "subject": "Clean infographic-style composition on dark background: a visual comparison showing single 3D printer vs 10-printer farm, with simple icon-style illustrations of printers, dollar signs and percentage indicators using electric blue and teal accent colors, minimalist data visualization aesthetic, no text labels needed, the visual hierarchy should clearly show scaling from one to many, professional dark theme matching industrial website style",
+      "width": 1024,
+      "height": 1024
+    },
+    {
+      "id": "blog-diagram-multicolor",
+      "subject": "Visual comparison on dark background: left side shows a single-color 3D printed object in plain white, right side shows the same object printed in vibrant multi-color gradient, a color spectrum bar or swatches below showing the transition from mono to multi-color, clean infographic style, electric blue and teal accents, professional dark theme, minimalist data visualization",
+      "width": 1024,
+      "height": 1024
+    },
+    {
+      "id": "blog-diagram-maintenance",
+      "subject": "Clean exploded-view style diagram of a 3D printer extruder assembly on a dark technical background, showing the key replaceable parts — nozzle, PTFE tube, silicone sock, extruder gear — each component slightly separated from the assembly with subtle highlight glow, technical blueprint aesthetic, electric blue accent lines connecting parts, professional dark theme, no text",
+      "width": 1024,
+      "height": 1024
+    },
+    {
+      "id": "blog-diagram-ai-slicer",
+      "subject": "Split-screen visual on dark background: left half shows a wireframe 3D model of a geometric object on a laptop screen with AI-generated support structures highlighted in electric blue, right half shows the actual printed object emerging from a 3D printer, a glowing connection line between digital and physical halves, clean tech aesthetic, professional dark theme, no text, conveys AI-powered digital-to-physical workflow",
+      "width": 1024,
+      "height": 1024
+    }
+  ]
+}

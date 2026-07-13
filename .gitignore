@@ -1,0 +1,8 @@
+.wrangler/
+*.pyc
+__pycache__/
+screenshot-*.png
+hero-*-prompt.json
+blog-image-prompts.json
+batch-v3-prompts.json
+image-brief.html

@@ -1,0 +1,34 @@
+{
+  "images": [
+    {
+      "id": "hero-product-v3",
+      "subject": "A sleek modern 3D printer positioned in the upper third of the frame, the lower two-thirds of the image is clean dark empty studio space with smooth gradient to deep black, the printer sits well above center leaving generous dark negative space below for text overlay, soft even lighting from above, cool blue ambient tones, professional product photography, the dark lower area is perfectly clean with no objects or distractions — designed to have bold white centered text overlaid across the lower portion",
+      "width": 1024,
+      "height": 1024
+    },
+    {
+      "id": "sub-hero-right-1",
+      "subject": "Modern consumer 3D printer positioned in the right half of the frame, left half is clean dark negative space with no objects, dramatic rim lighting on the printer from the side, cool blue tones, professional product photography, the left side is deliberately empty for text overlay, dark background throughout, no people",
+      "width": 1024,
+      "height": 1024
+    },
+    {
+      "id": "sub-hero-right-2",
+      "subject": "Modern clean manufacturing facility or engineering workspace positioned in the right portion of frame, left portion is dark empty space, organized workstations on the right side only, professional industrial environment, cool blue tones, the empty left side is designed for text overlay, no people faces",
+      "width": 1024,
+      "height": 1024
+    },
+    {
+      "id": "blog-cover-maintenance",
+      "subject": "Close-up of 3D printer maintenance — a hand adjusting the extruder assembly with precision tools visible, spare nozzles and parts organized neatly on a dark workbench, warm focused lighting on the maintenance area, professional workshop atmosphere, dark background, no face visible, conveys precision care and technical expertise",
+      "width": 1024,
+      "height": 1024
+    },
+    {
+      "id": "blog-cover-ai-slicer",
+      "subject": "Split composition — left side shows a laptop screen displaying colorful 3D model with AI-generated support structures and slicing patterns, right side shows the same object being printed on a modern 3D printer, the connection between digital and physical is the focal point, dark studio environment, cool blue and cyan accent lighting, professional tech aesthetic, no people",
+      "width": 1024,
+      "height": 1024
+    }
+  ]
+}

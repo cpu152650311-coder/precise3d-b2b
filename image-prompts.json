@@ -1,0 +1,52 @@
+{
+  "images": [
+    {
+      "id": "hero-product",
+      "subject": "A sleek modern consumer 3D printer on a dark studio table, mid-print with a geometric object being created, dramatic rim lighting from the side, cool blue ambient tones, professional product photography, macro detail visible on the print head, dark background, high contrast, premium industrial aesthetic, no people visible",
+      "width": 1024,
+      "height": 1024
+    },
+    {
+      "id": "product-a",
+      "subject": "Flagship enclosed 3D printer with glass door, CoreXY design, professional studio product shot on a dark reflective surface, dramatic lighting highlighting the aluminum frame and touchscreen display, clean industrial look, product-only no background clutter, premium photography style",
+      "width": 1024,
+      "height": 1024
+    },
+    {
+      "id": "product-b",
+      "subject": "Mid-range open-frame 3D printer with aluminum extrusion frame, product photography on a clean dark surface, 45-degree angle shot showing the build plate and extruder assembly, modern design language, professional lighting, white filament spool mounted on top",
+      "width": 1024,
+      "height": 1024
+    },
+    {
+      "id": "product-c",
+      "subject": "Compact entry-level 3D printer, small footprint design, clean product shot on dark matte surface, front-facing angle, pre-assembled look, friendly consumer aesthetic but still professional, bright LED indicator showing it's powered on, simple clean design",
+      "width": 1024,
+      "height": 1024
+    },
+    {
+      "id": "print-detail",
+      "subject": "Extreme macro close-up of a high-quality 3D printed mechanical part, visible layer lines are ultra-fine and precise, cool blue-tinted lighting, engineering precision aesthetic, the printed object is a complex geometric lattice structure, dark background, sharp focus on surface detail and texture",
+      "width": 1024,
+      "height": 1024
+    },
+    {
+      "id": "factory-line",
+      "subject": "Modern clean manufacturing facility with 3D printers being assembled on a production line, bright industrial lighting, organized workstations, professional factory environment, ISO-certified look, wide angle view showing scale, technicians in clean uniforms (faces not visible), precision assembly tools visible",
+      "width": 1024,
+      "height": 1024
+    },
+    {
+      "id": "solution-edu",
+      "subject": "Multiple 3D printers operating in a modern classroom or makerspace setting, colorful printed objects displayed on shelves, bright natural lighting through windows, educational environment, organized and clean, no people faces visible, printers are the main focus, creative learning atmosphere",
+      "width": 1024,
+      "height": 1024
+    },
+    {
+      "id": "solution-proto",
+      "subject": "Engineering workspace with a 3D printer printing a functional prototype part, laptop showing CAD software on screen nearby, calipers and measurement tools on the desk, professional R&D environment, dark moody lighting with warm desk lamp accent, hands of engineer adjusting printer (no face), product development atmosphere",
+      "width": 1024,
+      "height": 1024
+    }
+  ]
+}
