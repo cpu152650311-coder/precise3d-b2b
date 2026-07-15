@@ -34,8 +34,7 @@
       <div class="contact-grid fade-up">
         <div class="contact-form-wrap">
           <h2 class="h2">Send an Inquiry</h2>
-          <form action="https://formsubmit.co/sales@precise3d.com" method="POST" class="contact-form">
-            <input type="hidden" name="_subject" value="Precise3D B2B Inquiry"><input type="hidden" name="_template" value="table">
+          <form onsubmit="return handleInquiry(event)" novalidate class="contact-form">
             <div class="form-group"><label for="name">Name <span class="required">*</span></label><input type="text" id="name" name="name" required placeholder="Your full name"></div>
             <div class="form-group"><label for="email">Email <span class="required">*</span></label><input type="email" id="email" name="email" required placeholder="you@company.com"></div>
             <div class="form-group"><label for="message">Message <span class="required">*</span></label><textarea id="message" name="message" required rows="5" placeholder="Tell us about your business, target market, and what you're looking for..."></textarea></div>
@@ -82,8 +81,7 @@
     <button class="modal-close" onclick="closeModal()" aria-label="Close">&times;</button>
     <h2 class="h2">Send an Inquiry</h2>
     <p class="body-sm">We'll respond within 24 hours.</p>
-    <form class="modal-form" action="https://formsubmit.co/sales@precise3d.com" method="POST">
-      <input type="hidden" name="_subject" value="Precise3D B2B Inquiry"><input type="hidden" name="_template" value="table">
+    <form class="modal-form" onsubmit="return handleInquiry(event)" novalidate>
       <div class="form-group"><label for="modal-name">Name <span class="required">*</span></label><input type="text" id="modal-name" name="name" required placeholder="Your full name"></div>
       <div class="form-group"><label for="modal-email">Email <span class="required">*</span></label><input type="email" id="modal-email" name="email" required placeholder="you@company.com"></div>
       <div class="form-group"><label for="modal-message">Message <span class="required">*</span></label><textarea id="modal-message" name="message" required rows="4" placeholder="Tell us about your business and what you're looking for..."></textarea></div>
@@ -99,6 +97,7 @@ function openModal(){document.getElementById('inquiryModal').classList.add('open
 function closeModal(){document.getElementById('inquiryModal').classList.remove('open')}
 document.getElementById('inquiryModal').addEventListener('click',function(e){if(e.target===this)closeModal()})
 </script>
+<script src="/inquiry-handler.js"></script>
 
 <style>
 .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:var(--space-12);align-items:start}

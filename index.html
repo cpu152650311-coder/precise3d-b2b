@@ -8,7 +8,28 @@
   <meta property="og:title" content="Precise3D — Export-Grade Consumer 3D Printers">
   <meta property="og:description" content="Your trusted OEM partner for consumer 3D printers. Factory-direct quality, worldwide shipping.">
   <meta property="og:type" content="website">
+  <link rel="stylesheet" href="/styles.css">
   <link rel="stylesheet" href="/design-tokens.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "name": "Precise3D",
+      "url": "https://ems-3dp.com",
+      "logo": "https://ems-3dp.com/generated/hero-precise3d.webp",
+      "description": "Export-grade consumer 3D printers for global B2B distribution.",
+      "email": "info@ems-3dp.com"
+    },
+    {
+      "@type": "WebSite",
+      "name": "Precise3D",
+      "url": "https://ems-3dp.com"
+    }
+  ]
+}
+</script>
 </head>
 <body>
 
@@ -220,9 +241,7 @@
     <button class="modal-close" onclick="closeModal()" aria-label="Close">&times;</button>
     <h2 class="h2">Send an Inquiry</h2>
     <p class="body-sm">We'll respond within 24 hours.</p>
-    <form class="modal-form" action="https://formsubmit.co/sales@ems-3dp.com" method="POST">
-      <input type="hidden" name="_subject" value="Precise3D B2B Inquiry">
-      <input type="hidden" name="_template" value="table">
+    <form class="modal-form" onsubmit="return handleInquiry(event)" novalidate>
       <div class="form-group"><label for="modal-name">Name <span class="required">*</span></label><input type="text" id="modal-name" name="name" required placeholder="Your full name"></div>
       <div class="form-group"><label for="modal-email">Email <span class="required">*</span></label><input type="email" id="modal-email" name="email" required placeholder="you@company.com"></div>
       <div class="form-group"><label for="modal-message">Message <span class="required">*</span></label><textarea id="modal-message" name="message" required rows="4" placeholder="Tell us about your business and what you're looking for..."></textarea></div>
@@ -239,5 +258,6 @@ function closeModal(){document.getElementById('inquiryModal').classList.remove('
 document.getElementById('inquiryModal').addEventListener('click',function(e){if(e.target===this)closeModal()})
 </script>
 
+<script src="inquiry-handler.js"></script>
 </body>
 </html>

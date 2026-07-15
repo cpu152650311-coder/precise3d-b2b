@@ -8,6 +8,8 @@
   <meta property="og:title" content="How AI Slicers Are Changing Consumer 3D Printing">
   <meta property="og:description" content="AI-powered auto-orientation, intelligent supports, and failure prediction are making 3D printing accessible to everyone. Here's what's changed.">
   <meta property="og:type" content="article">
+  <meta property="og:url" content="https://ems-3dp.com/blog/ai-slicers-changing-consumer-3d-printing">
+  <link rel="canonical" href="https://ems-3dp.com/blog/ai-slicers-changing-consumer-3d-printing">
   <link rel="stylesheet" href="/design-tokens.css">
 </head>
 <body>
@@ -91,8 +93,7 @@
     <button class="modal-close" onclick="closeModal()" aria-label="Close">&times;</button>
     <h2 class="h2">Send an Inquiry</h2>
     <p class="body-sm">We'll respond within 24 hours.</p>
-    <form class="modal-form" action="https://formsubmit.co/sales@precise3d.com" method="POST">
-      <input type="hidden" name="_subject" value="Precise3D B2B Inquiry"><input type="hidden" name="_template" value="table">
+    <form class="modal-form" onsubmit="return handleInquiry(event)" novalidate>
       <div class="form-group"><label for="modal-name">Name <span class="required">*</span></label><input type="text" id="modal-name" name="name" required placeholder="Your full name"></div>
       <div class="form-group"><label for="modal-email">Email <span class="required">*</span></label><input type="email" id="modal-email" name="email" required placeholder="you@company.com"></div>
       <div class="form-group"><label for="modal-message">Message <span class="required">*</span></label><textarea id="modal-message" name="message" required rows="4" placeholder="Tell us about your business and what you're looking for..."></textarea></div>
@@ -115,5 +116,6 @@ document.getElementById('inquiryModal').addEventListener('click',function(e){if(
 .blog-body h2{font-size:var(--text-2xl);font-weight:600;color:var(--color-text);margin-top:var(--space-12);margin-bottom:var(--space-5)}
 .blog-body strong{color:var(--color-text)}
 </style>
+<script src="../inquiry-handler.js"></script>
 </body>
 </html>
