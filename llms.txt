@@ -1,0 +1,13 @@
+# llms.txt — ems-3dp.com (Precise3D)
+> Precise3D: Export-grade consumer 3D printers for global B2B distribution.
+
+## Core Pages
+- [Home](https://ems-3dp.com/): 3D printer manufacturer overview
+- [Blog](https://ems-3dp.com/blog/): 3D printing guides and industry insights
+
+## Key Facts
+- Product: Consumer 3D printers (FDM/Resin)
+- Business: B2B OEM distribution
+- Certification: ISO 9001
+- MOQ: Competitive for distributors
+- Markets: Global export

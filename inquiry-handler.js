@@ -8,7 +8,7 @@ async function handleInquiry(event) {
     source: 'ems-3dp.com',
   };
   try {
-    const res = await fetch('http://43.161.222.16:8080/inquiry', {
+    const res = await fetch('https://inquiry-proxy.cpu152650311.workers.dev/inquiry', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(data),
