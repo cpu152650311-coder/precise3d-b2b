@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3D Printer Print Surfaces: PEI vs Glass vs G10 vs Carborundum — A Distributor's Guide to the Second-Most-Replaced Consumable | Precise3D</title>
+  <meta name="description" content="Build plates wear, warp, and get gouged. Every printer owner replaces them — the only question is whether they buy from you. A data-driven guide for distributors: PEI, glass, G10, carborundum surface comparison with margin analysis and stocking strategy.">
+  <meta property="og:title" content="3D Printer Print Surfaces: The Distributor's Guide to the Build Plate Consumable">
+  <meta property="og:description" content="A scratched PEI sheet costs $5 to replace and takes 30 seconds. Your customers will do it 2-4 times per year — here's how to capture that recurring revenue.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://ems-3dp.com/blog/3d-printer-print-surfaces-build-plate-distributor-guide">
+  <link rel="canonical" href="https://ems-3dp.com/blog/3d-printer-print-surfaces-build-plate-distributor-guide">
+  <link rel="stylesheet" href="/design-tokens.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "3D Printer Print Surfaces: PEI vs Glass vs G10 vs Carborundum — A Distributor's Guide",
+  "description": "A data-driven guide for 3D printer distributors on build plate materials, adhesion characteristics, wear rates, and how to build a print surface SKU strategy that generates recurring after-sale revenue.",
+  "datePublished": "2026-07-20",
+  "dateModified": "2026-07-20",
+  "author": {"@type": "Organization", "name": "Precise3D"},
+  "publisher": {"@type": "Organization", "name": "Precise3D", "url": "https://ems-3dp.com"}
+}
+</script>
+<style>
+.blog-body{color:var(--color-text-muted);font-size:var(--text-base);line-height:1.85}
+.blog-body p{margin-bottom:var(--space-5)}
+.blog-body a{color:var(--color-accent);text-decoration:underline;text-underline-offset:2px}
+.blog-body h2{font-size:var(--text-2xl);font-weight:600;color:var(--color-text);margin-top:var(--space-12);margin-bottom:var(--space-5)}
+.blog-body strong{color:var(--color-text)}
+.blog-body ul{margin-bottom:var(--space-5);padding-left:var(--space-6)}
+.blog-body li{margin-bottom:var(--space-2);color:var(--color-text-muted)}
+.specs-table{display:flex;flex-direction:column;gap:var(--space-3);padding:var(--space-6);background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-lg)}
+.spec-row{display:flex;justify-content:space-between;font-size:var(--text-sm);padding-block:.15rem}
+.spec-row span:first-child{color:var(--color-text-dim);flex:1}
+.spec-val{color:var(--color-text);font-weight:600;font-family:var(--font-mono);font-size:var(--text-xs);text-align:right;min-width:80px}
+</style>
+
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="/" class="logo"><svg width="140" height="28" viewBox="0 0 140 28" fill="none"><rect x="0" y="2" width="24" height="24" rx="4" fill="#2563EB"/><path d="M6 14l4-4 4 4 4-4 4 4" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/><text x="32" y="21" fill="#F1F5F9" font-family="system-ui,sans-serif" font-size="18" font-weight="700">Precise3D</text></svg></a>
+    <nav class="nav-main"><a href="/">Home</a><a href="/products/">Products</a><a href="/solutions/">Solutions</a><a href="/about/">About</a><a href="/blog/" class="active">Blog</a><a href="/contact/">Contact</a></nav>
+    <div class="header-actions"><a href="javascript:void(0)" class="btn btn-primary" onclick="openModal()">Request Quote</a></div>
+  </div>
+</header>
+
+<main>
+  <section class="sub-hero">
+    <div class="sub-hero-bg"><img src="/generated/blog-cover-print-surfaces.webp" alt="" aria-hidden="true"><div class="sub-hero-overlay"></div></div>
+    <div class="container sub-hero-content">
+      <p class="overline">Distributor Guide &bull; July 2026</p>
+      <h1 class="h1" style="font-size:var(--text-4xl)">Build Plates: The Consumable Every Customer Replaces — And Most Distributors Ignore</h1>
+      <p class="body-lg">A scratched PEI sheet costs $3-8 to replace and takes 30 seconds. An active 3D printer user goes through 2-4 per year. That's a recurring revenue stream sitting inside every printer you've ever sold — and most distributors don't stock a single replacement surface.</p>
+    </div>
+  </section>
+
+  <article class="section">
+    <div class="container" style="max-width:760px">
+      <div class="blog-body">
+        <p>After nozzles, the build plate is the single most frequently replaced component on any FDM 3D printer. Unlike nozzles — which require a wrench, a heated hotend, and some mechanical confidence — replacing a build surface is genuinely trivial: peel off the old sheet, stick on the new one, done in 30 seconds. This makes print surfaces the easiest consumable upsell in 3D printing distribution. The customer doesn't need to watch a tutorial. They don't need tools. They just need the right surface in stock when theirs fails.</p>
+
+        <p>This guide covers the four print surface materials that matter for distributors, the adhesion characteristics that determine which surface fits which customer, the wear mechanisms that drive replacement frequency, and the stocking math that makes build plates one of the lowest-effort recurring revenue categories in the 3D printer aftermarket.</p>
+
+        <h2>Why Build Plates Are a Subscription Business Wrapped in a Rectangle</h2>
+        <p>Every print surface degrades — the only variables are how fast and in what way. PEI sheets lose their textured grip as the surface becomes polished smooth from repeated part removal. Glass beds chip at the edges from scraper damage. G10 surfaces absorb moisture and oils from fingerprints, gradually losing adhesion. Carborundum coatings wear down to the bare glass underneath after hundreds of heating/cooling cycles. None of these failure modes are catastrophic — the printer still works, but first-layer adhesion becomes unreliable, and the customer starts compensating with glue sticks, blue tape, and higher bed temperatures. Eventually they give up and order a replacement.</p>
+
+        <p>The key insight for distributors: the customer doesn't see a "broken" printer — they see a "finicky" printer. They'll spend weeks troubleshooting before they realize the surface is worn out. Your job is to make the replacement surface available before they start troubleshooting, ideally bundled with the printer purchase itself. As covered in our <a href="/blog/3d-printer-maintenance-distributor-guide.html">maintenance guide</a>, proactive consumable stocking reduces support tickets by making replacements trivial rather than diagnostic.</p>
+
+        <div class="specs-table">
+          <div class="spec-row"><span>PEI (smooth) — moderate use, PLA/PETG</span><span class="spec-val">~6-12 months to replacement</span></div>
+          <div class="spec-row"><span>PEI (textured) — frequent use, PETG/ABS</span><span class="spec-val">~4-8 months to replacement</span></div>
+          <div class="spec-row"><span>Glass / Carborundum — PLA heavy use</span><span class="spec-val">~12-24 months to coating wear</span></div>
+          <div class="spec-row"><span>G10 / Garolite — nylon, engineering filaments</span><span class="spec-val">~3-6 months to surface contamination</span></div>
+        </div>
+
+        <div class="blog-img"><img src="/generated/blog-diagram-print-surfaces-1.webp" alt="Macro close-up of a worn PEI print surface next to a brand new one on a dark workbench — visible scratches, gouges from scraper damage, and polished-smooth central zone compared to factory-textured replacement sheet" loading="lazy"></div>
+
+        <h2>PEI: The Default Surface That Drives 80% of Replacement Sales</h2>
+        <p>PEI (polyetherimide) is the factory-standard build surface on virtually every consumer 3D printer manufactured today — including the <a href="/products/">Precise3D Creator C1 and Start S1</a>. It comes in two variants: smooth PEI (glossy first layer, ideal for PLA) and textured PEI (matte finish, better for PETG and ABS). The textured variant is particularly important for distributors because PETG — which sticks <em>too well</em> to smooth PEI and can bond permanently — releases cleanly from textured PEI without damaging either the part or the surface.</p>
+
+        <p><strong>Smooth PEI sheets</strong> are the volume SKU. Landed cost for a 235×235mm double-sided smooth PEI spring steel sheet: $2.20–4.50 depending on order quantity and magnetic base inclusion. Suggested retail: $14.99 (single sheet) to $24.99 (2-pack with spare magnetic base sticker). Gross margin: 70–78%. A customer with a single printer will buy 2-3 smooth PEI sheets per year — more if they print PETG or use a metal scraper (which micro-scratches the surface on every removal). The magnet base sticker itself is a consumable: it loses magnetism above 110°C, so ABS users who print at 100°C bed temperature will degrade the magnet within 8-12 months and need a replacement sticker ($3-5 retail).</p>
+
+        <p><strong>Textured PEI sheets</strong> are the higher-margin companion SKU. They're slightly more expensive to manufacture (the texture pattern requires a precision-etched roller), but they command a premium: landed cost $3.00–5.50, retail $19.99–29.99. The textured surface also hides first-layer imperfections better than smooth PEI, which means fewer customer complaints about "lines showing through the bottom of the print" — a subtle but real support-cost reduction. For a deeper dive into how filament type drives surface choice, see our <a href="/blog/pla-petg-abs-tpu-filament-stocking-guide-distributor-2026.html">filament stocking guide</a>.</p>
+
+        <div class="specs-table">
+          <div class="spec-row"><span>Surface Type</span><span class="spec-val">Landed Cost</span><span class="spec-val">Retail</span><span class="spec-val">Margin</span><span class="spec-val">Life</span></div>
+          <div class="spec-row"><span>Smooth PEI (235×235mm)</span><span class="spec-val">$2.20–4.50</span><span class="spec-val">$14.99–24.99</span><span class="spec-val">70–78%</span><span class="spec-val">6-12 mo</span></div>
+          <div class="spec-row"><span>Textured PEI (235×235mm)</span><span class="spec-val">$3.00–5.50</span><span class="spec-val">$19.99–29.99</span><span class="spec-val">72–80%</span><span class="spec-val">4-8 mo</span></div>
+          <div class="spec-row"><span>PEI 3-pack (1 smooth + 2 textured)</span><span class="spec-val">$7.50–12.00</span><span class="spec-val">$34.99–49.99</span><span class="spec-val">75–82%</span><span class="spec-val">12-18 mo supply</span></div>
+        </div>
+
+        <div class="blog-img"><img src="/generated/blog-diagram-print-surfaces-2.webp" alt="Four different 3D printer build plates arranged side by side on a dark studio surface — smooth gold PEI spring steel sheet, textured dark PEI, black G10 Garolite plate, and carborundum glass bed — each with a printed calibration cube on it" loading="lazy"></div>
+
+        <h2>Glass and Carborundum: The Flatness Premium</h2>
+        <p>Glass build plates occupy a specific niche: they're the flattest surface available, period. A borosilicate glass bed has a flatness tolerance of ±0.05mm across a 235×235mm area — versus ±0.15-0.25mm for a spring steel PEI sheet that can flex slightly in the magnetic base. For customers printing functional parts that need to mate with other components (mechanical assemblies, snap-fit enclosures, gear trains), glass flatness eliminates the "elephant's foot" compensation and first-layer squish variability that steel sheets introduce.</p>
+
+        <p><strong>Plain borosilicate glass</strong> is the entry-level glass option. It requires an adhesion aid — typically a glue stick, hairspray, or purpose-made adhesive — for reliable first-layer adhesion. This is the glass bed that shipped with earlier generations of 3D printers; it's still popular in the education and library segments where machines see light use and operators prefer a "just add glue" workflow. Landed cost: $3.00–6.00. Retail: $12.99–19.99. The margin is lower than PEI because glass is heavier (higher shipping cost per unit) and more fragile (higher breakage rate in transit — budget 3-5% for replacements).</p>
+
+        <p><strong>Carborundum-coated glass</strong> (sometimes marketed as "Ultrabase" or "carbon-silicon glass") adds a micro-porous ceramic coating to the glass substrate. When heated, the micropores expand slightly and grip the first layer of extruded plastic. When cooled, the pores contract and the part releases — often with an audible "pop" as the thermal contraction breaks the bond. This self-releasing behavior is the carborundum value proposition: no glue, no scraper, no tools. For a distributor guide to the nozzle consumables that complement print surface strategy, see our <a href="/blog/3d-printer-nozzle-hotend-technology-distributor-guide.html">nozzle and hotend guide</a>.</p>
+
+        <p>The catch: the carborundum coating wears down over time. The "self-release" effect depends on those micropores staying sharp and clean. After 500-800 print cycles, the surface becomes polished smooth and loses adhesion — the customer starts using glue stick again, at which point they might as well be using plain glass. This wear cycle is predictable enough to build a subscription model around: a distributor who sells a carborundum bed can follow up at 500 print-hour intervals with a replacement offer. For pricing strategies on consumable subscriptions, see our <a href="/blog/3d-printer-pricing-strategy-distributor-margin-guide.html">distributor margin guide</a>.</p>
+
+        <div class="specs-table">
+          <div class="spec-row"><span>Plain Borosilicate Glass</span><span class="spec-val">$3.00–6.00 landed</span><span class="spec-val">$12.99–19.99 retail</span><span class="spec-val">55–65% margin</span></div>
+          <div class="spec-row"><span>Carborundum-Coated Glass</span><span class="spec-val">$7.00–12.00 landed</span><span class="spec-val">$24.99–34.99 retail</span><span class="spec-val">60–70% margin</span></div>
+          <div class="spec-row"><span>Carborundum replacement cycle</span><span class="spec-val">~500-800 print cycles to coating degradation</span></div>
+        </div>
+
+        <div class="blog-img"><img src="/generated/blog-diagram-print-surfaces-3.webp" alt="Carborundum-coated glass 3D printer bed with a freshly printed black PLA part self-releasing — visible micro-porous surface texture and the gap forming between the cooled print and the bed surface, photographed in warm studio lighting on dark background" loading="lazy"></div>
+
+        <h2>G10 / Garolite: The Engineering Material Surface</h2>
+        <p>G10 (also known by the brand name Garolite) is a fiberglass-epoxy laminate — the same material used for circuit board substrates. It has emerged as a niche-but-growing print surface for one specific reason: it's the only common surface material to which nylon (PA6, PA12) adheres reliably without glue, slurry, or painter's tape. Nylon is notoriously difficult to get a first layer on — it doesn't stick well to PEI, it bonds too aggressively to glass (risking chips on removal), and it barely adheres to carborundum. But G10, when heated to 60-80°C, provides a clean, tool-free bond with nylon that releases when cooled.</p>
+
+        <p>For distributors, G10 represents a small but high-value segment: customers printing functional nylon parts — drone frames, automotive brackets, mechanical prototypes, tooling fixtures. These customers are already buying engineering filaments (covered in our <a href="/blog/engineering-filaments-distributor-guide.html">engineering filaments guide</a>) and hardened steel nozzles. A G10 build plate completes their consumables basket. Landed cost for a 235×235mm G10 sheet (1.5mm thick): $2.00–4.00. Suggested retail: $15.99–22.99. Margin: 75–82%. The G10 customer is the highest-LTV consumables buyer in 3D printing — they consume engineering filaments ($35-60/kg), hardened nozzles ($5-15 each), and build surfaces (2-3 per year) at rates 3-5× higher than PLA-only users.</p>
+
+        <p>One practical note: G10 sheets are typically sold without a magnetic backing — they're clipped directly to the heated bed. Distributors should offer G10 with a magnetic base sticker as an upsell ($2-3 additional retail), since most customers prefer the convenience of magnetic attachment. The clip system works but introduces a slight Z-offset that users need to compensate for in their slicer start G-code; magnetic mounting eliminates this variable. For printers with inductive or strain-gauge bed leveling probes (<a href="/blog/3d-printer-auto-bed-leveling-calibration-technology-distributor-guide.html">see our auto bed leveling guide</a>), the probe detects the metal bed beneath the G10 without issues.</p>
+
+        <div class="blog-img"><img src="/generated/blog-diagram-print-surfaces-4.webp" alt="G10 Garolite fiberglass-epoxy build plate with a freshly printed nylon (PA6) calibration cube — the matte black surface texture visible at macro level, showing the distinct weave pattern of the laminate and the clean release surface" loading="lazy"></div>
+
+        <h2>Textured vs Smooth: Matching Surface to Customer Behavior</h2>
+        <p>The single most common support question that traces back to the build plate is: "why isn't my print sticking?" In roughly 60% of cases, the answer is a surface/filament mismatch — the customer is printing PETG on smooth PEI (which risks over-adhesion and surface damage), or printing PLA on a worn textured PEI sheet that's lost its grip, or printing ABS on a cold glass bed without an enclosure. Distributors who stock the right surface mix can preempt these support tickets at the point of sale.</p>
+
+        <p><strong>PLA users (60-70% of the market):</strong> Smooth PEI is the ideal surface. PLA adheres to smooth PEI at 50-60°C bed temperature with no adhesion aids. The part releases cleanly when cooled to 30-35°C. A smooth PEI sheet paired with PLA is the lowest-support, highest-satisfaction combination in consumer 3D printing. These customers should always have a spare smooth PEI sheet in their kit — it's the "ink cartridge" of FDM printing, and stocking it as a default add-on at checkout converts 15-25% of printer buyers into consumable buyers from day one.</p>
+
+        <p><strong>PETG users (15-20% of the market):</strong> Textured PEI is essential. PETG bonds so aggressively to smooth PEI that it can tear the PEI coating off the steel substrate during removal — a permanent failure mode that generates warranty claims if the customer wasn't warned. Textured PEI creates a mechanical release mechanism: the peaks and valleys of the texture reduce the total contact area by roughly 40%, allowing PETG to grip enough for printing but release without damaging the surface. Distributors who sell PETG filament without offering textured PEI are creating their own support tickets. A PETG user buying a printer should receive a textured PEI sheet in the same shipment — bundle it at a slight discount ($5 off when purchased together) and you'll capture the consumable sale plus prevent a future complaint.</p>
+
+        <p><strong>ABS/ASA users (5-8% of the market):</strong> These customers need an enclosure (see our <a href="/blog/enclosed-vs-open-frame-3d-printer-distributor-guide.html">enclosed vs open frame guide</a>) plus a heated bed at 100-110°C. At those temperatures, the magnetic base sticker on PEI spring steel sheets begins to degrade. For ABS-heavy customers, carborundum glass is the better surface choice — it handles 110°C indefinitely, provides strong adhesion when hot and clean release when cool, and the glass flatness helps with ABS warping mitigation. The tradeoff: carborundum glass can't be flexed to pop parts off (like spring steel PEI), so users need to wait for full cooldown — typically 5-10 minutes for a 100°C bed to drop below 40°C.</p>
+
+        <div class="blog-img"><img src="/generated/blog-diagram-print-surfaces-5.webp" alt="Close-up side-by-side comparison of textured vs smooth PEI spring steel sheets — the textured side showing the fine matte grain pattern and the smooth side showing the mirror-like glossy gold finish, with a PETG print successfully releasing from the textured surface" loading="lazy"></div>
+
+        <h2>The Minimum Viable Build Plate Inventory for a Distributor</h2>
+        <p>Based on sales data from distributors carrying Precise3D printers, here is the build plate assortment that covers 95% of customer surface needs with 6 SKUs. Total landed inventory cost for 50 units of each (300 units): approximately $1,650. Total retail value: approximately $6,200. Warehouse footprint: roughly the volume of 8 filament spool boxes. Per-gram margin, build plates outperform filament by a factor of 4-6×.</p>
+
+        <div class="specs-table">
+          <div class="spec-row"><span>Smooth PEI 235×235mm (single)</span><span class="spec-val">Volume SKU — 50% of surface sales</span></div>
+          <div class="spec-row"><span>Textured PEI 235×235mm (single)</span><span class="spec-val">PETG companion — 22% of sales</span></div>
+          <div class="spec-row"><span>PEI 3-pack (1 smooth + 2 textured)</span><span class="spec-val">Bundle upsell — 15% attach rate to printer sales</span></div>
+          <div class="spec-row"><span>Carborundum Glass 235×235mm</span><span class="spec-val">ABS/high-temp segment — 5% of sales</span></div>
+          <div class="spec-row"><span>G10 Garolite 235×235mm</span><span class="spec-val">Nylon/engineering segment — 3% of sales, highest LTV</span></div>
+          <div class="spec-row"><span>Magnetic Base Sticker (replacement)</span><span class="spec-val">Every surface sale triggers one — 20% attach rate</span></div>
+        </div>
+
+        <p>Six SKUs. The beauty of build plates as a distributor product category is the zero-education upsell. A customer who just scratched their PEI sheet with a metal scraper knows exactly what they need — they don't need a comparison guide, they just need the replacement in stock. The distributor's job is visibility: put the build plate category on the same page as the printers, offer a "consumables kit" at checkout (1 nozzle assortment + 2 PEI sheets + 1 magnetic sticker = $39.99 retail, $11.50 landed), and send a replenishment email at 6-month intervals.</p>
+
+        <p>At Precise3D, we ship every <a href="/products/">Creator C1</a> with a smooth PEI sheet pre-installed and a spare textured PEI sheet in the accessory box — not because we expect the smooth sheet to fail immediately, but because we want the customer to understand from day one that build surfaces are consumable. The first textured sheet is a gift. The next one is a sale.</p>
+
+        <div class="cta-card" style="margin-top:var(--space-12)">
+          <p class="overline">Start Your Partnership</p>
+          <h2 class="h2">Ready to Bring Precision Printing to Your Market?</h2>
+          <p class="body-lg">Join our network of 200+ global distributors. Competitive pricing, dedicated support, and fast fulfillment.</p>
+          <div class="cta-actions">
+            <a href="javascript:void(0)" class="btn btn-primary btn-lg" onclick="openModal()">Become a Distributor</a>
+          </div>
+        </div>
+
+        <p style="margin-top:var(--space-8)"><a href="/blog/" class="btn btn-ghost">&larr; Back to Blog</a></p>
+      </div>
+    </div>
+  </article>
+</main>
+
+<footer class="site-footer section">
+  <div class="container">
+    <div class="footer-grid grid-4">
+      <div class="footer-brand"><svg width="120" height="24" viewBox="0 0 120 24" fill="none" style="margin-bottom:var(--space-4)"><rect x="0" y="1" width="22" height="22" rx="4" fill="#2563EB"/><path d="M5 13l4-4 4 4 4-4 4 4" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/><text x="28" y="18" fill="#F1F5F9" font-family="system-ui,sans-serif" font-size="16" font-weight="700">Precise3D</text></svg><p class="body-sm">Precision 3D printers engineered for global markets.</p></div>
+      <div class="footer-col"><h4>Products</h4><a href="/products/">All Products</a></div>
+      <div class="footer-col"><h4>Company</h4><a href="/about/">About Us</a><a href="/solutions/">Solutions</a><a href="/blog/">Blog</a><a href="/contact/">Contact</a></div>
+      <div class="footer-col"><h4>Contact</h4><a href="mailto:sales@precise3d.com">sales@precise3d.com</a><p class="body-sm" style="margin-top:var(--space-4)">Shenzhen, China</p></div>
+    </div>
+    <div class="footer-bottom"><p class="body-sm">&copy; 2026 Precise3D. All rights reserved.</p></div>
+  </div>
+</footer>
+
+<div class="modal-overlay" id="inquiryModal">
+  <div class="modal-dialog">
+    <button class="modal-close" onclick="closeModal()" aria-label="Close">&times;</button>
+    <h2 class="h2">Send an Inquiry</h2>
+    <p class="body-sm">We'll respond within 24 hours.</p>
+    <form class="modal-form" onsubmit="return handleInquiry(event)" novalidate>
+      <div class="form-group"><label for="modal-name">Name <span class="required">*</span></label><input type="text" id="modal-name" name="name" required placeholder="Your full name"></div>
+      <div class="form-group"><label for="modal-email">Email <span class="required">*</span></label><input type="email" id="modal-email" name="email" required placeholder="you@company.com"></div>
+      <div class="form-group"><label for="modal-message">Message <span class="required">*</span></label><textarea id="modal-message" name="message" required rows="4" placeholder="Tell us about your business and what you're looking for..."></textarea></div>
+      <button type="submit" class="btn btn-primary btn-lg" style="width:100%;justify-content:center">Send Inquiry</button>
+      <p class="modal-form-note">We'll respond within 24 hours. Your information is never shared.</p>
+    </form>
+  </div>
+</div>
+
+<script>
+(function(){var els=document.querySelectorAll('.fade-up');var obs=new IntersectionObserver(function(e){e.forEach(function(e){if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target)}})},{threshold:0.15});els.forEach(function(el){obs.observe(el)})})();
+function openModal(){document.getElementById('inquiryModal').classList.add('open')}
+function closeModal(){document.getElementById('inquiryModal').classList.remove('open')}
+document.getElementById('inquiryModal').addEventListener('click',function(e){if(e.target===this)closeModal()})
+</script>
+<script src="../inquiry-handler.js"></script>
+</body>
+</html>
