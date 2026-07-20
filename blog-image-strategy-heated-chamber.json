@@ -1,0 +1,29 @@
+{
+  "images": [
+    {
+      "id": "blog-cover-heated-chamber",
+      "prompt": "Enclosed 3D printer with transparent panels and visible heated chamber interior glowing warm orange, dark navy (#0B1120) background with electric blue (#2563EB) accent rim lighting on printer edges, engineering precision aesthetic, macro detail of temperature display on screen reading 65C, cool industrial studio lighting, no people faces, no text, no logos, no brands, photorealistic product photography style",
+      "size": "1024x1024"
+    },
+    {
+      "id": "blog-heated-chamber-active",
+      "prompt": "Extreme macro close-up of PTC ceramic heater element with red glow inside 3D printer chamber, thermistor wire and mounting bracket visible, dark navy (#0B1120) background, electric blue (#2563EB) LED accent glow reflecting off metal components, printed ASA part on build plate in foreground with smooth surface finish, precision engineering shot, shallow depth of field, no people faces, no text, no logos, no brands, photorealistic industrial macro photography",
+      "size": "1024x1024"
+    },
+    {
+      "id": "blog-heated-chamber-filament",
+      "prompt": "Assortment of engineering-grade 3D printer filament spools (ABS, ASA, PC, Nylon) arranged on dark industrial surface, enclosed 3D printer with glowing heated chamber visible in background, labels and spool colors varied (black ABS, gray ASA, clear PC, white Nylon), dark navy (#0B1120) tones with electric blue (#2563EB) accent highlights on printer, cool studio lighting, no people faces, no text, no logos, no brands, professional product photography for industrial catalog",
+      "size": "1024x1024"
+    },
+    {
+      "id": "blog-heated-chamber-comparison",
+      "prompt": "Side-by-side display of enclosed 3D printer with digital temperature controller showing 65C next to open-frame CoreXY printer on dark reflective surface, engineering filament spools and calibration print parts between them, dark navy (#0B1120) environment with electric blue (#2563EB) accent lighting, industrial workshop setting, professional product comparison shot, no people faces, no text, no logos, no brands, clean photorealistic studio photography",
+      "size": "1024x1024"
+    },
+    {
+      "id": "blog-heated-chamber-cta",
+      "prompt": "Modern 3D printer showroom with multiple enclosed printers of varying sizes on illuminated dark display podiums, engineering filament spools on metal shelving in background, warm orange glow from heated chambers contrasting with dark navy (#0B1120) room tones, electric blue (#2563EB) accent strip lighting along display edges, professional industrial aesthetic, wide angle shot, no people faces, no text, no logos, no brands, high-end commercial photography style",
+      "size": "1024x1024"
+    }
+  ]
+}
