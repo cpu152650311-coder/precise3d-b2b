@@ -1,0 +1,28 @@
+{
+  "site": "precise3d-b2b",
+  "updated": "2026-07-21",
+  "topics": [
+    {
+      "id": 34,
+      "title": "3D Printer Safety & Reliability — Thermal Runaway Protection, Power Loss Recovery & Fire Prevention",
+      "status": "published",
+      "score": 85,
+      "funnel": "MOFU",
+      "category": "purchasing-decision",
+      "file": "/blog/3d-printer-safety-features-thermal-runaway-protection-distributor-guide.html",
+      "created": "2026-07-21",
+      "published": "2026-07-21"
+    },
+    {
+      "id": 33,
+      "title": "3D Printer Remote Monitoring & Cloud Connectivity: WiFi Cameras, OctoPrint & Smart Print Farms",
+      "status": "published",
+      "score": 82,
+      "funnel": "MOFU",
+      "category": "tech-trends",
+      "file": "/blog/3d-printer-remote-monitoring-cloud-connectivity-distributor-guide.html",
+      "created": "2026-07-21",
+      "published": "2026-07-21"
+    }
+  ]
+}
