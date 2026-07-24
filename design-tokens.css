@@ -339,7 +339,23 @@ a:hover{color:var(--color-accent-glow)}
 .modal-form input::placeholder,.modal-form textarea::placeholder{color:var(--color-text-dim)}
 .modal-form-note{font-size:var(--text-xs);color:var(--color-text-dim);text-align:center;margin-top:var(--space-2)}
 
+/* Dropdown Navigation */
+.nav-dropdown{position:relative;display:inline-flex}
+.nav-dropdown-toggle{cursor:pointer;display:flex;align-items:center;gap:4px}
+.nav-dropdown-toggle::after{content:'';display:inline-block;width:6px;height:6px;border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;transform:rotate(45deg);margin-top:-2px;transition:transform .15s}
+.nav-dropdown:hover .nav-dropdown-toggle::after{transform:rotate(-135deg);margin-top:2px}
+.nav-dropdown-menu{position:absolute;top:100%;left:50%;transform:translateX(-50%);background:var(--color-surface);border:1px solid rgba(255,255,255,.08);border-radius:var(--radius-md);padding:var(--space-2);min-width:200px;opacity:0;visibility:hidden;transition:opacity .15s,visibility .15s;z-index:100;box-shadow:0 12px 40px rgba(0,0,0,.4)}
+.nav-dropdown:hover .nav-dropdown-menu{opacity:1;visibility:visible}
+.nav-dropdown-menu a{display:block;padding:var(--space-2) var(--space-3);color:var(--color-text);font-size:var(--text-sm);border-radius:var(--radius-sm);white-space:nowrap;transition:background .15s,color .15s}
+.nav-dropdown-menu a:hover{background:rgba(37,99,235,.15);color:var(--color-accent-glow)}
+.nav-dropdown-menu a.active{color:var(--color-accent-glow)}
+.nav-main{display:flex;align-items:center;gap:var(--space-1)}
+.nav-main > a,.nav-dropdown-toggle{padding:var(--space-2) var(--space-3);color:var(--color-text-dim);font-size:var(--text-sm);font-weight:500;text-decoration:none;border-radius:var(--radius-sm);transition:color .15s,background .15s}
+.nav-main > a:hover,.nav-dropdown:hover .nav-dropdown-toggle{color:var(--color-text);background:rgba(255,255,255,.04)}
+.nav-main > a.active{color:var(--color-accent-glow)}
+
 @media(max-width:768px){
   .sub-hero{min-height:300px;padding-block:var(--space-12)}
   .modal-dialog{padding:var(--space-6)}
+  .nav-dropdown-menu{position:static;transform:none;opacity:1;visibility:visible;box-shadow:none;border:none;padding-left:var(--space-4);background:none;min-width:0}
 }
