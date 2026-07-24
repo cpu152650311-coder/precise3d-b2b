@@ -669,6 +669,8 @@ document.getElementById('inquiryModal').addEventListener('click',function(e){if(
 .blog-card-body p{color:var(--color-text-muted);font-size:var(--text-sm);line-height:1.7;margin-bottom:var(--space-4)}
 .blog-card-body time{display:block;color:var(--color-text-dim)}
 .blog-subscribe .body-lg{max-width:500px;margin-inline:auto}
+/* No-JS fallback: ensure blog cards are visible even if IntersectionObserver fails */
+.blog-grid.fade-up{opacity:1;transform:none}
 @media(max-width:768px){.blog-grid{grid-template-columns:1fr}}
 </style>
 <script src="../inquiry-handler.js"></script>
