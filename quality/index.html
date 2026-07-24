@@ -7,57 +7,119 @@
   <link rel="apple-touch-icon" sizes="180x180" href="/generated/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="192x192" href="/generated/icon-192.png">
   <link rel="icon" type="image/png" sizes="512x512" href="/generated/icon-512.png">
-  <title>Quality Control — Precise3D | ISO 9001 3D Printer QC Process</title>
-  <meta name="description" content="Precise3D quality control: 7 inspection gates from IQC to OQC, ISO 9001 certified, 100% print-tested. Statistical process control, metrology lab, and zero-defect shipping.">
-  <meta property="og:title" content="Precise3D Quality Control — ISO 9001 Certified">
-  <meta property="og:description" content="7 inspection gates, 100% print-testing, metrology lab. Every printer ships with a test print log.">
+  <title>Quality Control — Precise3D | ISO 9001 3D Printer QC Process & Testing</title>
+  <meta name="description" content="Precise3D quality control system: 7 inspection gates (IQC to OQC), ISO 9001:2015 certified, 100% print-testing, metrology lab with laser measurement, AQL sampling, SPC tracking. Less than 0.3% DOA rate.">
+  <meta property="og:title" content="Precise3D Quality Control — ISO 9001 Certified 3D Printer QC">
+  <meta property="og:description" content="7 inspection gates, 100% print-testing, metrology lab, AQL 0.65 sampling. Every printer ships with a test print log. Less than 0.3% DOA rate.">
+  <meta property="og:type" content="website">
+  <link rel="canonical" href="https://ems-3dp.com/quality/">
   <link rel="stylesheet" href="/design-tokens.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Precise3D Quality Control",
+    "description": "Precise3D quality control system: 7 inspection gates from IQC to OQC, ISO 9001:2015 certified, 100% print-testing, metrology lab.",
+    "url": "https://ems-3dp.com/quality/"
+  }
+  </script>
+  <style>
+    .qc-table { width: 100%; border-collapse: collapse; font-size: var(--text-sm); }
+    .qc-table th { text-align: left; padding: var(--space-3) var(--space-4); color: var(--color-text); font-weight: 600; border-bottom: 2px solid var(--color-border); background: var(--color-surface2); }
+    .qc-table td { padding: var(--space-3) var(--space-4); color: var(--color-text-muted); border-bottom: 1px solid var(--color-border); }
+    .qc-table tr:hover td { background: rgba(37,99,235,.05); }
+  </style>
 </head>
 <body>
 
 <header class="site-header">
   <div class="container header-inner">
-    <a href="/" class="logo"><img src="/generated/logo-header.png" alt="Precise3D" width="140" height="28"></a>
+    <a href="/" class="logo"><img src="/generated/logo-icon.png" alt="" width="32" height="32" aria-hidden="true"><span class="logo-text">ems-3dp</span></a>
     <nav class="nav-main">
-      <a href="/">Home</a>
-      <a href="/products/">Products</a>
-      <div class="nav-dropdown">
-        <span class="nav-dropdown-toggle">Partner Programs</span>
-        <div class="nav-dropdown-menu">
-          <a href="/solutions/">Overview</a>
-          <a href="/solutions/distribution/">Distribution</a>
-          <a href="/solutions/oem-white-label/">OEM &amp; White Label</a>
-          <a href="/solutions/education/">Education</a>
-        </div>
-      </div>
-      <div class="nav-dropdown">
-        <span class="nav-dropdown-toggle">Engineering</span>
-        <div class="nav-dropdown-menu">
-          <a href="/engineering/">Overview</a>
-          <a href="/engineering/research-development/">R&amp;D</a>
-          <a href="/engineering/quality-control/">Quality Control</a>
-          <a href="/engineering/certifications/">Certifications</a>
-          <a href="/capabilities/">Capabilities</a>
-        </div>
-      </div>
-      <div class="nav-dropdown">
-        <span class="nav-dropdown-toggle">Resources</span>
-        <div class="nav-dropdown-menu">
-          <a href="/partner-support/">Partner Support</a>
-          <a href="/partner-support/training/">Training</a>
-          <a href="/partner-support/marketing-assets/">Marketing Assets</a>
-          <a href="/partner-support/after-sales/">After-Sales</a>
-          <a href="/industries/">Industries</a>
-          <a href="/design-guides/">Design Guides</a>
-          <a href="/shipping/">Shipping</a>
-          <a href="/how-it-works/">How It Works</a>
-          <a href="/faq/">FAQ</a>
-        </div>
-      </div>
-      <a href="/blog/">Blog</a>
-      <a href="/about/">About</a>
-      <a href="/contact/">Contact</a>
-    </nav>
+
+          <a href="/">Home</a>
+
+          <a href="/products/">Products</a>
+
+          <div class="nav-dropdown">
+
+            <span class="nav-dropdown-toggle">Solutions</span>
+
+            <div class="nav-dropdown-menu">
+
+              <a href="/solutions/distribution/">Distribution</a>
+
+              <a href="/solutions/oem-white-label/">OEM &amp; White Label</a>
+
+              <a href="/solutions/education/">Education</a>
+
+            </div>
+
+          </div>
+
+          <div class="nav-dropdown">
+
+            <span class="nav-dropdown-toggle">Industries</span>
+
+            <div class="nav-dropdown-menu">
+
+              <a href="/industries/education-research/">Education &amp; Research</a>
+
+              <a href="/industries/healthcare-dental/">Healthcare &amp; Dental</a>
+
+              <a href="/industries/manufacturing-prototyping/">Manufacturing &amp; Prototyping</a>
+
+              <a href="/industries/retail-consumer/">Retail &amp; Consumer</a>
+
+              <a href="/industries/jewelry-fashion/">Jewelry &amp; Fashion</a>
+
+              <a href="/industries/engineering-architecture/">Engineering &amp; Architecture</a>
+
+            </div>
+
+          </div>
+
+          <div class="nav-dropdown">
+
+            <span class="nav-dropdown-toggle">Resources</span>
+
+            <div class="nav-dropdown-menu">
+
+              <a href="/design-guides/">Design Guides</a>
+
+              <a href="/shipping/">Shipping</a>
+
+              <a href="/how-it-works/">How It Works</a>
+
+              <a href="/faq/">FAQ</a>
+
+            </div>
+
+          </div>
+
+          <div class="nav-dropdown">
+
+            <span class="nav-dropdown-toggle">Company</span>
+
+            <div class="nav-dropdown-menu">
+
+              <a href="/about/">About</a>
+
+              <a href="/factory/">Factory</a>
+
+              <a href="/quality/" class="active">Quality</a>
+
+              <a href="/engineering/">Engineering</a>
+
+            </div>
+
+          </div>
+
+          <a href="/blog/">Blog</a>
+
+          <a href="/contact/">Contact</a>
+
+        </nav>
     <div class="header-actions"><a href="javascript:void(0)" class="btn btn-primary" onclick="openModal()">Request Quote</a></div>
   </div>
 </header>
@@ -68,33 +130,304 @@
     <div class="container sub-hero-content">
       <p class="overline">Quality Control</p>
       <h1 class="h1">Every Printer<br>Tested. Every Time.</h1>
-      <p class="body-lg">Seven inspection gates from incoming materials to final audit. 100% print-testing. ISO 9001-certified. Zero tolerance for defects that reach our partners.</p>
+      <p class="body-lg">Seven inspection gates from incoming materials to final audit. 100% print-testing on every unit. ISO 9001:2015 certified. Less than 0.3% DOA rate across all models.</p>
+    </div>
+  </section>
+
+  <section class="section stats-strip">
+    <div class="container">
+      <div class="grid-4 fade-up">
+        <div class="stat-item"><div class="stat-number">99.2%</div><div class="stat-label">first-pass yield</div></div>
+        <div class="stat-item"><div class="stat-number"><0.3%</div><div class="stat-label">DOA rate</div></div>
+        <div class="stat-item"><div class="stat-number">100%</div><div class="stat-label">print-tested units</div></div>
+        <div class="stat-item"><div class="stat-number">24h</div><div class="stat-label">QC report turnaround</div></div>
+      </div>
     </div>
   </section>
 
   <section class="section">
     <div class="container">
-      <div class="section-header"><p class="overline">The 7 Gates</p><h2 class="h2">Our QC Process</h2></div>
-      <div class="grid-1 fade-up" style="gap:var(--space-5)">
-        <div class="card"><div style="display:flex;gap:var(--space-4);align-items:baseline"><span style="color:var(--color-accent-glow);font-weight:700;font-size:1.2rem;white-space:nowrap">Gate 1</span><div><h3 class="h3" style="margin:0">IQC — Incoming Quality Control</h3><p>Every batch of raw materials inspected before entering production. Aluminum extrusions checked for straightness (±0.1mm/m). Electronic components sampled per AQL 1.0. Filament spools measured for diameter consistency (±0.02mm). Non-conforming materials rejected at the dock.</p></div></div></div>
-        <div class="card"><div style="display:flex;gap:var(--space-4);align-items:baseline"><span style="color:var(--color-accent-glow);font-weight:700;font-size:1.2rem;white-space:nowrap">Gate 2</span><div><h3 class="h3" style="margin:0">IPQC-1 — Frame & Motion System</h3><p>After frame assembly: gantry squareness check (±0.05°), rail parallelism measurement, belt tension verification (45-55Hz on tension meter). Any frame failing geometry check is reworked before proceeding.</p></div></div></div>
-        <div class="card"><div style="display:flex;gap:var(--space-4);align-items:baseline"><span style="color:var(--color-accent-glow);font-weight:700;font-size:1.2rem;white-space:nowrap">Gate 3</span><div><h3 class="h3" style="margin:0">IPQC-2 — Electronics & Wiring</h3><p>Controller board powered and self-tested. All stepper drivers verified. Heated bed resistance measured. Thermistor accuracy checked against reference (±1°C). Enclosure safety interlocks tested.</p></div></div></div>
-        <div class="card"><div style="display:flex;gap:var(--space-4);align-items:baseline"><span style="color:var(--color-accent-glow);font-weight:700;font-size:1.2rem;white-space:nowrap">Gate 4</span><div><h3 class="h3" style="margin:0">IPQC-3 — Pre-Calibration</h3><p>Auto bed leveling mesh verification (max deviation <0.1mm across the entire build plate). Z-offset calibration. Extruder e-steps calibration. PID tuning for hotend and heated bed.</p></div></div></div>
-        <div class="card"><div style="display:flex;gap:var(--space-4);align-items:baseline"><span style="color:var(--color-accent-glow);font-weight:700;font-size:1.2rem;white-space:nowrap">Gate 5</span><div><h3 class="h3" style="margin:0">Test Print — Every Unit</h3><p>Standard test print runs on 100% of printers: dimensional accuracy cube (20±0.1mm), bridging (50mm span), overhang (0-60°), retraction test. 4-hour continuous run for professional models. Results logged per serial number.</p></div></div></div>
-        <div class="card"><div style="display:flex;gap:var(--space-4);align-items:baseline"><span style="color:var(--color-accent-glow);font-weight:700;font-size:1.2rem;white-space:nowrap">Gate 6</span><div><h3 class="h3" style="margin:0">Final Inspection</h3><p>Cosmetic inspection of enclosure and frame. Touchscreen function test. Wi-Fi connectivity verification. USB and Ethernet port testing. Accessories checklist: all included items verified against packing list.</p></div></div></div>
-        <div class="card"><div style="display:flex;gap:var(--space-4);align-items:baseline"><span style="color:var(--color-accent-glow);font-weight:700;font-size:1.2rem;white-space:nowrap">Gate 7</span><div><h3 class="h3" style="margin:0">OQC — Outgoing Quality Control</h3><p>Random sampling per AQL 0.65 Level II before shipment. Packaging integrity check: drop test, vibration test. Serial number registration and test log archived. Certificate of conformance generated.</p></div></div></div>
+      <div class="section-header">
+        <p class="overline">QC Process Overview</p>
+        <h2 class="h2">Three-Stage Quality Assurance</h2>
+        <p class="body-lg">Quality is not inspected at the end — it is built in at every stage. Our three-stage system catches defects at their source, not after assembly.</p>
+      </div>
+      <div class="grid-3 fade-up">
+        <div class="card">
+          <div class="feature-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></div>
+          <h3 class="h3">IQC — Incoming QC</h3>
+          <p>Every batch of raw materials and components inspected before entering the production floor. Aluminum extrusions, electronic components, motors, bearings, and filament all verified against published specifications. Sampling per AQL 1.0 Level II. Non-conforming lots rejected at the dock and returned to supplier within 24 hours.</p>
+        </div>
+        <div class="card">
+          <div class="feature-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+          <h3 class="h3">IPQC — In-Process QC</h3>
+          <p>Multiple inspection checkpoints embedded directly on the assembly lines. Go/no-go fixtures at each station for rapid pass/fail decisions. First-article inspection for every production batch. Real-time SPC data collection with corrective action triggers at 2-sigma deviation. Six IPQC stations ensure no defect propagates downstream.</p>
+        </div>
+        <div class="card">
+          <div class="feature-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg></div>
+          <h3 class="h3">OQC — Outgoing QC</h3>
+          <p>Pre-shipment audit on every batch. Random sampling per AQL 0.65 Level II (tightened inspection). Functional re-test on sampled units: print test, connectivity, touchscreen, enclosure safety. Packaging integrity verified. Certificate of conformance issued. Test print log and QC checklist included in each box.</p>
+        </div>
       </div>
     </div>
   </section>
 
   <section class="section" style="background:var(--color-surface)">
     <div class="container">
-      <div class="section-header"><p class="overline">Metrics</p><h2 class="h2">Quality You Can Measure</h2></div>
-      <div class="grid-4 fade-up" style="text-align:center">
-        <div><div style="font-size:2.5rem;font-weight:700;color:var(--color-success)">99.2%</div><p class="body-sm" style="color:var(--color-text-muted)">first-pass yield</p></div>
-        <div><div style="font-size:2.5rem;font-weight:700;color:var(--color-success)"><0.3%</div><p class="body-sm" style="color:var(--color-text-muted)">DOA rate</p></div>
-        <div><div style="font-size:2.5rem;font-weight:700;color:var(--color-success)">100%</div><p class="body-sm" style="color:var(--color-text-muted)">print-tested</p></div>
-        <div><div style="font-size:2.5rem;font-weight:700;color:var(--color-success)">24h</div><p class="body-sm" style="color:var(--color-text-muted)">QC report turnaround</p></div>
+      <div class="section-header">
+        <p class="overline">The 7 Inspection Gates</p>
+        <h2 class="h2">No Step Skipped, No Shortcut Taken</h2>
+        <p class="body-lg">From raw material delivery to palletized shipment, every printer passes through seven controlled inspection gates. Each gate requires operator sign-off and is traced by serial number.</p>
+      </div>
+
+      <div class="grid-1 fade-up" style="gap:var(--space-5);max-width:900px;margin-inline:auto">
+        <div class="card">
+          <div style="display:flex;gap:var(--space-5);align-items:flex-start">
+            <div style="width:44px;height:44px;border-radius:50%;background:rgba(37,99,235,.12);display:flex;align-items:center;justify-content:center;flex-shrink:0"><span style="font-weight:700;color:var(--color-accent-glow);font-size:1rem">G1</span></div>
+            <div>
+              <h3 class="h3" style="margin-bottom:var(--space-2)">IQC — Incoming Quality Control</h3>
+              <p class="body-sm">Every batch of raw materials inspected before release to production. Aluminum extrusions checked for straightness (0.1mm/m max deviation). Electronic components sampled per AQL 1.0 normal inspection, Level II. Filament spools measured for diameter consistency (1.75mm +/-0.02mm) using laser micrometer. Non-conforming materials quarantined in designated rejection zone. Supplier corrective action report (SCAR) issued within 48 hours for any rejection.</p>
+              <p style="font-size:var(--text-xs);color:var(--color-text-dim);margin-top:var(--space-3);font-family:var(--font-mono)">Equipment: Laser micrometer, digital calipers, surface flatness gauge, LCR meter, tensile tester</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div style="display:flex;gap:var(--space-5);align-items:flex-start">
+            <div style="width:44px;height:44px;border-radius:50%;background:rgba(37,99,235,.12);display:flex;align-items:center;justify-content:center;flex-shrink:0"><span style="font-weight:700;color:var(--color-accent-glow);font-size:1rem">G2</span></div>
+            <div>
+              <h3 class="h3" style="margin-bottom:var(--space-2)">IPQC-1 — Frame &amp; Motion System</h3>
+              <p class="body-sm">After frame assembly, every unit undergoes geometry verification. Gantry squareness checked to within 0.05 degrees using digital angle gauge. Rail parallelism measured with dial indicator across full travel length. Belt tension verified at 50 Hz +/-5 Hz on acoustic tension meter. All linear bearings tested for smooth travel — any binding or roughness triggers immediate rework. Frame mounting surface flatness verified on granite inspection plate.</p>
+              <p style="font-size:var(--text-xs);color:var(--color-text-dim);margin-top:var(--space-3);font-family:var(--font-mono)">Equipment: Digital angle gauge, dial indicator (0.001mm resolution), acoustic belt tension meter, granite surface plate (Grade 0)</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div style="display:flex;gap:var(--space-5);align-items:flex-start">
+            <div style="width:44px;height:44px;border-radius:50%;background:rgba(37,99,235,.12);display:flex;align-items:center;justify-content:center;flex-shrink:0"><span style="font-weight:700;color:var(--color-accent-glow);font-size:1rem">G3</span></div>
+            <div>
+              <h3 class="h3" style="margin-bottom:var(--space-2)">IPQC-2 — Electronics &amp; Wiring</h3>
+              <p class="body-sm">Controller board powered on and self-test diagnostics run. All stepper driver channels verified for correct current output. Heated bed resistance measured to within 5% of nominal. Thermistor accuracy checked against calibrated reference to within 1 degree C at three temperature points (20, 100, 200 degrees C). Enclosure safety interlock switches tested for positive break. USB, Ethernet, and Wi-Fi connectivity verified. All connectors pull-tested for secure engagement.</p>
+              <p style="font-size:var(--text-xs);color:var(--color-text-dim);margin-top:var(--space-3);font-family:var(--font-mono)">Equipment: Digital multimeter (6.5-digit), thermal reference calibrator, network analyzer, hipot tester</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div style="display:flex;gap:var(--space-5);align-items:flex-start">
+            <div style="width:44px;height:44px;border-radius:50%;background:rgba(37,99,235,.12);display:flex;align-items:center;justify-content:center;flex-shrink:0"><span style="font-weight:700;color:var(--color-accent-glow);font-size:1rem">G4</span></div>
+            <div>
+              <h3 class="h3" style="margin-bottom:var(--space-2)">IPQC-3 — Calibration Verification</h3>
+              <p class="body-sm">Auto bed leveling mesh verified across full 5x5 probe grid. Maximum deviation must be under 0.1mm across the entire build plate surface. Z-offset calibrated using feeler gauge method for consistent first layer. Extruder e-steps calibrated: 100mm extrusion command must deliver 100mm +/-0.5mm of filament. PID auto-tune performed and verified for both hotend and heated bed. All calibration values saved to EEPROM and logged per serial number.</p>
+              <p style="font-size:var(--text-xs);color:var(--color-text-dim);margin-top:var(--space-3);font-family:var(--font-mono)">Equipment: Feeler gauge set, digital scale (0.01g resolution), infrared thermal camera, calibration reference filament</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div style="display:flex;gap:var(--space-5);align-items:flex-start">
+            <div style="width:44px;height:44px;border-radius:50%;background:rgba(37,99,235,.12);display:flex;align-items:center;justify-content:center;flex-shrink:0"><span style="font-weight:700;color:var(--color-accent-glow);font-size:1rem">G5</span></div>
+            <div>
+              <h3 class="h3" style="margin-bottom:var(--space-2)">Test Print — 100% of Units</h3>
+              <p class="body-sm">Every single printer runs a standardized test print — no exceptions. Test suite includes: dimensional accuracy cube (20mm nominal, must measure 19.95-20.05mm), bridging test (50mm span with no sag), overhang test (0-60 degrees, clean surface required through 50 degrees), and retraction stringing test. Professional series printers additionally run a 4-hour continuous print test. All test prints are measured, photographed, and archived by serial number. A copy of the test print is included in the box.</p>
+              <p style="font-size:var(--text-xs);color:var(--color-text-dim);margin-top:var(--space-3);font-family:var(--font-mono)">Equipment: Digital microscope (50x), CMM (coordinate measuring machine), test print reference library, standardized filament</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div style="display:flex;gap:var(--space-5);align-items:flex-start">
+            <div style="width:44px;height:44px;border-radius:50%;background:rgba(37,99,235,.12);display:flex;align-items:center;justify-content:center;flex-shrink:0"><span style="font-weight:700;color:var(--color-accent-glow);font-size:1rem">G6</span></div>
+            <div>
+              <h3 class="h3" style="margin-bottom:var(--space-2)">Final Inspection</h3>
+              <p class="body-sm">Cosmetic inspection of all exterior surfaces: enclosure panels, frame finish, touchscreen, logo application. Touchscreen function verified: all menu items accessible, touch response calibrated. All ports tested: USB host, USB device, Ethernet, Wi-Fi (connection and transfer test). SD card slot read/write verified. Accessories checklist confirmed against packing list: spool holder, toolkit, USB drive with software and manuals, power cord (region-specific), filament sample, spare nozzle. Serial number label verified and registered in warranty database.</p>
+              <p style="font-size:var(--text-xs);color:var(--color-text-dim);margin-top:var(--space-3);font-family:var(--font-mono)">Equipment: Gloss meter, colorimeter, port test jig, barcode scanner, digital checklist system</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div style="display:flex;gap:var(--space-5);align-items:flex-start">
+            <div style="width:44px;height:44px;border-radius:50%;background:rgba(37,99,235,.12);display:flex;align-items:center;justify-content:center;flex-shrink:0"><span style="font-weight:700;color:var(--color-accent-glow);font-size:1rem">G7</span></div>
+            <div>
+              <h3 class="h3" style="margin-bottom:var(--space-2)">OQC — Outgoing Quality Control</h3>
+              <p class="body-sm">Final pre-shipment sampling audit per AQL 0.65 Level II tightened inspection — a stricter standard than normal. Sampled units undergo full functional re-test. Packaging integrity verified: ISTA 3A drop test on random cartons, vibration simulation, compression test. Humidity indicator cards verified within specification. Certificate of conformance generated with batch traceability. Serial numbers cross-referenced against production database. OQC sign-off required before any shipment release.</p>
+              <p style="font-size:var(--text-xs);color:var(--color-text-dim);margin-top:var(--space-3);font-family:var(--font-mono)">Equipment: Drop test machine (ISTA 3A), vibration table, compression tester, barcode scanner, QC database terminal</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <p class="overline">Sampling Methodology</p>
+        <h2 class="h2">AQL-Based Statistical Sampling</h2>
+        <p class="body-lg">We use ANSI/ASQ Z1.4 (ISO 2859-1) sampling standards for statistical quality control. This ensures representative inspection without 100% destructive testing on components.</p>
+      </div>
+      <div class="grid-3 fade-up">
+        <div class="card">
+          <h3 class="h3" style="margin-bottom:var(--space-3)">IQC Sampling</h3>
+          <table class="qc-table">
+            <tr><th>Parameter</th><th>Standard</th></tr>
+            <tr><td>Level</td><td>AQL 1.0 Normal, Level II</td></tr>
+            <tr><td>Critical defects</td><td>0 (zero acceptance)</td></tr>
+            <tr><td>Major defects</td><td>AQL 1.0</td></tr>
+            <tr><td>Minor defects</td><td>AQL 2.5</td></tr>
+            <tr><td>Special inspection</td><td>S-3 for destructive tests</td></tr>
+          </table>
+        </div>
+        <div class="card">
+          <h3 class="h3" style="margin-bottom:var(--space-3)">IPQC Sampling</h3>
+          <table class="qc-table">
+            <tr><th>Parameter</th><th>Standard</th></tr>
+            <tr><td>First article</td><td>100% inspection</td></tr>
+            <tr><td>In-process</td><td>5 pcs/hour/station</td></tr>
+            <tr><td>Critical dimensions</td><td>100% (go/no-go gauge)</td></tr>
+            <tr><td>Control limits</td><td>2-sigma trigger, 3-sigma stop</td></tr>
+            <tr><td>Frequency</td><td>Continuous throughout shift</td></tr>
+          </table>
+        </div>
+        <div class="card">
+          <h3 class="h3" style="margin-bottom:var(--space-3)">OQC Sampling</h3>
+          <table class="qc-table">
+            <tr><th>Parameter</th><th>Standard</th></tr>
+            <tr><td>Level</td><td>AQL 0.65 Tightened, Level II</td></tr>
+            <tr><td>Test print</td><td>100% of units (no sampling)</td></tr>
+            <tr><td>Function check</td><td>100% of units (no sampling)</td></tr>
+            <tr><td>Packaging audit</td><td>3 cartons per batch</td></tr>
+            <tr><td>Doc review</td><td>100% per shipment</td></tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background:var(--color-surface)">
+    <div class="container">
+      <div class="section-header">
+        <p class="overline">Testing Equipment</p>
+        <h2 class="h2">Metrology Lab &amp; Test Instruments</h2>
+        <p class="body-lg">Our in-house metrology lab is equipped with calibrated instruments for precise dimensional, electrical, and environmental testing. All instruments undergo annual third-party calibration.</p>
+      </div>
+
+      <div class="grid-2 fade-up" style="gap:var(--space-6)">
+        <div class="card" style="overflow:hidden;padding:0">
+          <img src="/generated/diagram-qc-flow.webp" alt="Precise3D quality control process flow diagram showing inspection stages" loading="lazy" style="width:100%;height:auto">
+        </div>
+        <div style="display:flex;flex-direction:column;gap:var(--space-4)">
+          <div>
+            <h3 class="h3" style="margin-bottom:var(--space-3)">Dimensional Metrology</h3>
+            <ul class="body-sm" style="list-style:none;display:flex;flex-direction:column;gap:var(--space-2)">
+              <li>Coordinate Measuring Machine (CMM) — 2.5 + L/300 um accuracy</li>
+              <li>Laser Micrometer — 0.001mm resolution for filament diameter</li>
+              <li>Digital Calipers — Mitutoyo Absolute, 0.01mm resolution, calibrated quarterly</li>
+              <li>Dial Indicators — 0.001mm resolution for rail and gantry alignment</li>
+              <li>Granite Surface Plate — Grade 0, 1200x900mm, flatness 3.5 um</li>
+              <li>Digital Height Gauge — 0.001mm resolution, 600mm range</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="h3" style="margin-bottom:var(--space-3)">Electrical &amp; Environmental</h3>
+            <ul class="body-sm" style="list-style:none;display:flex;flex-direction:column;gap:var(--space-2)">
+              <li>6.5-Digit Bench Multimeter — Keysight 34465A, calibrated annually</li>
+              <li>4-Channel Oscilloscope — for stepper driver signal analysis</li>
+              <li>Thermal Camera — FLIR, 320x240 resolution, +/-2 degrees C accuracy</li>
+              <li>Sound Level Meter — Class 2, for verifying sub-45dB operation</li>
+              <li>Hipot Tester — 5kV AC/DC for electrical safety verification</li>
+              <li>Environmental Chamber — -20 to 60 degrees C for thermal cycling tests</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-2 fade-up" style="gap:var(--space-6);margin-top:var(--space-8)">
+        <div style="display:flex;flex-direction:column;gap:var(--space-4)">
+          <div>
+            <h3 class="h3" style="margin-bottom:var(--space-3)">Mechanical Testing</h3>
+            <ul class="body-sm" style="list-style:none;display:flex;flex-direction:column;gap:var(--space-2)">
+              <li>Belt Tension Meter — Acoustic type, 10-100 Hz range, calibrated monthly</li>
+              <li>Digital Torque Wrench — 0.5-25 Nm, for fastener verification</li>
+              <li>Pull Force Tester — For connector retention and wire crimp testing</li>
+              <li>Drop Test Machine — ISTA 3A compliant, for packaging validation</li>
+              <li>Vibration Table — Simulates truck/air/sea transport conditions</li>
+              <li>Compression Tester — Carton stacking strength verification</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="h3" style="margin-bottom:var(--space-3)">Optical &amp; Visual Inspection</h3>
+            <ul class="body-sm" style="list-style:none;display:flex;flex-direction:column;gap:var(--space-2)">
+              <li>Digital Microscope — 10x-200x magnification with measurement overlay</li>
+              <li>Video Borescope — For internal cavity inspection of assembled units</li>
+              <li>Gloss Meter — 60-degree geometry for surface finish verification</li>
+              <li>Colorimeter — For enclosure panel color consistency across batches</li>
+              <li>LED Inspection Lamp — 5000K daylight, 2000 lux at work surface</li>
+              <li>UV Inspection Lamp — For conformal coating coverage verification</li>
+            </ul>
+          </div>
+        </div>
+        <div class="card" style="overflow:hidden;padding:0">
+          <img src="/generated/diagram-qc-standards.webp" alt="Precise3D quality control standards and specifications reference chart" loading="lazy" style="width:100%;height:auto">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <p class="overline">Certifications</p>
+        <h2 class="h2">Internationally Recognized Standards</h2>
+        <p class="body-lg">Our quality management system and products are certified to internationally recognized standards. Audit reports and certificates available for partner review.</p>
+      </div>
+      <div class="grid-2 fade-up" style="gap:var(--space-6)">
+        <div class="card" style="overflow:hidden;padding:0">
+          <img src="/generated/diagram-certifications-grid.webp" alt="Precise3D certifications: ISO 9001, CE, FCC, RoHS, UKCA" loading="lazy" style="width:100%;height:auto">
+        </div>
+        <div style="display:flex;flex-direction:column;gap:var(--space-4)">
+          <div class="card">
+            <h3 class="h3" style="margin-bottom:var(--space-3)">ISO 9001:2015</h3>
+            <p class="body-sm">Full quality management system certification covering design, manufacturing, and after-sales service. Annual surveillance audits conducted by TUV Rheinland. Next recertification audit scheduled. Our QMS covers 27 documented procedures, 85 work instructions, and 140+ quality records.</p>
+          </div>
+          <div class="card">
+            <h3 class="h3" style="margin-bottom:var(--space-3)">Product Certifications</h3>
+            <p class="body-sm">CE Mark (EU EMC + LVD + RoHS directives), FCC Part 15 (US), UKCA (UK), RoHS 2.0 (EU 2011/65/EU), REACH compliant. UL/ETL safety certification available on request. All test reports available in technical documentation package.</p>
+          </div>
+          <div class="card">
+            <h3 class="h3" style="margin-bottom:var(--space-3)">Factory Certifications</h3>
+            <p class="body-sm">ISO 14001:2015 (Environmental Management). SMETA 4-Pillar social compliance audit completed. BSCI member factory. Annual on-site audits from multiple international clients with full transparency.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background:var(--color-surface)">
+    <div class="container">
+      <div class="section-header">
+        <p class="overline">Continuous Improvement</p>
+        <h2 class="h2">Defect Tracking &amp; Root Cause Analysis</h2>
+        <p class="body-lg">Quality does not stop at inspection. We track every defect, analyze root causes, and implement permanent corrective actions. Our partners benefit from a system that gets better every quarter.</p>
+      </div>
+      <div class="grid-3 fade-up">
+        <div class="card">
+          <div class="feature-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div>
+          <h3 class="h3">Digital QC Database</h3>
+          <p>Every inspection result is recorded digitally and linked to serial number. Real-time dashboards display yield rates, defect categories, and trend charts. Partner-accessible QC reports available within 24 hours of request.</p>
+        </div>
+        <div class="card">
+          <div class="feature-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg></div>
+          <h3 class="h3">8D Corrective Action</h3>
+          <p>All repeat defects trigger an 8D problem-solving process. Cross-functional team assembled within 24 hours. Root cause identified using fishbone analysis and 5-Why methodology. Permanent corrective action implemented with effectiveness verification at 30, 60, and 90 days.</p>
+        </div>
+        <div class="card">
+          <div class="feature-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg></div>
+          <h3 class="h3">Quarterly Quality Review</h3>
+          <p>Comprehensive quarterly review: defect Pareto charts, supplier performance scorecards, SPC trend analysis, and customer feedback integration. Each review generates a continuous improvement action plan with measurable targets for the following quarter.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -103,9 +436,12 @@
     <div class="container">
       <div class="cta-card">
         <p class="overline">Quality Documentation</p>
-        <h2 class="h2">Request Our QC Process Documentation</h2>
-        <p class="body-lg">Full QC manual, sampling plans, test print standards, and metrology equipment list available for partner review.</p>
-        <div class="cta-actions"><a href="javascript:void(0)" class="btn btn-primary btn-lg" onclick="openModal()">Request QC Documentation</a></div>
+        <h2 class="h2">Request Our Complete QC Package</h2>
+        <p class="body-lg">Full QC manual, sampling plans, test print standards, metrology equipment list, and certifications available for partner review. See exactly how we ensure every printer meets specification.</p>
+        <div class="cta-actions">
+          <a href="javascript:void(0)" class="btn btn-primary btn-lg" onclick="openModal()">Request QC Documentation</a>
+          <a href="/factory/" class="btn btn-outline btn-lg">Tour the Factory</a>
+        </div>
       </div>
     </div>
   </section>
@@ -113,13 +449,18 @@
 
 <footer class="site-footer section">
   <div class="container">
-    <div class="footer-grid grid-4">
-      <div class="footer-brand"><img src="/generated/logo-footer.png" alt="Precise3D" width="100" height="20" style="margin-bottom:var(--space-4)"><p class="body-sm">Precision 3D printers engineered for global markets.</p></div>
-      <div class="footer-col"><h4>Products</h4><a href="/products/">All Products</a></div>
-      <div class="footer-col"><h4>Company</h4><a href="/about/">About Us</a><a href="/factory/">Factory Tour</a><a href="/quality/">Quality Control</a><a href="/engineering/">Engineering</a><a href="/solutions/">Partner Programs</a><a href="/blog/">Blog</a><a href="/contact/">Contact</a></div>
-      <div class="footer-col"><h4>Contact</h4><a href="/cdn-cgi/l/email-protection#ef9c8e838a9caf9f9d8a8c869c8ac98e9d818a838ac18c8082"><span class="__cf_email__" data-cfemail="dfacbeb3baac9fafadbabcb6acbaecbbf1bcb0b2">[email&#160;protected]</span></a><p class="body-sm" style="margin-top:var(--space-4)">Shenzhen, China</p></div>
-    </div>
-    <div class="footer-bottom"><p class="body-sm">&copy; 2026 Precise3D. All rights reserved.</p></div>
+        <div class="footer-grid grid-4">
+
+          <div class="footer-brand"><img src="/generated/logo-icon.png" alt="" width="28" height="28" style="margin-bottom:var(--space-4)" aria-hidden="true"><p class="body-sm" style="margin-bottom:var(--space-3);font-weight:700;color:var(--color-text)">ems-3dp</p><p class="body-sm">Precision 3D printers engineered for global markets.</p></div>
+
+          <div class="footer-col"><h4>Solutions</h4><a href="/solutions/distribution/">Distribution</a><a href="/solutions/oem-white-label/">OEM &amp; White Label</a><a href="/solutions/education/">Education</a></div>
+
+          <div class="footer-col"><h4>Company</h4><a href="/about/">About</a><a href="/factory/">Factory</a><a href="/quality/">Quality</a><a href="/engineering/">Engineering</a><a href="/blog/">Blog</a><a href="/contact/">Contact</a></div>
+
+          <div class="footer-col"><h4>Resources</h4><a href="/design-guides/">Design Guides</a><a href="/shipping/">Shipping</a><a href="/how-it-works/">How It Works</a><a href="/faq/">FAQ</a><a href="/privacy/">Privacy Policy</a><a href="/terms/">Terms of Service</a></div>
+
+        </div>
+<div class="footer-bottom"><p class="body-sm">&copy; 2026 Precise3D. All rights reserved.</p></div>
   </div>
 </footer>
 
