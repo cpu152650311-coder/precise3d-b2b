@@ -223,5 +223,23 @@
     "display": "full-bleed",
     "size_bytes": 99648,
     "source": "text-to-image"
+  },
+  "sub-certifications-v3": {
+    "id": "sub-certifications-v3",
+    "file": "sub-certifications-v3.webp",
+    "role": "sub-hero-bg",
+    "page": "various",
+    "display": "full-bleed",
+    "size_bytes": 107214,
+    "source": "text-to-image"
+  },
+  "sub-certifications-v4": {
+    "id": "sub-certifications-v4",
+    "file": "sub-certifications-v4.webp",
+    "role": "sub-hero-bg",
+    "page": "various",
+    "display": "full-bleed",
+    "size_bytes": 41536,
+    "source": "text-to-image"
   }
 }
