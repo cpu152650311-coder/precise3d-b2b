@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Materials Engineering — Precise3D | Filament Validation & Print Profiles</title>
+  <meta name="description" content="Materials engineering for 3D printing: 30+ filament compatibility testing, material-specific print profiles, nozzle and build plate R&D, filament brand partnerships.">
+  <link rel="stylesheet" href="/design-tokens.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="/" class="logo"><svg width="140" height="28" viewBox="0 0 140 28" fill="none"><rect x="0" y="2" width="24" height="24" rx="4" fill="#2563EB"/><path d="M6 14l4-4 4 4 4-4 4 4" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/><text x="32" y="21" fill="#F1F5F9" font-family="system-ui,sans-serif" font-size="18" font-weight="700">Precise3D</text></svg></a>
+    <nav class="nav-main">
+      <a href="/">Home</a>
+      <a href="/products/">Products</a>
+      <a href="/solutions/">Partner Programs</a>
+      <a href="/engineering/">Engineering</a>
+      <a href="/capabilities/" class="active">Capabilities</a>
+      <a href="/partner-support/">Resources</a>
+      <a href="/blog/">Blog</a>
+      <a href="/about/">About</a>
+      <a href="/contact/">Contact</a>
+    </nav>
+    <div class="header-actions"><a href="javascript:void(0)" class="btn btn-primary" onclick="openModal()">Request Quote</a></div>
+  </div>
+</header>
+
+<main>
+  <section class="sub-hero">
+    <div class="sub-hero-bg"><img src="/generated/sub-tech-material-science.webp" alt="" aria-hidden="true"><div class="sub-hero-overlay"></div></div>
+    <div class="container sub-hero-content">
+      <p class="overline">Capabilities · Materials Engineering</p>
+      <h1 class="h1">Every Material.<br>Every Profile. Validated.</h1>
+      <p class="body-lg">30+ filaments tested, profiled, and documented. Our materials lab ensures your customers get perfect prints with every spool — no guesswork, no failed prints.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-header"><p class="overline">Filament Testing</p><h2 class="h2">Material Compatibility Matrix</h2></div>
+      <div class="compare-table fade-up">
+        <table>
+          <thead><tr><th>Material</th><th>Nozzle °C</th><th>Bed °C</th><th>Enclosure</th><th>Difficulty</th><th>Applications</th></tr></thead>
+          <tbody>
+            <tr><td>PLA</td><td>200-220</td><td>50-60</td><td>Not needed</td><td>Easy</td><td>Prototypes, decorative, consumer goods</td></tr>
+            <tr><td>PLA+</td><td>210-230</td><td>55-65</td><td>Not needed</td><td>Easy</td><td>Functional prototypes, mechanical parts</td></tr>
+            <tr><td>PETG</td><td>230-250</td><td>70-85</td><td>Optional</td><td>Moderate</td><td>Structural parts, outdoor, food-safe</td></tr>
+            <tr><td>ABS</td><td>240-260</td><td>100-110</td><td>Required</td><td>Intermediate</td><td>Automotive, enclosures, durable goods</td></tr>
+            <tr><td>ASA</td><td>240-260</td><td>100-110</td><td>Required</td><td>Intermediate</td><td>Outdoor, UV-resistant parts</td></tr>
+            <tr><td>TPU 95A</td><td>220-240</td><td>40-60</td><td>Not needed</td><td>Moderate</td><td>Phone cases, gaskets, flexible parts</td></tr>
+            <tr><td>Nylon PA6</td><td>250-270</td><td>80-100</td><td>Required</td><td>Advanced</td><td>Gears, bearings, high-strength parts</td></tr>
+            <tr><td>Polycarbonate</td><td>270-300</td><td>100-110</td><td>Required (50°C+)</td><td>Advanced</td><td>High-temp, structural, transparent</td></tr>
+            <tr><td>PETG-CF</td><td>240-260</td><td>75-85</td><td>Optional</td><td>Intermediate</td><td>Stiff, lightweight structural parts</td></tr>
+            <tr><td>Wood PLA</td><td>190-220</td><td>50-60</td><td>Not needed</td><td>Easy</td><td>Decorative, furniture, art pieces</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p style="color:var(--color-text-muted);margin-top:var(--space-4);text-align:center">30+ additional materials tested. Contact us for the full matrix or to request testing of a specific filament.</p>
+    </div>
+  </section>
+
+  <section class="section" style="background:var(--color-surface)">
+    <div class="container">
+      <div class="section-header"><p class="overline">Print Profiles</p><h2 class="h2">Pre-Tuned for Every Material</h2></div>
+      <div class="grid-3 fade-up">
+        <div class="card"><h3 class="h3">Temperature Towers</h3><p>Optimal nozzle and bed temperature determined through systematic testing. Temperature tower printed for every filament, every batch. Documented sweet spot for layer adhesion vs. stringing.</p></div>
+        <div class="card"><h3 class="h3">Retraction Tuning</h3><p>Retraction distance and speed calibrated per material. Direct drive and Bowden profiles available. Tested across 10+ retraction test models to minimize stringing.</p></div>
+        <div class="card"><h3 class="h3">Speed & Acceleration</h3><p>Maximum volumetric flow rate measured for each material. Speed and acceleration limits set to ensure consistent extrusion. Separate profiles for quality (60mm/s) and speed (150mm/s+).</p></div>
+        <div class="card"><h3 class="h3">Cooling Optimization</h3><p>Part cooling fan speed calibrated per material and layer. Overhang performance optimized. Bridging fan settings tuned for clean spans up to 50mm.</p></div>
+        <div class="card"><h3 class="h3">Bed Adhesion</h3><p>First layer settings optimized per material and build surface. Brim, skirt, and raft recommendations. Bed surface recommendation: PEI, glass, or adhesive.</p></div>
+        <div class="card"><h3 class="h3">Drying Protocols</h3><p>Drying requirements documented per material: temperature, duration, and storage conditions. Filament dryness indicators and recommended dryer models.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section cta-banner">
+    <div class="container">
+      <div class="cta-card">
+        <p class="overline">Filament Partnership</p>
+        <h2 class="h2">Co-Branded Filament Program</h2>
+        <p class="body-lg">Launch your own branded filament line. We validate and profile your filament supplier's materials, create print profiles, and package them under your brand.</p>
+        <div class="cta-actions"><a href="javascript:void(0)" class="btn btn-primary btn-lg" onclick="openModal()">Explore Filament Program</a></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer section">
+  <div class="container">
+    <div class="footer-grid grid-4">
+      <div class="footer-brand"><svg width="120" height="24" viewBox="0 0 120 24" fill="none" style="margin-bottom:var(--space-4)"><rect x="0" y="1" width="22" height="22" rx="4" fill="#2563EB"/><path d="M5 13l4-4 4 4 4-4 4 4" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/><text x="28" y="18" fill="#F1F5F9" font-family="system-ui,sans-serif" font-size="16" font-weight="700">Precise3D</text></svg><p class="body-sm">Precision 3D printers engineered for global markets.</p></div>
+      <div class="footer-col"><h4>Capabilities</h4><a href="/capabilities/">Overview</a><a href="/capabilities/oem-customization/">OEM & Customization</a><a href="/capabilities/firmware-software/">Firmware & Software</a><a href="/capabilities/materials-engineering/">Materials Engineering</a></div>
+      <div class="footer-col"><h4>Company</h4><a href="/about/">About</a><a href="/factory/">Factory</a><a href="/quality/">Quality</a><a href="/shipping/">Shipping</a><a href="/contact/">Contact</a></div>
+      <div class="footer-col"><h4>Contact</h4><a href="/cdn-cgi/l/email-protection#e99a88858c9aa9999b8c8a809a8cc78b9a889a9c808588c78a8684"><span class="__cf_email__" data-cfemail="5320323f362013232136303a20367d31203220263a3f327d303c3e">[email&#160;protected]</span></a><p class="body-sm" style="margin-top:var(--space-4)">Shenzhen, China</p></div>
+    </div>
+    <div class="footer-bottom"><p class="body-sm">&copy; 2026 Precise3D. All rights reserved.</p></div>
+  </div>
+</footer>
+
+<div class="modal-overlay" id="inquiryModal">
+  <div class="modal-dialog">
+    <button class="modal-close" onclick="closeModal()" aria-label="Close">&times;</button>
+    <h2 class="h2">Send an Inquiry</h2>
+    <p class="body-sm">We'll respond within 24 hours.</p>
+    <form class="modal-form" onsubmit="return handleInquiry(event)" novalidate>
+      <div class="form-group"><label for="modal-name">Name <span class="required">*</span></label><input type="text" id="modal-name" name="name" required placeholder="Your full name"></div>
+      <div class="form-group"><label for="modal-email">Email <span class="required">*</span></label><input type="email" id="modal-email" name="email" required placeholder="you@company.com"></div>
+      <div class="form-group"><label for="modal-message">Message <span class="required">*</span></label><textarea id="modal-message" name="message" required rows="4" placeholder="Tell us about your business and what you're looking for..."></textarea></div>
+      <button type="submit" class="btn btn-primary btn-lg" style="width:100%;justify-content:center">Send Inquiry</button>
+      <p class="modal-form-note">We'll respond within 24 hours. Your information is never shared.</p>
+    </form>
+  </div>
+</div>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+(function(){var els=document.querySelectorAll('.fade-up');var obs=new IntersectionObserver(function(e){e.forEach(function(e){if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target)}})},{threshold:0.15});els.forEach(function(el){obs.observe(el)})})();
+function openModal(){document.getElementById('inquiryModal').classList.add('open')}
+function closeModal(){document.getElementById('inquiryModal').classList.remove('open')}
+document.getElementById('inquiryModal').addEventListener('click',function(e){if(e.target===this)closeModal()})
+</script>
+<script src="/inquiry-handler.js"></script>
+</body>
+</html>

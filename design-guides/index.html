@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Design Guides — Precise3D | DFM for 3D Printing, File Formats & Parameters</title>
+  <meta name="description" content="Design for 3D printing guide: recommended file formats (STL, STEP, 3MF), design rules (wall thickness, overhangs, tolerances), print parameter recommendations for PLA, PETG, ABS, TPU.">
+  <meta property="og:title" content="Precise3D Design Guides — DFM for 3D Printing">
+  <meta property="og:description" content="Everything you need to design parts that print perfectly. File formats, design rules, and parameter recommendations.">
+  <link rel="stylesheet" href="/design-tokens.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="/" class="logo"><svg width="140" height="28" viewBox="0 0 140 28" fill="none"><rect x="0" y="2" width="24" height="24" rx="4" fill="#2563EB"/><path d="M6 14l4-4 4 4 4-4 4 4" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/><text x="32" y="21" fill="#F1F5F9" font-family="system-ui,sans-serif" font-size="18" font-weight="700">Precise3D</text></svg></a>
+    <nav class="nav-main">
+      <a href="/">Home</a>
+      <a href="/products/">Products</a>
+      <a href="/solutions/">Partner Programs</a>
+      <a href="/engineering/">Engineering</a>
+      <a href="/partner-support/">Resources</a>
+      <a href="/blog/">Blog</a>
+      <a href="/about/">About</a>
+      <a href="/contact/">Contact</a>
+    </nav>
+    <div class="header-actions"><a href="javascript:void(0)" class="btn btn-primary" onclick="openModal()">Request Quote</a></div>
+  </div>
+</header>
+
+<main>
+  <section class="sub-hero">
+    <div class="sub-hero-bg"><img src="/generated/sub-tech-material-science.webp" alt="" aria-hidden="true"><div class="sub-hero-overlay"></div></div>
+    <div class="container sub-hero-content">
+      <p class="overline">Design Guides</p>
+      <h1 class="h1">Design Parts That<br>Print Perfectly</h1>
+      <p class="body-lg">Everything your customers need to know about designing for 3D printing. File formats, wall thickness, overhangs, tolerances, and material-specific recommendations.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-header"><p class="overline">File Formats</p><h2 class="h2">Recommended File Types</h2></div>
+      <div class="grid-3 fade-up">
+        <div class="card"><h3 class="h3">STL</h3><p style="color:var(--color-text-muted)">Industry standard</p><p>Triangle mesh format supported by all slicers. Export at high resolution: chordal tolerance ≤0.01mm, angular tolerance ≤1° for smooth curves. Binary STL preferred over ASCII for smaller file size.</p></div>
+        <div class="card"><h3 class="h3">3MF</h3><p style="color:var(--color-text-muted)">Modern alternative</p><p>XML-based format that preserves model hierarchy, materials, colors, and metadata. Smaller than STL. Supported by PrusaSlicer, Cura, and Bambu Studio. Recommended for multi-material designs.</p></div>
+        <div class="card"><h3 class="h3">STEP / IGES</h3><p style="color:var(--color-text-muted)">Engineering CAD</p><p>Parametric formats for engineering parts. Preserves exact geometry without tessellation. Convert to STL with fine settings for printing. Preferred for mechanical assemblies.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background:var(--color-surface)">
+    <div class="container">
+      <div class="section-header"><p class="overline">Design Rules</p><h2 class="h2">DFM for FDM 3D Printing</h2></div>
+      <div class="compare-table fade-up">
+        <table>
+          <thead><tr><th>Design Element</th><th>Recommendation</th><th>Notes</th></tr></thead>
+          <tbody>
+            <tr><td>Minimum Wall Thickness</td><td>≥0.8mm (0.4mm nozzle)</td><td>2× nozzle diameter minimum. For structural parts, use ≥1.2mm.</td></tr>
+            <tr><td>Unsupported Overhangs</td><td>≤45° from vertical</td><td>Beyond 45° requires supports. 60°+ strongly needs supports.</td></tr>
+            <tr><td>Bridging</td><td>≤50mm span</td><td>Longer bridges may sag. Active cooling fan essential. Test with bridging calibration print.</td></tr>
+            <tr><td>Hole Diameter (Horizontal)</td><td>Drill after printing for precision</td><td>FDM holes print ~0.1-0.2mm undersized. Design 0.2mm oversize or post-drill.</td></tr>
+            <tr><td>Clearance (Moving Parts)</td><td>0.3-0.5mm gap</td><td>For print-in-place mechanisms. Depends on printer calibration and material shrinkage.</td></tr>
+            <tr><td>First Layer</td><td>0.2mm height, 105-110% extrusion</td><td>Slower speed (20-30mm/s) for adhesion. Clean bed essential.</td></tr>
+            <tr><td>Corner Fillets</td><td>R ≥2mm recommended</td><td>Sharp corners concentrate stress. Fillets improve strength and printability.</td></tr>
+            <tr><td>Embossed/Engraved Text</td><td>≥4mm height, ≥0.5mm depth</td><td>Top-surface text prints clearest. Avoid text on vertical walls.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-header"><p class="overline">Parameters</p><h2 class="h2">Material-Specific Recommendations</h2></div>
+      <div class="grid-3 fade-up">
+        <div class="card"><h3 class="h3">PLA / PLA+</h3><p>Nozzle: 200-220°C | Bed: 50-60°C<br>Speed: 60-80mm/s | Cooling: 100% fan<br>No enclosure needed. Best for decorative parts, prototypes, and consumer products. Low warping, easy to print.</p></div>
+        <div class="card"><h3 class="h3">PETG</h3><p>Nozzle: 230-250°C | Bed: 70-85°C<br>Speed: 40-60mm/s | Cooling: 30-50% fan<br>Partial enclosure recommended. Stronger than PLA, more flexible. Good chemical resistance. Slight stringing — tune retraction.</p></div>
+        <div class="card"><h3 class="h3">ABS / ASA</h3><p>Nozzle: 240-260°C | Bed: 100-110°C<br>Speed: 40-60mm/s | Cooling: 0-20% fan<br>Full enclosure required. Warp-prone — use brim or enclosure preheat. ASA for UV-resistant outdoor parts. Ventilate for fumes.</p></div>
+        <div class="card"><h3 class="h3">TPU (Flexible)</h3><p>Nozzle: 220-240°C | Bed: 40-60°C<br>Speed: 20-30mm/s | Cooling: 50% fan<br>Direct drive extruder required. Disable retraction or use minimal (1-2mm). Dry filament before printing. Shore hardness 95A recommended for beginners.</p></div>
+        <div class="card"><h3 class="h3">Nylon (PA)</h3><p>Nozzle: 250-270°C | Bed: 80-100°C<br>Speed: 30-50mm/s | Cooling: 0-30% fan<br>Enclosure required. Must be dried (70°C for 6-12h). Use glue stick or garolite bed surface. Strong, durable, but hygroscopic.</p></div>
+        <div class="card"><h3 class="h3">Polycarbonate (PC)</h3><p>Nozzle: 270-300°C | Bed: 100-110°C<br>Speed: 30-40mm/s | Cooling: 0-20% fan<br>Full enclosure at 50°C+ required. All-metal hotend mandatory. Extreme strength and heat resistance. Must be thoroughly dried.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background:var(--color-surface)">
+    <div class="container">
+      <div class="section-header"><p class="overline">Common Mistakes</p><h2 class="h2">Design Errors to Avoid</h2></div>
+      <div class="grid-2 fade-up">
+        <div class="card"><h3 class="h3">❌ Paper-Thin Walls</h3><p>Walls thinner than nozzle diameter cannot print. Always design at 2× nozzle width minimum.</p></div>
+        <div class="card"><h3 class="h3">❌ Unsupported 90° Overhangs</h3><p>Horizontal surfaces in mid-air will fail. Add chamfers, split the part, or accept support material.</p></div>
+        <div class="card"><h3 class="h3">❌ Ignoring Layer Adhesion</h3><p>Z-axis is the weakest direction. Orient parts so load is across layers, not along them.</p></div>
+        <div class="card"><h3 class="h3">❌ Skipping Filament Drying</h3><p>Wet filament causes stringing, popping, and weak prints. Nylon, PETG, PC especially hygroscopic.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section cta-banner">
+    <div class="container">
+      <div class="cta-card">
+        <p class="overline">Need Help?</p>
+        <h2 class="h2">Get Our Complete Design Guide PDF</h2>
+        <p class="body-lg">Comprehensive DFM guide, parameter cheat sheets, and troubleshooting reference. Perfect for your customers and support team.</p>
+        <div class="cta-actions"><a href="javascript:void(0)" class="btn btn-primary btn-lg" onclick="openModal()">Download Design Guide</a></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer section">
+  <div class="container">
+    <div class="footer-grid grid-4">
+      <div class="footer-brand"><svg width="120" height="24" viewBox="0 0 120 24" fill="none" style="margin-bottom:var(--space-4)"><rect x="0" y="1" width="22" height="22" rx="4" fill="#2563EB"/><path d="M5 13l4-4 4 4 4-4 4 4" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/><text x="28" y="18" fill="#F1F5F9" font-family="system-ui,sans-serif" font-size="16" font-weight="700">Precise3D</text></svg><p class="body-sm">Precision 3D printers engineered for global markets.</p></div>
+      <div class="footer-col"><h4>Resources</h4><a href="/design-guides/">Design Guides</a><a href="/how-it-works/">How It Works</a><a href="/faq/">FAQ</a><a href="/blog/">Blog</a></div>
+      <div class="footer-col"><h4>Company</h4><a href="/about/">About Us</a><a href="/factory/">Factory Tour</a><a href="/quality/">Quality Control</a><a href="/shipping/">Shipping</a><a href="/contact/">Contact</a></div>
+      <div class="footer-col"><h4>Contact</h4><a href="/cdn-cgi/l/email-protection#295a48454c5a69191b4c4a405a4c1e49074a4644"><span class="__cf_email__" data-cfemail="b2c1d3ded7c1f28280d7d1dbc1d785d29cd1dddf">[email&#160;protected]</span></a><p class="body-sm" style="margin-top:var(--space-4)">Shenzhen, China</p></div>
+    </div>
+    <div class="footer-bottom"><p class="body-sm">&copy; 2026 Precise3D. All rights reserved.</p></div>
+  </div>
+</footer>
+
+<div class="modal-overlay" id="inquiryModal">
+  <div class="modal-dialog">
+    <button class="modal-close" onclick="closeModal()" aria-label="Close">&times;</button>
+    <h2 class="h2">Send an Inquiry</h2>
+    <p class="body-sm">We'll respond within 24 hours.</p>
+    <form class="modal-form" onsubmit="return handleInquiry(event)" novalidate>
+      <div class="form-group"><label for="modal-name">Name <span class="required">*</span></label><input type="text" id="modal-name" name="name" required placeholder="Your full name"></div>
+      <div class="form-group"><label for="modal-email">Email <span class="required">*</span></label><input type="email" id="modal-email" name="email" required placeholder="you@company.com"></div>
+      <div class="form-group"><label for="modal-message">Message <span class="required">*</span></label><textarea id="modal-message" name="message" required rows="4" placeholder="Tell us about your business and what you're looking for..."></textarea></div>
+      <button type="submit" class="btn btn-primary btn-lg" style="width:100%;justify-content:center">Send Inquiry</button>
+      <p class="modal-form-note">We'll respond within 24 hours. Your information is never shared.</p>
+    </form>
+  </div>
+</div>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+(function(){var els=document.querySelectorAll('.fade-up');var obs=new IntersectionObserver(function(e){e.forEach(function(e){if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target)}})},{threshold:0.15});els.forEach(function(el){obs.observe(el)})})();
+function openModal(){document.getElementById('inquiryModal').classList.add('open')}
+function closeModal(){document.getElementById('inquiryModal').classList.remove('open')}
+document.getElementById('inquiryModal').addEventListener('click',function(e){if(e.target===this)closeModal()})
+</script>
+<script src="/inquiry-handler.js"></script>
+</body>
+</html>

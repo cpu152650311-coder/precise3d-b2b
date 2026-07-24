@@ -35,7 +35,27 @@
 - [Market Overview](https://ems-3dp.com/market-insights/): Global 3D printer market data by region
 - [Regional Guides](https://ems-3dp.com/market-insights/regional-guides/): 6 region deep-dives for market entry
 
-## Customer Resources
+## Capabilities
+- [Capabilities Hub](https://ems-3dp.com/capabilities/): Full-stack 3D printer engineering overview
+- [OEM & Customization](https://ems-3dp.com/capabilities/oem-customization/): Hardware customization, enclosure, branding
+- [Firmware & Software](https://ems-3dp.com/capabilities/firmware-software/): Custom firmware, UI themes, slicer profiles
+- [Materials Engineering](https://ems-3dp.com/capabilities/materials-engineering/): 30+ filament validation, print profiles
+
+## Industries
+- [Industries Hub](https://ems-3dp.com/industries/): 3D printing applications across 6 sectors
+- [Education & Research](https://ems-3dp.com/industries/education-research/): K-12 STEM and university labs
+- [Healthcare & Dental](https://ems-3dp.com/industries/healthcare-dental/): Dental models, surgical guides
+- [Manufacturing & Prototyping](https://ems-3dp.com/industries/manufacturing-prototyping/): Jigs, fixtures, end-use parts
+- [Retail & Consumer](https://ems-3dp.com/industries/retail-consumer/): Retail-ready packaging and UX
+- [Jewelry & Fashion](https://ems-3dp.com/industries/jewelry-fashion/): Lost-wax casting, fine detail
+- [Engineering & Architecture](https://ems-3dp.com/industries/engineering-architecture/): AEC models, multi-day prints
+
+## Trust & Resources
+- [Factory Tour](https://ems-3dp.com/factory/): 5,000 sqm facility, 8 assembly lines
+- [Quality Control](https://ems-3dp.com/quality/): 7 inspection gates, ISO 9001
+- [Shipping & Logistics](https://ems-3dp.com/shipping/): Global delivery, packaging standards
+- [Design Guides](https://ems-3dp.com/design-guides/): DFM for 3D printing, material parameters
+- [Projects & Cases](https://ems-3dp.com/projects/): Partner success stories
 - [How It Works](https://ems-3dp.com/how-it-works/): 7-step partner journey from inquiry to delivery
 - [FAQ](https://ems-3dp.com/faq/): 12 FAQs covering products, MOQ, shipping, support, certification
 - [Request Quote](https://ems-3dp.com/quote/): Inquiry form with country, volume, and program selection
