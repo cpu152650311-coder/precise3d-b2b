@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Get a Quote — Request Wholesale Pricing for Precise3D Printers</title>
+  <meta name="description" content="Request wholesale pricing for Precise3D 3D printers. Tell us your market and volume expectations and we'll send a tailored quote within 24 hours.">
+  <link rel="canonical" href="https://ems-3dp.com/quote/">
+  <link rel="stylesheet" href="/design-tokens.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="/" class="logo"><svg width="140" height="28" viewBox="0 0 140 28" fill="none"><rect x="0" y="2" width="24" height="24" rx="4" fill="#2563EB"/><path d="M6 14l4-4 4 4 4-4 4 4" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/><text x="32" y="21" fill="#F1F5F9" font-family="system-ui,sans-serif" font-size="18" font-weight="700">Precise3D</text></svg></a>
+    <nav class="nav-main"><a href="/">Home</a><a href="/products/">Products</a><a href="/solutions/">Partner Programs</a><a href="/engineering/">Engineering</a><a href="/partner-support/">Resources</a><a href="/blog/">Blog</a><a href="/contact/">Contact</a></nav>
+    <div class="header-actions"><a href="javascript:void(0)" class="btn btn-primary" onclick="openModal()">Request Quote</a></div>
+  </div>
+</header>
+
+<main>
+  <section class="sub-hero" style="min-height:30vh">
+    <div class="sub-hero-bg" style="background:linear-gradient(135deg,var(--color-bg),var(--color-surface))"></div>
+    <div class="container sub-hero-content">
+      <p class="overline">Pricing</p>
+      <h1 class="h1">Get a Wholesale Quote</h1>
+      <p class="body-lg">Tell us about your business and we'll send a tailored pricing proposal within 24 hours.</p>
+    </div>
+  </section>
+
+  <section class="section" id="quote-form">
+    <div class="container" style="max-width:650px">
+      <div class="card fade-up" style="padding:var(--space-10)">
+        <form onsubmit="return handleInquiry(event)" novalidate>
+          <div class="form-group"><label for="modal-name">Full Name <span class="required">*</span></label><input type="text" name="name" required placeholder="Your full name" style="width:100%"></div>
+          <div class="form-group"><label for="modal-email">Work Email <span class="required">*</span></label><input type="email" name="email" required placeholder="you@company.com" style="width:100%"></div>
+          <div class="form-group"><label for="modal-company">Company Name</label><input type="text" name="company" placeholder="Your company" style="width:100%"></div>
+          <div class="form-group"><label for="modal-country">Target Market / Country <span class="required">*</span></label><input type="text" name="country" required placeholder="e.g. Germany, Brazil, Japan" style="width:100%"></div>
+          <div class="form-group"><label for="modal-volume">Expected Monthly Volume</label><select name="volume" style="width:100%;background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-md);padding:var(--space-3);color:var(--color-text)"><option value="">Select...</option><option>Evaluating (1-5 units sample)</option><option>Small (10-30 units/month)</option><option>Medium (30-100 units/month)</option><option>Large (100-500 units/month)</option><option>Enterprise (500+ units/month)</option></select></div>
+          <div class="form-group"><label for="modal-program">Program Interest</label><select name="program" style="width:100%;background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-md);padding:var(--space-3);color:var(--color-text)"><option value="">Select...</option><option>Authorized Distribution</option><option>OEM / White Label</option><option>Education Partnership</option><option>Not sure yet — exploring options</option></select></div>
+          <div class="form-group"><label for="modal-message">Additional Details</label><textarea name="message" rows="3" placeholder="Anything else we should know about your business or requirements..." style="width:100%"></textarea></div>
+          <button type="submit" class="btn btn-primary btn-lg" style="width:100%;justify-content:center">Request Quote</button>
+          <p style="font-size:var(--text-xs);color:var(--color-text-dim);text-align:center;margin-top:var(--space-3)">We'll respond within 24 hours. Your information is never shared.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer section">
+  <div class="container">
+    <div class="footer-grid grid-4">
+      <div class="footer-brand"><svg width="120" height="24" viewBox="0 0 120 24" fill="none" style="margin-bottom:var(--space-4)"><rect x="0" y="1" width="22" height="22" rx="4" fill="#2563EB"/><path d="M5 13l4-4 4 4 4-4 4 4" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/><text x="28" y="18" fill="#F1F5F9" font-family="system-ui,sans-serif" font-size="16" font-weight="700">Precise3D</text></svg><p class="body-sm">Precision 3D printers engineered for global markets.</p></div>
+      <div class="footer-col"><h4>Quick Links</h4><a href="/faq/">FAQ</a><a href="/how-it-works/">How It Works</a><a href="/quote/">Get a Quote</a></div>
+      <div class="footer-col"><h4>Company</h4><a href="/about/">About Us</a><a href="/engineering/">Engineering</a><a href="/products/">Products</a><a href="/blog/">Blog</a><a href="/contact/">Contact</a></div>
+      <div class="footer-col"><h4>Legal</h4><a href="/privacy/">Privacy Policy</a><a href="/terms/">Terms of Service</a></div>
+    </div>
+    <div class="footer-bottom"><p class="body-sm">&copy; 2026 Precise3D. All rights reserved.</p></div>
+  </div>
+</footer>
+
+<div class="modal-overlay" id="inquiryModal"><div class="modal-dialog"><button class="modal-close" onclick="closeModal()" aria-label="Close">&times;</button><h2 class="h2">Send an Inquiry</h2><form class="modal-form" onsubmit="return handleInquiry(event)" novalidate><div class="form-group"><label for="modal-name">Name <span class="required">*</span></label><input type="text" id="modal-name" name="name" required></div><div class="form-group"><label for="modal-email">Email <span class="required">*</span></label><input type="email" id="modal-email" name="email" required></div><div class="form-group"><label for="modal-message">Message <span class="required">*</span></label><textarea id="modal-message" name="message" required rows="4"></textarea></div><button type="submit" class="btn btn-primary btn-lg" style="width:100%;justify-content:center">Send Inquiry</button></form></div></div>
+<script>(function(){var els=document.querySelectorAll('.fade-up');var obs=new IntersectionObserver(function(e){e.forEach(function(e){if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target)}})},{threshold:0.15});els.forEach(function(el){obs.observe(el)})})();
+function openModal(){document.getElementById('inquiryModal').classList.add('open')}
+function closeModal(){document.getElementById('inquiryModal').classList.remove('open')}
+document.getElementById('inquiryModal').addEventListener('click',function(e){if(e.target===this)closeModal()})
+</script>
+<script src="/inquiry-handler.js"></script>
+</body>
+</html>

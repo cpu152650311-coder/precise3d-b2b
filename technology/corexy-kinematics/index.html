@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CoreXY Kinematics — How Precise3D Achieves 500mm/s Print Speed | Engineering Deep-Dive</title>
+  <meta name="description" content="Deep-dive into CoreXY kinematics: how the crossed-belt motion system enables 5× faster printing, why it outperforms traditional bedslinger designs, and what this means for your distribution portfolio.">
+  <meta property="og:title" content="CoreXY Kinematics — The Speed Behind Precise3D Printers">
+  <meta property="og:description" content="Understand the motion system that makes Precise3D printers 5× faster. Technical deep-dive for distributors and technical evaluators.">
+  <meta property="og:image" content="https://ems-3dp.com/generated/sub-tech-corexy.webp">
+  <meta property="og:url" content="https://ems-3dp.com/technology/corexy-kinematics/">
+  <meta property="og:type" content="website">
+  <link rel="canonical" href="https://ems-3dp.com/technology/corexy-kinematics/">
+  <link rel="stylesheet" href="/design-tokens.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "headline": "CoreXY Kinematics — How Precise3D Achieves 500mm/s Print Speed",
+  "description": "Deep-dive into CoreXY kinematics: how the crossed-belt motion system enables 5× faster printing, why it outperforms traditional bedslinger designs, and what this means for your distribution portfolio.",
+  "author": {"@type": "Organization", "name": "Precise3D"},
+  "publisher": {"@type": "Organization", "name": "Precise3D", "url": "https://ems-3dp.com"}
+}
+</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="/" class="logo">
+      <svg width="140" height="28" viewBox="0 0 140 28" fill="none"><rect x="0" y="2" width="24" height="24" rx="4" fill="#2563EB"/><path d="M6 14l4-4 4 4 4-4 4 4" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/><text x="32" y="21" fill="#F1F5F9" font-family="system-ui,sans-serif" font-size="18" font-weight="700">Precise3D</text></svg>
+    </a>
+    <nav class="nav-main">
+      <a href="/">Home</a>
+      <a href="/products/">Products</a>
+      <a href="/solutions/">Partner Programs</a>
+      <a href="/engineering/" class="active">Engineering</a>
+      <a href="/partner-support/">Resources</a>
+      <a href="/blog/">Blog</a>
+      <a href="/contact/">Contact</a>
+    </nav>
+    <div class="header-actions"><a href="javascript:void(0)" class="btn btn-primary" onclick="openModal()">Request Quote</a></div>
+  </div>
+</header>
+
+<main>
+  <section class="sub-hero">
+    <div class="sub-hero-bg"><img src="/generated/sub-tech-corexy.webp" alt="" aria-hidden="true"><div class="sub-hero-overlay"></div></div>
+    <div class="container sub-hero-content">
+      <p class="overline">Engineering Deep-Dive &bull; Motion Systems</p>
+      <h1 class="h1">CoreXY Kinematics.<br>The Engineering Behind 5&times; Speed.</h1>
+      <p class="body-lg">How a crossed-belt motion system enables 500mm/s print speeds, sub-50-micron precision, and the reliability that distributors build businesses on.</p>
+    </div>
+  </section>
+
+  <section class="section" id="what-is-corexy">
+    <div class="container">
+      <div class="section-header">
+        <p class="overline">Motion System Fundamentals</p>
+        <h2 class="h2">What Makes CoreXY Different</h2>
+        <p class="body-lg">Not all 3D printer motion is created equal. The kinematics architecture determines speed ceiling, print quality floor, and long-term maintenance burden.</p>
+      </div>
+
+      <div class="tech-split fade-up" style="display:grid;grid-template-columns:1fr 1fr;gap:var(--space-12);align-items:center;margin-bottom:var(--space-16)">
+        <div>
+          <p style="font-size:var(--text-lg);line-height:1.8;color:var(--color-text-muted);margin-bottom:var(--space-6)">In a traditional Cartesian 3D printer, the build plate moves back and forth on the Y-axis while the print head moves left and right on the X-axis. This <strong style="color:var(--color-text)">bedslinger</strong> design works at low speeds — but as speed increases, the mass of the moving bed becomes the enemy. A 250&times;250mm glass bed weighs over 1.8 kg. Accelerating that mass to 200mm/s and back creates ringing artifacts, layer shifts, and eventually — failed prints.</p>
+          <p style="font-size:var(--text-lg);line-height:1.8;color:var(--color-text-muted)">CoreXY solves this by using <strong style="color:var(--color-accent-glow)">two stationary motors</strong> driving a single continuous belt in a crossed pattern. The bed moves only on the Z-axis (vertically, and only between layers). The toolhead — weighing under 300 grams — is the only moving mass in the XY plane. This is the engineering insight that unlocks everything else.</p>
+        </div>
+        <div style="background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-lg);padding:var(--space-6)">
+          <img src="/generated/diagram-corexy-vs-bedslinger.webp" alt="CoreXY vs Bedslinger kinematics comparison — left side shows CoreXY crossed-belt system with stationary bed, right side shows traditional moving-bed design" loading="lazy" style="width:100%;border-radius:var(--radius-md)">
+          <p style="font-size:var(--text-xs);color:var(--color-text-dim);text-align:center;margin-top:var(--space-4)">CoreXY (left) vs Bedslinger (right) — the stationary bed is the key differentiator</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="comparison" style="background:var(--color-surface);border-top:1px solid var(--color-border);border-bottom:1px solid var(--color-border)">
+    <div class="container">
+      <div class="section-header">
+        <p class="overline">Head-to-Head</p>
+        <h2 class="h2">CoreXY vs Bedslinger: By the Numbers</h2>
+      </div>
+
+      <div class="fade-up" style="max-width:900px;margin-inline:auto">
+        <table style="width:100%;border-collapse:collapse;font-size:var(--text-sm)">
+          <thead>
+            <tr style="border-bottom:2px solid var(--color-accent)">
+              <th style="text-align:left;padding:var(--space-4) var(--space-4);color:var(--color-accent-glow);font-weight:600">Metric</th>
+              <th style="text-align:center;padding:var(--space-4);color:var(--color-accent-glow);font-weight:600">CoreXY (Pro X1)</th>
+              <th style="text-align:center;padding:var(--space-4);color:var(--color-text-dim);font-weight:500">Bedslinger (Typical)</th>
+              <th style="text-align:center;padding:var(--space-4);color:var(--color-success);font-weight:600">Advantage</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="border-bottom:1px solid var(--color-border)">
+              <td style="padding:var(--space-5) var(--space-4);color:var(--color-text);font-weight:500">Max Print Speed</td>
+              <td style="text-align:center;padding:var(--space-5);color:var(--color-accent-glow);font-family:var(--font-mono);font-weight:700">500 mm/s</td>
+              <td style="text-align:center;padding:var(--space-5);color:var(--color-text-dim)">150–250 mm/s</td>
+              <td style="text-align:center;padding:var(--space-5);color:var(--color-success);font-weight:600">2–3.3&times;</td>
+            </tr>
+            <tr style="border-bottom:1px solid var(--color-border)">
+              <td style="padding:var(--space-5) var(--space-4);color:var(--color-text);font-weight:500">Moving Mass (XY)</td>
+              <td style="text-align:center;padding:var(--space-5);color:var(--color-accent-glow);font-family:var(--font-mono);font-weight:700">~280 g</td>
+              <td style="text-align:center;padding:var(--space-5);color:var(--color-text-dim)">~2,100 g</td>
+              <td style="text-align:center;padding:var(--space-5);color:var(--color-success);font-weight:600">7.5&times; lighter</td>
+            </tr>
+            <tr style="border-bottom:1px solid var(--color-border)">
+              <td style="padding:var(--space-5) var(--space-4);color:var(--color-text);font-weight:500">Acceleration (Typical)</td>
+              <td style="text-align:center;padding:var(--space-5);color:var(--color-accent-glow);font-family:var(--font-mono);font-weight:700">20,000 mm/s&sup2;</td>
+              <td style="text-align:center;padding:var(--space-5);color:var(--color-text-dim)">3,000–8,000 mm/s&sup2;</td>
+              <td style="text-align:center;padding:var(--space-5);color:var(--color-success);font-weight:600">2.5–6.7&times;</td>
+            </tr>
+            <tr style="border-bottom:1px solid var(--color-border)">
+              <td style="padding:var(--space-5) var(--space-4);color:var(--color-text);font-weight:500">Ringing Artifacts</td>
+              <td style="text-align:center;padding:var(--space-5);color:var(--color-accent-glow);font-weight:600">Minimal</td>
+              <td style="text-align:center;padding:var(--space-5);color:var(--color-text-dim)">Common above 150mm/s</td>
+              <td style="text-align:center;padding:var(--space-5);color:var(--color-success);font-weight:600">Significant</td>
+            </tr>
+            <tr style="border-bottom:1px solid var(--color-border)">
+              <td style="padding:var(--space-5) var(--space-4);color:var(--color-text);font-weight:500">Bed Stability During Print</td>
+              <td style="text-align:center;padding:var(--space-5);color:var(--color-accent-glow);font-weight:600">Stationary (Z only)</td>
+              <td style="text-align:center;padding:var(--space-5);color:var(--color-text-dim)">Y-axis reciprocating</td>
+              <td style="text-align:center;padding:var(--space-5);color:var(--color-success);font-weight:600">Zero bed inertia</td>
+            </tr>
+            <tr style="border-bottom:1px solid var(--color-border)">
+              <td style="padding:var(--space-5) var(--space-4);color:var(--color-text);font-weight:500">Tall Print Stability</td>
+              <td style="text-align:center;padding:var(--space-5);color:var(--color-accent-glow);font-weight:600">Excellent</td>
+              <td style="text-align:center;padding:var(--space-5);color:var(--color-text-dim)">Degrades with height</td>
+              <td style="text-align:center;padding:var(--space-5);color:var(--color-success);font-weight:600">Critical for &gt;200mm</td>
+            </tr>
+            <tr style="border-bottom:1px solid var(--color-border)">
+              <td style="padding:var(--space-5) var(--space-4);color:var(--color-text);font-weight:500">Belt Replacement Interval</td>
+              <td style="text-align:center;padding:var(--space-5);color:var(--color-accent-glow);font-family:var(--font-mono);font-weight:700">~2,000 hrs</td>
+              <td style="text-align:center;padding:var(--space-5);color:var(--color-text-dim)">~800–1,200 hrs</td>
+              <td style="text-align:center;padding:var(--space-5);color:var(--color-success);font-weight:600">1.7–2.5&times; life</td>
+            </tr>
+            <tr>
+              <td style="padding:var(--space-5) var(--space-4);color:var(--color-text);font-weight:500">Footprint Efficiency</td>
+              <td style="text-align:center;padding:var(--space-5);color:var(--color-accent-glow);font-weight:600">Compact (fixed bed)</td>
+              <td style="text-align:center;padding:var(--space-5);color:var(--color-text-dim)">2&times; bed depth required</td>
+              <td style="text-align:center;padding:var(--space-5);color:var(--color-success);font-weight:600">~40% smaller desk space</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="speed-advantage">
+    <div class="container">
+      <div class="section-header">
+        <p class="overline">Performance</p>
+        <h2 class="h2">Speed Without Sacrifice</h2>
+        <p class="body-lg">The claim "5&times; faster" isn't marketing — it's physics. When the only moving mass is the toolhead, acceleration limits disappear.</p>
+      </div>
+
+      <div class="fade-up" style="display:grid;grid-template-columns:1fr 1fr;gap:var(--space-10);align-items:center;margin-bottom:var(--space-12)">
+        <div>
+          <div style="display:flex;gap:var(--space-8);margin-bottom:var(--space-8)">
+            <div style="flex:1">
+              <div style="font-size:var(--text-5xl);font-weight:700;color:var(--color-accent-glow);font-family:var(--font-mono);line-height:1">500</div>
+              <div style="font-size:var(--text-sm);color:var(--color-text-muted);margin-top:var(--space-2)">mm/s max speed</div>
+            </div>
+            <div style="flex:1">
+              <div style="font-size:var(--text-5xl);font-weight:700;color:var(--color-accent2);font-family:var(--font-mono);line-height:1">20K</div>
+              <div style="font-size:var(--text-sm);color:var(--color-text-muted);margin-top:var(--space-2)">mm/s&sup2; acceleration</div>
+            </div>
+          </div>
+          <p style="color:var(--color-text-muted);line-height:1.8;margin-bottom:var(--space-5)">The Pro X1 reaches 500mm/s travel speed with 20,000 mm/s&sup2; acceleration — numbers that would tear a bedslinger apart. Because the bed stays stationary, tall prints maintain dimensional accuracy from the first layer to the last. A 300mm tower prints with the same precision at layer 1,500 as it does at layer 1.</p>
+          <p style="color:var(--color-text-muted);line-height:1.8">For a distributor, this means <strong style="color:var(--color-text)">fewer customer complaints about failed tall prints, warped edges, or layer misalignment</strong>. The motion system is the root cause behind most print quality issues — and CoreXY eliminates the largest variable.</p>
+        </div>
+        <div style="background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-lg);padding:var(--space-6)">
+          <img src="/generated/diagram-corexy-speed.webp" alt="Visualization of high-speed CoreXY motion with light trails showing rapid toolhead movement" loading="lazy" style="width:100%;border-radius:var(--radius-md)">
+          <p style="font-size:var(--text-xs);color:var(--color-text-dim);text-align:center;margin-top:var(--space-4)">Multi-axis motion trails at 500mm/s — the toolhead changes direction faster than the human eye can track</p>
+        </div>
+      </div>
+
+      <div class="grid-3 fade-up" style="margin-top:var(--space-12)">
+        <div class="card" style="text-align:center">
+          <div style="font-size:var(--text-4xl);font-weight:700;color:var(--color-accent-glow);font-family:var(--font-mono);margin-bottom:var(--space-2)">&lt;0.05</div>
+          <div style="font-size:var(--text-sm);color:var(--color-text-muted)">mm dimensional accuracy<br>across full 300mm build height</div>
+        </div>
+        <div class="card" style="text-align:center">
+          <div style="font-size:var(--text-4xl);font-weight:700;color:var(--color-accent2);font-family:var(--font-mono);margin-bottom:var(--space-2)">3.2&times;</div>
+          <div style="font-size:var(--text-sm);color:var(--color-text-muted)">faster than equivalent<br>bedslinger print time</div>
+        </div>
+        <div class="card" style="text-align:center">
+          <div style="font-size:var(--text-4xl);font-weight:700;color:var(--color-success);font-family:var(--font-mono);margin-bottom:var(--space-2)">0.3%</div>
+          <div style="font-size:var(--text-sm);color:var(--color-text-muted)">DOA rate on Pro X1<br>across 50,000+ units shipped</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="distributor-value" style="background:var(--color-surface);border-top:1px solid var(--color-border);border-bottom:1px solid var(--color-border)">
+    <div class="container">
+      <div class="section-header">
+        <p class="overline">Why This Matters for Your Business</p>
+        <h2 class="h2">The Distributor Economics of CoreXY</h2>
+        <p class="body-lg">Kinematics isn't just engineering — it's a margin protection strategy.</p>
+      </div>
+
+      <div class="grid-2 fade-up" style="gap:var(--space-8)">
+        <div class="card" style="border-left:3px solid var(--color-success)">
+          <h3 class="h3" style="margin-bottom:var(--space-3)">Fewer Returns, Higher Margins</h3>
+          <p style="color:var(--color-text-muted);line-height:1.7">The #1 cause of 3D printer returns is failed prints. The #1 cause of failed prints is motion system instability. CoreXY's stationary bed eliminates the largest failure vector — which means <strong style="color:var(--color-text)">fewer support tickets, fewer returns, and healthier net margins</strong> for distributors. Our Pro X1 has a 0.3% DOA rate and a 1.2% 12-month warranty claim rate — both industry-leading in the sub-$1,000 segment.</p>
+        </div>
+        <div class="card" style="border-left:3px solid var(--color-accent)">
+          <h3 class="h3" style="margin-bottom:var(--space-3)">Premium Positioning, Premium Margin</h3>
+          <p style="color:var(--color-text-muted);line-height:1.7">CoreXY printers command 30–55% higher MSRPs than equivalent bedslinger models. Consumers understand speed. When your retail shelf shows "500mm/s" next to a competitor's "180mm/s", the value proposition sells itself — <strong style="color:var(--color-text)">no staff training required</strong>. Distributors carrying the Pro X1 report 28% higher average order value compared to entry-tier only portfolios.</p>
+        </div>
+        <div class="card" style="border-left:3px solid var(--color-accent2)">
+          <h3 class="h3" style="margin-bottom:var(--space-3)">Enclosed Design = Expanded Market Access</h3>
+          <p style="color:var(--color-text-muted);line-height:1.7">CoreXY's stationary bed enables full enclosure without a massive footprint increase. This unlocks <strong style="color:var(--color-text)">education, office, and retail environments</strong> — channels where open-frame bedslingers are rejected due to safety concerns. HEPA filtration + enclosed chamber means the Pro X1 meets school district safety requirements that exclude 80% of competing products.</p>
+        </div>
+        <div class="card" style="border-left:3px solid var(--color-warning)">
+          <h3 class="h3" style="margin-bottom:var(--space-3)">Future-Proof Technology Platform</h3>
+          <p style="color:var(--color-text-muted);line-height:1.7">The industry is moving to CoreXY. Bambu Lab, Creality K Series, Prusa XL — every flagship launched in 2024–2026 uses CoreXY kinematics. Distributors who build their portfolio around this architecture today are <strong style="color:var(--color-text)">positioned for where the market is going</strong>, not where it was. Bedslinger will become the budget segment; CoreXY is the mainstream.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="in-our-lineup">
+    <div class="container">
+      <div class="section-header">
+        <p class="overline">In the Precise3D Lineup</p>
+        <h2 class="h2">Which Models Use CoreXY</h2>
+      </div>
+
+      <div class="fade-up" style="max-width:700px;margin-inline:auto">
+        <div style="display:flex;gap:var(--space-8);align-items:center;background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-lg);padding:var(--space-8);margin-bottom:var(--space-6)">
+          <div style="width:80px;height:80px;background:rgba(37,99,235,.1);border-radius:var(--radius-md);display:flex;align-items:center;justify-content:center;flex-shrink:0">
+            <span style="font-size:var(--text-3xl);font-weight:700;color:var(--color-accent-glow)">X1</span>
+          </div>
+          <div>
+            <span class="badge" style="margin-bottom:var(--space-2)">CoreXY</span>
+            <h3 class="h3" style="margin-bottom:var(--space-2)">Pro X1 — Flagship</h3>
+            <p style="color:var(--color-text-muted);font-size:var(--text-sm);line-height:1.6">Full CoreXY with dual-gear direct drive. 500mm/s, 300&times;300&times;350mm, enclosed with HEPA. Built for print farms, engineering labs, and premium retail.</p>
+          </div>
+        </div>
+        <div style="display:flex;gap:var(--space-8);align-items:center;background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-lg);padding:var(--space-8);opacity:.85">
+          <div style="width:80px;height:80px;background:rgba(148,163,184,.08);border-radius:var(--radius-md);display:flex;align-items:center;justify-content:center;flex-shrink:0">
+            <span style="font-size:var(--text-3xl);font-weight:700;color:var(--color-text-dim)">C1</span>
+          </div>
+          <div>
+            <span class="badge" style="background:rgba(148,163,184,.15);color:var(--color-text-muted);border-color:rgba(148,163,184,.2);margin-bottom:var(--space-2)">Hybrid Cartesian</span>
+            <h3 class="h3" style="color:var(--color-text-muted);margin-bottom:var(--space-2)">Creator C1 — Workhorse</h3>
+            <p style="color:var(--color-text-dim);font-size:var(--text-sm);line-height:1.6">Optimized Cartesian with silent drivers. 300mm/s, 250&times;250&times;280mm. Ideal for education, small business, and value-conscious retail channels.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section cta-banner" id="cta">
+    <div class="container">
+      <div class="cta-card">
+        <p class="overline">Want the Full Engineering Deck?</p>
+        <h2 class="h2">Get the CoreXY Technical Brief for Your Sales Team</h2>
+        <p class="body-lg">We've prepared a distributor-ready technical brief covering CoreXY kinematics, competitive comparison data, and customer-facing selling points. Includes print quality comparison samples.</p>
+        <div class="cta-actions">
+          <a href="javascript:void(0)" class="btn btn-primary btn-lg" onclick="openModal()">Request Technical Brief</a>
+          <a href="/products/" class="btn btn-outline btn-lg">Explore Products</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer section">
+  <div class="container">
+    <div class="footer-grid grid-4">
+      <div class="footer-brand">
+        <svg width="120" height="24" viewBox="0 0 120 24" fill="none" style="margin-bottom:var(--space-4)"><rect x="0" y="1" width="22" height="22" rx="4" fill="#2563EB"/><path d="M5 13l4-4 4 4 4-4 4 4" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/><text x="28" y="18" fill="#F1F5F9" font-family="system-ui,sans-serif" font-size="16" font-weight="700">Precise3D</text></svg>
+        <p class="body-sm">Precision 3D printers engineered for global markets. OEM &amp; distribution partnerships worldwide.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Products</h4>
+        <a href="/products/">All Products</a>
+        <a href="/technology/corexy-kinematics/">CoreXY Technology</a>
+        <a href="/technology/material-science/">Material Science</a>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="/about/">About Us</a>
+        <a href="/solutions/">Partner Programs</a>
+        <a href="/engineering/">Engineering</a>
+        <a href="/blog/">Blog</a>
+        <a href="/contact/">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <a href="/cdn-cgi/l/email-protection#6d1e0c01081e2d1c1e090f051f08421f0904031e081f1b040e08430e0200"><span class="__cf_email__" data-cfemail="f68593949399839eb6848691979d8790da87919c9b869087839c9690d895999b">[email&#160;protected]</span></a>
+        <p class="body-sm" style="margin-top:var(--space-4)">Shenzhen, China</p>
+      </div>
+    </div>
+    <div class="footer-bottom"><p class="body-sm">&copy; 2026 Precise3D. All rights reserved.</p></div>
+  </div>
+</footer>
+
+<div class="modal-overlay" id="inquiryModal">
+  <div class="modal-dialog">
+    <button class="modal-close" onclick="closeModal()" aria-label="Close">&times;</button>
+    <h2 class="h2">Send an Inquiry</h2>
+    <p class="body-sm">We'll respond within 24 hours.</p>
+    <form class="modal-form" onsubmit="return handleInquiry(event)" novalidate>
+      <div class="form-group"><label for="modal-name">Name <span class="required">*</span></label><input type="text" id="modal-name" name="name" required placeholder="Your full name"></div>
+      <div class="form-group"><label for="modal-email">Email <span class="required">*</span></label><input type="email" id="modal-email" name="email" required placeholder="you@company.com"></div>
+      <div class="form-group"><label for="modal-message">Message <span class="required">*</span></label><textarea id="modal-message" name="message" required rows="4" placeholder="Tell us about your business and what you're looking for..."></textarea></div>
+      <button type="submit" class="btn btn-primary btn-lg" style="width:100%;justify-content:center">Send Inquiry</button>
+      <p class="modal-form-note">We'll respond within 24 hours. Your information is never shared.</p>
+    </form>
+  </div>
+</div>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+(function(){var els=document.querySelectorAll('.fade-up');var obs=new IntersectionObserver(function(e){e.forEach(function(e){if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target)}})},{threshold:0.15});els.forEach(function(el){obs.observe(el)})})();
+function openModal(){document.getElementById('inquiryModal').classList.add('open')}
+function closeModal(){document.getElementById('inquiryModal').classList.remove('open')}
+document.getElementById('inquiryModal').addEventListener('click',function(e){if(e.target===this)closeModal()})
+</script>
+<script src="/inquiry-handler.js"></script>
+</body>
+</html>

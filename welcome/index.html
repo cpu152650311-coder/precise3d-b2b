@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Become a Precise3D Distributor — Premium 3D Printers for Global Markets</title>
+  <meta name="description" content="Partner with Precise3D. Premium CoreXY 3D printers with 30-45% wholesale margins, protected territories, and zero MOQ for sample orders. Apply today.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta property="og:title" content="Become a Precise3D Distributor">
+  <meta property="og:description" content="Premium 3D printers. Protected territories. 30-45% wholesale margins.">
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:system-ui,-apple-system,sans-serif;background:#0B1120;color:#F1F5F9;line-height:1.6}
+    .hero{min-height:100vh;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#0B1120 0%,#111827 40%,#0F172A 100%);position:relative;overflow:hidden;padding:2rem}
+    .hero::before{content:'';position:absolute;top:-50%;right:-20%;width:600px;height:600px;background:radial-gradient(circle,rgba(37,99,235,.12),transparent 70%);pointer-events:none}
+    .hero::after{content:'';position:absolute;bottom:-30%;left:-10%;width:400px;height:400px;background:radial-gradient(circle,rgba(59,130,246,.08),transparent 70%);pointer-events:none}
+    .hero-content{max-width:650px;text-align:center;position:relative;z-index:1}
+    h1{font-size:clamp(2rem,5vw,3.2rem);font-weight:800;line-height:1.15;margin-bottom:1.25rem;letter-spacing:-.02em}
+    .accent{color:#3B82F6}
+    p{font-size:1.15rem;color:#94A3B8;margin-bottom:2rem;line-height:1.7}
+    .stats{display:flex;gap:2rem;justify-content:center;margin-bottom:2.5rem;flex-wrap:wrap}
+    .stat{text-align:center}.stat-val{font-size:2rem;font-weight:800;color:#3B82F6;font-variant-numeric:tabular-nums}.stat-label{font-size:.85rem;color:#64748B;margin-top:.25rem}
+    form{display:flex;flex-direction:column;gap:.75rem;max-width:420px;margin:0 auto 1.5rem}
+    input,select,textarea{width:100%;padding:.85rem 1rem;border-radius:8px;border:1px solid rgba(148,163,184,.2);background:rgba(15,23,42,.8);color:#F1F5F9;font-size:.95rem;font-family:inherit;outline:none;transition:border-color .2s}
+    input:focus,select:focus,textarea:focus{border-color:#2563EB}
+    select{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%2394A3B8' stroke-width='1.5' fill='none'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right .75rem center;padding-right:2.5rem}
+    button{width:100%;padding:1rem;background:#2563EB;color:#fff;border:none;border-radius:8px;font-size:1.05rem;font-weight:600;cursor:pointer;transition:background .2s}
+    button:hover{background:#1D4ED8}
+    .trust{font-size:.8rem;color:#475569;margin-top:1rem}
+    .trust span{color:#64748B}
+    @media(max-width:600px){.hero{padding:1.5rem}.stats{gap:1.25rem}.stat-val{font-size:1.5rem}}
+  </style>
+</head>
+<body>
+<div class="hero">
+  <div class="hero-content">
+    <h1>Become a <span class="accent">Precise3D</span> Distributor</h1>
+    <p>Premium CoreXY 3D printers with genuine technical differentiation. Protected territories, 30–45% wholesale margins, and full partner support — starting from zero minimum order.</p>
+    <div class="stats">
+      <div class="stat"><div class="stat-val">30–45%</div><div class="stat-label">Wholesale Margin</div></div>
+      <div class="stat"><div class="stat-val">0</div><div class="stat-label">Sample MOQ</div></div>
+      <div class="stat"><div class="stat-val">500mm/s</div><div class="stat-label">Print Speed</div></div>
+      <div class="stat"><div class="stat-val">60+</div><div class="stat-label">Countries Certified</div></div>
+    </div>
+    <form onsubmit="return handleLandingInquiry(event)" novalidate>
+      <input type="text" name="name" required placeholder="Full Name">
+      <input type="email" name="email" required placeholder="Work Email">
+      <input type="text" name="company" placeholder="Company Name">
+      <select name="country" required><option value="">Target Market / Country</option><option>United States</option><option>Germany</option><option>United Kingdom</option><option>France</option><option>Japan</option><option>Australia</option><option>Brazil</option><option>Other</option></select>
+      <select name="volume"><option value="">Expected Monthly Volume</option><option>Evaluating (sample order)</option><option>Small (10-30/month)</option><option>Medium (30-100/month)</option><option>Large (100+/month)</option></select>
+      <textarea name="message" rows="2" placeholder="Tell us about your distribution channels (optional)"></textarea>
+      <button type="submit">Apply to Become a Distributor</button>
+    </form>
+    <p class="trust">Response within <span>24 hours</span> &middot; <span>No commitment</span> &middot; <span>Confidential</span></p>
+  </div>
+</div>
+<script>
+async function handleLandingInquiry(event){
+  event.preventDefault();
+  const form=event.target;
+  const data={name:form.querySelector('[name="name"]').value,email:form.querySelector('[name="email"]').value,company:form.querySelector('[name="company"]').value,country:form.querySelector('[name="country"]').value,volume:form.querySelector('[name="volume"]').value,message:form.querySelector('[name="message"]').value,source:'ems-3dp.com/welcome-ads'};
+  try{
+    const res=await fetch('https://inquiry-proxy.cpu152650311.workers.dev/inquiry',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(data)});
+    const result=await res.json();
+    if(result.success){alert('Thank you! Your application has been received. We will respond within 24 hours.');form.reset();}else{alert(result.message||'Submission failed. Please try again.');}
+  }catch{alert('Network error. Please try again later.');}
+  return false;
+}
+</script>
+</body>
+</html>

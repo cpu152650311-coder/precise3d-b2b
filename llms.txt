@@ -1,13 +1,58 @@
 # llms.txt — ems-3dp.com (Precise3D)
-> Precise3D: Export-grade consumer 3D printers for global B2B distribution.
+> Precise3D: Export-grade consumer 3D printers for global B2B distribution, OEM white-label, and education markets.
 
-## Core Pages
-- [Home](https://ems-3dp.com/): 3D printer manufacturer overview
-- [Blog](https://ems-3dp.com/blog/): 3D printing guides and industry insights
+## Products
+- [Product Catalog](https://ems-3dp.com/products/): Pro X1, Creator C1, Start S1 — three tiers with full specs and comparison table
+
+## Partner Programs
+- [Partner Programs Overview](https://ems-3dp.com/solutions/): Distribution, OEM white-label, and education partnerships
+- [Distribution Partnership](https://ems-3dp.com/solutions/distribution/): Territory rights, tiered pricing, marketing support
+- [OEM & White Label](https://ems-3dp.com/solutions/oem-white-label/): Custom branding, firmware, MOQ options
+- [Education & Institutional](https://ems-3dp.com/solutions/education/): Classroom bundles, curriculum, safety features
+
+## Engineering & Credibility
+- [Research & Development](https://ems-3dp.com/engineering/research-development/): 7-stage gate process, firmware, testing
+- [Quality Control](https://ems-3dp.com/engineering/quality-control/): 7 inspection gates, metrology, ISO 9001
+- [Certifications](https://ems-3dp.com/engineering/certifications/): CE, FCC, RoHS, KC, BIS, UKCA, SAA
+
+## Technology Deep-Dives
+- [CoreXY Kinematics](https://ems-3dp.com/technology/corexy-kinematics/): Architecture, comparison with bedslinger/delta, technical advantages
+- [Material Science](https://ems-3dp.com/technology/material-science/): 6 polymer families, application matrix, filament guide
+
+## Partner Resources
+- [Partner Support Hub](https://ems-3dp.com/partner-support/): Training, marketing assets, after-sales support
+- [Training Program](https://ems-3dp.com/partner-support/training/): 4 learning tracks for sales and technical teams
+- [Marketing Assets](https://ems-3dp.com/partner-support/marketing-assets/): 6 asset categories for co-branded promotion
+- [After-Sales Support](https://ems-3dp.com/partner-support/after-sales/): Warranty, RMA process, spare parts
+
+## Partner Stories
+- [Partner Stories](https://ems-3dp.com/partner-stories/): Real distributor case studies
+- [EMEA Distributor Success](https://ems-3dp.com/partner-stories/emea-distributor-success/): Timeline, results, partner quote
+
+## Market Insights
+- [Market Overview](https://ems-3dp.com/market-insights/): Global 3D printer market data by region
+- [Regional Guides](https://ems-3dp.com/market-insights/regional-guides/): 6 region deep-dives for market entry
+
+## Customer Resources
+- [How It Works](https://ems-3dp.com/how-it-works/): 7-step partner journey from inquiry to delivery
+- [FAQ](https://ems-3dp.com/faq/): 12 FAQs covering products, MOQ, shipping, support, certification
+- [Request Quote](https://ems-3dp.com/quote/): Inquiry form with country, volume, and program selection
+- [Blog](https://ems-3dp.com/blog/): 50+ articles on 3D printing technology, distribution strategy, and industry insights
+
+## Company
+- [About Us](https://ems-3dp.com/about/)
+- [Contact](https://ems-3dp.com/contact/): Inquiry form, email, Shenzhen headquarters
+
+## Legal
+- [Privacy Policy](https://ems-3dp.com/privacy/)
+- [Terms of Service](https://ems-3dp.com/terms/)
 
 ## Key Facts
-- Product: Consumer 3D printers (FDM/Resin)
-- Business: B2B OEM distribution
-- Certification: ISO 9001
-- MOQ: Competitive for distributors
-- Markets: Global export
+- Products: Consumer/prosumer 3D printers (FDM)
+- Product Line: Pro X1 (professional), Creator C1 (mid-range), Start S1 (entry)
+- Business Models: B2B distribution, OEM white-label, education/institutional
+- Engineering: In-house R&D, 7-stage QC, CoreXY kinematics
+- Certifications: ISO 9001, CE, FCC, RoHS, KC, BIS, UKCA, SAA
+- Location: Shenzhen, Guangdong, China
+- MOQ: Flexible — as low as 50 units for distribution, 100 for white-label
+- Global Markets: EMEA, Americas, APAC, Oceania
