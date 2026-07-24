@@ -11,11 +11,13 @@
 - [Education & Institutional](https://ems-3dp.com/solutions/education/): Classroom bundles, curriculum, safety features
 
 ## Engineering & Credibility
+- [Engineering Hub](https://ems-3dp.com/engineering/): R&D, quality control, and certifications overview
 - [Research & Development](https://ems-3dp.com/engineering/research-development/): 7-stage gate process, firmware, testing
 - [Quality Control](https://ems-3dp.com/engineering/quality-control/): 7 inspection gates, metrology, ISO 9001
 - [Certifications](https://ems-3dp.com/engineering/certifications/): CE, FCC, RoHS, KC, BIS, UKCA, SAA
 
 ## Technology Deep-Dives
+- [Technology Hub](https://ems-3dp.com/technology/): Technical foundations overview
 - [CoreXY Kinematics](https://ems-3dp.com/technology/corexy-kinematics/): Architecture, comparison with bedslinger/delta, technical advantages
 - [Material Science](https://ems-3dp.com/technology/material-science/): 6 polymer families, application matrix, filament guide
 
