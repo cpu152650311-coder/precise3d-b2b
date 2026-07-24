@@ -1,0 +1,227 @@
+{
+  "sub-solutions-v2": {
+    "id": "sub-solutions-v2",
+    "file": "sub-solutions-v2.webp",
+    "role": "sub-hero-bg",
+    "page": "various",
+    "display": "full-bleed",
+    "size_bytes": 65462,
+    "source": "text-to-image"
+  },
+  "sub-solutions-v3": {
+    "id": "sub-solutions-v3",
+    "file": "sub-solutions-v3.webp",
+    "role": "sub-hero-bg",
+    "page": "various",
+    "display": "full-bleed",
+    "size_bytes": 134690,
+    "source": "text-to-image"
+  },
+  "sub-solutions-v4": {
+    "id": "sub-solutions-v4",
+    "file": "sub-solutions-v4.webp",
+    "role": "sub-hero-bg",
+    "page": "various",
+    "display": "full-bleed",
+    "size_bytes": 111066,
+    "source": "text-to-image"
+  },
+  "sub-solutions-v5": {
+    "id": "sub-solutions-v5",
+    "file": "sub-solutions-v5.webp",
+    "role": "sub-hero-bg",
+    "page": "various",
+    "display": "full-bleed",
+    "size_bytes": 73420,
+    "source": "text-to-image"
+  },
+  "sub-oem-v2": {
+    "id": "sub-oem-v2",
+    "file": "sub-oem-v2.webp",
+    "role": "sub-hero-bg",
+    "page": "various",
+    "display": "full-bleed",
+    "size_bytes": 45596,
+    "source": "text-to-image"
+  },
+  "sub-oem-v3": {
+    "id": "sub-oem-v3",
+    "file": "sub-oem-v3.webp",
+    "role": "sub-hero-bg",
+    "page": "various",
+    "display": "full-bleed",
+    "size_bytes": 83904,
+    "source": "text-to-image"
+  },
+  "sub-oem-v4": {
+    "id": "sub-oem-v4",
+    "file": "sub-oem-v4.webp",
+    "role": "sub-hero-bg",
+    "page": "various",
+    "display": "full-bleed",
+    "size_bytes": 65594,
+    "source": "text-to-image"
+  },
+  "sub-oem-v5": {
+    "id": "sub-oem-v5",
+    "file": "sub-oem-v5.webp",
+    "role": "sub-hero-bg",
+    "page": "various",
+    "display": "full-bleed",
+    "size_bytes": 96562,
+    "source": "text-to-image"
+  },
+  "diagram-material-apps-v2": {
+    "id": "diagram-material-apps-v2",
+    "file": "diagram-material-apps-v2.webp",
+    "role": "technical-diagram",
+    "page": "various",
+    "display": "inline-large",
+    "size_bytes": 108320,
+    "source": "text-to-image"
+  },
+  "diagram-material-apps-v3": {
+    "id": "diagram-material-apps-v3",
+    "file": "diagram-material-apps-v3.webp",
+    "role": "technical-diagram",
+    "page": "various",
+    "display": "inline-large",
+    "size_bytes": 100870,
+    "source": "text-to-image"
+  },
+  "diagram-material-apps-v4": {
+    "id": "diagram-material-apps-v4",
+    "file": "diagram-material-apps-v4.webp",
+    "role": "technical-diagram",
+    "page": "various",
+    "display": "inline-large",
+    "size_bytes": 126146,
+    "source": "text-to-image"
+  },
+  "diagram-material-apps-v5": {
+    "id": "diagram-material-apps-v5",
+    "file": "diagram-material-apps-v5.webp",
+    "role": "technical-diagram",
+    "page": "various",
+    "display": "inline-large",
+    "size_bytes": 142040,
+    "source": "text-to-image"
+  },
+  "sub-tech-material-v2": {
+    "id": "sub-tech-material-v2",
+    "file": "sub-tech-material-v2.webp",
+    "role": "sub-hero-bg",
+    "page": "various",
+    "display": "full-bleed",
+    "size_bytes": 86956,
+    "source": "text-to-image"
+  },
+  "sub-tech-material-v3": {
+    "id": "sub-tech-material-v3",
+    "file": "sub-tech-material-v3.webp",
+    "role": "sub-hero-bg",
+    "page": "various",
+    "display": "full-bleed",
+    "size_bytes": 60304,
+    "source": "text-to-image"
+  },
+  "sub-tech-material-v4": {
+    "id": "sub-tech-material-v4",
+    "file": "sub-tech-material-v4.webp",
+    "role": "sub-hero-bg",
+    "page": "various",
+    "display": "full-bleed",
+    "size_bytes": 218968,
+    "source": "text-to-image"
+  },
+  "sub-rd-lab-v2": {
+    "id": "sub-rd-lab-v2",
+    "file": "sub-rd-lab-v2.webp",
+    "role": "sub-hero-bg",
+    "page": "various",
+    "display": "full-bleed",
+    "size_bytes": 123058,
+    "source": "text-to-image"
+  },
+  "sub-rd-lab-v3": {
+    "id": "sub-rd-lab-v3",
+    "file": "sub-rd-lab-v3.webp",
+    "role": "sub-hero-bg",
+    "page": "various",
+    "display": "full-bleed",
+    "size_bytes": 147036,
+    "source": "text-to-image"
+  },
+  "sub-rd-lab-v4": {
+    "id": "sub-rd-lab-v4",
+    "file": "sub-rd-lab-v4.webp",
+    "role": "sub-hero-bg",
+    "page": "various",
+    "display": "full-bleed",
+    "size_bytes": 109514,
+    "source": "text-to-image"
+  },
+  "sub-edu-v2": {
+    "id": "sub-edu-v2",
+    "file": "sub-edu-v2.webp",
+    "role": "sub-hero-bg",
+    "page": "various",
+    "display": "full-bleed",
+    "size_bytes": 103962,
+    "source": "text-to-image"
+  },
+  "sub-edu-v3": {
+    "id": "sub-edu-v3",
+    "file": "sub-edu-v3.webp",
+    "role": "sub-hero-bg",
+    "page": "various",
+    "display": "full-bleed",
+    "size_bytes": 118272,
+    "source": "text-to-image"
+  },
+  "sub-edu-v4": {
+    "id": "sub-edu-v4",
+    "file": "sub-edu-v4.webp",
+    "role": "sub-hero-bg",
+    "page": "various",
+    "display": "full-bleed",
+    "size_bytes": 115796,
+    "source": "text-to-image"
+  },
+  "sub-distribution-v2": {
+    "id": "sub-distribution-v2",
+    "file": "sub-distribution-v2.webp",
+    "role": "sub-hero-bg",
+    "page": "various",
+    "display": "full-bleed",
+    "size_bytes": 163898,
+    "source": "text-to-image"
+  },
+  "sub-distribution-v3": {
+    "id": "sub-distribution-v3",
+    "file": "sub-distribution-v3.webp",
+    "role": "sub-hero-bg",
+    "page": "various",
+    "display": "full-bleed",
+    "size_bytes": 129922,
+    "source": "text-to-image"
+  },
+  "sub-distribution-v4": {
+    "id": "sub-distribution-v4",
+    "file": "sub-distribution-v4.webp",
+    "role": "sub-hero-bg",
+    "page": "various",
+    "display": "full-bleed",
+    "size_bytes": 149672,
+    "source": "text-to-image"
+  },
+  "sub-certifications-v2": {
+    "id": "sub-certifications-v2",
+    "file": "sub-certifications-v2.webp",
+    "role": "sub-hero-bg",
+    "page": "various",
+    "display": "full-bleed",
+    "size_bytes": 99648,
+    "source": "text-to-image"
+  }
+}
