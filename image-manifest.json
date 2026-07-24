@@ -241,5 +241,59 @@
     "display": "full-bleed",
     "size_bytes": 41536,
     "source": "text-to-image"
+  },
+  "diagram-material-comp-v2": {
+    "id": "diagram-material-comp-v2",
+    "file": "diagram-material-comp-v2.webp",
+    "role": "technical-diagram",
+    "page": "various",
+    "display": "inline-large",
+    "size_bytes": 90700,
+    "source": "text-to-image"
+  },
+  "diagram-material-comp-v3": {
+    "id": "diagram-material-comp-v3",
+    "file": "diagram-material-comp-v3.webp",
+    "role": "technical-diagram",
+    "page": "various",
+    "display": "inline-large",
+    "size_bytes": 78564,
+    "source": "text-to-image"
+  },
+  "diagram-material-comp-v4": {
+    "id": "diagram-material-comp-v4",
+    "file": "diagram-material-comp-v4.webp",
+    "role": "technical-diagram",
+    "page": "various",
+    "display": "inline-large",
+    "size_bytes": 102534,
+    "source": "text-to-image"
+  },
+  "diagram-corexy-speed-v2": {
+    "id": "diagram-corexy-speed-v2",
+    "file": "diagram-corexy-speed-v2.webp",
+    "role": "technical-diagram",
+    "page": "various",
+    "display": "inline-large",
+    "size_bytes": 141318,
+    "source": "text-to-image"
+  },
+  "diagram-corexy-speed-v3": {
+    "id": "diagram-corexy-speed-v3",
+    "file": "diagram-corexy-speed-v3.webp",
+    "role": "technical-diagram",
+    "page": "various",
+    "display": "inline-large",
+    "size_bytes": 92602,
+    "source": "text-to-image"
+  },
+  "diagram-corexy-speed-v4": {
+    "id": "diagram-corexy-speed-v4",
+    "file": "diagram-corexy-speed-v4.webp",
+    "role": "technical-diagram",
+    "page": "various",
+    "display": "inline-large",
+    "size_bytes": 76338,
+    "source": "text-to-image"
   }
 }
