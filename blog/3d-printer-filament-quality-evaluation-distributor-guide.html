@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="/generated/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="/generated/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/generated/icon-192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="/generated/icon-512.png">
+  <title>How to Evaluate 3D Printer Filament Quality — A Distributor's Supplier Auditing Guide: Diameter, Moisture &amp; Winding | Precise3D</title>
+  <meta name="description" content="How distributors audit filament suppliers: diameter consistency (±0.02mm vs ±0.05mm), ovality measurement, moisture content testing, spool winding quality, and the 7-point QC checklist that separates premium from budget filament.">
+  <meta property="og:title" content="How to Evaluate 3D Printer Filament Quality: A Distributor's Supplier Audit Guide">
+  <meta property="og:description" content="Diameter consistency, ovality, moisture content, spool winding — the 7-point QC checklist for auditing filament suppliers.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://ems-3dp.com/blog/3d-printer-filament-quality-evaluation-distributor-guide">
+  <link rel="canonical" href="https://ems-3dp.com/blog/3d-printer-filament-quality-evaluation-distributor-guide">
+  <link rel="stylesheet" href="/design-tokens.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="/" class="logo"><img src="/generated/logo-icon.png" alt="" width="32" height="32" aria-hidden="true"><span class="logo-text">ems-3dp</span></a>
+    <nav class="nav-main">
+      <a href="/">Home</a>
+      <a href="/products/">Products</a>
+      <div class="nav-dropdown">
+        <span class="nav-dropdown-toggle">Solutions</span>
+        <div class="nav-dropdown-menu">
+          <a href="/solutions/distribution/">Distribution</a>
+          <a href="/solutions/oem-white-label/">OEM &amp; White Label</a>
+          <a href="/solutions/education/">Education</a>
+        </div>
+      </div>
+      <div class="nav-dropdown">
+        <span class="nav-dropdown-toggle">Industries</span>
+        <div class="nav-dropdown-menu">
+          <a href="/industries/education-research/">Education &amp; Research</a>
+          <a href="/industries/healthcare-dental/">Healthcare &amp; Dental</a>
+          <a href="/industries/manufacturing-prototyping/">Manufacturing &amp; Prototyping</a>
+          <a href="/industries/retail-consumer/">Retail &amp; Consumer</a>
+          <a href="/industries/jewelry-fashion/">Jewelry &amp; Fashion</a>
+          <a href="/industries/engineering-architecture/">Engineering &amp; Architecture</a>
+        </div>
+      </div>
+      <div class="nav-dropdown">
+        <span class="nav-dropdown-toggle">Resources</span>
+        <div class="nav-dropdown-menu">
+          <a href="/design-guides/">Design Guides</a>
+          <a href="/shipping/">Shipping</a>
+          <a href="/how-it-works/">How It Works</a>
+          <a href="/faq/">FAQ</a>
+        </div>
+      </div>
+      <div class="nav-dropdown">
+        <span class="nav-dropdown-toggle">Company</span>
+        <div class="nav-dropdown-menu">
+          <a href="/about/">About</a>
+          <a href="/factory/">Factory</a>
+          <a href="/quality/">Quality</a>
+          <a href="/engineering/">Engineering</a>
+        </div>
+      </div>
+      <a href="/blog/">Blog</a>
+      <a href="/contact/">Contact</a>
+    </nav>
+    <div class="header-actions"><a href="javascript:void(0)" class="btn btn-primary" onclick="openModal()">Request Quote</a></div>
+  </div>
+</header>
+
+<main>
+  <section class="sub-hero">
+    <div class="sub-hero-bg"><img src="/generated/blog-cover-filament-quality.webp" alt="" aria-hidden="true"><div class="sub-hero-overlay"></div></div>
+    <div class="container sub-hero-content">
+      <p class="overline">Distributor Guide &bull; July 2026</p>
+      <h1 class="h1" style="font-size:var(--text-4xl)">How to Evaluate 3D Printer Filament Quality — A Distributor's Supplier Auditing Guide</h1>
+      <p class="body-lg">Filament is the highest-volume, highest-frequency consumable in 3D printing — and the one where quality variance most directly destroys customer trust. A single spool of badly wound, out-of-spec filament that jams a customer's printer mid-print can cost you that customer permanently. This guide gives distributors the exact measurement methods, tolerance thresholds, and supplier audit checklist to ensure every spool you sell performs as promised.</p>
+    </div>
+  </section>
+
+  <article class="section">
+    <div class="container" style="max-width:760px">
+      <div class="blog-body">
+        <p>Filament quality is invisible at the point of sale. A spool of PLA on a shelf looks identical whether it is premium material extruded to ±0.02mm tolerance in a climate-controlled clean room, or budget material extruded to ±0.08mm in a warehouse with open windows. The customer discovers the difference 3 hours into a print, when a diameter spike causes a nozzle jam, or a section of brittle filament snaps in the extruder, or moisture in the material produces a bubbled, weak print surface. And when that happens, the customer does not blame the filament supplier — they blame the distributor who sold it to them. For the complete filament stocking strategy, see our <a href="/blog/pla-petg-abs-tpu-filament-stocking-guide-distributor-2026.html">filament stocking guide</a>.</p>
+
+        <p>This guide covers the five quality dimensions every distributor should verify before committing to a filament supplier — and the seven-point supplier audit checklist to use during factory visits. For distributors who brand their own filament (OEM/white-label), this guide also covers the specification sheet you should include in your supplier contract — because the tolerance numbers you agree to on paper are the only leverage you have when quality drifts six months into the relationship.</p>
+
+        <div class="blog-img"><img src="/generated/blog-diagram-filament-quality-1.webp" alt="Close-up macro shot of digital calipers measuring 1.75mm 3D printer filament diameter on a clean white surface, precision measurement display visible, spool of filament in soft background focus" loading="lazy"></div>
+
+        <h2>Dimension 1: Diameter Consistency — The Single Most Important Metric</h2>
+
+        <p>Filament diameter is the foundation of print quality. A 3D printer's extruder calculates volumetric flow based on the assumption that the filament entering the hotend has a known, consistent diameter — typically 1.75mm. When the actual diameter deviates from 1.75mm, the extruder pushes too much or too little plastic through the nozzle, producing visible artifacts: over-extrusion bulges, under-extrusion gaps, and inconsistent layer bonding.</p>
+
+        <p>Industry-standard filament diameter tolerance is usually advertised as <strong>±0.05mm or ±0.02mm</strong>. The difference between these two numbers is the difference between acceptable and excellent — but only if the supplier actually delivers what they advertise. Many budget filament brands print "±0.02mm" on the box but ship material that measures ±0.06mm when independently tested. The only way to know is to measure.</p>
+
+        <div class="specs-table" style="margin:var(--space-8) 0">
+          <div class="spec-row"><span>Tolerance Grade</span><span class="spec-val">Diameter Range</span><span class="spec-val">Print Quality Impact</span><span class="spec-val">Typical Supplier Type</span><span class="spec-val">Price/kg (bulk)</span></div>
+          <div class="spec-row"><span>Premium</span><span class="spec-val">1.75 ±0.02mm</span><span class="spec-val">Invisible extrusion variation. Suitable for detailed architectural and engineering prints</span><span class="spec-val">Dedicated filament manufacturers with in-line laser measurement, climate-controlled extrusion rooms</span><span class="spec-val">$8–$12</span></div>
+          <div class="spec-row"><span>Standard</span><span class="spec-val">1.75 ±0.05mm</span><span class="spec-val">Minor extrusion variation, barely visible on functional parts. Acceptable for 90% of consumer use cases</span><span class="spec-val">Mid-tier manufacturers, some OEM private-label suppliers</span><span class="spec-val">$5–$8</span></div>
+          <div class="spec-row"><span>Budget</span><span class="spec-val">1.75 ±0.08mm+</span><span class="spec-val">Visible over/under-extrusion bands, nozzle jam risk above 0.10mm deviation. Unacceptable for consumer sale</span><span class="spec-val">Low-cost manufacturers, no in-line QC, manual diameter checks only</span><span class="spec-val">$3–$5</span></div>
+        </div>
+
+        <p>The measurement protocol distributors should use when auditing a supplier: take a <strong>5-meter sample from the beginning, middle, and end of three randomly selected spools</strong> from a production batch. Measure diameter every 10cm along each 5m sample using a digital micrometer with 0.001mm resolution — that is 150 measurements per spool, 450 measurements across the three-spool sample. If more than 2% of measurements fall outside the claimed tolerance band, the supplier's quality claim is not credible. This takes approximately 30 minutes with a digital micrometer and a simple measurement log spreadsheet, and it tells you more about the supplier's quality control than any certificate they can print. For the precision tools needed in the QC workflow, our <a href="/blog/3d-printer-advanced-calibration-e-steps-pid-flow-guide-distributor.html">advanced calibration guide</a> covers the full toolkit.</p>
+
+        <h2>Dimension 2: Ovality — The Hidden Diameter Problem</h2>
+
+        <p>Diameter consistency can pass inspection while ovality still ruins prints. A filament that measures 1.75mm across the X-axis but 1.82mm across the Y-axis has <strong>0.07mm of ovality</strong> — the extruder sees an alternating thick-thin-thick-thin profile as the filament rotates through the extruder gears. The result is a rhythmic extrusion pattern that appears as repeating vertical bands on the print surface.</p>
+
+        <p>Ovality is measured by taking each diameter reading in <strong>two perpendicular axes</strong> and calculating the difference. Any filament with ovality exceeding 0.03mm should be rejected — the print quality degradation is visible to the end user and generates support tickets that cost the distributor far more than the per-kg savings on the filament itself. The most common cause of ovality is a worn extrusion die that has become elliptical over time, and the fix is a die replacement that costs the supplier approximately $200 — a trivial cost compared to the distributor relationship damage caused by shipping oval filament.</p>
+
+        <div class="blog-img"><img src="/generated/blog-diagram-filament-quality-2.webp" alt="Macro close-up comparison of two 3D printer filament cross-sections side by side: perfectly round 1.75mm filament on left versus visibly oval cross-section on right, both on dark reflective surface, digital caliper measurement context" loading="lazy"></div>
+
+        <h2>Dimension 3: Moisture Content — The Shelf-Life Determinant</h2>
+
+        <p>Moisture is the silent filament killer. PLA absorbs approximately 0.3–0.5% of its weight in moisture under normal ambient conditions over 6 months. PETG absorbs 0.8–1.2%. Nylon absorbs 2–3% within 24 hours of exposure. When moisture-laden filament enters a 200°C+ hotend, the water instantly vaporizes, creating steam pockets that rupture through the extruded plastic — producing popping sounds during printing, bubbled surface finish, and dramatically reduced interlayer adhesion strength.</p>
+
+        <p>The moisture content of incoming filament should be verified at receipt and monitored throughout storage. The measurement method is straightforward: weigh a 10g filament sample on a 0.01g-resolution scale, dry it in a food dehydrator or filament dryer at the material's recommended drying temperature for 4 hours, and re-weigh. The weight loss percentage is the moisture content. Acceptable thresholds:</p>
+
+        <div class="specs-table" style="margin:var(--space-8) 0">
+          <div class="spec-row"><span>Material</span><span class="spec-val">Max Moisture at Receipt</span><span class="spec-val">Drying Temperature</span><span class="spec-val">Drying Time</span><span class="spec-val">Vacuum Seal Required?</span></div>
+          <div class="spec-row"><span>PLA</span><span class="spec-val">&lt;0.3%</span><span class="spec-val">45–50°C</span><span class="spec-val">4 hours</span><span class="spec-val">Recommended, not mandatory</span></div>
+          <div class="spec-row"><span>PETG</span><span class="spec-val">&lt;0.5%</span><span class="spec-val">60–65°C</span><span class="spec-val">4–6 hours</span><span class="spec-val">Yes — hygroscopic, absorbs ambient moisture quickly</span></div>
+          <div class="spec-row"><span>ABS</span><span class="spec-val">&lt;0.3%</span><span class="spec-val">70–80°C</span><span class="spec-val">4 hours</span><span class="spec-val">Recommended</span></div>
+          <div class="spec-row"><span>TPU</span><span class="spec-val">&lt;0.5%</span><span class="spec-val">50–55°C</span><span class="spec-val">5 hours</span><span class="spec-val">Yes — extremely hygroscopic</span></div>
+          <div class="spec-row"><span>Nylon/PA</span><span class="spec-val">&lt;1.0% at receipt (will need drying before use)</span><span class="spec-val">70–80°C</span><span class="spec-val">6–8 hours</span><span class="spec-val">Yes — mandatory, absorbs moisture within hours</span></div>
+        </div>
+
+        <p>The most important supplier requirement is <strong>vacuum sealing with a fresh desiccant pack</strong>. Every spool should be vacuum-sealed at the factory within 24 hours of extrusion. The desiccant pack inside should be a minimum of 10g of silica gel or molecular sieve — the tiny 2g packets found in budget filament are decorative, not functional. A simple test: take a freshly received vacuum-sealed spool, cut open the bag, and place the desiccant pack on a 0.01g scale. If it weighs less than 8g, the supplier is cutting corners on packaging. If the vacuum bag does not audibly "whoosh" when opened — indicating pressure differential — the seal has failed and the filament has been absorbing ambient moisture during transit. For guidance on how to help customers manage filament once it is in their hands, see our <a href="/blog/filament-drying-storage-guide-distributor-2026.html">filament drying and storage guide</a>.</p>
+
+        <h2>Dimension 4: Spool Winding Quality — The Jam Prevention Metric</h2>
+
+        <p>A perfectly wound spool feeds filament smoothly from the first meter to the last. A poorly wound spool creates tangles, cross-overs, and snags that cause print failures — typically at hour 6 of an 8-hour print, when the customer is asleep. Spool winding quality is the most underrated filament quality metric because it does not show up in diameter measurement data, yet it causes more support tickets than any other defect.</p>
+
+        <p>There are three winding defects to inspect for when evaluating a supplier's spools:</p>
+
+        <div class="specs-table" style="margin:var(--space-8) 0">
+          <div class="spec-row"><span>Defect</span><span class="spec-val">What It Looks Like</span><span class="spec-val">Cause</span><span class="spec-val">Consequence</span></div>
+          <div class="spec-row"><span>Cross-over winding</span><span class="spec-val">Filament strands cross over each other on the spool, forming an X pattern visible on the spool surface</span><span class="spec-val">Winding machine tension inconsistent or spool traverse speed mismatched to extrusion speed</span><span class="spec-val">Filament snags under crossed strand during unwinding, extruder gear grinds, print fails</span></div>
+          <div class="spec-row"><span>Loose end tuck</span><span class="spec-val">The free end of the filament is not properly secured in the spool's edge holes — it springs loose inside the vacuum bag</span><span class="spec-val">Operator inattention; no automated end-tucking mechanism on the winding line</span><span class="spec-val">Customer opens bag, filament end is loose, tangles form in the first 2 meters</span></div>
+          <div class="spec-row"><span>Uneven layer density</span><span class="spec-val">Some sections of the spool are wound tightly, others loosely — visible as alternating tight/loose bands</span><span class="spec-val">Tension control system out of calibration or manual tension adjustment</span><span class="spec-val">Filament binds in the spool when unwinding from a tight section, extruder skips steps</span></div>
+        </div>
+
+        <p>The supplier audit for winding quality is simple: take three spools from the production line, manually pull 20 meters of filament from each spool at a consistent speed, and count snags. Any spool with more than <strong>zero snags in 20 meters</strong> is a winding quality fail. The spool should also be weighed to confirm the net filament weight matches the label — a variance of more than ±3% indicates either the winding machine's length counter is miscalibrated or the supplier is short-filling spools.</p>
+
+        <div class="blog-img"><img src="/generated/blog-diagram-filament-quality-3.webp" alt="Side-by-side comparison on dark industrial workbench: perfectly wound 3D printer filament spool with uniform tight layers on left versus poorly wound spool with visible cross-over tangles and uneven layer density on right, harsh overhead lighting emphasizing surface texture" loading="lazy"></div>
+
+        <h2>Dimension 5: Color Consistency and Material Additives</h2>
+
+        <p>Color consistency across batches matters more than most distributors realize. A customer who buys two spools of "Precise3D Matte Black PLA" six months apart expects them to be the same color — and when they visibly are not, the customer perceives a brand quality problem, even if the filament prints perfectly. Color variation between batches of more than <strong>ΔE 1.5</strong> (barely perceptible) is a supplier QC issue. Variation exceeding ΔE 3.0 is visible to any customer and will generate complaints.</p>
+
+        <p>The practical audit method does not require a spectrophotometer. Request <strong>color swatch cards from the last three production batches</strong> — small printed chips of the actual filament material — and compare them side by side under daylight-balanced lighting (5000K). If you can see a color difference without squinting, customers will see it too. The supplier should be able to explain their masterbatch (color concentrate) sourcing and mixing process. A supplier who buys masterbatch from different vendors depending on spot price will have batch-to-batch color drift. A supplier with a single approved masterbatch supplier and automated dosing will have consistent color.</p>
+
+        <p>Beyond color, material additives require verification. "PLA+" and "Tough PLA" are marketing terms — they mean different things to different manufacturers. The supplier should provide the <strong>specific impact modifier or copolymer blend</strong> used to achieve the claimed properties. If they cannot or will not name the additive, the material is likely standard PLA with a "+" on the label. Distributors selling engineering-grade materials to professional customers cannot afford to discover this distinction through customer returns. For the full engineering material portfolio, see our <a href="/blog/engineering-filaments-distributor-guide.html">engineering filaments guide</a>.</p>
+
+        <h2>The 7-Point Supplier Audit Checklist</h2>
+
+        <p>When visiting a filament supplier's factory — or commissioning a third-party audit — these are the seven checkpoints that separate professional-grade manufacturers from commodity extruders. Each checkpoint maps to a quality dimension covered above:</p>
+
+        <div class="specs-table" style="margin:var(--space-8) 0">
+          <div class="spec-row"><span>#</span><span class="spec-val">Checkpoint</span><span class="spec-val">What to Verify</span><span class="spec-val">Pass/Fail Criteria</span></div>
+          <div class="spec-row"><span>1</span><span class="spec-val">In-line laser diameter measurement</span><span class="spec-val">Is there a laser micrometer on the extrusion line measuring diameter in real time? What is the sampling frequency?</span><span class="spec-val">PASS: Laser micrometer with ≥100 readings/second, closed-loop feedback to extruder speed. FAIL: Manual caliper checks only</span></div>
+          <div class="spec-row"><span>2</span><span class="spec-val">Climate-controlled extrusion environment</span><span class="spec-val">Is the extrusion area temperature and humidity controlled? What are the setpoints?</span><span class="spec-val">PASS: 22–26°C, <40% RH, positive air pressure (clean room overpressure). FAIL: Open warehouse, no climate control</span></div>
+          <div class="spec-row"><span>3</span><span class="spec-val">Raw material traceability</span><span class="spec-val">Can the supplier trace every spool back to a specific raw resin lot? Is the resin supplier consistent?</span><span class="spec-val">PASS: Lot-level traceability from resin receipt to finished spool. FAIL: No lot tracking or resin sourced from spot market</span></div>
+          <div class="spec-row"><span>4</span><span class="spec-val">Vacuum sealing within 24 hours</span><span class="spec-val">How long after extrusion is filament vacuum sealed? What desiccant is used?</span><span class="spec-val">PASS: <24 hours from extrusion to seal, ≥10g fresh silica gel or molecular sieve desiccant. FAIL: >48 hours or <5g desiccant</span></div>
+          <div class="spec-row"><span>5</span><span class="spec-val">Automated spool winding</span><span class="spec-val">Is the winding machine automated with tension control? Does it have an end-tucking mechanism?</span><span class="spec-val">PASS: Automated winding with active tension control and automatic end-tuck. FAIL: Manual winding or tension adjusted by operator feel</span></div>
+          <div class="spec-row"><span>6</span><span class="spec-val">Batch QC sampling protocol</span><span class="spec-val">What QC samples are taken per batch? How many spools tested? What tests performed?</span><span class="spec-val">PASS: ≥3 spools per batch, diameter+ovality+moisture tested, results documented per batch. FAIL: No documented batch QC or one-spool-per-batch sampling</span></div>
+          <div class="spec-row"><span>7</span><span class="spec-val">Color masterbatch consistency</span><span class="spec-val">Single masterbatch supplier or multiple? Automated or manual color dosing?</span><span class="spec-val">PASS: Single approved masterbatch supplier, automated gravimetric dosing, color swatch retention per batch. FAIL: Multiple masterbatch sources, manual color mixing</span></div>
+        </div>
+
+        <p>A supplier that passes all seven checkpoints will deliver filament that generates near-zero customer complaints — and the slightly higher per-kg cost (typically $1–2 more than a commodity supplier) is recovered many times over in avoided returns, support tickets, and customer churn. A supplier that fails three or more checkpoints should not be your primary filament source, regardless of price. The cost of poor-quality filament is not the purchase price — it is the lost customers who blame your brand for failed prints. For the complete factory audit framework, see our <a href="/blog/3d-printer-factory-audit-qc-checklist-distributor-guide.html">factory audit checklist</a>.</p>
+
+        <div class="cta-card" style="margin-top:var(--space-12)">
+          <p class="overline">Quality Starts With Your Supplier</p>
+          <h2 class="h2">Get the Filament QC Protocol and Supplier Audit Template</h2>
+          <p class="body-lg">Precise3D distributors receive our complete filament quality control protocol: the 7-point audit checklist in printable format, the diameter measurement spreadsheet template, moisture content testing procedure, and a list of pre-vetted filament manufacturers that have passed our internal audit. Sell filament your customers trust.</p>
+          <div class="cta-actions">
+            <a href="javascript:void(0)" class="btn btn-primary btn-lg" onclick="openModal()">Become a Distributor</a>
+          </div>
+        </div>
+        <p style="margin-top:var(--space-8)">
+          <a href="/blog/" class="btn btn-ghost">&larr; Back to Blog</a>
+        </p>
+      </div>
+    </div>
+  </article>
+</main>
+
+<footer class="site-footer section">
+  <div class="container" style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:var(--space-8);padding-block:var(--space-12)">
+    <div style="max-width:320px">
+      <a href="/" class="logo" style="margin-bottom:var(--space-4);display:inline-block"><svg width="140" height="28" viewBox="0 0 140 28" fill="none"><rect x="0" y="2" width="24" height="24" rx="4" fill="#2563EB"/><path d="M6 14l4-4 4 4 4-4 4 4" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/><text x="32" y="21" fill="#F1F5F9" font-family="system-ui,sans-serif" font-size="18" font-weight="700">Precise3D</text></svg></a>
+      <p class="body-sm" style="color:var(--color-text-dim);margin-top:var(--space-3)">Factory-direct consumer 3D printers engineered in Shenzhen for distributors worldwide.</p>
+    </div>
+    <div><h4 class="h4" style="color:var(--color-text);margin-bottom:var(--space-4)">Products</h4><ul style="list-style:none;padding:0;display:flex;flex-direction:column;gap:var(--space-2)"><li><a href="/products/" class="body-sm" style="color:var(--color-text-dim);text-decoration:none">All Products</a></li><li><a href="/products/pro-x1/" class="body-sm" style="color:var(--color-text-dim);text-decoration:none">Pro X1</a></li><li><a href="/products/creator-c1/" class="body-sm" style="color:var(--color-text-dim);text-decoration:none">Creator C1</a></li><li><a href="/products/start-s1/" class="body-sm" style="color:var(--color-text-dim);text-decoration:none">Start S1</a></li></ul></div>
+    <div><h4 class="h4" style="color:var(--color-text);margin-bottom:var(--space-4)">Company</h4><ul style="list-style:none;padding:0;display:flex;flex-direction:column;gap:var(--space-2)"><li><a href="/about/" class="body-sm" style="color:var(--color-text-dim);text-decoration:none">About</a></li><li><a href="/blog/" class="body-sm" style="color:var(--color-text-dim);text-decoration:none">Blog</a></li><li><a href="/contact/" class="body-sm" style="color:var(--color-text-dim);text-decoration:none">Contact</a></li></ul></div>
+  </div>
+  <div class="container" style="border-top:1px solid var(--color-border);padding-block:var(--space-6);text-align:center"><p class="body-xs" style="color:var(--color-text-dim)">&copy; 2026 Precise3D. All rights reserved.</p></div>
+</footer>
+
+<div class="modal-overlay" id="inquiryModal">
+  <div class="modal-card">
+    <button class="modal-close" onclick="closeModal()" aria-label="Close">&times;</button>
+    <h3 class="h3" style="margin-bottom:var(--space-6)">Request Distributor Information</h3>
+    <form id="inquiryForm" onsubmit="handleInquiry(event)" style="display:flex;flex-direction:column;gap:var(--space-4)">
+      <input type="text" name="name" placeholder="Full Name *" required style="padding:var(--space-3);background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-md);color:var(--color-text)">
+      <input type="email" name="email" placeholder="Business Email *" required style="padding:var(--space-3);background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-md);color:var(--color-text)">
+      <input type="text" name="company" placeholder="Company Name" style="padding:var(--space-3);background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-md);color:var(--color-text)">
+      <textarea name="message" placeholder="Tell us about your market and requirements" rows="3" style="padding:var(--space-3);background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-md);color:var(--color-text);resize:vertical"></textarea>
+      <button type="submit" class="btn btn-primary btn-lg">Submit Enquiry</button>
+    </form>
+  </div>
+</div>
+
+<script>
+function openModal(){document.getElementById('inquiryModal').classList.add('open')}
+function closeModal(){document.getElementById('inquiryModal').classList.remove('open')}
+document.getElementById('inquiryModal').addEventListener('click',function(e){if(e.target===this)closeModal()})
+</script>
+
+<style>
+.blog-body{color:var(--color-text-muted);font-size:var(--text-base);line-height:1.85}
+.blog-body p{margin-bottom:var(--space-5)}
+.blog-body a{color:var(--color-accent);text-decoration:underline;text-underline-offset:2px}
+.blog-body h2{font-size:var(--text-2xl);font-weight:600;color:var(--color-text);margin-top:var(--space-12);margin-bottom:var(--space-5)}
+.blog-body strong{color:var(--color-text)}
+.blog-body ul{margin-bottom:var(--space-5);padding-left:var(--space-6)}
+.blog-body li{margin-bottom:var(--space-2);color:var(--color-text-muted)}
+.specs-table{display:flex;flex-direction:column;gap:var(--space-3);padding:var(--space-6);background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-lg)}
+.spec-row{display:flex;justify-content:space-between;font-size:var(--text-sm);padding-block:.15rem}
+.spec-row span:first-child{color:var(--color-text-dim);flex:1}
+.spec-val{color:var(--color-text);font-weight:600;font-family:var(--font-mono);font-size:var(--text-xs);text-align:right;min-width:80px}
+</style>
+<script src="../inquiry-handler.js"></script>
+</body>
+</html>

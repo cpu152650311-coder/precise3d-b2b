@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="/generated/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="/generated/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/generated/icon-192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="/generated/icon-512.png">
+  <title>Print Farm Operations at Scale — Managing 50+ 3D Printers: Workflow, Scheduling &amp; Failure Detection for Distributor Customers | Precise3D</title>
+  <meta name="description" content="How distributors help customers run 50+ printer farms: workflow design, batch scheduling, AI failure detection (Obico/Spaghetti Detective), QC at scale, and the software stack that turns chaos into predictable output.">
+  <meta property="og:title" content="Print Farm Operations at Scale: Managing 50+ 3D Printers for Distributor Customers">
+  <meta property="og:description" content="Workflow design, batch scheduling, AI failure detection, QC at scale — the complete operations playbook for print farm customers.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://ems-3dp.com/blog/print-farm-operations-scale-distributor-guide">
+  <link rel="canonical" href="https://ems-3dp.com/blog/print-farm-operations-scale-distributor-guide">
+  <link rel="stylesheet" href="/design-tokens.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="/" class="logo"><img src="/generated/logo-icon.png" alt="" width="32" height="32" aria-hidden="true"><span class="logo-text">ems-3dp</span></a>
+    <nav class="nav-main">
+      <a href="/">Home</a>
+      <a href="/products/">Products</a>
+      <div class="nav-dropdown">
+        <span class="nav-dropdown-toggle">Solutions</span>
+        <div class="nav-dropdown-menu">
+          <a href="/solutions/distribution/">Distribution</a>
+          <a href="/solutions/oem-white-label/">OEM &amp; White Label</a>
+          <a href="/solutions/education/">Education</a>
+        </div>
+      </div>
+      <div class="nav-dropdown">
+        <span class="nav-dropdown-toggle">Industries</span>
+        <div class="nav-dropdown-menu">
+          <a href="/industries/education-research/">Education &amp; Research</a>
+          <a href="/industries/healthcare-dental/">Healthcare &amp; Dental</a>
+          <a href="/industries/manufacturing-prototyping/">Manufacturing &amp; Prototyping</a>
+          <a href="/industries/retail-consumer/">Retail &amp; Consumer</a>
+          <a href="/industries/jewelry-fashion/">Jewelry &amp; Fashion</a>
+          <a href="/industries/engineering-architecture/">Engineering &amp; Architecture</a>
+        </div>
+      </div>
+      <div class="nav-dropdown">
+        <span class="nav-dropdown-toggle">Resources</span>
+        <div class="nav-dropdown-menu">
+          <a href="/design-guides/">Design Guides</a>
+          <a href="/shipping/">Shipping</a>
+          <a href="/how-it-works/">How It Works</a>
+          <a href="/faq/">FAQ</a>
+        </div>
+      </div>
+      <div class="nav-dropdown">
+        <span class="nav-dropdown-toggle">Company</span>
+        <div class="nav-dropdown-menu">
+          <a href="/about/">About</a>
+          <a href="/factory/">Factory</a>
+          <a href="/quality/">Quality</a>
+          <a href="/engineering/">Engineering</a>
+        </div>
+      </div>
+      <a href="/blog/">Blog</a>
+      <a href="/contact/">Contact</a>
+    </nav>
+    <div class="header-actions"><a href="javascript:void(0)" class="btn btn-primary" onclick="openModal()">Request Quote</a></div>
+  </div>
+</header>
+
+<main>
+  <section class="sub-hero">
+    <div class="sub-hero-bg"><img src="/generated/blog-cover-print-farm-ops.webp" alt="" aria-hidden="true"><div class="sub-hero-overlay"></div></div>
+    <div class="container sub-hero-content">
+      <p class="overline">Distributor Guide &bull; July 2026</p>
+      <h1 class="h1" style="font-size:var(--text-4xl)">Print Farm Operations at Scale — Managing 50+ 3D Printers for Your Customers</h1>
+      <p class="body-lg">A customer running 5 printers is a hobbyist. A customer running 50 is a business — and they need your help to make it work. This guide covers the workflow design, scheduling systems, AI failure detection, quality control, and operational discipline that turns a room full of printers into a profitable print farm. Distributors who can sell this operational knowledge alongside the printers close bigger deals and earn recurring revenue from the software and service layer.</p>
+    </div>
+  </section>
+
+  <article class="section">
+    <div class="container" style="max-width:760px">
+      <div class="blog-body">
+        <p>When a customer buys their 25th printer, something changes. They stop caring about print speed and start caring about <strong>throughput per labor hour</strong>. They stop asking about bed leveling and start asking about <strong>batch scheduling</strong>. They stop comparing nozzle materials and start comparing <strong>failure detection systems</strong>. The psychology shifts from maker to manufacturer — and the distributor who understands this shift becomes an indispensable partner, not just a supplier. For the economics behind the decision to scale, start with our <a href="/blog/print-farm-economics-2026.html">print farm economics guide</a>, which covers the financial fundamentals.</p>
+
+        <p>This guide maps the operational layer that sits on top of those economics: the daily workflow of a 50-printer farm, the software stack that makes it possible, the failure detection systems that prevent catastrophic material waste, and the quality control framework that keeps customers coming back. It is written for distributors who want to sell not just printers but the operational capability to run them at scale.</p>
+
+        <div class="blog-img"><img src="/generated/blog-diagram-print-farm-1.webp" alt="Rows of identical 3D printers operating simultaneously in a print farm, LED-lit print chambers visible, finished parts collection area in foreground, industrial warehouse setting" loading="lazy"></div>
+
+        <h2>The 50-Printer Workflow: One Operator, Zero Chaos</h2>
+
+        <p>The fundamental question every print farm operator faces is: <strong>how many printers can one person manage?</strong> The answer depends entirely on workflow design. A poorly organized farm with 20 printers can overwhelm a full-time operator. A well-designed farm with 60 printers can be managed by one person working 6 hours a day. The difference is in the batch-and-queue system.</p>
+
+        <p>The proven workflow for print farms of 30–100 printers follows a <strong>three-phase cycle</strong> that repeats daily:</p>
+
+        <div class="specs-table" style="margin:var(--space-8) 0">
+          <div class="spec-row"><span>Phase</span><span class="spec-val">Duration</span><span class="spec-val">Operator Tasks</span><span class="spec-val">Printers Active</span></div>
+          <div class="spec-row"><span>1. Harvest &amp; Inspect</span><span class="spec-val">60–90 min</span><span class="spec-val">Remove completed prints, quick visual QC, sort by order, log defects</span><span class="spec-val">0–10 (winding down)</span></div>
+          <div class="spec-row"><span>2. Prep &amp; Launch</span><span class="spec-val">45–60 min</span><span class="spec-val">Clean beds, apply adhesive, load filament, queue next batch via farm manager</span><span class="spec-val">0–30 (ramping up)</span></div>
+          <div class="spec-row"><span>3. Monitor &amp; Respond</span><span class="spec-val">Ongoing</span><span class="spec-val">Watch failure detection dashboard, swap filament, clear completed jobs, handle exceptions</span><span class="spec-val">All printers running</span></div>
+        </div>
+
+        <p>The key insight is that phases 1 and 2 are <strong>scheduled around print completion times</strong>, not around the operator's clock. If 60 printers finish their 4-hour jobs at 2 PM, the harvest phase starts at 2 PM — not at a fixed shift time. This means the farm management software must track per-printer ETA and notify the operator when a batch is ready for harvest. The operator should never be idly waiting for printers to finish; printers should finish in clusters that optimize the operator's harvest-and-relaunch cycle. For the software ecosystem that enables this, our <a href="/blog/3d-printer-software-ecosystem-slicers-farm-management-distributor-guide.html">software ecosystem guide</a> covers slicers, farm managers, and remote control.</p>
+
+        <h2>The Print Farm Software Stack: Four Layers You Cannot Skip</h2>
+
+        <p>Running 50 printers without a software stack is like running a warehouse without an inventory system — possible for a week, disastrous by month three. The minimum viable software stack has four layers, and skipping any one of them creates a bottleneck that caps your customer's scale.</p>
+
+        <div class="specs-table" style="margin:var(--space-8) 0">
+          <div class="spec-row"><span>Layer</span><span class="spec-val">What It Does</span><span class="spec-val">Recommended Tool</span><span class="spec-val">Without It</span></div>
+          <div class="spec-row"><span>1. Farm Orchestrator</span><span class="spec-val">File upload, batch queue, per-printer job assignment, ETA tracking</span><span class="spec-val">OctoFarm, SimplyPrint, 3DPrinterOS</span><span class="spec-val">Manually SD-card each printer — 15 min/printer/day</span></div>
+          <div class="spec-row"><span>2. Failure Detection</span><span class="spec-val">AI camera monitoring for spaghetti, layer shift, bed adhesion loss</span><span class="spec-val">Obico (The Spaghetti Detective), OctoEverywhere</span><span class="spec-val">1 in 8 prints fail undetected, wasting 2–8 hours of printer time each</span></div>
+          <div class="spec-row"><span>3. Filament Management</span><span class="spec-val">Per-spool tracking, remaining filament estimation, auto-pause on runout</span><span class="spec-val">Spoolman + Filament Manager plugin</span><span class="spec-val">Prints fail mid-job from empty spools; operator discovers it 3 hours later</span></div>
+          <div class="spec-row"><span>4. Order-to-Print Pipeline</span><span class="spec-val">Customer order → automatic slicing → queue assignment → print → QC → ship</span><span class="spec-val">Custom (3Dverse, Treatstock API) or manual</span><span class="spec-val">Operator spends 40% of time on order admin, not printing</span></div>
+        </div>
+
+        <p>The biggest mistake distributors make is selling printers without mentioning this software stack. A customer buys 20 printers, discovers they cannot manage them, and blames the printers — when the real problem is that nobody told them they needed OctoFarm and a spaghetti detection camera on every machine. The distributor who includes a software recommendation sheet with every multi-unit sale earns trust. The distributor who also offers to pre-configure the software stack earns a service retainer. For the hardware that makes remote monitoring possible, see our <a href="/blog/3d-printer-remote-monitoring-cloud-connectivity-distributor-guide.html">remote monitoring and cloud connectivity guide</a>.</p>
+
+        <div class="blog-img"><img src="/generated/blog-diagram-print-farm-2.webp" alt="Close-up of a tablet screen showing OctoFarm dashboard with multiple printer tiles, job progress bars, and temperature readings, held by an operator in a print farm environment with printers visible in background" loading="lazy"></div>
+
+        <h2>Failure Detection: The Economics of Catching Spaghetti</h2>
+
+        <p>Failure detection is not a luxury feature for print farms — it is the single highest-ROI investment after the printers themselves. The math is unforgiving:</p>
+
+        <div class="specs-table" style="margin:var(--space-8) 0">
+          <div class="spec-row"><span>Scenario (50 printers, 8hr jobs)</span><span class="spec-val">Without AI Detection</span><span class="spec-val">With AI Detection</span></div>
+          <div class="spec-row"><span>Print failure rate (undetected)</span><span class="spec-val">12%</span><span class="spec-val">3%</span></div>
+          <div class="spec-row"><span>Failed jobs per day</span><span class="spec-val">6</span><span class="spec-val">1.5</span></div>
+          <div class="spec-row"><span>Wasted filament per day (avg 120g/job)</span><span class="spec-val">720g</span><span class="spec-val">180g</span></div>
+          <div class="spec-row"><span>Wasted printer-hours per day</span><span class="spec-val">48 hours</span><span class="spec-val">12 hours</span></div>
+          <div class="spec-row"><span>Annual filament waste cost ($20/kg)</span><span class="spec-val">$5,256</span><span class="spec-val">$1,314</span></div>
+          <div class="spec-row"><span>Lost revenue (printer-hours × $3/hr avg)</span><span class="spec-val">$52,560</span><span class="spec-val">$13,140</span></div>
+          <div class="spec-row"><span>Total annual cost of undetected failures</span><span class="spec-val"><strong>$57,816</strong></span><span class="spec-val"><strong>$14,454</strong></span></div>
+        </div>
+
+        <p>AI failure detection saves this hypothetical 50-printer farm <strong>$43,362 per year</strong>. The hardware cost is roughly $15–25 per printer for a Raspberry Pi camera module + $5/month per printer for Obico cloud monitoring. Total annual investment for 50 printers: $3,750. That is an 11.6:1 return on investment — better than any printer upgrade, faster hotend, or premium filament.</p>
+
+        <p>Two systems dominate the market: <strong>Obico</strong> (formerly The Spaghetti Detective) uses cloud-based machine learning to detect print failures within 30–90 seconds of occurrence and can automatically pause the printer. <strong>OctoEverywhere</strong> offers similar AI detection with the added benefit of free remote access — no port forwarding or VPN required. Both work with OctoPrint, Klipper/Mainsail, and Fluidd. The recommended setup for farm customers: a Raspberry Pi Zero 2 W with a v3 camera module on every printer, running OctoPrint with the Obico plugin, feeding into a single Obico Pro account that monitors all 50 printers from one dashboard. The distributor who pre-assembles these camera kits and sells them as a bundle with each printer creates an instant upsell that pays for itself in the customer's first month of operation.</p>
+
+        <h2>Batch Scheduling: The Hidden Multiplier</h2>
+
+        <p>The amateur print farm operator prints jobs one at a time as orders come in. The professional operator prints in <strong>scheduled batches</strong> that maximize throughput per labor hour. The difference in output between these two approaches at 50 printers is approximately 40% — the equivalent of 20 additional printers' worth of output from the same hardware.</p>
+
+        <p>Batch scheduling works on a simple principle: <strong>all printers in a batch start and finish together</strong>. If you have 50 printers and customer orders for 3D printed parts with varying print times (2 hours, 4 hours, 6 hours, 8 hours), you do not assign jobs randomly. You group jobs by estimated print time and launch them in synchronized waves:</p>
+
+        <div class="specs-table" style="margin:var(--space-8) 0">
+          <div class="spec-row"><span>Wave</span><span class="spec-val">Print Duration</span><span class="spec-val">Launch Time</span><span class="spec-val">Harvest Time</span><span class="spec-val">Printers Used</span></div>
+          <div class="spec-row"><span>Fast Batch</span><span class="spec-val">2–3 hours</span><span class="spec-val">8:00 AM</span><span class="spec-val">10:30 AM</span><span class="spec-val">15 printers</span></div>
+          <div class="spec-row"><span>Medium Batch</span><span class="spec-val">4–6 hours</span><span class="spec-val">10:30 AM</span><span class="spec-val">3:30 PM</span><span class="spec-val">25 printers</span></div>
+          <div class="spec-row"><span>Overnight Batch</span><span class="spec-val">8–12 hours</span><span class="spec-val">6:00 PM</span><span class="spec-val">6:00 AM</span><span class="spec-val">10 printers</span></div>
+        </div>
+
+        <p>With this schedule, one operator arrives at 8 AM to harvest the overnight batch, launch the fast batch, and begin post-processing. By 10:30 AM, the fast batch is done. The operator harvests, launches the medium batch, and spends the afternoon on QC and packaging while the medium batch runs. The operator leaves at 6 PM after launching the overnight batch. Total hands-on operator time: approximately 5 hours. Total printer output: 50 jobs per day. This is the efficiency multiplier that makes print farm economics work — and it is the operational playbook that distributors should teach their customers. For a complete framework on customer education and onboarding, see our <a href="/blog/3d-printer-customer-training-onboarding-distributor-guide.html">customer training programs guide</a>.</p>
+
+        <div class="blog-img"><img src="/generated/blog-diagram-print-farm-3.webp" alt="Close-up of 3D printed parts being removed from multiple printer build plates simultaneously, finished parts of various colors arranged in sorting bins by order number, clean organized workspace" loading="lazy"></div>
+
+        <h2>Quality Control at Scale: Inspecting 150 Parts Per Day</h2>
+
+        <p>When a print farm produces 50 jobs per day averaging 3 parts per job, the operator faces 150 parts that need quality inspection. Full metrology on every part is impossible. The alternative is a <strong>tiered QC system</strong> that catches defects efficiently:</p>
+
+        <div class="specs-table" style="margin:var(--space-8) 0">
+          <div class="spec-row"><span>QC Tier</span><span class="spec-val">What to Check</span><span class="spec-val">Time per Part</span><span class="spec-val">Catch Rate</span></div>
+          <div class="spec-row"><span>Level 1 — Visual</span><span class="spec-val">Layer adhesion integrity, surface finish, dimensional accuracy against reference (every part)</span><span class="spec-val">15 seconds</span><span class="spec-val">85% of defects</span></div>
+          <div class="spec-row"><span>Level 2 — Functional</span><span class="spec-val">Fit test in mating part, flexibility test, snap-fit assembly (1 per batch)</span><span class="spec-val">2 minutes</span><span class="spec-val">+10% of defects</span></div>
+          <div class="spec-row"><span>Level 3 — Dimensional</span><span class="spec-val">Caliper measurement on critical dimensions, tolerance verification (1 per 10 orders)</span><span class="spec-val">5 minutes</span><span class="spec-val">+3% of defects</span></div>
+        </div>
+
+        <p>Total QC time for 150 parts: approximately 45 minutes of Level 1 inspection + 10 minutes of Level 2 + 8 minutes of Level 3 = <strong>63 minutes per day</strong>. This catches roughly 98% of defects while keeping inspection time under 10% of the operator's shift. The parts that fail Level 1 are reprinted immediately in the next batch — the farm management software queues them automatically with a "reprint priority" flag.</p>
+
+        <p>The QC data also becomes a valuable feedback loop. If a specific printer consistently produces parts that fail Level 1 inspection, that printer gets flagged for maintenance — belt tension, nozzle replacement, or bed leveling. The farm management dashboard should display per-printer QC pass rates as a leading indicator of maintenance needs, weeks before a full failure occurs. For the maintenance framework that prevents these failures, our <a href="/blog/3d-printer-maintenance-distributor-guide.html">printer maintenance guide</a> covers the complete preventive schedule.</p>
+
+        <h2>Filament Management: The Supply Chain Inside Your Farm</h2>
+
+        <p>A 50-printer farm running 16 hours per day consumes approximately <strong>8–12 kg of filament per day</strong> — roughly 250–360 spools per month. Without a filament management system, the operator discovers an empty spool when a printer stops mid-job at 2 AM. With a system, the operator knows exactly how much filament remains on every spool and can plan changes around the batch schedule.</p>
+
+        <p>The minimum viable filament management system: <strong>Spoolman</strong>, an open-source filament inventory tracker that integrates with OctoPrint and Klipper. Each spool gets a QR code label when opened. The operator scans the QR code when loading a spool into a printer. The printer reports filament usage back to Spoolman after every job. When a spool drops below 50g remaining, Spoolman sends an alert. The operator never discovers an empty spool by surprise.</p>
+
+        <p>For print farms consuming more than 100 kg/month, the next step is <strong>bulk spool procurement</strong> — buying 5 kg or 10 kg master spools and respooling onto 1 kg spools in-house. Bulk PLA filament costs approximately $8–10/kg versus $15–20/kg for pre-spooled 1 kg rolls. At 250 kg/month, the savings are $1,250–$2,500 per month — enough to pay for a part-time operator. The respooling machine costs $200–400 and pays for itself in the first month. Distributors who offer bulk filament + a respooling machine as a package with multi-unit printer orders create a consumables revenue stream that dwarfs the printer margin. For the stocking strategy behind filament inventory, our <a href="/blog/pla-petg-abs-tpu-filament-stocking-guide-distributor-2026.html">filament stocking guide</a> covers the complete product mix.</p>
+
+        <div class="cta-card" style="margin-top:var(--space-12)">
+          <p class="overline">Partner With Precise3D</p>
+          <h2 class="h2">Get the Print Farm Operations Playbook and Software Configuration Guide</h2>
+          <p class="body-lg">Every Precise3D distributor receives our complete print farm operations package: pre-configured software stack recommendations, camera kit BOM, batch scheduling templates, and the QC inspection checklist. Sell the operational capability, not just the hardware.</p>
+          <div class="cta-actions">
+            <a href="javascript:void(0)" class="btn btn-primary btn-lg" onclick="openModal()">Become a Distributor</a>
+          </div>
+        </div>
+        <p style="margin-top:var(--space-8)">
+          <a href="/blog/" class="btn btn-ghost">&larr; Back to Blog</a>
+        </p>
+      </div>
+    </div>
+  </article>
+</main>
+
+<footer class="site-footer section">
+  <div class="container" style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:var(--space-8);padding-block:var(--space-12)">
+    <div style="max-width:320px">
+      <a href="/" class="logo" style="margin-bottom:var(--space-4);display:inline-block"><svg width="140" height="28" viewBox="0 0 140 28" fill="none"><rect x="0" y="2" width="24" height="24" rx="4" fill="#2563EB"/><path d="M6 14l4-4 4 4 4-4 4 4" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/><text x="32" y="21" fill="#F1F5F9" font-family="system-ui,sans-serif" font-size="18" font-weight="700">Precise3D</text></svg></a>
+      <p class="body-sm" style="color:var(--color-text-dim);margin-top:var(--space-3)">Factory-direct consumer 3D printers engineered in Shenzhen for distributors worldwide.</p>
+    </div>
+    <div><h4 class="h4" style="color:var(--color-text);margin-bottom:var(--space-4)">Products</h4><ul style="list-style:none;padding:0;display:flex;flex-direction:column;gap:var(--space-2)"><li><a href="/products/" class="body-sm" style="color:var(--color-text-dim);text-decoration:none">All Products</a></li><li><a href="/products/pro-x1/" class="body-sm" style="color:var(--color-text-dim);text-decoration:none">Pro X1</a></li><li><a href="/products/creator-c1/" class="body-sm" style="color:var(--color-text-dim);text-decoration:none">Creator C1</a></li><li><a href="/products/start-s1/" class="body-sm" style="color:var(--color-text-dim);text-decoration:none">Start S1</a></li></ul></div>
+    <div><h4 class="h4" style="color:var(--color-text);margin-bottom:var(--space-4)">Company</h4><ul style="list-style:none;padding:0;display:flex;flex-direction:column;gap:var(--space-2)"><li><a href="/about/" class="body-sm" style="color:var(--color-text-dim);text-decoration:none">About</a></li><li><a href="/blog/" class="body-sm" style="color:var(--color-text-dim);text-decoration:none">Blog</a></li><li><a href="/contact/" class="body-sm" style="color:var(--color-text-dim);text-decoration:none">Contact</a></li></ul></div>
+  </div>
+  <div class="container" style="border-top:1px solid var(--color-border);padding-block:var(--space-6);text-align:center"><p class="body-xs" style="color:var(--color-text-dim)">&copy; 2026 Precise3D. All rights reserved.</p></div>
+</footer>
+
+<div class="modal-overlay" id="inquiryModal">
+  <div class="modal-card">
+    <button class="modal-close" onclick="closeModal()" aria-label="Close">&times;</button>
+    <h3 class="h3" style="margin-bottom:var(--space-6)">Request Distributor Information</h3>
+    <form id="inquiryForm" onsubmit="handleInquiry(event)" style="display:flex;flex-direction:column;gap:var(--space-4)">
+      <input type="text" name="name" placeholder="Full Name *" required style="padding:var(--space-3);background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-md);color:var(--color-text)">
+      <input type="email" name="email" placeholder="Business Email *" required style="padding:var(--space-3);background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-md);color:var(--color-text)">
+      <input type="text" name="company" placeholder="Company Name" style="padding:var(--space-3);background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-md);color:var(--color-text)">
+      <textarea name="message" placeholder="Tell us about your market and requirements" rows="3" style="padding:var(--space-3);background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-md);color:var(--color-text);resize:vertical"></textarea>
+      <button type="submit" class="btn btn-primary btn-lg">Submit Enquiry</button>
+    </form>
+  </div>
+</div>
+
+<script>
+function openModal(){document.getElementById('inquiryModal').classList.add('open')}
+function closeModal(){document.getElementById('inquiryModal').classList.remove('open')}
+document.getElementById('inquiryModal').addEventListener('click',function(e){if(e.target===this)closeModal()})
+</script>
+
+<style>
+.blog-body{color:var(--color-text-muted);font-size:var(--text-base);line-height:1.85}
+.blog-body p{margin-bottom:var(--space-5)}
+.blog-body a{color:var(--color-accent);text-decoration:underline;text-underline-offset:2px}
+.blog-body h2{font-size:var(--text-2xl);font-weight:600;color:var(--color-text);margin-top:var(--space-12);margin-bottom:var(--space-5)}
+.blog-body strong{color:var(--color-text)}
+.blog-body ul{margin-bottom:var(--space-5);padding-left:var(--space-6)}
+.blog-body li{margin-bottom:var(--space-2);color:var(--color-text-muted)}
+.specs-table{display:flex;flex-direction:column;gap:var(--space-3);padding:var(--space-6);background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-lg)}
+.spec-row{display:flex;justify-content:space-between;font-size:var(--text-sm);padding-block:.15rem}
+.spec-row span:first-child{color:var(--color-text-dim);flex:1}
+.spec-val{color:var(--color-text);font-weight:600;font-family:var(--font-mono);font-size:var(--text-xs);text-align:right;min-width:80px}
+</style>
+<script src="../inquiry-handler.js"></script>
+</body>
+</html>
