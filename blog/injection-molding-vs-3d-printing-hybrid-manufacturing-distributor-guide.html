@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="/generated/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="/generated/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/generated/icon-192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="/generated/icon-512.png">
+  <title>Injection Molding vs 3D Printing — A Distributor's Guide to Hybrid Manufacturing Strategy | Precise3D</title>
+  <meta name="description" content="3D printing is not replacing injection molding — it is compressing the low-volume range where molding was uneconomical. The crossover point has shifted from 100 units (2018) to 1,500-5,000 units (2026). This guide gives distributors the framework to position both technologies correctly: when to recommend 3D printing, when to recommend molding, and how to capture revenue from both.">
+  <meta property="og:title" content="Injection Molding vs 3D Printing — The Distributor's Hybrid Manufacturing Playbook">
+  <meta property="og:description" content="The unit-cost crossover between 3D printing and injection molding has shifted from ~100 to ~1,500-5,000 units. For distributors selling to manufacturers, understanding this shift — and knowing when to recommend which technology — is the difference between being a printer vendor and a manufacturing consultant.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://ems-3dp.com/blog/injection-molding-vs-3d-printing-hybrid-manufacturing-distributor-guide">
+  <link rel="canonical" href="https://ems-3dp.com/blog/injection-molding-vs-3d-printing-hybrid-manufacturing-distributor-guide">
+  <link rel="stylesheet" href="/design-tokens.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Injection Molding vs 3D Printing: A Distributor's Guide to Hybrid Manufacturing Strategy",
+  "description": "The unit-cost crossover between 3D printing and injection molding has shifted from ~100 units (2018) to ~1,500-5,000 units (2026) due to faster printers, cheaper engineering filaments, and metal 3D printed mold inserts. This guide explains when to recommend each technology, the 5 decision factors (volume, geometry, material, timeline, iteration), and how distributors can capture revenue from both technologies by positioning as a manufacturing consultant rather than a printer vendor.",
+  "datePublished": "2026-07-26",
+  "dateModified": "2026-07-26",
+  "author": {"@type": "Organization", "name": "Precise3D"},
+  "publisher": {"@type": "Organization", "name": "Precise3D", "url": "https://ems-3dp.com"}
+}
+</script>
+<style>
+.blog-body{color:var(--color-text-muted);font-size:var(--text-base);line-height:1.85}
+.blog-body p{margin-bottom:var(--space-5)}
+.blog-body a{color:var(--color-accent);text-decoration:underline;text-underline-offset:2px}
+.blog-body h2{font-size:var(--text-2xl);font-weight:600;color:var(--color-text);margin-top:var(--space-12);margin-bottom:var(--space-5)}
+.blog-body strong{color:var(--color-text)}
+.blog-body ul{margin-bottom:var(--space-5);padding-left:var(--space-6)}
+.blog-body li{margin-bottom:var(--space-2);color:var(--color-text-muted)}
+.specs-table{display:flex;flex-direction:column;gap:var(--space-3);padding:var(--space-6);background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-lg)}
+.spec-row{display:flex;justify-content:space-between;font-size:var(--text-sm);padding-block:.15rem}
+.spec-row span:first-child{color:var(--color-text-dim);flex:1}
+.spec-val{color:var(--color-text);font-weight:600;font-family:var(--font-mono);font-size:var(--text-xs);text-align:right;min-width:80px}
+.diag-box{padding:var(--space-4) var(--space-5);background:var(--color-surface);border-left:3px solid var(--color-accent);border-radius:0 var(--radius-md) var(--radius-md) 0;margin:var(--space-6) 0;font-size:var(--text-sm)}
+.diag-box strong{color:var(--color-accent-glow)}
+</style>
+
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="/" class="logo"><img src="/generated/logo-icon.png" alt="" width="32" height="32" aria-hidden="true"><span class="logo-text">ems-3dp</span></a>
+    <nav class="nav-main">
+          <a href="/">Home</a>
+          <a href="/products/">Products</a>
+          <div class="nav-dropdown">
+            <span class="nav-dropdown-toggle">Solutions</span>
+            <div class="nav-dropdown-menu">
+              <a href="/solutions/distribution/">Distribution</a>
+              <a href="/solutions/oem-white-label/">OEM &amp; White Label</a>
+              <a href="/solutions/education/">Education</a>
+            </div>
+          </div>
+          <div class="nav-dropdown">
+            <span class="nav-dropdown-toggle">Industries</span>
+            <div class="nav-dropdown-menu">
+              <a href="/industries/education-research/">Education &amp; Research</a>
+              <a href="/industries/healthcare-dental/">Healthcare &amp; Dental</a>
+              <a href="/industries/manufacturing-prototyping/">Manufacturing &amp; Prototyping</a>
+              <a href="/industries/retail-consumer/">Retail &amp; Consumer</a>
+              <a href="/industries/jewelry-fashion/">Jewelry &amp; Fashion</a>
+              <a href="/industries/engineering-architecture/">Engineering &amp; Architecture</a>
+            </div>
+          </div>
+          <div class="nav-dropdown">
+            <span class="nav-dropdown-toggle">Resources</span>
+            <div class="nav-dropdown-menu">
+              <a href="/design-guides/">Design Guides</a>
+              <a href="/shipping/">Shipping</a>
+              <a href="/how-it-works/">How It Works</a>
+              <a href="/faq/">FAQ</a>
+            </div>
+          </div>
+          <div class="nav-dropdown">
+            <span class="nav-dropdown-toggle">Company</span>
+            <div class="nav-dropdown-menu">
+              <a href="/about/">About</a>
+              <a href="/factory/">Factory</a>
+              <a href="/quality/">Quality</a>
+              <a href="/engineering/">Engineering</a>
+            </div>
+          </div>
+          <a href="/blog/">Blog</a>
+          <a href="/contact/">Contact</a>
+        </nav>
+    <div class="header-actions"><a href="javascript:void(0)" class="btn btn-primary" onclick="openModal()">Request Quote</a></div>
+  </div>
+</header>
+
+<main>
+  <section class="sub-hero">
+    <div class="sub-hero-bg"><img src="/generated/blog-cover-injection-mold-vs-3dp.webp" alt="" aria-hidden="true"><div class="sub-hero-overlay"></div></div>
+    <div class="container sub-hero-content">
+      <p class="overline">Manufacturing Strategy &bull; July 2026</p>
+      <h1 class="h1" style="font-size:var(--text-4xl)">Injection Molding vs 3D Printing — How Distributors Sell Both by Understanding the Crossover</h1>
+      <p class="body-lg">For years, the manufacturing narrative pitted 3D printing against injection molding as competing technologies — one for prototypes, one for production. That narrative is obsolete. In 2026, the two technologies overlap significantly in the 100–10,000 unit range, and the smartest manufacturers use both. The distributor who understands exactly where the crossover point lies — and can advise customers on when to 3D print, when to mold, and when to use 3D printing to make the mold itself — transitions from a hardware vendor to a manufacturing consultant, capturing revenue from both technologies and earning trust that no single-technology competitor can match.</p>
+    </div>
+  </section>
+
+  <article class="section">
+    <div class="container" style="max-width:760px">
+      <div class="blog-body">
+        <p>A manufacturer walks into your showroom with a part in hand — a plastic housing for an industrial sensor, roughly 80 × 50 × 30 mm, currently CNC machined from ABS at $12 per unit. They need 3,000 units per year. "Can your 3D printers make this cheaper than our CNC shop?" The answer is not yes or no — it is a conversation about volume, geometry, material properties, lead time, and iteration frequency. This article gives you the framework for that conversation, and for every manufacturing buyer who stands in your showroom holding a part and asking the same question: "Should I 3D print this or mold it?"</p>
+
+        <h2>The Shifting Crossover: 100 Units to 5,000+ Units in 8 Years</h2>
+        <p>The conventional rule of thumb — "3D printing for < 100 units, injection molding for > 10,000 units" — was accurate in 2018 when entry-level FDM printers cost $800, printed at 50 mm/s, and used $30/kg PLA. In 2026, a $600 CoreXY printer prints engineering-grade ABS and PETG at 300 mm/s, material costs have dropped to $12–25/kg for bulk filament, and a 3D-printed injection mold insert printed in carbon-fiber-filled filament can produce 100–500 shots before degradation. These three changes — faster printers, cheaper engineering materials, and 3D-printed tooling — have pushed the unit-cost crossover point from ~100 units to approximately 1,500–5,000 units for small-to-medium plastic parts, depending on geometry complexity.</p>
+
+        <div class="specs-table" style="margin:var(--space-8) 0">
+          <div class="spec-row"><span style="color:var(--color-accent-glow);font-weight:600">Part Volume</span><span style="color:var(--color-accent-glow);font-weight:600;text-align:right;min-width:100px">3D Print Unit Cost</span><span style="color:var(--color-accent-glow);font-weight:600;text-align:right;min-width:100px">IM Unit Cost (Steel Mold)</span><span style="color:var(--color-accent-glow);font-weight:600;text-align:right;min-width:100px">Crossover</span><span style="color:var(--color-accent-glow);font-weight:600;text-align:right;min-width:120px">Mold Tooling Cost</span><span style="color:var(--color-accent-glow);font-weight:600;text-align:right;min-width:120px">Break-Even Point</span></div>
+          <div class="spec-row"><span>100 units</span><span style="text-align:right;min-width:100px">$0.80</span><span style="text-align:right;min-width:100px">$48.00</span><span style="text-align:right;min-width:100px">3DP wins</span><span style="text-align:right;min-width:120px">$3,000–5,000</span><span style="text-align:right;min-width:120px">N/A (mold not viable)</span></div>
+          <div class="spec-row"><span>500 units</span><span style="text-align:right;min-width:100px">$0.80</span><span style="text-align:right;min-width:100px">$9.80</span><span style="text-align:right;min-width:100px">3DP wins</span><span style="text-align:right;min-width:120px">$3,000–5,000</span><span style="text-align:right;min-width:120px">~600 units</span></div>
+          <div class="spec-row"><span>2,000 units</span><span style="text-align:right;min-width:100px">$0.80</span><span style="text-align:right;min-width:100px">$2.55</span><span style="text-align:right;min-width:100px">3DP still winning</span><span style="text-align:right;min-width:120px">$3,000–5,000</span><span style="text-align:right;min-width:120px">~2,800 units</span></div>
+          <div class="spec-row"><span style="font-weight:700;color:var(--color-success)">5,000 units</span><span style="text-align:right;min-width:100px;font-weight:700;color:var(--color-success)">$0.80</span><span style="text-align:right;min-width:100px;font-weight:700;color:var(--color-success)">$1.06</span><span style="text-align:right;min-width:100px">Crossover zone</span><span style="text-align:right;min-width:120px">$3,000–5,000</span><span style="text-align:right;min-width:120px">~5,400 units</span></div>
+          <div class="spec-row"><span>10,000 units</span><span style="text-align:right;min-width:100px">$0.80</span><span style="text-align:right;min-width:100px">$0.42</span><span style="text-align:right;min-width:100px">IM wins</span><span style="text-align:right;min-width:120px">$3,000–5,000</span><span style="text-align:right;min-width:120px">~4,000 units</span></div>
+        </div>
+
+        <p>The table above assumes a small plastic part (15g PETG, 28-minute print time on a 300mm/s printer, $15/kg material cost). At 10,000 units, injection molding is clearly cheaper — $0.42 per unit versus $0.80 for 3D printing, a 47% cost savings that adds up to $3,800 on the full production run. But the analysis changes dramatically when three real-world factors enter: tooling lead time (4–8 weeks for a steel mold versus same-day for 3D printing), design iteration (mold modifications cost $500–2,000 per change; 3D printing design changes cost $0), and geometry complexity (undercuts, internal channels, and lattice structures that are free in 3D printing require complex multi-slide molds costing $10,000–30,000+). The pure unit-cost comparison is a starting point, not the decision. For a deeper dive into the business case for 3D printing in manufacturing, see our <a href="/blog/3d-printer-tco-roi-calculator-distributor-guide.html">TCO and ROI calculator guide</a>.</p>
+
+        <div class="blog-img"><img src="/generated/blog-diagram-injmold-1.webp" alt="Side-by-side comparison display showing injection molded plastic part and identical 3D printed part on inspection table, surface finish details visible on both, calipers and quality documentation nearby, manufacturing lab environment with deep navy background" loading="lazy"></div>
+
+        <h2>The Five-Factor Decision Framework</h2>
+        <p>When a manufacturing buyer asks whether to 3D print or injection mold, walk them through five factors in sequence. The order matters — volume is the least interesting factor, because it is the one most subject to change as a product finds its market. The more durable factors (geometry, material, iteration cadence) often dominate the decision regardless of volume.</p>
+
+        <div class="specs-table" style="margin:var(--space-8) 0">
+          <div class="spec-row"><span style="color:var(--color-accent-glow);font-weight:600">Factor</span><span style="color:var(--color-accent-glow);font-weight:600;text-align:right;min-width:100px">Weight</span><span style="color:var(--color-accent-glow);font-weight:600;text-align:right;min-width:160px">Favors 3D Printing When...</span><span style="color:var(--color-accent-glow);font-weight:600;text-align:right;min-width:160px">Favors Injection Molding When...</span></div>
+          <div class="spec-row"><span>1. Volume</span><span style="text-align:right;min-width:100px">25%</span><span style="text-align:right;min-width:160px">< 3,000 units/year</span><span style="text-align:right;min-width:160px">> 10,000 units/year</span></div>
+          <div class="spec-row"><span>2. Geometry</span><span style="text-align:right;min-width:100px">30%</span><span style="text-align:right;min-width:160px">Internal channels, undercuts, lattices, organic shapes</span><span style="text-align:right;min-width:160px">Simple prismatic shapes, uniform wall thickness</span></div>
+          <div class="spec-row"><span>3. Material</span><span style="text-align:right;min-width:100px">20%</span><span style="text-align:right;min-width:160px">Engineering filaments sufficient (PETG, ABS, PA, PC, TPU)</span><span style="text-align:right;min-width:160px">Requires specific IM-grade resin with certifications (FDA, UL, NSF)</span></div>
+          <div class="spec-row"><span>4. Timeline</span><span style="text-align:right;min-width:100px">15%</span><span style="text-align:right;min-width:160px">Parts needed in < 2 weeks</span><span style="text-align:right;min-width:160px">8+ week lead time acceptable</span></div>
+          <div class="spec-row"><span>5. Iteration</span><span style="text-align:right;min-width:100px">10%</span><span style="text-align:right;min-width:160px">Design likely to change (new product, beta testing)</span><span style="text-align:right;min-width:160px">Design frozen, no changes expected for 2+ years</span></div>
+        </div>
+
+        <p>Geometry carries the highest weight because it is the least changeable. A part with complex internal cooling channels designed for conformal cooling — a geometry that is physically impossible to produce with subtractive tooling — is a 3D printing part regardless of volume. A simple cylindrical bushing with uniform 2.5mm wall thickness that is chemically identical in PETG regardless of manufacturing method is an injection molding part above 5,000 units because the unit economics dominate. The distributor who asks about geometry first, before asking about volume, differentiates themselves from every other printer salesperson the buyer has talked to. For more on how to run consultative sales conversations with manufacturing buyers, see our <a href="/blog/3d-printer-b2b-sales-demo-playbook-distributor-guide.html">B2B sales demo playbook</a>.</p>
+
+        <div class="diag-box">
+          <strong>The Geometry Litmus Test:</strong> "Show me the most complex feature on this part. If I told you it had to be injection molded tomorrow, what would you change about the design to make it moldable?"<br>
+          <strong>What it reveals:</strong> If the answer is "nothing — it's already designed for molding," the part is a molding candidate. If the answer is "I'd eliminate these three internal channels that the simulation software added to optimize cooling flow," the part was designed for 3D printing and molding it would mean accepting a worse part.
+        </div>
+
+        <div class="blog-img"><img src="/generated/blog-diagram-injmold-2.webp" alt="3D printer actively printing complex part with internal lattice structure visible through transparent nozzle area, engineering filament spool mounted, print monitoring camera in frame, industrial prototyping lab setting" loading="lazy"></div>
+
+        <h2>The Hybrid Sweet Spot: 3D Printed Tooling</h2>
+        <p>The most profitable conversation a distributor can have with a manufacturer is about 3D printed injection mold tooling — using a 3D printer to produce the mold inserts that go into an injection molding machine. This is the hybrid model that captures revenue from both technologies: you sell the 3D printer and filament to make the mold, and the customer uses their existing injection molding machine (or a contract manufacturer's) to produce parts. A 3D printed mold insert made from carbon-fiber-filled PA or PC filament costs $8–35 in material and prints in 4–18 hours, versus $3,000–8,000 and 4–8 weeks for a machined steel mold insert. The 3D printed insert lasts 100–500 shots — enough for bridge production, market testing, and small-batch manufacturing — and can be reprinted in a day when it wears out.</p>
+
+        <p>This use case alone justifies a mid-range FDM printer (enclosed, high-temp hotend, hardened nozzle) for any manufacturer who currently injection molds. The math: a manufacturer who prototypes 3 new products per year, each requiring 2–3 design iterations with 200–500 test-shot runs, currently spends $15,000–45,000 annually on prototype tooling from an external mold shop. A $1,200 enclosed CoreXY printer with $500 in engineering filament and a hardened steel nozzle ($30) produces all of those prototype molds in-house for $1,730 in year one and $800/year thereafter — a 91% cost reduction. The printer pays for itself on the first project. Our <a href="/blog/3d-printing-manufacturing-tooling-distributor-guide.html">manufacturing tooling guide</a> covers the full workflow for 3D printed jigs, fixtures, and mold inserts, and our <a href="/blog/engineering-filaments-distributor-guide.html">engineering filaments guide</a> identifies the best materials for tooling applications.</p>
+
+        <div class="blog-img"><img src="/generated/blog-diagram-injmold-3.webp" alt="3D printed injection mold insert on inspection bench alongside molded plastic parts ejected from the insert, carbon fiber texture visible on mold surface, calipers and injection molding machine nozzle in background, tooling workshop environment" loading="lazy"></div>
+
+        <h2>When 3D Printing Replaces Molding Entirely</h2>
+        <p>There are applications where 3D printing does not just complement injection molding — it replaces it. These are the scenarios where a distributor who understands the technology shift wins large accounts that a molding-only supplier cannot touch. The four clear replacement scenarios: (1) <strong>Mass customization</strong> — dental aligners, hearing aid shells, and orthotic insoles where every unit is geometrically unique; injection molding is physically incapable of producing a different geometry per unit without a different mold per unit. (2) <strong>Inventory elimination</strong> — spare parts for legacy equipment where the mold is worn out or destroyed, annual demand is 5–50 units, and the cost of cutting a new mold ($5,000–15,000) exceeds the lifetime revenue from the parts; 3D printing on-demand from a digital file eliminates tooling and inventory carrying costs. (3) <strong>Part consolidation</strong> — assemblies that were designed as 20 separate injection molded parts (because molding cannot produce complex single-piece geometries) can be redesigned as a single 3D printed part, eliminating assembly labor, fasteners, and inventory of 20 different SKUs. GE's fuel nozzle — 20 brazed parts consolidated into 1 DMLS-printed part — is the canonical example, but the same principle applies to polymer parts: a consumer product company consolidated a 12-part snap-fit enclosure into a single PETG print, reducing total part cost from $4.80 (12 molded parts + assembly) to $1.40 (1 printed part, no assembly). (4) <strong>Bridge production</strong> — a product that needs 2,000 units immediately to fill a retailer order while the steel mold is being cut (8-week lead time); 3D printing fills the gap, captures the revenue, and retires when the mold is ready.</p>
+
+        <p>For more on selling 3D printers to manufacturers, see our guides on <a href="/blog/3d-printer-rapid-prototyping-rd-engineering-distributor-guide.html">selling to R&amp;D teams</a>, <a href="/blog/selling-3d-printers-to-small-manufacturers-distributor-guide.html">selling to small manufacturers</a>, and <a href="/blog/print-farm-operations-scale-distributor-guide.html">print farm operations at scale</a>.</p>
+
+        <h2>The Distributor Positioning: Consultant, Not Vendor</h2>
+        <p>The distributor who sells 3D printers for prototyping and refers production work to an injection molding partner earns revenue from both streams and builds a reputation as a trusted manufacturing advisor. The positioning is: "We help you get from concept to production. For the first 50–5,000 units, we 3D print. Once your volumes justify it, we connect you with our molding partners and support the transition with 3D printed tooling for bridge production." This is not a hypothetical — it is the business model of the most successful industrial 3D printer distributors globally, who report that 40–60% of their revenue now comes from services (printing, tooling, consulting) rather than hardware sales. The hardware sale opens the door; the manufacturing consulting relationship keeps it open and generates recurring revenue that compounds with every new product the customer develops.</p>
+
+        <p>A manufacturer who buys a $1,200 printer from you today to prototype three new products this year will, within 18–24 months, need injection molding for the product that succeeds in the market. If you positioned yourself as a printer vendor, they will Google "injection molding service" and find a competitor. If you positioned yourself as a manufacturing consultant, they will call you — and you will earn a 10–15% referral fee from your molding partner on a $25,000 tooling order while maintaining the relationship for the next product cycle. For guidance on how to structure these strategic partnerships, see our <a href="/blog/3d-printer-portfolio-strategy-distributor-market-segments.html">portfolio strategy guide</a> and <a href="/blog/3d-printer-after-sales-support-distributor-strategy.html">after-sales support strategy</a>.</p>
+
+        <div class="cta-card" style="margin-top:var(--space-12)">
+          <p class="overline">Build Your Manufacturing Consulting Practice</p>
+          <h2 class="h2">Offer Hybrid Manufacturing Solutions as a Precise3D Distributor</h2>
+          <p class="body-lg">We provide the printer hardware, engineering filament portfolio, and technical documentation to position you as a manufacturing consultant — not just a printer vendor. From prototyping to bridge production to injection molding transition, we will help you build the complete workflow your manufacturing customers need.</p>
+          <div class="cta-actions">
+            <a href="javascript:void(0)" class="btn btn-primary btn-lg" onclick="openModal()">Become a Distributor</a>
+          </div>
+        </div>
+
+        <p style="margin-top:var(--space-8)"><a href="/blog/" class="btn btn-ghost">&larr; Back to Blog</a></p>
+      </div>
+    </div>
+  </article>
+</main>
+
+<footer class="site-footer section">
+  <div class="container">
+        <div class="footer-grid grid-4">
+          <div class="footer-brand"><img src="/generated/logo-icon.png" alt="" width="28" height="28" style="margin-bottom:var(--space-4)" aria-hidden="true"><p class="body-sm" style="margin-bottom:var(--space-3);font-weight:700;color:var(--color-text)">ems-3dp</p><p class="body-sm">Precision 3D printers engineered for global markets.</p></div>
+          <div class="footer-col"><h4>Solutions</h4><a href="/solutions/distribution/">Distribution</a><a href="/solutions/oem-white-label/">OEM &amp; White Label</a><a href="/solutions/education/">Education</a></div>
+          <div class="footer-col"><h4>Company</h4><a href="/about/">About</a><a href="/factory/">Factory</a><a href="/quality/">Quality</a><a href="/engineering/">Engineering</a><a href="/blog/">Blog</a><a href="/contact/">Contact</a></div>
+          <div class="footer-col"><h4>Resources</h4><a href="/design-guides/">Design Guides</a><a href="/shipping/">Shipping</a><a href="/how-it-works/">How It Works</a><a href="/faq/">FAQ</a><a href="/privacy/">Privacy Policy</a><a href="/terms/">Terms of Service</a></div>
+        </div>
+<div class="footer-bottom"><p class="body-sm">&copy; 2026 Precise3D. All rights reserved.</p></div>
+  </div>
+</footer>
+
+<div class="modal-overlay" id="inquiryModal">
+  <div class="modal-dialog">
+    <button class="modal-close" onclick="closeModal()" aria-label="Close">&times;</button>
+    <h2 class="h2">Send an Inquiry</h2>
+    <p class="body-sm">We'll respond within 24 hours.</p>
+    <form class="modal-form" onsubmit="return handleInquiry(event)" novalidate>
+      <div class="form-group"><label for="modal-name">Name <span class="required">*</span></label><input type="text" id="modal-name" name="name" required placeholder="Your full name"></div>
+      <div class="form-group"><label for="modal-email">Email <span class="required">*</span></label><input type="email" id="modal-email" name="email" required placeholder="you@company.com"></div>
+      <div class="form-group"><label for="modal-message">Message <span class="required">*</span></label><textarea id="modal-message" name="message" required rows="4" placeholder="Tell us about your business and what you're looking for..."></textarea></div>
+      <button type="submit" class="btn btn-primary btn-lg" style="width:100%;justify-content:center">Send Inquiry</button>
+      <p class="modal-form-note">We'll respond within 24 hours. Your information is never shared.</p>
+    </form>
+  </div>
+</div>
+
+<script>
+(function(){var els=document.querySelectorAll('.fade-up');var obs=new IntersectionObserver(function(e){e.forEach(function(e){if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target)}})},{threshold:0.15});els.forEach(function(el){obs.observe(el)})})();
+function openModal(){document.getElementById('inquiryModal').classList.add('open')}
+function closeModal(){document.getElementById('inquiryModal').classList.remove('open')}
+document.getElementById('inquiryModal').addEventListener('click',function(e){if(e.target===this)closeModal()})
+</script>
+<script src="../inquiry-handler.js"></script>
+</body>
+</html>
