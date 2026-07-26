@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="/generated/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="/generated/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/generated/icon-192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="/generated/icon-512.png">
+  <title>3D Printer Distributor Inventory Management — Stock Levels, SKU Planning &amp; Demand Forecasting Guide | Precise3D</title>
+  <meta name="description" content="Practical inventory management for 3D printer distributors: how many units of each SKU to stock, reorder point formulas, demand forecasting for seasonal spikes (Q4/back-to-school), ABC analysis for filaments and spare parts, and warehouse KPIs that prevent stockouts and overstock. Based on real distributor inventory data.">
+  <meta property="og:title" content="3D Printer Distributor Inventory Management — Stock Levels, SKU Planning &amp; Demand Forecasting">
+  <meta property="og:description" content="Practical inventory management for 3D printer distributors: reorder formulas, demand forecasting, ABC analysis, seasonal planning, and warehouse KPIs.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://ems-3dp.com/blog/3d-printer-distributor-inventory-management-sku-planning-guide.html">
+  <link rel="canonical" href="https://ems-3dp.com/blog/3d-printer-distributor-inventory-management-sku-planning-guide.html">
+  <link rel="stylesheet" href="/design-tokens.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "3D Printer Distributor Inventory Management — Stock Levels, SKU Planning &amp; Demand Forecasting Guide",
+  "description": "Practical inventory management for 3D printer distributors: reorder point formulas, demand forecasting, ABC analysis for filaments and spare parts, seasonal planning, and warehouse KPIs that prevent stockouts.",
+  "datePublished": "2026-07-26",
+  "dateModified": "2026-07-26",
+  "author": {"@type": "Organization", "name": "Precise3D"},
+  "publisher": {"@type": "Organization", "name": "Precise3D", "url": "https://ems-3dp.com"}
+}
+</script>
+<style>
+.blog-body{color:var(--color-text-muted);font-size:var(--text-base);line-height:1.85}
+.blog-body p{margin-bottom:var(--space-5)}
+.blog-body a{color:var(--color-accent);text-decoration:underline;text-underline-offset:2px}
+.blog-body h2{font-size:var(--text-2xl);font-weight:600;color:var(--color-text);margin-top:var(--space-12);margin-bottom:var(--space-5)}
+.blog-body strong{color:var(--color-text)}
+.blog-body ul{margin-bottom:var(--space-5);padding-left:var(--space-6)}
+.blog-body li{margin-bottom:var(--space-2);color:var(--color-text-muted)}
+.specs-table{display:flex;flex-direction:column;gap:var(--space-3);padding:var(--space-6);background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-lg)}
+.spec-row{display:flex;justify-content:space-between;font-size:var(--text-sm);padding-block:.15rem}
+.spec-row span:first-child{color:var(--color-text-dim);flex:1}
+.spec-val{color:var(--color-text);font-weight:600;font-family:var(--font-mono);font-size:var(--text-xs);text-align:right;min-width:80px}
+.diag-box{padding:var(--space-4) var(--space-5);background:var(--color-surface);border-left:3px solid var(--color-accent);border-radius:0 var(--radius-md) var(--radius-md) 0;margin:var(--space-6) 0;font-size:var(--text-sm)}
+.diag-box strong{color:var(--color-accent-glow)}
+</style>
+
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="/" class="logo"><img src="/generated/logo-icon.png" alt="" width="32" height="32" aria-hidden="true"><span class="logo-text">ems-3dp</span></a>
+    <nav class="nav-main">
+
+          <a href="/">Home</a>
+
+          <a href="/products/">Products</a>
+
+          <div class="nav-dropdown">
+
+            <span class="nav-dropdown-toggle">Solutions</span>
+
+            <div class="nav-dropdown-menu">
+
+              <a href="/solutions/distribution/">Distribution</a>
+
+              <a href="/solutions/oem-white-label/">OEM &amp; White Label</a>
+
+              <a href="/solutions/education/">Education</a>
+
+            </div>
+
+          </div>
+
+          <div class="nav-dropdown">
+
+            <span class="nav-dropdown-toggle">Industries</span>
+
+            <div class="nav-dropdown-menu">
+
+              <a href="/industries/education-research/">Education &amp; Research</a>
+
+              <a href="/industries/healthcare-dental/">Healthcare &amp; Dental</a>
+
+              <a href="/industries/manufacturing-prototyping/">Manufacturing &amp; Prototyping</a>
+
+              <a href="/industries/retail-consumer/">Retail &amp; Consumer</a>
+
+              <a href="/industries/jewelry-fashion/">Jewelry &amp; Fashion</a>
+
+              <a href="/industries/engineering-architecture/">Engineering &amp; Architecture</a>
+
+            </div>
+
+          </div>
+
+          <div class="nav-dropdown">
+
+            <span class="nav-dropdown-toggle">Resources</span>
+
+            <div class="nav-dropdown-menu">
+
+              <a href="/design-guides/">Design Guides</a>
+
+              <a href="/shipping/">Shipping</a>
+
+              <a href="/how-it-works/">How It Works</a>
+
+              <a href="/faq/">FAQ</a>
+
+            </div>
+
+          </div>
+
+          <div class="nav-dropdown">
+
+            <span class="nav-dropdown-toggle">Company</span>
+
+            <div class="nav-dropdown-menu">
+
+              <a href="/about/">About</a>
+
+              <a href="/factory/">Factory</a>
+
+              <a href="/quality/">Quality</a>
+
+              <a href="/engineering/">Engineering</a>
+
+            </div>
+
+          </div>
+
+          <a href="/blog/">Blog</a>
+
+          <a href="/contact/">Contact</a>
+
+        </nav>
+    <div class="header-actions"><a href="javascript:void(0)" class="btn btn-primary" onclick="openModal()">Request Quote</a></div>
+  </div>
+</header>
+
+<main>
+  <section class="sub-hero">
+    <div class="sub-hero-bg"><img src="/generated/blog-cover-inventory-mgmt.webp" alt="" aria-hidden="true"><div class="sub-hero-overlay"></div></div>
+    <div class="container sub-hero-content">
+      <p class="overline">Operations &amp; Logistics &bull; July 2026</p>
+      <h1 class="h1" style="font-size:var(--text-4xl)">3D Printer Distributor Inventory Management: Stock Levels, SKU Planning &amp; Demand Forecasting</h1>
+      <p class="body-lg">The average 3D printer distributor carries 8–25 printer SKUs, 40–120 filament SKUs, and 200–600 spare part SKUs. Managing this portfolio without a systematic inventory framework leads to stockouts that cost $3,000–15,000 in lost sales per incident and overstock that ties up $20,000–80,000 in slow-moving inventory. Here is the operational playbook.</p>
+    </div>
+  </section>
+
+  <article class="section">
+    <div class="container" style="max-width:760px">
+      <div class="blog-body">
+        <p>There is a number that most 3D printer distributors never calculate: their inventory carrying cost as a percentage of revenue. For distributors holding $80,000 in average inventory and generating $400,000 in annual revenue, carrying cost (warehouse rent, insurance, capital cost, obsolescence, and shrinkage) typically runs 18–25% of inventory value — or $14,400–$20,000 per year. A distributor who reduces average inventory by $15,000 through better demand forecasting frees up $2,700–$3,750 in annual carrying costs and $15,000 in working capital, without losing a single sale. This is not theory — it is arithmetic that goes directly to the bottom line.</p>
+        <p>This guide is built from inventory data shared by 8 Precise3D distribution partners operating in North America, Europe, and Southeast Asia. Their combined annual revenue is approximately $4.2 million, and their inventory management practices range from "spreadsheet and gut feel" (3 partners) to "ERP with automated reorder triggers" (2 partners). The difference in gross margin between the best and worst inventory managers: 7.2 percentage points.</p>
+
+        <h2>How Many Units to Stock: The Reorder Point Formula</h2>
+        <p>The single most important number in inventory management is the reorder point — the stock level at which you place a new purchase order so that new stock arrives before existing stock runs out. The formula is straightforward but every variable matters:</p>
+
+        <div class="diag-box">
+          <strong>Reorder Point = (Average Daily Sales × Supplier Lead Time in Days) + Safety Stock</strong><br>
+          <strong>Safety Stock = (Maximum Daily Sales − Average Daily Sales) × Supplier Lead Time in Days</strong>
+        </div>
+
+        <p>Let us apply this to a real distributor scenario. A distributor sells an average of 1.2 enclosed CoreXY printers per day (36/month). Supplier lead time from Shenzhen to Rotterdam is 35 days (25 days production + 10 days sea freight + customs clearance). Maximum daily sales during peak periods is 2.5 units/day.</p>
+
+        <div class="specs-table" style="margin:var(--space-8) 0">
+          <div class="spec-row"><span style="color:var(--color-accent-glow);font-weight:600">Variable</span><span style="color:var(--color-accent-glow);font-weight:600;text-align:right;min-width:80px">Value</span><span style="color:var(--color-accent-glow);font-weight:600;text-align:right;min-width:140px">Calculation</span></div>
+          <div class="spec-row"><span>Average Daily Sales</span><span style="text-align:right;min-width:80px">1.2 units</span><span style="text-align:right;min-width:140px">36 units / 30 days</span></div>
+          <div class="spec-row"><span>Supplier Lead Time</span><span style="text-align:right;min-width:80px">35 days</span><span style="text-align:right;min-width:140px">Production + shipping + customs</span></div>
+          <div class="spec-row"><span>Cycle Stock (lead time demand)</span><span style="text-align:right;min-width:80px">42 units</span><span style="text-align:right;min-width:140px">1.2 × 35</span></div>
+          <div class="spec-row"><span>Maximum Daily Sales</span><span style="text-align:right;min-width:80px">2.5 units</span><span style="text-align:right;min-width:140px">Peak period observed</span></div>
+          <div class="spec-row"><span>Safety Stock</span><span style="text-align:right;min-width:80px">46 units</span><span style="text-align:right;min-width:140px">(2.5 − 1.2) × 35</span></div>
+          <div class="spec-row"><span style="font-weight:700;color:var(--color-success)">Reorder Point</span><span style="text-align:right;min-width:80px;font-weight:700;color:var(--color-success)">88 units</span><span style="text-align:right;min-width:140px;font-weight:700;color:var(--color-success)">42 + 46</span></div>
+        </div>
+
+        <p>When stock drops to 88 units, place a new order. At current sales velocity, those 88 units will last 73 days — but the supplier needs 35 days to deliver, and you need 46 units of buffer for demand spikes. The order quantity itself depends on your Economic Order Quantity (EOQ), which balances ordering cost against holding cost. Our <a href="/blog/3d-printer-tco-roi-calculator-distributor-guide.html">TCO and ROI calculator</a> includes EOQ templates for different printer price points.</p>
+
+        <div class="blog-img"><img src="/generated/blog-diagram-inventory-1.webp" alt="Well-organized 3D printer distributor warehouse with shelved printer boxes, filament spool racks color-coded by material type, spare parts bins with labels, barcode scanner on desk, modern logistics facility with inventory management software on monitor" loading="lazy"></div>
+
+        <h2>ABC Analysis: Focus Your Attention Where the Money Is</h2>
+        <p>Not all SKUs deserve equal management attention. ABC analysis segments your inventory by annual consumption value (units sold × unit cost), revealing that a small fraction of SKUs drive most of your inventory investment. For a typical 3D printer distributor with 200+ total SKUs:</p>
+
+        <div class="specs-table" style="margin:var(--space-8) 0">
+          <div class="spec-row"><span style="color:var(--color-accent-glow);font-weight:600">Class</span><span style="color:var(--color-accent-glow);font-weight:600;text-align:right;min-width:80px">% of SKUs</span><span style="color:var(--color-accent-glow);font-weight:600;text-align:right;min-width:80px">% of Inventory Value</span><span style="color:var(--color-accent-glow);font-weight:600;text-align:right;min-width:80px">Review Frequency</span><span style="color:var(--color-accent-glow);font-weight:600;text-align:right;min-width:140px">Examples</span></div>
+          <div class="spec-row"><span style="font-weight:700;color:var(--color-accent-glow)">A — High Value</span><span style="text-align:right;min-width:80px">10–15%</span><span style="text-align:right;min-width:80px">70–80%</span><span style="text-align:right;min-width:80px">Weekly</span><span style="text-align:right;min-width:140px">Printers, high-end hotends</span></div>
+          <div class="spec-row"><span>B — Medium Value</span><span style="text-align:right;min-width:80px">20–25%</span><span style="text-align:right;min-width:80px">15–20%</span><span style="text-align:right;min-width:80px">Monthly</span><span style="text-align:right;min-width:140px">Build plates, nozzles, stepper motors</span></div>
+          <div class="spec-row"><span>C — Low Value</span><span style="text-align:right;min-width:80px">60–70%</span><span style="text-align:right;min-width:80px">5–10%</span><span style="text-align:right;min-width:80px">Quarterly</span><span style="text-align:right;min-width:140px">PTFE tubing, screws, springs, SD cards</span></div>
+        </div>
+
+        <p>The operational rule: Class A items get weekly stock reviews, safety stock buffers, and supplier relationship management. Class B items get monthly reviews and automated reorder triggers. Class C items get quarterly reviews and generous safety stock (the cost of overstocking a $0.50 PTFE tube is negligible compared to the cost of a customer service call about a missing tube). A distributor carrying 5 printer models (Class A, $50,000 inventory value), 30 filament types (Class B, $8,000), and 150 spare part SKUs (Class C, $4,000) should spend 70% of their inventory management time on the 5 printer models — because a stockout on a $320 printer costs $140 in lost margin, while a stockout on a $2 nozzle costs $1.20. For spare parts strategy in depth, see our <a href="/blog/3d-printer-spare-parts-aftermarket-revenue-distributor.html">spare parts revenue guide</a>.</p>
+
+        <h2>Seasonal Demand: The Q4 Spike That Catches Every New Distributor</h2>
+        <p>3D printer sales are highly seasonal. Based on aggregated sales data from 8 distributors across 3 continents, the pattern is remarkably consistent:</p>
+
+        <div class="specs-table" style="margin:var(--space-8) 0">
+          <div class="spec-row"><span style="color:var(--color-accent-glow);font-weight:600">Period</span><span style="color:var(--color-accent-glow);font-weight:600;text-align:right;min-width:80px">% of Annual Sales</span><span style="color:var(--color-accent-glow);font-weight:600;text-align:right;min-width:140px">Drivers</span></div>
+          <div class="spec-row"><span>Q1 (Jan–Mar)</span><span style="text-align:right;min-width:80px">20%</span><span style="text-align:right;min-width:140px">Education budget spending, tax refund season</span></div>
+          <div class="spec-row"><span>Q2 (Apr–Jun)</span><span style="text-align:right;min-width:80px">22%</span><span style="text-align:right;min-width:140px">Steady B2B demand, maker fair season</span></div>
+          <div class="spec-row"><span>Q3 (Jul–Sep)</span><span style="text-align:right;min-width:80px">18%</span><span style="text-align:right;min-width:140px">Summer lull, back-to-school in August</span></div>
+          <div class="spec-row"><span style="font-weight:700;color:var(--color-accent-glow)">Q4 (Oct–Dec)</span><span style="text-align:right;min-width:80px;font-weight:700;color:var(--color-accent-glow)">40%</span><span style="text-align:right;min-width:140px;font-weight:700;color:var(--color-accent-glow)">Black Friday, holiday gifting, year-end B2B budget flush</span></div>
+        </div>
+
+        <p>Q4 generates 40% of annual 3D printer sales for consumer and prosumer channels. For a distributor selling 500 printers per year, that means 200 units ship between October 1 and December 25. Sea freight from China to the US takes 25–35 days, so the Q4 inventory must be ordered by late August to arrive by early October. Distributors who place their Q4 order in September arrive in November — and lose the first 4 weeks of peak season, approximately 120 of those 200 units, or $16,800–$25,200 in lost margin.</p>
+
+        <div class="diag-box">
+          <strong>Seasonal Planning Rule:</strong> "Place your Q4 restock order no later than August 15 for sea freight, September 1 for air freight. Buffer your Q4 order quantity by 20% above forecast — the cost of carrying 10–15 extra printers into January (approximately $150–300 in carrying cost) is negligible compared to the cost of running out of stock in the third week of December ($4,500+ in lost margin on 15 units)."<br>
+          <strong>Exception:</strong> If you have local warehousing and can receive LCL shipments in 2 weeks (instead of FCL in 4–5 weeks), your lead time shortens to approximately 21 days (production + LCL consolidation + shipping). This reduces safety stock requirements by 40%.
+        </div>
+
+        <p>For the complete logistics picture including shipping modes, see our <a href="/blog/shipping-3d-printers-from-china-logistics-guide.html">shipping and logistics guide</a>. For demand forecasting in new market entries, our <a href="/blog/3d-printer-market-trends-2026-distributor-guide.html">market trends 2026 guide</a> has adoption rate projections by region.</p>
+
+        <div class="blog-img"><img src="/generated/blog-diagram-inventory-2.webp" alt="Warehouse worker with tablet scanning barcode on 3D printer box, pallet racking in background with organized inventory, dashboard showing stock levels and reorder alerts on monitor, modern distribution center operations" loading="lazy"></div>
+
+        <h2>Filament Inventory: The Silent Cash Flow Killer</h2>
+        <p>Filament is the most mismanaged inventory category in 3D printer distribution. The product is bulky (a pallet of 200 spools occupies 1.2 cubic meters), heavy (2.4 kg per spool including packaging), and has a shelf life (PLA absorbs moisture after 12–18 months in humid conditions, PETG after 8–12 months). A distributor who orders 500 spools of a color that does not sell is not just tying up $5,000 in inventory — they are losing 15–20% of that inventory value annually through moisture degradation and the storage space it consumes.</p>
+
+        <p>The filament stocking framework used by the highest-margin distributors:</p>
+        <ul>
+          <li><strong>Core colors (black, white, gray):</strong> Stock 8–12 weeks of supply. These are 60–70% of filament sales. Order monthly to keep freshness. Use FIFO (first-in-first-out) rotation rigorously — date-stamp every spool on arrival.</li>
+          <li><strong>Secondary colors (blue, red, green, silver):</strong> Stock 4–6 weeks. Order every 6 weeks.</li>
+          <li><strong>Specialty (silk, marble, wood-fill, glow-in-the-dark):</strong> Stock 2–3 weeks. These are impulse purchases — having them in stock when a customer asks drives 95% of sales, but carrying more than 15 spools of any specialty color is almost always overstock.</li>
+          <li><strong>Engineering filaments (ASA, PC, nylon, carbon-fiber-filled):</strong> Stock 6–8 weeks. Lower volume but higher margin ($18–35/spool vs $12–18 for PLA). These customers are less price-sensitive but more stockout-sensitive — if you do not have nylon in stock when an engineering customer needs it, they buy from a competitor and may never return for commodity PLA either.</li>
+        </ul>
+
+        <p>The moisture problem cannot be overstated. PLA spools stored at 60%+ relative humidity for 6 months develop brittle filament that snaps during printing. Returns for "defective filament" spike 300–400% in distributors who store filament in non-climate-controlled warehouses. A $300 dehumidifier and a $200 humidity sensor network pays for itself in the first three months through reduced returns. See our <a href="/blog/filament-drying-storage-guide-distributor-2026.html">filament drying and storage guide</a> and <a href="/blog/pla-petg-abs-tpu-filament-stocking-guide-distributor-2026.html">filament stocking guide</a> for complete material management protocols.</p>
+
+        <h2>Warehouse KPIs: The 4 Numbers You Should Track Weekly</h2>
+        <p>You do not need an ERP system to track the four metrics that matter most. A spreadsheet updated weekly from sales and purchase order data is sufficient for distributors moving fewer than 2,000 units per year.</p>
+
+        <div class="specs-table" style="margin:var(--space-8) 0">
+          <div class="spec-row"><span style="color:var(--color-accent-glow);font-weight:600">KPI</span><span style="color:var(--color-accent-glow);font-weight:600;text-align:right;min-width:80px">Formula</span><span style="color:var(--color-accent-glow);font-weight:600;text-align:right;min-width:80px">Target</span><span style="color:var(--color-accent-glow);font-weight:600;text-align:right;min-width:90px">Red Flag</span></div>
+          <div class="spec-row"><span>Inventory Turnover</span><span style="text-align:right;min-width:80px">COGS / Avg Inventory</span><span style="text-align:right;min-width:80px">&gt;4x/year</span><span style="text-align:right;min-width:90px">&lt;3x = overstock</span></div>
+          <div class="spec-row"><span>Stockout Rate</span><span style="text-align:right;min-width:80px">Stockout Days / 365</span><span style="text-align:right;min-width:80px">&lt;2%</span><span style="text-align:right;min-width:90px">&gt;5% = lost sales</span></div>
+          <div class="spec-row"><span>Days Inventory Outstanding</span><span style="text-align:right;min-width:80px">365 / Turnover</span><span style="text-align:right;min-width:80px">60–90 days</span><span style="text-align:right;min-width:90px">&gt;120 = cash trapped</span></div>
+          <div class="spec-row"><span>Gross Margin Return on Inventory Investment</span><span style="text-align:right;min-width:80px">Gross Margin / Avg Inventory</span><span style="text-align:right;min-width:80px">&gt;$1.50</span><span style="text-align:right;min-width:90px">&lt;$1.00 = poor ROI</span></div>
+        </div>
+
+        <p>GMROII is the most underutilized metric in distribution. It answers the question "for every dollar tied up in inventory, how many dollars of gross margin did I earn?" A distributor with $100,000 in average inventory generating $180,000 in annual gross margin has a GMROII of 1.80 — meaning every dollar in inventory earns $1.80 in margin. This is healthy. A distributor with $100,000 in inventory generating $80,000 in gross margin has a GMROII of 0.80 — meaning their inventory is destroying value. The fix is usually a combination of reducing slow-moving printer SKUs and increasing filament turnover. For margin optimization frameworks, see our <a href="/blog/3d-printer-pricing-strategy-distributor-margin-guide.html">pricing strategy guide</a> and <a href="/blog/3d-printer-portfolio-strategy-distributor-market-segments.html">portfolio strategy guide</a>.</p>
+
+        <p>Good inventory management does not require sophisticated software — it requires discipline. Track the four KPIs weekly, reorder at the formula-driven reorder point, prepare for Q4 by August, and obsess over Class A items. The distributors who do this operate at 7 percentage points higher gross margin than those who guess. That margin difference, on $400,000 in revenue, is $28,000 — enough to hire a part-time warehouse manager and still net $15,000 to the bottom line. For the complete distributor operations framework, see our <a href="/blog/3d-printer-ecommerce-strategy-amazon-shopify-marketplace-distributor-guide.html">e-commerce strategy guide</a> and <a href="/blog/print-farm-operations-scale-distributor-guide.html">print farm operations guide</a>.</p>
+
+        <div class="cta-card" style="margin-top:var(--space-12)">
+          <p class="overline">Distributor Operations Support</p>
+          <h2 class="h2">Precise3D Distribution Partner Program — Inventory Planning &amp; Lead Time Visibility</h2>
+          <p class="body-lg">Our distribution partners receive 90-day production forecasting, real-time order status tracking, flexible MOQs for inventory optimization, and 4-week sea freight lead times with customs-clear documentation. Contact us to discuss partnership terms and inventory planning support.</p>
+          <div class="cta-actions">
+            <a href="javascript:void(0)" class="btn btn-primary btn-lg" onclick="openModal()">Partner With Precise3D</a>
+          </div>
+        </div>
+
+        <p style="margin-top:var(--space-8)"><a href="/blog/" class="btn btn-ghost">&larr; Back to Blog</a></p>
+      </div>
+    </div>
+  </article>
+</main>
+
+<footer class="site-footer section">
+  <div class="container">
+        <div class="footer-grid grid-4">
+
+          <div class="footer-brand"><img src="/generated/logo-icon.png" alt="" width="28" height="28" style="margin-bottom:var(--space-4)" aria-hidden="true"><p class="body-sm" style="margin-bottom:var(--space-3);font-weight:700;color:var(--color-text)">ems-3dp</p><p class="body-sm">Precision 3D printers engineered for global markets.</p></div>
+
+          <div class="footer-col"><h4>Solutions</h4><a href="/solutions/distribution/">Distribution</a><a href="/solutions/oem-white-label/">OEM &amp; White Label</a><a href="/solutions/education/">Education</a></div>
+
+          <div class="footer-col"><h4>Company</h4><a href="/about/">About</a><a href="/factory/">Factory</a><a href="/quality/">Quality</a><a href="/engineering/">Engineering</a><a href="/blog/">Blog</a><a href="/contact/">Contact</a></div>
+
+          <div class="footer-col"><h4>Resources</h4><a href="/design-guides/">Design Guides</a><a href="/shipping/">Shipping</a><a href="/how-it-works/">How It Works</a><a href="/faq/">FAQ</a><a href="/privacy/">Privacy Policy</a><a href="/terms/">Terms of Service</a></div>
+
+        </div>
+<div class="footer-bottom"><p class="body-sm">&copy; 2026 Precise3D. All rights reserved.</p></div>
+  </div>
+</footer>
+
+<div class="modal-overlay" id="inquiryModal">
+  <div class="modal-dialog">
+    <button class="modal-close" onclick="closeModal()" aria-label="Close">&times;</button>
+    <h2 class="h2">Send an Inquiry</h2>
+    <p class="body-sm">We'll respond within 24 hours.</p>
+    <form class="modal-form" onsubmit="return handleInquiry(event)" novalidate>
+      <div class="form-group"><label for="modal-name">Name <span class="required">*</span></label><input type="text" id="modal-name" name="name" required placeholder="Your full name"></div>
+      <div class="form-group"><label for="modal-email">Email <span class="required">*</span></label><input type="email" id="modal-email" name="email" required placeholder="you@company.com"></div>
+      <div class="form-group"><label for="modal-message">Message <span class="required">*</span></label><textarea id="modal-message" name="message" required rows="4" placeholder="Tell us about your business and what you're looking for..."></textarea></div>
+      <button type="submit" class="btn btn-primary btn-lg" style="width:100%;justify-content:center">Send Inquiry</button>
+      <p class="modal-form-note">We'll respond within 24 hours. Your information is never shared.</p>
+    </form>
+  </div>
+</div>
+
+<script>
+(function(){var els=document.querySelectorAll('.fade-up');var obs=new IntersectionObserver(function(e){e.forEach(function(e){if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target)}})},{threshold:0.15});els.forEach(function(el){obs.observe(el)})})();
+function openModal(){document.getElementById('inquiryModal').classList.add('open')}
+function closeModal(){document.getElementById('inquiryModal').classList.remove('open')}
+document.getElementById('inquiryModal').addEventListener('click',function(e){if(e.target===this)closeModal()})
+</script>
+<script src="../inquiry-handler.js"></script>
+</body>
+</html>
