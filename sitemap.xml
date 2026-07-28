@@ -956,4 +956,25 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <!-- Blog: Multi-Material Systems -->
+  <url>
+    <loc>https://ems-3dp.com/blog/multi-material-3d-printing-ams-cfs-mmu-distributor-guide</loc>
+    <lastmod>2026-07-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <!-- Blog: CoreXY Comparison -->
+  <url>
+    <loc>https://ems-3dp.com/blog/bambu-p1s-vs-creality-k2-plus-vs-qidi-plus4-distributor-comparison</loc>
+    <lastmod>2026-07-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <!-- Blog: Hospitality Retail -->
+  <url>
+    <loc>https://ems-3dp.com/blog/3d-printing-hospitality-retail-fixtures-displays-distributor-guide</loc>
+    <lastmod>2026-07-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>
