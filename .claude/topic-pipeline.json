@@ -1,6 +1,6 @@
 {
   "site": "precise3d-b2b",
-  "updated": "2026-07-21",
+  "updated": "2026-07-29",
   "topics": [
     {
       "id": 34,
@@ -15,7 +15,7 @@
     },
     {
       "id": 33,
-      "title": "3D Printer Remote Monitoring & Cloud Connectivity: WiFi Cameras, OctoPrint & Smart Print Farms",
+      "title": "3D Printer Remote Monitoring & Cloud Connectivity",
       "status": "published",
       "score": 82,
       "funnel": "MOFU",
@@ -23,6 +23,39 @@
       "file": "/blog/3d-printer-remote-monitoring-cloud-connectivity-distributor-guide.html",
       "created": "2026-07-21",
       "published": "2026-07-21"
+    },
+    {
+      "id": 35,
+      "title": "Multi-Material 3D Printing Systems — AMS vs CFS vs MMU: A Distributor's Guide to 4x Filament Revenue Per Printer",
+      "status": "published",
+      "score": 88,
+      "funnel": "MOFU",
+      "category": "tech-comparison",
+      "file": "/blog/multi-material-3d-printing-ams-cfs-mmu-distributor-guide.html",
+      "created": "2026-07-29",
+      "published": "2026-07-29"
+    },
+    {
+      "id": 36,
+      "title": "Bambu Lab P1S vs Creality K2 Plus vs Qidi Plus4 — Enclosed CoreXY Comparison for Distributor Portfolio Planning (2026)",
+      "status": "published",
+      "score": 85,
+      "funnel": "MOFU",
+      "category": "product-comparison",
+      "file": "/blog/bambu-p1s-vs-creality-k2-plus-vs-qidi-plus4-distributor-comparison.html",
+      "created": "2026-07-29",
+      "published": "2026-07-29"
+    },
+    {
+      "id": 37,
+      "title": "3D Printing for Hospitality & Retail — Custom Fixtures, Signage & Displays: A Distributor's Guide to the $2B Vertical",
+      "status": "published",
+      "score": 82,
+      "funnel": "TOFU",
+      "category": "vertical-market",
+      "file": "/blog/3d-printing-hospitality-retail-fixtures-displays-distributor-guide.html",
+      "created": "2026-07-29",
+      "published": "2026-07-29"
     }
   ]
 }
