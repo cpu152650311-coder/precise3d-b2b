@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="/generated/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="/generated/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/generated/icon-192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="/generated/icon-512.png">
+  <title>3D Printer Frame Rigidity Guide — Why Aluminum Extrusion, Steel, and Injection-Molded Frames Produce Different Print Quality | Precise3D</title>
+  <meta name="description" content="Frame rigidity is the foundation of print quality. This distributor guide compares 2020/2040 aluminum extrusion, welded steel, and injection-molded frames — covering stiffness, vibration damping, thermal expansion, and how frame design affects dimensional accuracy at speeds above 300 mm/s.">
+  <meta property="og:title" content="3D Printer Frame Rigidity: The Engineering Behind Print Accuracy at High Speed">
+  <meta property="og:description" content="Why two printers with identical electronics and kinematics can produce completely different print quality. The answer is in the frame — and this guide gives distributors the data to explain it to customers.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://ems-3dp.com/blog/3d-printer-frame-rigidity-materials-distributor-guide">
+  <link rel="canonical" href="https://ems-3dp.com/blog/3d-printer-frame-rigidity-materials-distributor-guide">
+  <link rel="stylesheet" href="/design-tokens.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "3D Printer Frame Rigidity Guide: Why Aluminum Extrusion, Steel, and Injection-Molded Frames Produce Different Print Quality",
+  "description": "Comprehensive distributor guide comparing 3D printer frame materials — aluminum extrusion vs welded steel vs injection-molded polymer — covering stiffness, vibration damping, thermal expansion, modal analysis, and how frame rigidity determines dimensional accuracy at print speeds above 300 mm/s.",
+  "datePublished": "2026-07-30",
+  "dateModified": "2026-07-30",
+  "author": {"@type": "Organization", "name": "Precise3D"},
+  "publisher": {"@type": "Organization", "name": "Precise3D", "url": "https://ems-3dp.com"}
+}
+</script>
+<style>
+.blog-body{color:var(--color-text-muted);font-size:var(--text-base);line-height:1.85}
+.blog-body p{margin-bottom:var(--space-5)}
+.blog-body a{color:var(--color-accent);text-decoration:underline;text-underline-offset:2px}
+.blog-body h2{font-size:var(--text-2xl);font-weight:600;color:var(--color-text);margin-top:var(--space-12);margin-bottom:var(--space-5)}
+.blog-body strong{color:var(--color-text)}
+.blog-body ul{margin-bottom:var(--space-5);padding-left:var(--space-6)}
+.blog-body li{margin-bottom:var(--space-2);color:var(--color-text-muted)}
+.specs-table{display:flex;flex-direction:column;gap:var(--space-3);padding:var(--space-6);background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-lg)}
+.spec-row{display:flex;justify-content:space-between;font-size:var(--text-sm);padding-block:.15rem}
+.spec-row span:first-child{color:var(--color-text-dim);flex:1}
+.spec-val{color:var(--color-text);font-weight:600;font-family:var(--font-mono);font-size:var(--text-xs);text-align:right;min-width:80px}
+.diag-box{padding:var(--space-4) var(--space-5);background:var(--color-surface);border-left:3px solid var(--color-accent);border-radius:0 var(--radius-md) var(--radius-md) 0;margin:var(--space-6) 0;font-size:var(--text-sm)}
+.diag-box strong{color:var(--color-accent-glow)}
+</style>
+
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="/" class="logo"><img src="/generated/logo-icon.png" alt="" width="32" height="32" aria-hidden="true"><span class="logo-text">ems-3dp</span></a>
+    <nav class="nav-main">
+
+          <a href="/">Home</a>
+
+          <a href="/products/">Products</a>
+
+          <div class="nav-dropdown">
+
+            <span class="nav-dropdown-toggle">Solutions</span>
+
+            <div class="nav-dropdown-menu">
+
+              <a href="/solutions/distribution/">Distribution</a>
+
+              <a href="/solutions/oem-white-label/">OEM &amp; White Label</a>
+
+              <a href="/solutions/education/">Education</a>
+
+            </div>
+
+          </div>
+
+          <div class="nav-dropdown">
+
+            <span class="nav-dropdown-toggle">Industries</span>
+
+            <div class="nav-dropdown-menu">
+
+              <a href="/industries/education-research/">Education &amp; Research</a>
+
+              <a href="/industries/healthcare-dental/">Healthcare &amp; Dental</a>
+
+              <a href="/industries/manufacturing-prototyping/">Manufacturing &amp; Prototyping</a>
+
+              <a href="/industries/retail-consumer/">Retail &amp; Consumer</a>
+
+              <a href="/industries/jewelry-fashion/">Jewelry &amp; Fashion</a>
+
+              <a href="/industries/engineering-architecture/">Engineering &amp; Architecture</a>
+
+            </div>
+
+          </div>
+
+          <div class="nav-dropdown">
+
+            <span class="nav-dropdown-toggle">Resources</span>
+
+            <div class="nav-dropdown-menu">
+
+              <a href="/design-guides/">Design Guides</a>
+
+              <a href="/shipping/">Shipping</a>
+
+              <a href="/how-it-works/">How It Works</a>
+
+              <a href="/faq/">FAQ</a>
+
+            </div>
+
+          </div>
+
+          <div class="nav-dropdown">
+
+            <span class="nav-dropdown-toggle">Company</span>
+
+            <div class="nav-dropdown-menu">
+
+              <a href="/about/">About</a>
+
+              <a href="/factory/">Factory</a>
+
+              <a href="/quality/">Quality</a>
+
+              <a href="/engineering/">Engineering</a>
+
+            </div>
+
+          </div>
+
+          <a href="/blog/">Blog</a>
+
+          <a href="/contact/">Contact</a>
+
+        </nav>
+    <div class="header-actions"><a href="javascript:void(0)" class="btn btn-primary" onclick="openModal()">Request Quote</a></div>
+  </div>
+</header>
+
+<main>
+  <section class="sub-hero">
+    <div class="sub-hero-bg"><img src="/generated/blog-cover-frame-rigidity.webp" alt="" aria-hidden="true"><div class="sub-hero-overlay"></div></div>
+    <div class="container sub-hero-content">
+      <p class="overline">Distributor Guide &bull; July 2026</p>
+      <h1 class="h1" style="font-size:var(--text-4xl)">Frame Rigidity: The Invisible Foundation That Determines Print Quality at Every Speed</h1>
+      <p class="body-lg">Two printers with identical linear rails, identical stepper motors, and identical Klipper configurations can produce prints that differ by 0.15 mm in dimensional accuracy. The difference is the frame — and most distributors cannot explain why. This guide covers frame materials, stiffness calculations, vibration modes, and the practical selection criteria that separate a 60 mm/s printer from a 400 mm/s workhorse.</p>
+    </div>
+  </section>
+
+  <article class="section">
+    <div class="container" style="max-width:760px">
+      <div class="blog-body">
+        <p>When a customer asks "why is this printer more expensive than that one," and both have the same build volume, the same hotend temperature, and the same advertised print speed, the answer is almost always in the frame. The frame is the metrology backbone of a 3D printer — every positioning command from the stepper drivers is referenced to the frame, and every micron of frame deflection becomes a micron of position error at the nozzle. A printer frame that deflects 50 microns under a 5 N cutting force from the extruder — typical during fast travel moves — will produce parts that are 50 microns out of tolerance, no matter how precise the linear rails or how advanced the input shaper. This guide gives distributors the engineering vocabulary and selection criteria to explain frame quality to customers, position premium printers against budget competitors, and reduce "dimensional accuracy" support tickets that trace back to frame issues the customer cannot diagnose.</p>
+
+        <h2>Why Frame Rigidity Is Not Just "Build Quality" — It Is Metrology</h2>
+        <p>In precision engineering, a measurement machine is only as accurate as its reference frame. A 3D printer is fundamentally a coordinate measurement machine that happens to deposit plastic: it positions a toolhead at commanded X, Y, Z coordinates, and the printed part is accurate to the extent that the toolhead actually arrives at those coordinates. The frame is the reference against which all positioning is measured. When the frame flexes, the reference moves — and the printer has no way to know it moved. The stepper motors report position based on step counts from their home switches, not from an absolute position sensor. Every micron of frame deflection is invisible to the control system.</p>
+
+        <p>The practical consequence: a printer with a 2020 aluminum extrusion frame — 20 mm × 20 mm T-slot profile, common in entry-level machines — has a bending stiffness roughly 8 times lower than the same geometry in 4040 extrusion (40 mm × 40 mm). Under the same acceleration forces at 5,000 mm/s² — typical for modern high-speed printing — the 2020 frame deflects approximately 80–120 microns at the toolhead, while the 4040 frame deflects 10–15 microns. The difference is not in the electronics, the firmware, or the slicer. It is in the cross-sectional moment of inertia of the frame members — a purely mechanical property. For a deeper understanding of how motion system components interact with frame rigidity, see our <a href="/blog/linear-rails-vs-vwheels-3d-printer-motion-system-distributor-guide.html">linear rails vs V-wheels comparison</a>, which covers how slop in the motion guides compounds with frame flex.</p>
+
+        <div class="blog-img"><img src="/generated/blog-diagram-frame-1.webp" alt="Close-up of 3D printer aluminum extrusion frame corner bracket, T-slot profile visible, bolts and T-nuts in sharp focus, engineering laboratory setting" loading="lazy"></div>
+
+        <h2>Frame Materials Compared: Aluminum Extrusion, Welded Steel, and Injection-Molded Polymer</h2>
+        <p>Three frame materials dominate the consumer and prosumer 3D printer market. Each has a fundamentally different stiffness-to-weight ratio, damping characteristic, and thermal expansion coefficient — and each produces different failure modes when pushed beyond its design envelope.</p>
+
+        <div class="specs-table" style="margin:var(--space-8) 0">
+          <div class="spec-row"><span style="color:var(--color-accent-glow);font-weight:600">Property</span><span style="color:var(--color-accent-glow);font-weight:600;text-align:right;min-width:110px">2020 Aluminum</span><span style="color:var(--color-accent-glow);font-weight:600;text-align:right;min-width:110px">4040 Aluminum</span><span style="color:var(--color-accent-glow);font-weight:600;text-align:right;min-width:100px">Welded Steel</span><span style="color:var(--color-accent-glow);font-weight:600;text-align:right;min-width:110px">Injection Molded</span></div>
+          <div class="spec-row"><span>Young's Modulus (GPa)</span><span style="text-align:right;min-width:110px">69</span><span style="text-align:right;min-width:110px">69</span><span style="text-align:right;min-width:100px">200</span><span style="text-align:right;min-width:110px">2–4</span></div>
+          <div class="spec-row"><span>Density (g/cm³)</span><span style="text-align:right;min-width:110px">2.7</span><span style="text-align:right;min-width:110px">2.7</span><span style="text-align:right;min-width:100px">7.8</span><span style="text-align:right;min-width:110px">1.0–1.4</span></div>
+          <div class="spec-row"><span>Thermal expansion (µm/m·K)</span><span style="text-align:right;min-width:110px">23</span><span style="text-align:right;min-width:110px">23</span><span style="text-align:right;min-width:100px">12</span><span style="text-align:right;min-width:110px">60–100</span></div>
+          <div class="spec-row"><span>Damping factor (loss coefficient)</span><span style="text-align:right;min-width:110px">0.001</span><span style="text-align:right;min-width:110px">0.001</span><span style="text-align:right;min-width:100px">0.002</span><span style="text-align:right;min-width:110px">0.02–0.05</span></div>
+          <div class="spec-row"><span>Typical frame weight (kg)</span><span style="text-align:right;min-width:110px">4–7</span><span style="text-align:right;min-width:110px">9–15</span><span style="text-align:right;min-width:100px">15–25</span><span style="text-align:right;min-width:110px">2–5</span></div>
+          <div class="spec-row"><span>Stiffness (relative)</span><span style="text-align:right;min-width:110px">1×</span><span style="text-align:right;min-width:110px">8×</span><span style="text-align:right;min-width:100px">12–15×</span><span style="text-align:right;min-width:110px">0.3–0.5×</span></div>
+        </div>
+
+        <p><strong>2020/2040 Aluminum Extrusion:</strong> The workhorse of the industry. 6063-T5 aluminum T-slot extrusion is cheap, modular, and easy to assemble with corner brackets and T-nuts. The stiffness of an extrusion beam scales with the cube of its cross-sectional dimension — doubling the side length from 20 mm to 40 mm increases bending stiffness by a factor of approximately 8. The weak point in aluminum extrusion frames is not the extrusion itself but the corner joints: a typical L-bracket connection achieves only 40–60% of the theoretical stiffness of a continuous beam, because the bracket itself flexes and the T-nut engagement introduces micro-slip under cyclic loading. Machines that use machined corner plates with 4+ bolts per joint approach 80–90% of continuous-beam stiffness — a detail that separates $400 printers from $1,200 printers.</p>
+
+        <p><strong>Welded Steel:</strong> Used in high-end machines (Prusa XL, Rat Rig V-Core, Annex Engineering). Steel has nearly 3× the Young's modulus of aluminum and a lower thermal expansion coefficient (12 vs 23 µm/m·K), meaning a steel frame printer is both stiffer and more thermally stable. The critical advantage of welded steel is joint continuity: a properly welded joint is essentially a continuous structure with no micro-slip, no bolt loosening, and no bracket flex. The tradeoffs are weight (steel weighs 2.9× more than aluminum for equivalent stiffness) and manufacturing complexity — welded frames require post-weld stress relief and machining of mounting surfaces, adding $80–150 to the BOM cost. For distributors positioning premium printers, the steel frame narrative is powerful: "the same frame material used in CNC machining centers." For a detailed breakdown of motion system selection, see our <a href="/blog/corexy-vs-bedslinger-3d-printer-kinematics-guide.html">kinematics architecture guide</a>.</p>
+
+        <p><strong>Injection-Molded Polymer:</strong> Used in ultra-budget machines and some innovative designs (Bambu Lab A1 Mini uses a polymer base with steel inserts). The damping factor of glass-fiber-reinforced nylon or polycarbonate is 10–20× higher than aluminum, meaning injection-molded frames absorb vibration far better — a genuine advantage for reducing visible ringing at moderate speeds. However, the stiffness is 100–200× lower than steel, and thermal expansion is 3–5× higher. An injection-molded frame operating in a 50°C heated chamber will grow by 0.15–0.30 mm across a 250 mm span — enough to throw off first-layer calibration. For distributors, the key is knowing which applications benefit from polymer's damping (slow, detail-oriented printing) and which require metal's stiffness (high-speed production). Our <a href="/blog/3d-printer-belt-tensioning-guide-distributor.html">belt tensioning guide</a> covers how frame flex and belt resonance interact at different print speeds.</p>
+
+        <div class="blog-img"><img src="/generated/blog-diagram-frame-2.webp" alt="Side-by-side comparison of 3D printer frame types: 2020 aluminum extrusion corner, welded steel gantry plate, and injection-molded polymer base, studio photography on dark surface" loading="lazy"></div>
+
+        <h2>Vibration Modes and Why Input Shaping Cannot Fix a Floppy Frame</h2>
+        <p>Input shaping is a firmware technique that cancels resonant vibrations by pre-distorting the motion command — essentially feeding the stepper motors a signal that includes an inverted copy of the expected resonance. It is remarkably effective at eliminating visible ringing, and Klipper's built-in accelerometer-based calibration makes it accessible to any user. But input shaping has a fundamental limitation: it can only cancel vibrations that are linear, time-invariant, and within the bandwidth of the stepper motor. Frame flex introduces non-linear behavior — as the frame deflects, the stiffness changes, which shifts the resonant frequency. A resonance measured at 45 Hz during calibration may shift to 42 Hz under different print-head positions, because the effective span length and load distribution change. Input shaping tuned to 45 Hz will be partially effective at 42 Hz, but the residual vibration will be visible on print surfaces.</p>
+
+        <p>The practical rule: input shaping can compensate for approximately 2–4× the inherent vibration amplitude of a rigid frame, but it cannot compensate for a frame that is fundamentally too flexible. A 2020 aluminum extrusion frame with a first-mode resonance at 18 Hz — typical — can be input-shaped to produce clean prints up to about 150 mm/s. Beyond that speed, the excitation forces exceed what shaping can cancel, and ghosting reappears regardless of calibration quality. A 4040 frame with a first-mode resonance at 45 Hz can be input-shaped to 350–400 mm/s before the same limit is reached. The frame sets the ceiling; input shaping works within it. For distributors selling high-speed machines, see our <a href="/blog/high-speed-3d-printing-input-shaping-pressure-advance-distributor-guide.html">high-speed printing guide</a> for the full interaction between mechanics and firmware.</p>
+
+        <div class="blog-img"><img src="/generated/blog-diagram-frame-3.webp" alt="3D printer frame undergoing vibration testing with accelerometer attached to toolhead mount, laboratory test setup with data acquisition cables visible" loading="lazy"></div>
+
+        <h2>Practical Selection Criteria for Distributors</h2>
+        <p>When evaluating printers for your product line, assess frame quality with these five checks — none of which require specialized equipment:</p>
+
+        <ul>
+          <li><strong>Corner joint design:</strong> Look for machined corner plates with 4+ bolts per joint, not stamped L-brackets with 2 bolts. The difference in joint stiffness is 2–3×.</li>
+          <li><strong>Extrusion profile size:</strong> 2020 is adequate for build volumes under 200 mm and speeds under 120 mm/s. 2040 or 3030 is the minimum for 250+ mm builds or speeds above 200 mm/s. 4040 is the professional standard.</li>
+          <li><strong>Gantry beam cross-section:</strong> The X-axis gantry — the beam that carries the toolhead — is the most deflection-critical member. A 2020 gantry spanning 300 mm will sag 0.08–0.12 mm under its own weight plus toolhead mass. A 2040 gantry in the same span sags 0.01–0.02 mm. The gantry should always be one profile size larger than the vertical uprights.</li>
+          <li><strong>Triangulation and bracing:</strong> An open rectangular frame — four vertical uprights with a top rectangle — has essentially zero resistance to racking (parallelogram deformation). Corner gussets or diagonal braces that triangulate the structure increase racking stiffness by 10–50×. Look for machines with diagonal braces in at least one plane.</li>
+          <li><strong>Base plate material:</strong> A 3–6 mm aluminum base plate that ties the bottom of the frame together provides significantly more torsional stiffness than a frame that bolts directly to rubber feet. Machines with solid base plates consistently measure 30–50% lower frame deflection under dynamic loading.</li>
+        </ul>
+
+        <p>For distributors positioning a product line across price tiers, the frame is the clearest differentiator: a $600 printer with a 2040 frame and machined corner plates will produce more dimensionally accurate parts at high speed than a $400 printer with a 2020 frame and stamped brackets, even if both advertise the same "500 mm/s max speed." The speed rating of the electronics is irrelevant if the frame cannot hold the toolhead within 50 microns at that speed. Our <a href="/blog/3d-printer-pricing-strategy-distributor-margin-guide.html">pricing strategy guide</a> covers how to use mechanical quality as a margin justification in competitive markets.</p>
+
+        <div class="blog-img"><img src="/generated/blog-diagram-frame-4.webp" alt="Exploded view of 3D printer frame assembly with aluminum extrusions, corner brackets, T-nuts, and base plate, clean workshop bench with assembly tools" loading="lazy"></div>
+
+        <h2>Thermal Expansion: The Hidden Variable in Enclosed Printers</h2>
+        <p>When a printer operates inside a heated enclosure at 60°C chamber temperature — common for ABS and engineering filament printing — the aluminum frame expands by approximately 0.22 mm across a 400 mm span relative to its room-temperature dimensions (ΔT = 40°C × 23 µm/m·K × 0.4 m = 0.37 mm at the extremes, 0.18 mm in the center). Since the linear rails are typically steel (12 µm/m·K), they expand at roughly half the rate of the aluminum frame they are mounted to. This differential expansion introduces subtle bending stress into the linear rail, which can increase carriage friction by 10–30% in extreme cases. The practical consequence: a printer calibrated perfectly at room temperature may produce parts 0.05–0.10 mm undersized in the X-Y plane when running at full chamber temperature, purely from differential thermal expansion between the aluminum frame and the steel rails.</p>
+
+        <p>The mitigation is not exotic: steel frames eliminate the differential entirely (frame and rails are both steel), and printers with polymer bushings instead of recirculating-ball carriages are far more tolerant of slight rail bending because the bushing compliance absorbs the misalignment. For distributors selling enclosed printers, thermal expansion is a talking point that demonstrates technical depth: a steel-frame enclosed printer maintains dimensional accuracy across its full temperature range, while an aluminum-frame enclosed printer requires thermal soak time (30–45 minutes) for the frame to reach equilibrium before starting a precision print. See our <a href="/blog/3d-printer-enclosure-temperature-control-distributor-guide.html">enclosure temperature control guide</a> for more on chamber thermal management.</p>
+
+        <div class="blog-img"><img src="/generated/blog-diagram-frame-5.webp" alt="Enclosed 3D printer with heated chamber door open, visible aluminum frame and linear rails inside, thermal imaging color overlay on key frame members" loading="lazy"></div>
+
+        <div class="cta-card" style="margin-top:var(--space-12)">
+          <p class="overline">Product Sourcing</p>
+          <h2 class="h2">Source 3D printers with the right frame for your market</h2>
+          <p class="body-lg">Our engineering team can help you evaluate frame designs across our product line — from budget 2020 machines to professional 4040 and steel-frame workhorses.</p>
+          <div class="cta-actions">
+            <a href="javascript:void(0)" class="btn btn-primary btn-lg" onclick="openModal()">Request Product Specs</a>
+          </div>
+        </div>
+        <p style="margin-top:var(--space-8)">
+          <a href="/blog/" class="btn btn-ghost">&larr; Back to Blog</a>
+        </p>
+      </div>
+    </div>
+  </article>
+</main>
+
+<footer class="site-footer section">
+  <div class="container">
+        <div class="footer-grid grid-4">
+
+          <div class="footer-brand"><img src="/generated/logo-icon.png" alt="" width="28" height="28" style="margin-bottom:var(--space-4)" aria-hidden="true"><p class="body-sm" style="margin-bottom:var(--space-3);font-weight:700;color:var(--color-text)">ems-3dp</p><p class="body-sm">Precision 3D printers engineered for global markets.</p></div>
+
+          <div class="footer-col"><h4>Solutions</h4><a href="/solutions/distribution/">Distribution</a><a href="/solutions/oem-white-label/">OEM &amp; White Label</a><a href="/solutions/education/">Education</a></div>
+
+          <div class="footer-col"><h4>Company</h4><a href="/about/">About</a><a href="/factory/">Factory</a><a href="/quality/">Quality</a><a href="/engineering/">Engineering</a><a href="/blog/">Blog</a><a href="/contact/">Contact</a></div>
+
+          <div class="footer-col"><h4>Resources</h4><a href="/design-guides/">Design Guides</a><a href="/shipping/">Shipping</a><a href="/how-it-works/">How It Works</a><a href="/faq/">FAQ</a><a href="/privacy/">Privacy Policy</a><a href="/terms/">Terms of Service</a></div>
+
+        </div>
+<div class="footer-bottom"><p class="body-sm">&copy; 2026 Precise3D. All rights reserved.</p></div>
+  </div>
+</footer>
+
+<div class="modal-overlay" id="inquiryModal">
+  <div class="modal-dialog">
+    <button class="modal-close" onclick="closeModal()" aria-label="Close">&times;</button>
+    <h2 class="h2">Send an Inquiry</h2>
+    <p class="body-sm">We'll respond within 24 hours.</p>
+    <form class="modal-form" onsubmit="return handleInquiry(event)" novalidate>
+      <div class="form-group"><label for="modal-name">Name <span class="required">*</span></label><input type="text" id="modal-name" name="name" required placeholder="Your full name"></div>
+      <div class="form-group"><label for="modal-email">Email <span class="required">*</span></label><input type="email" id="modal-email" name="email" required placeholder="you@company.com"></div>
+      <div class="form-group"><label for="modal-message">Message <span class="required">*</span></label><textarea id="modal-message" name="message" required rows="4" placeholder="Tell us about your business and what you're looking for..."></textarea></div>
+      <button type="submit" class="btn btn-primary btn-lg" style="width:100%;justify-content:center">Send Inquiry</button>
+      <p class="modal-form-note">We'll respond within 24 hours. Your information is never shared.</p>
+    </form>
+  </div>
+</div>
+
+<script>
+(function(){var els=document.querySelectorAll('.fade-up');var obs=new IntersectionObserver(function(e){e.forEach(function(e){if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target)}})},{threshold:0.15});els.forEach(function(el){obs.observe(el)})})();
+function openModal(){document.getElementById('inquiryModal').classList.add('open')}
+function closeModal(){document.getElementById('inquiryModal').classList.remove('open')}
+document.getElementById('inquiryModal').addEventListener('click',function(e){if(e.target===this)closeModal()})
+</script>
+<script src="../inquiry-handler.js"></script>
+</body>
+</html>

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="/generated/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="/generated/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/generated/icon-192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="/generated/icon-512.png">
+  <title>Ball Screw vs Lead Screw Z-Axis Guide — Which Motion Upgrade Delivers Better Layer Consistency for 3D Printers | Precise3D</title>
+  <meta name="description" content="Z-axis consistency is the difference between visible layer lines and a glass-smooth finish. This distributor guide compares ball screws and lead screws for 3D printer Z-axis — covering backlash, resolution, wobble, cost, and which upgrade path delivers measurable print quality improvements.">
+  <meta property="og:title" content="Ball Screw vs Lead Screw Z-Axis: The Motion Upgrade That Determines Layer Consistency">
+  <meta property="og:description" content="A 0.01 mm Z-axis error per layer accumulates to 2 mm of dimensional error over a 200 mm print. Here's how the choice between ball screws and lead screws determines whether that error happens.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://ems-3dp.com/blog/3d-printer-z-axis-ball-screw-vs-lead-screw-distributor-guide">
+  <link rel="canonical" href="https://ems-3dp.com/blog/3d-printer-z-axis-ball-screw-vs-lead-screw-distributor-guide">
+  <link rel="stylesheet" href="/design-tokens.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Ball Screw vs Lead Screw Z-Axis Guide: Which Motion Upgrade Delivers Better Layer Consistency for 3D Printers",
+  "description": "Comprehensive distributor guide comparing ball screws and lead screws for 3D printer Z-axis motion — covering backlash, resolution, lead error, Z-wobble mechanics, anti-backlash nut design, cost analysis, and upgrade ROI for different printer architectures.",
+  "datePublished": "2026-07-30",
+  "dateModified": "2026-07-30",
+  "author": {"@type": "Organization", "name": "Precise3D"},
+  "publisher": {"@type": "Organization", "name": "Precise3D", "url": "https://ems-3dp.com"}
+}
+</script>
+<style>
+.blog-body{color:var(--color-text-muted);font-size:var(--text-base);line-height:1.85}
+.blog-body p{margin-bottom:var(--space-5)}
+.blog-body a{color:var(--color-accent);text-decoration:underline;text-underline-offset:2px}
+.blog-body h2{font-size:var(--text-2xl);font-weight:600;color:var(--color-text);margin-top:var(--space-12);margin-bottom:var(--space-5)}
+.blog-body strong{color:var(--color-text)}
+.blog-body ul{margin-bottom:var(--space-5);padding-left:var(--space-6)}
+.blog-body li{margin-bottom:var(--space-2);color:var(--color-text-muted)}
+.specs-table{display:flex;flex-direction:column;gap:var(--space-3);padding:var(--space-6);background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-lg)}
+.spec-row{display:flex;justify-content:space-between;font-size:var(--text-sm);padding-block:.15rem}
+.spec-row span:first-child{color:var(--color-text-dim);flex:1}
+.spec-val{color:var(--color-text);font-weight:600;font-family:var(--font-mono);font-size:var(--text-xs);text-align:right;min-width:80px}
+.diag-box{padding:var(--space-4) var(--space-5);background:var(--color-surface);border-left:3px solid var(--color-accent);border-radius:0 var(--radius-md) var(--radius-md) 0;margin:var(--space-6) 0;font-size:var(--text-sm)}
+.diag-box strong{color:var(--color-accent-glow)}
+</style>
+
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="/" class="logo"><img src="/generated/logo-icon.png" alt="" width="32" height="32" aria-hidden="true"><span class="logo-text">ems-3dp</span></a>
+    <nav class="nav-main">
+
+          <a href="/">Home</a>
+
+          <a href="/products/">Products</a>
+
+          <div class="nav-dropdown">
+
+            <span class="nav-dropdown-toggle">Solutions</span>
+
+            <div class="nav-dropdown-menu">
+
+              <a href="/solutions/distribution/">Distribution</a>
+
+              <a href="/solutions/oem-white-label/">OEM &amp; White Label</a>
+
+              <a href="/solutions/education/">Education</a>
+
+            </div>
+
+          </div>
+
+          <div class="nav-dropdown">
+
+            <span class="nav-dropdown-toggle">Industries</span>
+
+            <div class="nav-dropdown-menu">
+
+              <a href="/industries/education-research/">Education &amp; Research</a>
+
+              <a href="/industries/healthcare-dental/">Healthcare &amp; Dental</a>
+
+              <a href="/industries/manufacturing-prototyping/">Manufacturing &amp; Prototyping</a>
+
+              <a href="/industries/retail-consumer/">Retail &amp; Consumer</a>
+
+              <a href="/industries/jewelry-fashion/">Jewelry &amp; Fashion</a>
+
+              <a href="/industries/engineering-architecture/">Engineering &amp; Architecture</a>
+
+            </div>
+
+          </div>
+
+          <div class="nav-dropdown">
+
+            <span class="nav-dropdown-toggle">Resources</span>
+
+            <div class="nav-dropdown-menu">
+
+              <a href="/design-guides/">Design Guides</a>
+
+              <a href="/shipping/">Shipping</a>
+
+              <a href="/how-it-works/">How It Works</a>
+
+              <a href="/faq/">FAQ</a>
+
+            </div>
+
+          </div>
+
+          <div class="nav-dropdown">
+
+            <span class="nav-dropdown-toggle">Company</span>
+
+            <div class="nav-dropdown-menu">
+
+              <a href="/about/">About</a>
+
+              <a href="/factory/">Factory</a>
+
+              <a href="/quality/">Quality</a>
+
+              <a href="/engineering/">Engineering</a>
+
+            </div>
+
+          </div>
+
+          <a href="/blog/">Blog</a>
+
+          <a href="/contact/">Contact</a>
+
+        </nav>
+    <div class="header-actions"><a href="javascript:void(0)" class="btn btn-primary" onclick="openModal()">Request Quote</a></div>
+  </div>
+</header>
+
+<main>
+  <section class="sub-hero">
+    <div class="sub-hero-bg"><img src="/generated/blog-cover-z-axis-screw.webp" alt="" aria-hidden="true"><div class="sub-hero-overlay"></div></div>
+    <div class="container sub-hero-content">
+      <p class="overline">Distributor Guide &bull; July 2026</p>
+      <h1 class="h1" style="font-size:var(--text-4xl)">Ball Screws vs Lead Screws: The Z-Axis Decision That Separates 50-Micron Printers From 200-Micron Printers</h1>
+      <p class="body-lg">The difference between a printer that produces perfectly smooth vertical walls and one that shows visible layer banding every 2-3 mm is often a single component: the Z-axis lead screw. This guide covers the engineering tradeoffs between ball screws and lead screws, the physics of Z-wobble, and which upgrade delivers measurable ROI for distributors selling into precision markets.</p>
+    </div>
+  </section>
+
+  <article class="section">
+    <div class="container" style="max-width:760px">
+      <div class="blog-body">
+        <p>When a customer sends a photo of a print with evenly spaced horizontal bands — repeating every 2–8 mm up the Z-axis — the diagnosis is almost certainly in the lead screw. Not the extrusion multiplier. Not the filament diameter. Not the PID tuning. A bent or eccentric lead screw introduces a periodic Z-axis displacement error that repeats with every rotation of the screw, producing visible banding that no amount of slicer tuning can eliminate. The upgrade from a commodity T8 lead screw to a precision C5 ground ball screw costs $30–80 per axis — and for printers targeting layer heights below 0.1 mm, it is the single most cost-effective mechanical upgrade available. This guide gives distributors the engineering knowledge to explain the difference to customers and identify which printer models justify the premium.</p>
+
+        <h2>The Fundamental Difference: Sliding Friction vs Rolling Friction</h2>
+        <p>Lead screws and ball screws both convert rotary motion from a stepper motor into linear motion along the Z-axis. They look similar — a threaded shaft with a nut that travels along it — but the internal mechanics are fundamentally different, and that difference determines everything about accuracy, backlash, wear, and cost.</p>
+
+        <p><strong>Lead screw (T8 trapezoidal thread):</strong> A stainless steel or carbon steel shaft with a trapezoidal thread profile (typically Tr8×8 — 8 mm diameter, 8 mm lead per revolution). A brass or POM (Delrin) nut rides on the threads with sliding contact. The nut and screw are always in physical contact, and the coefficient of friction between brass and steel is approximately 0.15–0.25. This sliding friction is the source of several failure modes: it generates heat at high speeds (though Z-axis speeds are low enough that this is rarely an issue), it wears the softer brass nut over time (typically 500–2,000 hours of Z-axis travel before measurable backlash develops), and it requires some clearance between the nut and screw to prevent binding — clearance that becomes backlash. Anti-backlash nuts address this with a spring-loaded split design that preloads the nut against both flanks of the thread, reducing effective backlash to 0.01–0.05 mm at the cost of increased friction and accelerated wear.</p>
+
+        <p><strong>Ball screw (C5/C7 precision ground):</strong> A hardened steel shaft with a Gothic-arch thread profile, containing recirculating steel balls between the nut and the shaft — exactly like a linear bearing wrapped around a helix. The coefficient of rolling friction between hardened steel balls and a hardened steel raceway is 0.003–0.005 — roughly 50× lower than the sliding friction of a lead screw. This has three practical consequences: near-zero static friction (no stick-slip at layer changes), efficiency of 90–95% (versus 30–40% for lead screws — the motor does useful work instead of fighting friction), and dramatically longer wear life (10,000–50,000 hours before measurable backlash develops). The balls are preloaded internally — either by oversizing them slightly relative to the raceway or by using a double-nut with a spacer — eliminating backlash entirely (C5 grade: <0.005 mm; C3 grade: <0.003 mm). For context on how Z-axis precision affects overall print quality, see our <a href="/blog/3d-printer-auto-bed-leveling-calibration-technology-distributor-guide.html">bed leveling and calibration guide</a>.</p>
+
+        <div class="blog-img"><img src="/generated/blog-diagram-zscrew-1.webp" alt="Close-up macro photograph comparing T8 lead screw with brass nut and C5 ball screw with recirculating ball nut, both on dark surface with caliper for scale, engineering studio shot" loading="lazy"></div>
+
+        <h2>Z-Wobble: The Physics of Why Bent Lead Screws Ruin Prints</h2>
+        <p>Z-wobble — the periodic banding pattern that repeats every 8 mm on a T8×8 lead screw printer — is not a lead error problem. It is a straightness problem. The mechanism works as follows.</p>
+
+        <p>A T8 lead screw with a straightness tolerance of 0.1 mm per 300 mm (typical for commodity-grade rolled screws) will have a lateral runout at the nut position of approximately 0.05–0.10 mm as the screw rotates. If the Z-axis nut is rigidly coupled to the X-axis gantry — as it is in most printer designs — that lateral displacement pushes the gantry sideways by the same amount. The result: the toolhead position shifts 0.05–0.10 mm in X or Y with every full rotation of the Z-axis screw, producing a visible horizontal band every 8 mm (the lead of a T8×8 screw). At a 0.2 mm layer height, that band is 2–3 layers thick — easily visible and often mistaken for inconsistent extrusion.</p>
+
+        <p>The mitigation is not a more expensive screw — it is decoupling the nut from the gantry. A backlash-free flexible coupling (Oldham coupler or diaphragm coupler) between the lead screw nut and the gantry absorbs the lateral runout while transmitting the vertical motion. This is a $3–8 part that eliminates 80–90% of visible Z-wobble without replacing the lead screw. The remaining 10–20% comes from the lead screw's inherent pitch error — the actual lead deviating from the nominal 8 mm per revolution — which cannot be fixed by a coupler and requires a higher-grade screw. For printers with dual Z-axis motors, the interaction between two independent lead screws introduces an additional failure mode: if the two screws are not perfectly synchronized, the gantry tilts, producing a diagonal banding pattern. Our <a href="/blog/3d-printer-belt-tensioning-guide-distributor.html">belt tensioning guide</a> covers a similar synchronization issue in CoreXY belt paths.</p>
+
+        <div class="blog-img"><img src="/generated/blog-diagram-zscrew-2.webp" alt="Close-up of 3D printer Z-axis lead screw assembly with anti-backlash nut and Oldham coupler, showing the flexible joint between screw nut and gantry bracket, clean engineering workspace" loading="lazy"></div>
+
+        <h2>Performance Comparison: Lead Screw vs Ball Screw by the Numbers</h2>
+
+        <div class="specs-table" style="margin:var(--space-8) 0">
+          <div class="spec-row"><span style="color:var(--color-accent-glow);font-weight:600">Parameter</span><span style="color:var(--color-accent-glow);font-weight:600;text-align:right;min-width:110px">T8 Lead Screw</span><span style="color:var(--color-accent-glow);font-weight:600;text-align:right;min-width:110px">T8 w/ Anti-Backlash</span><span style="color:var(--color-accent-glow);font-weight:600;text-align:right;min-width:110px">C7 Ball Screw</span><span style="color:var(--color-accent-glow);font-weight:600;text-align:right;min-width:110px">C5 Ball Screw</span></div>
+          <div class="spec-row"><span>Backlash</span><span style="text-align:right;min-width:110px">0.05–0.15 mm</span><span style="text-align:right;min-width:110px">0.01–0.05 mm</span><span style="text-align:right;min-width:110px">0.01–0.03 mm</span><span style="text-align:right;min-width:110px"><0.005 mm</span></div>
+          <div class="spec-row"><span>Lead accuracy (/300 mm)</span><span style="text-align:right;min-width:110px">±0.10 mm</span><span style="text-align:right;min-width:110px">±0.10 mm</span><span style="text-align:right;min-width:110px">±0.05 mm</span><span style="text-align:right;min-width:110px">±0.023 mm</span></div>
+          <div class="spec-row"><span>Efficiency</span><span style="text-align:right;min-width:110px">30–40%</span><span style="text-align:right;min-width:110px">25–35%</span><span style="text-align:right;min-width:110px">90–95%</span><span style="text-align:right;min-width:110px">90–95%</span></div>
+          <div class="spec-row"><span>Wear life (hours)</span><span style="text-align:right;min-width:110px">500–2,000</span><span style="text-align:right;min-width:110px">300–1,500</span><span style="text-align:right;min-width:110px">10,000–30,000</span><span style="text-align:right;min-width:110px">20,000–50,000</span></div>
+          <div class="spec-row"><span>Cost per axis (300 mm)</span><span style="text-align:right;min-width:110px">$3–8</span><span style="text-align:right;min-width:110px">$8–15</span><span style="text-align:right;min-width:110px">$25–50</span><span style="text-align:right;min-width:110px">$50–120</span></div>
+          <div class="spec-row"><span>Requires lubrication</span><span style="text-align:right;min-width:110px">Yes (grease)</span><span style="text-align:right;min-width:110px">Yes (grease)</span><span style="text-align:right;min-width:110px">Yes (oil/grease)</span><span style="text-align:right;min-width:110px">Yes (oil/grease)</span></div>
+        </div>
+
+        <p>The cost gap between a T8 lead screw ($3–8) and a C5 ball screw ($50–120) is substantial — roughly 10–15×. For a printer with dual Z-axis motors, the upgrade cost is $100–240 in BOM. This is why ball screws appear almost exclusively on printers priced above $800: the BOM cost for dual C5 ball screws alone exceeds the total manufacturing cost of a budget bedslinger. The question for distributors is not "which is better" — the ball screw wins on every performance metric — but "at what price point does the customer value the improvement." Our <a href="/blog/3d-printer-pricing-strategy-distributor-margin-guide.html">pricing strategy guide</a> covers how to position mechanical upgrades in competitive markets.</p>
+
+        <div class="blog-img"><img src="/generated/blog-diagram-zscrew-3.webp" alt="Precision C5 ground ball screw assembly with double nut and wiper seals on anti-static mat, digital micrometer measuring lead accuracy, calipers and engineering drawings in background" loading="lazy"></div>
+
+        <h2>Which Upgrade Path for Which Customer</h2>
+        <p>The Z-axis upgrade decision tree depends on the customer's current printer, their print quality complaints, and their budget. The three upgrade paths below cover the spectrum from a $5 fix to a $200 precision conversion.</p>
+
+        <div class="diag-box">
+          <strong>Path A — "The $5 Fix": Anti-Backlash Nut + Oldham Coupler</strong><br>
+          <strong>For:</strong> Printers with visible Z-banding every 8 mm, layer height ≥0.15 mm, T8×8 lead screw.<br>
+          <strong>Expected improvement:</strong> Eliminates 80–90% of visible banding. Does not improve lead accuracy — parts will still have a ±0.1 mm Z-dimension error over 300 mm height.<br>
+          <strong>Parts:</strong> POM anti-backlash nut ($3–5) + Oldham coupler ($2–3). Installation time: 20 minutes. No firmware changes required.
+        </div>
+
+        <div class="diag-box" style="margin-top:var(--space-4)">
+          <strong>Path B — "The Precision Upgrade": C7 Rolled Ball Screw Conversion</strong><br>
+          <strong>For:</strong> Printers targeting layer heights of 0.08–0.12 mm, dimensional accuracy requirements of ±0.05 mm over 200 mm height, or users experiencing recurring anti-backlash nut wear.<br>
+          <strong>Expected improvement:</strong> Z-axis backlash <0.03 mm, lead accuracy ±0.05 mm/300 mm — sufficient for functional prototypes and end-use parts. Ball screw wear life eliminates the maintenance cycle of replacing brass nuts every 500–1,500 hours.<br>
+          <strong>Parts:</strong> C7 ball screw + ball nut + bearing block + motor coupler, $60–100 for dual-Z. Installation time: 2–3 hours. May require Z-axis stepper current adjustment (lower friction → lower torque requirement).
+        </div>
+
+        <div class="diag-box" style="margin-top:var(--space-4)">
+          <strong>Path C — "The Metrology-Grade Build": C5 Ground Ball Screw</strong><br>
+          <strong>For:</strong> Printers used for dental models, jewelry casting patterns, or engineering fixtures where Z-axis accuracy of ±0.01 mm over 200 mm is a customer requirement.<br>
+          <strong>Expected improvement:</strong> Backlash <0.005 mm, lead accuracy ±0.023 mm/300 mm — approaching the limits of what FDM extrusion can resolve. At this grade, the limiting factor is no longer the Z-axis mechanics but the extrusion consistency and X-Y positioning.<br>
+          <strong>Parts:</strong> C5 ground ball screw + double nut + precision bearing blocks, $150–240 for dual-Z. Installation time: 3–4 hours. Justified only when the printer's frame is stiff enough to benefit — a C5 ball screw on a 2020 aluminum extrusion frame is wasted precision. See our <a href="/blog/3d-printer-frame-rigidity-materials-distributor-guide.html">frame rigidity guide</a> for the mechanical prerequisites.
+        </div>
+
+        <div class="blog-img"><img src="/generated/blog-diagram-zscrew-4.webp" alt="3D printer Z-axis assembly with ball screw conversion installed, precision bearing blocks visible, clean gantry with linear rails parallel to ball screw, workshop setting" loading="lazy"></div>
+
+        <h2>Lead Screw Pitch and Stepper Motor Resolution</h2>
+        <p>An often-overlooked aspect of Z-axis design is the interaction between screw lead and stepper motor resolution. A T8×8 lead screw advances 8 mm per full revolution. With a standard 1.8° stepper motor (200 full steps per revolution) and 16× microstepping, the theoretical Z-axis resolution is 8 mm / (200 × 16) = 0.0025 mm per microstep — far finer than any FDM layer height. But microsteps are not equally spaced: at low torque loads (typical for Z-axis during layer changes), the stepper motor may not reliably hold every microstep position. The practical resolution is closer to 0.01 mm for a T8×8 with 16× microstepping.</p>
+
+        <p>A T8×2 lead screw — 8 mm diameter, 2 mm lead — improves practical resolution to 0.0025 mm per microstep × 4 (because the lead is 4× finer) = effectively 0.0025 mm practical positioning. This is why some high-end printers use T8×2 lead screws instead of T8×8: the finer pitch provides 4× the mechanical advantage and 4× the positioning resolution, at the cost of 4× the travel time (irrelevant for Z-axis, which moves slowly). However, T8×2 screws are more susceptible to binding because the thread helix angle is shallower, and any misalignment between the screw and the linear guides produces proportionally higher side loads. For 3D printers where the Z-axis moves the gantry rather than the bed — CoreXY and similar architectures — misalignment is more common because the gantry weight distribution changes with X-axis position. Our <a href="/blog/corexy-vs-bedslinger-3d-printer-kinematics-guide.html">kinematics guide</a> covers how Z-axis loading differs across architectures.</p>
+
+        <h2>Distributor Positioning: When to Sell the Upgrade</h2>
+        <p>For distributors, the Z-axis screw upgrade is not a standalone product — it is a margin-add to a printer sale or a follow-on consumable for existing customers. The three most effective sales triggers:</p>
+
+        <ul>
+          <li><strong>At point of printer sale:</strong> "This model comes with a T8×8 lead screw and anti-backlash nut — good for 0.15 mm layer heights. If your customers need 0.08 mm or finer, we offer a factory-installed C7 ball screw upgrade for $45 per printer at order time." The factory-installed option is critical — retrofitting a ball screw is a 2–3 hour job for an experienced user, which is beyond what most consumers will attempt. The factory-installed upgrade is a $45 margin-add with near-zero support cost.</li>
+          <li><strong>As a consumable replacement:</strong> Brass lead screw nuts wear out after 500–2,000 hours of Z travel. For a print farm running 24/7, that is 3–12 months. Selling replacement anti-backlash nuts ($5 each) as a consumable is a recurring revenue stream. When the second replacement is needed, position the C7 ball screw as a permanent fix: "You have replaced the nut twice in 18 months at $10 total. For $60, the ball screw eliminates this maintenance permanently. Your breakeven is 5–8 years, and you eliminate the downtime."</li>
+          <li><strong>As a precision-market differentiator:</strong> For distributors selling into dental labs, jewelry casting services, or engineering firms, the Z-axis specification is a purchasing criterion. A printer with C5 ball screws and a stated Z-axis accuracy of ±0.01 mm is a fundamentally different product category from a printer with T8 lead screws and ±0.1 mm accuracy — even if both have the same build volume and hotend temperature. The specification sells the printer. Our <a href="/blog/3d-printer-certification-compliance-distributor-guide.html">certification guide</a> covers how to document mechanical specifications for institutional buyers.</li>
+        </ul>
+
+        <div class="blog-img"><img src="/generated/blog-diagram-zscrew-5.webp" alt="Flat lay of Z-axis upgrade kit: C7 ball screw, double ball nut, bearing blocks, motor coupler, hex keys, and printed installation guide, clean white photography surface" loading="lazy"></div>
+
+        <div class="cta-card" style="margin-top:var(--space-12)">
+          <p class="overline">Motion Components</p>
+          <h2 class="h2">Source printers with precision Z-axis motion for your market segment</h2>
+          <p class="body-lg">Our product line ranges from T8 lead screw machines for entry-level consumers to C5 ball screw workhorses for dental labs and engineering firms. We offer factory-installed ball screw upgrades at order time — no retrofit required.</p>
+          <div class="cta-actions">
+            <a href="javascript:void(0)" class="btn btn-primary btn-lg" onclick="openModal()">Request Motion Specs</a>
+          </div>
+        </div>
+        <p style="margin-top:var(--space-8)">
+          <a href="/blog/" class="btn btn-ghost">&larr; Back to Blog</a>
+        </p>
+      </div>
+    </div>
+  </article>
+</main>
+
+<footer class="site-footer section">
+  <div class="container">
+        <div class="footer-grid grid-4">
+
+          <div class="footer-brand"><img src="/generated/logo-icon.png" alt="" width="28" height="28" style="margin-bottom:var(--space-4)" aria-hidden="true"><p class="body-sm" style="margin-bottom:var(--space-3);font-weight:700;color:var(--color-text)">ems-3dp</p><p class="body-sm">Precision 3D printers engineered for global markets.</p></div>
+
+          <div class="footer-col"><h4>Solutions</h4><a href="/solutions/distribution/">Distribution</a><a href="/solutions/oem-white-label/">OEM &amp; White Label</a><a href="/solutions/education/">Education</a></div>
+
+          <div class="footer-col"><h4>Company</h4><a href="/about/">About</a><a href="/factory/">Factory</a><a href="/quality/">Quality</a><a href="/engineering/">Engineering</a><a href="/blog/">Blog</a><a href="/contact/">Contact</a></div>
+
+          <div class="footer-col"><h4>Resources</h4><a href="/design-guides/">Design Guides</a><a href="/shipping/">Shipping</a><a href="/how-it-works/">How It Works</a><a href="/faq/">FAQ</a><a href="/privacy/">Privacy Policy</a><a href="/terms/">Terms of Service</a></div>
+
+        </div>
+<div class="footer-bottom"><p class="body-sm">&copy; 2026 Precise3D. All rights reserved.</p></div>
+  </div>
+</footer>
+
+<div class="modal-overlay" id="inquiryModal">
+  <div class="modal-dialog">
+    <button class="modal-close" onclick="closeModal()" aria-label="Close">&times;</button>
+    <h2 class="h2">Send an Inquiry</h2>
+    <p class="body-sm">We'll respond within 24 hours.</p>
+    <form class="modal-form" onsubmit="return handleInquiry(event)" novalidate>
+      <div class="form-group"><label for="modal-name">Name <span class="required">*</span></label><input type="text" id="modal-name" name="name" required placeholder="Your full name"></div>
+      <div class="form-group"><label for="modal-email">Email <span class="required">*</span></label><input type="email" id="modal-email" name="email" required placeholder="you@company.com"></div>
+      <div class="form-group"><label for="modal-message">Message <span class="required">*</span></label><textarea id="modal-message" name="message" required rows="4" placeholder="Tell us about your business and what you're looking for..."></textarea></div>
+      <button type="submit" class="btn btn-primary btn-lg" style="width:100%;justify-content:center">Send Inquiry</button>
+      <p class="modal-form-note">We'll respond within 24 hours. Your information is never shared.</p>
+    </form>
+  </div>
+</div>
+
+<script>
+(function(){var els=document.querySelectorAll('.fade-up');var obs=new IntersectionObserver(function(e){e.forEach(function(e){if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target)}})},{threshold:0.15});els.forEach(function(el){obs.observe(el)})})();
+function openModal(){document.getElementById('inquiryModal').classList.add('open')}
+function closeModal(){document.getElementById('inquiryModal').classList.remove('open')}
+document.getElementById('inquiryModal').addEventListener('click',function(e){if(e.target===this)closeModal()})
+</script>
+<script src="../inquiry-handler.js"></script>
+</body>
+</html>
