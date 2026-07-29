@@ -1051,4 +1051,19 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://ems-3dp.com/blog/bambu-lab-closed-ecosystem-distributor-strategy.html</loc>
+    <lastmod>2026-07-30</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ems-3dp.com/blog/3d-printer-enclosure-modification-upgrade-distributor-guide.html</loc>
+    <lastmod>2026-07-30</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ems-3dp.com/blog/water-washable-vs-standard-resin-margin-comparison-distributor-guide.html</loc>
+    <lastmod>2026-07-30</lastmod>
+    <priority>0.8</priority>
+  </url>
 </urlset>
