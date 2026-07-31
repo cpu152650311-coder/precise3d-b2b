@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="/generated/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="/generated/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/generated/icon-192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="/generated/icon-512.png">
+  <title>3D Printer Temperature Sensors — Thermistor vs Thermocouple vs RTD: A Distributor's Selection &amp; Margin Guide | Precise3D</title>
+  <meta name="description" content="Every 3D printer relies on temperature sensors for hotend and heated bed control — but thermistors, thermocouples, and RTDs each have different accuracy windows, failure modes, and replacement revenue potential. This distributor guide covers sensor selection, common failure diagnostics, stocking strategy, and the aftermarket revenue from temperature sensor replacements.">
+  <meta property="og:title" content="3D Printer Temperature Sensors: Thermistor vs Thermocouple vs RTD — The Replacement Part That Sells Itself">
+  <meta property="og:description" content="Temperature sensors are the most frequently replaced electronic component on any 3D printer — and most distributors don't stock them. Here's the sensor technology comparison, failure diagnosis guide, and aftermarket revenue playbook.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://ems-3dp.com/blog/3d-printer-temperature-sensors-thermistor-thermocouple-distributor-guide">
+  <link rel="canonical" href="https://ems-3dp.com/blog/3d-printer-temperature-sensors-thermistor-thermocouple-distributor-guide">
+  <link rel="stylesheet" href="/design-tokens.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "3D Printer Temperature Sensors — Thermistor vs Thermocouple vs RTD: A Distributor's Selection & Margin Guide",
+  "description": "Complete distributor guide to 3D printer temperature sensors covering NTC thermistor vs thermocouple vs RTD (PT100/PT1000) technology comparison, failure mode diagnostics, accuracy specifications by temperature range, replacement revenue analysis, stocking SKU strategy, cartridge vs glass bead vs ring terminal form factors, and the aftermarket opportunity in temperature sensor replacements for hotend and heated bed applications.",
+  "datePublished": "2026-07-31",
+  "dateModified": "2026-07-31",
+  "author": {"@type": "Organization", "name": "Precise3D"},
+  "publisher": {"@type": "Organization", "name": "Precise3D", "url": "https://ems-3dp.com"}
+}
+</script>
+<style>
+.blog-body{color:var(--color-text-muted);font-size:var(--text-base);line-height:1.85}
+.blog-body p{margin-bottom:var(--space-5)}
+.blog-body a{color:var(--color-accent);text-decoration:underline;text-underline-offset:2px}
+.blog-body h2{font-size:var(--text-2xl);font-weight:600;color:var(--color-text);margin-top:var(--space-12);margin-bottom:var(--space-5)}
+.blog-body strong{color:var(--color-text)}
+.blog-body ul{margin-bottom:var(--space-5);padding-left:var(--space-6)}
+.blog-body li{margin-bottom:var(--space-2);color:var(--color-text-muted)}
+.specs-table{display:flex;flex-direction:column;gap:var(--space-3);padding:var(--space-6);background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-lg)}
+.spec-row{display:flex;justify-content:space-between;font-size:var(--text-sm);padding-block:.15rem}
+.spec-row span:first-child{color:var(--color-text-dim);flex:1}
+.spec-val{color:var(--color-text);font-weight:600;font-family:var(--font-mono);font-size:var(--text-xs);text-align:right;min-width:80px}
+.diag-box{padding:var(--space-4) var(--space-5);background:var(--color-surface);border-left:3px solid var(--color-accent);border-radius:0 var(--radius-md) var(--radius-md) 0;margin:var(--space-6) 0;font-size:var(--text-sm)}
+.diag-box strong{color:var(--color-accent-glow)}
+</style>
+
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="/" class="logo"><img src="/generated/logo-icon.png" alt="" width="32" height="32" aria-hidden="true"><span class="logo-text">ems-3dp</span></a>
+    <nav class="nav-main">
+
+          <a href="/">Home</a>
+
+          <a href="/products/">Products</a>
+
+          <div class="nav-dropdown">
+
+            <span class="nav-dropdown-toggle">Solutions</span>
+
+            <div class="nav-dropdown-menu">
+
+              <a href="/solutions/distribution/">Distribution</a>
+
+              <a href="/solutions/oem-white-label/">OEM &amp; White Label</a>
+
+              <a href="/solutions/education/">Education</a>
+
+            </div>
+
+          </div>
+
+          <div class="nav-dropdown">
+
+            <span class="nav-dropdown-toggle">Industries</span>
+
+            <div class="nav-dropdown-menu">
+
+              <a href="/industries/education-research/">Education &amp; Research</a>
+
+              <a href="/industries/healthcare-dental/">Healthcare &amp; Dental</a>
+
+              <a href="/industries/manufacturing-prototyping/">Manufacturing &amp; Prototyping</a>
+
+              <a href="/industries/retail-consumer/">Retail &amp; Consumer</a>
+
+              <a href="/industries/jewelry-fashion/">Jewelry &amp; Fashion</a>
+
+              <a href="/industries/engineering-architecture/">Engineering &amp; Architecture</a>
+
+            </div>
+
+          </div>
+
+          <div class="nav-dropdown">
+
+            <span class="nav-dropdown-toggle">Resources</span>
+
+            <div class="nav-dropdown-menu">
+
+              <a href="/design-guides/">Design Guides</a>
+
+              <a href="/shipping/">Shipping</a>
+
+              <a href="/how-it-works/">How It Works</a>
+
+              <a href="/faq/">FAQ</a>
+
+            </div>
+
+          </div>
+
+          <div class="nav-dropdown">
+
+            <span class="nav-dropdown-toggle">Company</span>
+
+            <div class="nav-dropdown-menu">
+
+              <a href="/about/">About</a>
+
+              <a href="/factory/">Factory</a>
+
+              <a href="/quality/">Quality</a>
+
+              <a href="/engineering/">Engineering</a>
+
+            </div>
+
+          </div>
+
+          <a href="/blog/">Blog</a>
+
+          <a href="/contact/">Contact</a>
+
+        </nav>
+    <div class="header-actions"><a href="javascript:void(0)" class="btn btn-primary" onclick="openModal()">Request Quote</a></div>
+  </div>
+</header>
+
+<main>
+  <section class="sub-hero">
+    <div class="sub-hero-bg"><img src="/generated/blog-cover-temp-sensors.webp" alt="" aria-hidden="true"><div class="sub-hero-overlay"></div></div>
+    <div class="container sub-hero-content">
+      <p class="overline">Hardware Component Guide &bull; July 2026</p>
+      <h1 class="h1" style="font-size:var(--text-4xl)">Temperature Sensors: The $8 Component That Fails First — and the Aftermarket Revenue Most Distributors Ignore</h1>
+      <p class="body-lg">Every 3D printer has at least two temperature sensors — a hotend thermistor and a heated bed thermistor — and both are consumable wear items that fail predictably after 1,000-3,000 print hours. Yet most distributors stock zero replacement sensors. This guide covers the three sensor technologies (NTC thermistor, thermocouple, RTD/PT100), their accuracy windows and failure modes, the diagnostic process for identifying a failing sensor before it causes a thermal runaway shutdown, and the stocking strategy that turns an $8 wholesale component into a $25-45 recurring aftermarket sale with 60%+ gross margins.</p>
+    </div>
+  </section>
+
+  <article class="section">
+    <div class="container" style="max-width:760px">
+      <div class="blog-body">
+        <p>The most common reason a 3D printer stops working mid-print with a "thermal runaway" error is not a firmware bug or a power supply failure — it is a $3 thermistor that drifted out of spec after 1,500 hours of thermal cycling between 25°C and 250°C. The customer does not know this. They see an error message, power-cycle the printer, try again, and when it fails a second time they call you — the distributor — asking if the printer is defective. If you can diagnose a failing thermistor over the phone and ship a replacement the same day, you earn a $30 sale, a loyalty point, and a customer who will buy their next printer from you. If you cannot, they buy the thermistor from Amazon and start questioning whether your printer brand is reliable. For the complete maintenance and aftermarket parts strategy, see our <a href="/blog/3d-printer-maintenance-distributor-guide.html">maintenance guide</a> and <a href="/blog/3d-printer-spare-parts-aftermarket-revenue-distributor-guide.html">spare parts revenue guide</a>.</p>
+
+        <h2>The Three Temperature Sensor Technologies: What Your Customers Are Actually Using</h2>
+        <p>Temperature sensing in 3D printers is almost exclusively done by three sensor types, each with distinct accuracy characteristics, failure modes, and replacement economics. Understanding the differences is not academic — it determines which replacement sensor you stock, how you diagnose failures, and how you upsell customers to more reliable sensor types.</p>
+
+        <div class="blog-img"><img src="/generated/blog-diagram-temp-sensors-1.webp" alt="Three temperature sensor types on dark surface with caliper for scale — glass bead NTC thermistor with thin wire leads, cartridge-style thermistor in brass housing, and PT100 RTD probe with stainless steel sheath, macro photography showing component detail, electronics workbench setting" loading="lazy"></div>
+
+        <div class="specs-table" style="margin:var(--space-8) 0">
+          <div class="spec-row"><span style="color:var(--color-accent-glow);font-weight:600">Sensor Type</span><span style="color:var(--color-accent-glow);font-weight:600;text-align:right;min-width:80px">Accuracy (±°C)</span><span style="color:var(--color-accent-glow);font-weight:600;text-align:right;min-width:80px">Max Temp</span><span style="color:var(--color-accent-glow);font-weight:600;text-align:right;min-width:70px">Response Time</span><span style="color:var(--color-accent-glow);font-weight:600;text-align:right;min-width:80px">Wholesale Cost</span><span style="color:var(--color-accent-glow);font-weight:600;text-align:right;min-width:90px">Failure Mode</span></div>
+          <div class="spec-row"><span>NTC Thermistor (100k, glass bead)</span><span style="text-align:right;min-width:80px">±1-3°C</span><span style="text-align:right;min-width:80px">280-300°C</span><span style="text-align:right;min-width:70px">2-5 sec</span><span style="text-align:right;min-width:80px">$1.50-3.00</span><span style="text-align:right;min-width:90px">Resistance drift, wire fatigue</span></div>
+          <div class="spec-row"><span>NTC Thermistor (cartridge style)</span><span style="text-align:right;min-width:80px">±1-2°C</span><span style="text-align:right;min-width:80px">300-350°C</span><span style="text-align:right;min-width:70px">3-8 sec</span><span style="text-align:right;min-width:80px">$3.00-6.00</span><span style="text-align:right;min-width:90px">Physical damage, connector looseness</span></div>
+          <div class="spec-row"><span>Type-K Thermocouple</span><span style="text-align:right;min-width:80px">±1.5-4°C</span><span style="text-align:right;min-width:80px">500°C+</span><span style="text-align:right;min-width:70px">0.5-2 sec</span><span style="text-align:right;min-width:80px">$8.00-15.00</span><span style="text-align:right;min-width:90px">Junction degradation, EMI interference</span></div>
+          <div class="spec-row"><span>PT100 RTD (Class B)</span><span style="text-align:right;min-width:80px">±0.3-0.8°C</span><span style="text-align:right;min-width:80px">400-500°C</span><span style="text-align:right;min-width:70px">5-10 sec</span><span style="text-align:right;min-width:80px">$6.00-12.00</span><span style="text-align:right;min-width:90px">Wire breakage, rarely drifts</span></div>
+          <div class="spec-row"><span>PT1000 RTD (Class A)</span><span style="text-align:right;min-width:80px">±0.15-0.3°C</span><span style="text-align:right;min-width:80px">400-500°C</span><span style="text-align:right;min-width:70px">3-6 sec</span><span style="text-align:right;min-width:80px">$10.00-18.00</span><span style="text-align:right;min-width:90px">Extremely rare (connector only)</span></div>
+        </div>
+
+        <p>The NTC (Negative Temperature Coefficient) thermistor is the default sensor on 95% of consumer and prosumer 3D printers. It is a semiconductor device whose resistance decreases predictably as temperature increases — 100 kilohms at 25°C, dropping to approximately 100-200 ohms at 250°C. The glass-bead form factor, with its fragile 28-32 AWG wire leads, is the sensor that fails most frequently because the thin wires fatigue at the bead junction after thousands of thermal cycles and printer movements. The cartridge-style thermistor, which encases the sensing element in a brass or stainless steel housing with a JST connector, addresses the wire fatigue problem but costs 2-3x more at wholesale. For the complete hotend component ecosystem, see our <a href="/blog/3d-printer-nozzle-hotend-technology-distributor-guide.html">nozzle and hotend guide</a>.</p>
+
+        <div class="diag-box">
+          <strong>Diagnostic Question:</strong> "When the printer reports a 'thermal runaway' error, what is the displayed temperature just before the error triggers — and does it swing erratically by more than 3-5°C in either direction during heating?"<br>
+          <strong>What you're looking for:</strong> A failing thermistor typically shows temperature readings that swing ±5-10°C erratically during heating — the resistance is drifting as the bead junction degrades, and the firmware interprets this as an unstable thermal system and triggers the safety shutdown. A steady temperature that simply stops rising is more likely a failed heater cartridge (the heating element, not the sensor). The distinction matters: shipping the wrong replacement part means a second service call and a frustrated customer.
+        </div>
+
+        <h2>Thermocouples: When Your Customer Needs to Print Above 300°C</h2>
+        <p>Standard NTC thermistors have an upper temperature limit of approximately 280-300°C — and their accuracy degrades significantly above 250°C. For customers printing engineering filaments that require hotend temperatures of 300-450°C — PEEK at 380-410°C, PEI at 350-380°C, PPSU at 330-360°C — a Type-K thermocouple is the only viable sensor technology. A thermocouple generates a microvolt-level signal proportional to the temperature difference between its hot junction (at the heater block) and its cold junction (at the amplifier board). This microvolt signal must be amplified and digitized by a dedicated thermocouple amplifier chip — typically a MAX6675 or MAX31855 — which means a thermocouple upgrade is not just a sensor swap; it requires a controller board with thermocouple support or an external amplifier board.</p>
+
+        <div class="blog-img"><img src="/generated/blog-diagram-temp-sensors-2.webp" alt="Close-up of Type-K thermocouple installed in 3D printer hotend, yellow connector visible, amplifier board with MAX31855 chip next to it on anti-static mat, high-temperature hotend assembly with copper heater block, industrial lighting" loading="lazy"></div>
+
+        <p>The aftermarket opportunity in thermocouples is in upgrade kits — selling a thermocouple sensor, amplifier board, and high-temperature firmware configuration as a bundled upgrade for customers who are graduating from PLA/PETG to engineering-grade filaments. The kit retails for $35-65 at 3-5x landed cost and represents a high-margin transaction that locks the customer into your ecosystem for subsequent high-temperature filament sales. For the engineering filament customer profile that generates these upgrade opportunities, see our <a href="/blog/industrial-3d-printing-materials-peek-pei-ppsu-distributor-guide.html">industrial materials guide</a> and <a href="/blog/polycarbonate-pc-filament-3d-printer-distributor-guide.html">polycarbonate filament guide</a>.</p>
+
+        <h2>PT100/PT1000 RTDs: The Industrial-Grade Sensor That Should Be Standard</h2>
+        <p>A Resistance Temperature Detector (RTD) uses a platinum element whose resistance increases linearly with temperature — 100 ohms at 0°C for a PT100, 1000 ohms at 0°C for a PT1000. Unlike thermistors, which have a nonlinear resistance curve that requires a lookup table in firmware, RTDs have a nearly linear response that can be calibrated with a simple two-point measurement. This linearity, combined with platinum's chemical stability, means PT100 sensors do not drift over time the way NTC thermistors do. A PT100 that reads accurately at installation will read accurately at 5,000 print hours. The only failure mode is physical wire breakage from repeated flexing — which the stainless steel probe sheath largely prevents.</p>
+
+        <p>The reason PT100 sensors are not standard on consumer printers is cost and firmware compatibility. A PT100 costs $6-12 at wholesale versus $1.50-3 for a glass-bead thermistor, and most consumer printer firmware does not include RTD support in the default configuration. However, the TCO (total cost of ownership) argument for RTDs is compelling: a customer who replaces a $3 thermistor every 1,500 hours at $15 retail (your price) spends $30 on sensors over 3,000 hours + experiences two print failures from failing sensors. A customer who pays $35 for a PT100 upgrade never replaces the sensor and never experiences a sensor-related print failure. The upgrade pays for itself on the second thermistor replacement avoided. For the complete printer reliability and safety discussion, see our <a href="/blog/3d-printer-safety-features-thermal-runaway-protection-distributor-guide.html">safety features guide</a>.</p>
+
+        <div class="blog-img"><img src="/generated/blog-diagram-temp-sensors-3.webp" alt="PT100 RTD probe with M3 threaded mount installed in 3D printer hotend aluminum block, stainless steel sheath visible, high-temperature silicone wire leads with braided sleeve, side-by-side comparison with glass bead thermistor on anti-static mat, electronics bench with multimeter in background" loading="lazy"></div>
+
+        <h2>Stocking Strategy: The Sensor SKUs Every Distributor Should Carry</h2>
+        <p>Sensors are small, lightweight, and have 95%+ gross margins at retail — they are the ideal aftermarket part from an inventory management perspective. A complete sensor inventory for a 3D printer distributor fits in a single shoebox and costs less than $200 at wholesale landed cost, yet generates $500-800 in retail revenue at 60-70% gross margins when sold through. The minimum viable sensor inventory covers the five most common form factors and connector types across the printer brands you stock.</p>
+
+        <div class="specs-table" style="margin:var(--space-8) 0">
+          <div class="spec-row"><span style="color:var(--color-accent-glow);font-weight:600">SKU</span><span style="color:var(--color-accent-glow);font-weight:600;text-align:right;min-width:70px">Qty</span><span style="color:var(--color-accent-glow);font-weight:600;text-align:right;min-width:70px">Landed Cost</span><span style="color:var(--color-accent-glow);font-weight:600;text-align:right;min-width:70px">Retail Price</span><span style="color:var(--color-accent-glow);font-weight:600;text-align:right;min-width:80px">Margin %</span><span style="color:var(--color-accent-glow);font-weight:600;text-align:right;min-width:130px">Compatible Printers</span></div>
+          <div class="spec-row"><span>NTC 100k glass bead, JST-XH 2-pin</span><span style="text-align:right;min-width:70px">20 pcs</span><span style="text-align:right;min-width:70px">$1.80</span><span style="text-align:right;min-width:70px">$12.00</span><span style="text-align:right;min-width:80px">85%</span><span style="text-align:right;min-width:130px">Creality, Anycubic, Elegoo, Sovol</span></div>
+          <div class="spec-row"><span>NTC 100k cartridge, Molex Micro-Fit</span><span style="text-align:right;min-width:70px">15 pcs</span><span style="text-align:right;min-width:70px">$4.50</span><span style="text-align:right;min-width:70px">$18.00</span><span style="text-align:right;min-width:80px">75%</span><span style="text-align:right;min-width:130px">Bambu Lab, Qidi, Flashforge</span></div>
+          <div class="spec-row"><span>NTC 100k ring terminal (bed sensor)</span><span style="text-align:right;min-width:70px">10 pcs</span><span style="text-align:right;min-width:70px">$2.00</span><span style="text-align:right;min-width:70px">$15.00</span><span style="text-align:right;min-width:80px">87%</span><span style="text-align:right;min-width:130px">Universal heated bed replacement</span></div>
+          <div class="spec-row"><span>PT100 cartridge, Molex Micro-Fit</span><span style="text-align:right;min-width:70px">10 pcs</span><span style="text-align:right;min-width:70px">$8.00</span><span style="text-align:right;min-width:70px">$35.00</span><span style="text-align:right;min-width:80px">77%</span><span style="text-align:right;min-width:130px">Upgrade for any cartridge printer</span></div>
+          <div class="spec-row"><span>Type-K thermocouple + MAX31855 amp</span><span style="text-align:right;min-width:70px">5 kits</span><span style="text-align:right;min-width:70px">$12.00</span><span style="text-align:right;min-width:70px">$45.00</span><span style="text-align:right;min-width:80px">73%</span><span style="text-align:right;min-width:130px">High-temp engineering filament users</span></div>
+        </div>
+
+        <p>Total inventory investment: $196 at wholesale landed cost for 60 sensor units across five SKUs. Total potential retail revenue: $990. Gross profit: $794. Inventory turnover: sensors are consumables — an active customer base of 500 printers will consume approximately 50-80 sensor replacements per year. At 60 units of initial inventory, you will reorder within 8-12 months and can optimize SKU mix based on actual replacement patterns. For guidance on managing the full spare parts inventory, see our <a href="/blog/3d-printer-distributor-inventory-management-sku-planning-guide.html">inventory management guide</a>.</p>
+
+        <h2>Failure Diagnosis: The 3 Questions That Identify a Bad Sensor</h2>
+        <p>When a customer reports temperature-related issues, the diagnostic process separates sensor failures from heater failures, firmware problems, and wiring issues. The three questions that identify a failing sensor are: (1) At room temperature, does the reported temperature match ambient within ±2°C? A sensor reading 5-10°C above or below ambient at room temperature has drifted out of spec. (2) During heating, does the temperature rise smoothly and monotonically? A sensor that shows temperature jumping up and down by 5-10°C during heating has an intermittent connection — typically a fractured wire at the bead junction that makes and breaks contact as the wire flexes during printer movement. (3) At steady state, does the temperature reading remain stable within ±1°C for 60 seconds? A sensor whose reading oscillates by more than 1-2°C at steady state has degraded and should be replaced preemptively — it will fail completely within the next 50-100 print hours. For the complete print failure diagnosis framework, see our <a href="/blog/3d-printer-troubleshooting-print-failure-diagnosis-distributor-guide.html">troubleshooting guide</a>.</p>
+
+        <div class="blog-img"><img src="/generated/blog-diagram-temp-sensors-4.webp" alt="Multimeter measuring resistance across thermistor connector, digital display showing 98.7k ohms at room temperature, 3D printer hotend assembly on workbench with sensor wires exposed, technician's hands in frame, electronics repair setting" loading="lazy"></div>
+
+        <h2>Bottom Line</h2>
+        <p>Temperature sensors are the highest-margin, lowest-storage-space aftermarket part category in 3D printer distribution. A complete sensor inventory costs $200 at wholesale, stores in a shoebox, and generates $800+ in retail revenue at 70%+ gross margins. Every printer you have sold is a future sensor replacement — thermistors have a finite service life of 1,000-3,000 print hours before resistance drift triggers thermal runaway errors that the customer interprets as a printer defect. The distributor who stocks sensors and can diagnose failures over the phone turns a service call into a sale. The distributor who does not sends the customer to Amazon and loses the relationship. For the complete aftermarket revenue strategy across all consumable categories, see our <a href="/blog/3d-printer-consumables-accessories-bundling-strategy-distributor.html">consumables bundling guide</a> and <a href="/blog/3d-printer-upgrades-aftermarket-revenue-distributor-guide.html">upgrades revenue guide</a>.</p>
+
+        <div class="cta-card" style="margin-top:var(--space-12)">
+          <p class="overline">Start Your Partnership</p>
+          <h2 class="h2">Ready to Bring Precision Printing to Your Market?</h2>
+          <p class="body-lg">Join our network of 200+ global distributors. Competitive pricing, dedicated support, and fast fulfillment.</p>
+          <div class="cta-actions">
+            <a href="javascript:void(0)" class="btn btn-primary btn-lg" onclick="openModal()">Become a Distributor</a>
+          </div>
+        </div>
+
+        <p style="margin-top:var(--space-8)"><a href="/blog/" class="btn btn-ghost">&larr; Back to Blog</a></p>
+      </div>
+    </div>
+  </article>
+</main>
+
+<footer class="site-footer section">
+  <div class="container">
+        <div class="footer-grid grid-4">
+
+          <div class="footer-brand"><img src="/generated/logo-icon.png" alt="" width="28" height="28" style="margin-bottom:var(--space-4)" aria-hidden="true"><p class="body-sm" style="margin-bottom:var(--space-3);font-weight:700;color:var(--color-text)">ems-3dp</p><p class="body-sm">Precision 3D printers engineered for global markets.</p></div>
+
+          <div class="footer-col"><h4>Solutions</h4><a href="/solutions/distribution/">Distribution</a><a href="/solutions/oem-white-label/">OEM &amp; White Label</a><a href="/solutions/education/">Education</a></div>
+
+          <div class="footer-col"><h4>Company</h4><a href="/about/">About</a><a href="/factory/">Factory</a><a href="/quality/">Quality</a><a href="/engineering/">Engineering</a><a href="/blog/">Blog</a><a href="/contact/">Contact</a></div>
+
+          <div class="footer-col"><h4>Resources</h4><a href="/design-guides/">Design Guides</a><a href="/shipping/">Shipping</a><a href="/how-it-works/">How It Works</a><a href="/faq/">FAQ</a><a href="/privacy/">Privacy Policy</a><a href="/terms/">Terms of Service</a></div>
+
+        </div>
+<div class="footer-bottom"><p class="body-sm">&copy; 2026 Precise3D. All rights reserved.</p></div>
+  </div>
+</footer>
+
+<div class="modal-overlay" id="inquiryModal">
+  <div class="modal-dialog">
+    <button class="modal-close" onclick="closeModal()" aria-label="Close">&times;</button>
+    <h2 class="h2">Send an Inquiry</h2>
+    <p class="body-sm">We'll respond within 24 hours.</p>
+    <form class="modal-form" onsubmit="return handleInquiry(event)" novalidate>
+      <div class="form-group"><label for="modal-name">Name <span class="required">*</span></label><input type="text" id="modal-name" name="name" required placeholder="Your full name"></div>
+      <div class="form-group"><label for="modal-email">Email <span class="required">*</span></label><input type="email" id="modal-email" name="email" required placeholder="you@company.com"></div>
+      <div class="form-group"><label for="modal-message">Message <span class="required">*</span></label><textarea id="modal-message" name="message" required rows="4" placeholder="Tell us about your business and what you're looking for..."></textarea></div>
+      <button type="submit" class="btn btn-primary btn-lg" style="width:100%;justify-content:center">Send Inquiry</button>
+      <p class="modal-form-note">We'll respond within 24 hours. Your information is never shared.</p>
+    </form>
+  </div>
+</div>
+
+<script>
+(function(){var els=document.querySelectorAll('.fade-up');var obs=new IntersectionObserver(function(e){e.forEach(function(e){if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target)}})},{threshold:0.15});els.forEach(function(el){obs.observe(el)})})();
+function openModal(){document.getElementById('inquiryModal').classList.add('open')}
+function closeModal(){document.getElementById('inquiryModal').classList.remove('open')}
+document.getElementById('inquiryModal').addEventListener('click',function(e){if(e.target===this)closeModal()})
+</script>
+<script src="/inquiry-handler.js"></script>
+</body>
+</html>
