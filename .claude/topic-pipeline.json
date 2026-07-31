@@ -182,6 +182,36 @@
       "file": "/blog/3d-printing-mining-heavy-industry-distributor-guide.html",
       "created": "2026-08-01",
       "published": "2026-08-01"
+    },
+    {
+      "id": 50,
+      "title": "3D Printing for EV & E-Mobility — Charging Hardware, Battery Fixtures & Tooling: A Distributor's Guide to the Fastest-Growing Vertical",
+      "status": "published",
+      "score": 84,
+      "funnel": "MOFU",
+      "file": "/blog/3d-printing-ev-e-mobility-distributor-guide.html",
+      "created": "2026-08-01",
+      "published": "2026-08-01"
+    },
+    {
+      "id": 51,
+      "title": "3D Printing for Telecom & 5G — Antenna Mounts, RF Test Fixtures & Outdoor Enclosures: Distributor Guide",
+      "status": "published",
+      "score": 82,
+      "funnel": "MOFU",
+      "file": "/blog/3d-printing-telecom-5g-infrastructure-distributor-guide.html",
+      "created": "2026-08-01",
+      "published": "2026-08-01"
+    },
+    {
+      "id": 52,
+      "title": "Heat-Set Inserts for 3D Printed Parts — Pull-Out Strength, Installation Methods & Distributor Margins",
+      "status": "published",
+      "score": 86,
+      "funnel": "BOFU",
+      "file": "/blog/3d-printer-heat-set-inserts-threaded-fasteners-distributor-guide.html",
+      "created": "2026-08-01",
+      "published": "2026-08-01"
     }
   ]
 }
