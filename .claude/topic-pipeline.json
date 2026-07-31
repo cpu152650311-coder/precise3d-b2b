@@ -89,6 +89,66 @@
       "file": "/blog/3d-printing-cosplay-props-entertainment-distributor-guide.html",
       "created": "2026-07-31",
       "published": "2026-07-31"
+    },
+    {
+      "id": 41,
+      "title": "VFA (Vertical Fine Artifacts) Troubleshooting — Surface Defect Diagnosis",
+      "status": "published",
+      "score": 82,
+      "funnel": "MOFU",
+      "file": "/blog/3d-printer-vfa-vertical-fine-artifacts-troubleshooting-distributor-guide.html",
+      "created": "2026-07-30",
+      "published": "2026-07-30"
+    },
+    {
+      "id": 42,
+      "title": "RatRig Open-Source 3D Printer Ecosystem — Distributor Guide",
+      "status": "published",
+      "score": 78,
+      "funnel": "MOFU",
+      "file": "/blog/ratrig-open-source-3d-printer-ecosystem-distributor-guide.html",
+      "created": "2026-07-30",
+      "published": "2026-07-30"
+    },
+    {
+      "id": 43,
+      "title": "H-Bot vs CoreXY Kinematics Comparison",
+      "status": "published",
+      "score": 80,
+      "funnel": "MOFU",
+      "file": "/blog/hbot-vs-corexy-3d-printer-kinematics-distributor-guide.html",
+      "created": "2026-07-30",
+      "published": "2026-07-30"
+    },
+    {
+      "id": 44,
+      "title": "3D Printing for Marine & Boating — Saltwater Vertical Distributor Guide",
+      "status": "published",
+      "score": 84,
+      "funnel": "MOFU",
+      "file": "/blog/3d-printing-marine-boating-distributor-guide.html",
+      "created": "2026-07-31",
+      "published": "2026-07-31"
+    },
+    {
+      "id": 45,
+      "title": "3D Printing for Energy & Renewables — Solar, Wind & Oil-Gas Distributor Guide",
+      "status": "published",
+      "score": 83,
+      "funnel": "MOFU",
+      "file": "/blog/3d-printing-energy-renewables-distributor-guide.html",
+      "created": "2026-07-31",
+      "published": "2026-07-31"
+    },
+    {
+      "id": 46,
+      "title": "3D Printing for Railway & Mass Transit — Fire-Rated Parts Distributor Guide",
+      "status": "published",
+      "score": 81,
+      "funnel": "MOFU",
+      "file": "/blog/3d-printing-railway-transit-distributor-guide.html",
+      "created": "2026-07-31",
+      "published": "2026-07-31"
     }
   ]
 }
