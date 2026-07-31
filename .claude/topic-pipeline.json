@@ -1,6 +1,6 @@
 {
   "site": "precise3d-b2b",
-  "updated": "2026-07-31",
+  "updated": "2026-08-01",
   "topics": [
     {
       "id": 33,
@@ -149,6 +149,39 @@
       "file": "/blog/3d-printing-railway-transit-distributor-guide.html",
       "created": "2026-07-31",
       "published": "2026-07-31"
+    },
+    {
+      "id": 47,
+      "title": "Filament Runout Sensors & Detection Systems — The $8 Part That Prevents $80 Failed Prints",
+      "status": "published",
+      "score": 84,
+      "funnel": "MOFU",
+      "category": "hardware-component",
+      "file": "/blog/3d-printer-filament-runout-sensor-detection-distributor-guide.html",
+      "created": "2026-08-01",
+      "published": "2026-08-01"
+    },
+    {
+      "id": 48,
+      "title": "Polypropylene (PP) Filament — Chemical-Resistant Hinges & 40% Margins",
+      "status": "published",
+      "score": 83,
+      "funnel": "MOFU",
+      "category": "materials",
+      "file": "/blog/polypropylene-pp-filament-3d-printing-distributor-guide.html",
+      "created": "2026-08-01",
+      "published": "2026-08-01"
+    },
+    {
+      "id": 49,
+      "title": "3D Printing for Mining & Heavy Industry — Spare Parts That Survive 3,000m Underground",
+      "status": "published",
+      "score": 85,
+      "funnel": "MOFU",
+      "category": "vertical-market",
+      "file": "/blog/3d-printing-mining-heavy-industry-distributor-guide.html",
+      "created": "2026-08-01",
+      "published": "2026-08-01"
     }
   ]
 }
