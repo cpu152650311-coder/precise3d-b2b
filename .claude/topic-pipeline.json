@@ -1,18 +1,7 @@
 {
   "site": "precise3d-b2b",
-  "updated": "2026-07-29",
+  "updated": "2026-07-31",
   "topics": [
-    {
-      "id": 34,
-      "title": "3D Printer Safety & Reliability — Thermal Runaway Protection, Power Loss Recovery & Fire Prevention",
-      "status": "published",
-      "score": 85,
-      "funnel": "MOFU",
-      "category": "purchasing-decision",
-      "file": "/blog/3d-printer-safety-features-thermal-runaway-protection-distributor-guide.html",
-      "created": "2026-07-21",
-      "published": "2026-07-21"
-    },
     {
       "id": 33,
       "title": "3D Printer Remote Monitoring & Cloud Connectivity",
@@ -21,6 +10,17 @@
       "funnel": "MOFU",
       "category": "tech-trends",
       "file": "/blog/3d-printer-remote-monitoring-cloud-connectivity-distributor-guide.html",
+      "created": "2026-07-21",
+      "published": "2026-07-21"
+    },
+    {
+      "id": 34,
+      "title": "3D Printer Safety & Reliability — Thermal Runaway Protection, Power Loss Recovery & Fire Prevention",
+      "status": "published",
+      "score": 85,
+      "funnel": "MOFU",
+      "category": "purchasing-decision",
+      "file": "/blog/3d-printer-safety-features-thermal-runaway-protection-distributor-guide.html",
       "created": "2026-07-21",
       "published": "2026-07-21"
     },
@@ -56,6 +56,39 @@
       "file": "/blog/3d-printing-hospitality-retail-fixtures-displays-distributor-guide.html",
       "created": "2026-07-29",
       "published": "2026-07-29"
+    },
+    {
+      "id": 38,
+      "title": "3D Printing for Agriculture & Hydroponics — A Distributor's Guide to the Emerging $1.5B Vertical",
+      "status": "published",
+      "score": 82,
+      "funnel": "TOFU",
+      "category": "vertical-market",
+      "file": "/blog/3d-printing-agriculture-hydroponics-distributor-guide.html",
+      "created": "2026-07-31",
+      "published": "2026-07-31"
+    },
+    {
+      "id": 39,
+      "title": "3D Printer Temperature Sensors — Thermistor vs Thermocouple vs RTD: A Distributor's Selection & Margin Guide",
+      "status": "published",
+      "score": 85,
+      "funnel": "MOFU",
+      "category": "hardware-component",
+      "file": "/blog/3d-printer-temperature-sensors-thermistor-thermocouple-distributor-guide.html",
+      "created": "2026-07-31",
+      "published": "2026-07-31"
+    },
+    {
+      "id": 40,
+      "title": "3D Printing for Cosplay, Props & Entertainment — A Distributor's Guide to the Creative Industry Vertical",
+      "status": "published",
+      "score": 80,
+      "funnel": "TOFU",
+      "category": "vertical-market",
+      "file": "/blog/3d-printing-cosplay-props-entertainment-distributor-guide.html",
+      "created": "2026-07-31",
+      "published": "2026-07-31"
     }
   ]
 }
