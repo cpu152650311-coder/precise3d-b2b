@@ -275,6 +275,39 @@
       "file": "/blog/3d-printing-home-appliances-industry-distributor-guide.html",
       "created": "2026-08-01",
       "published": "2026-08-01"
+    },
+    {
+      "id": 59,
+      "title": "3D Printing for Pharma & Biotech — Labware, GMP Tooling & Regulated Materials",
+      "status": "published",
+      "score": 88,
+      "funnel": "MOFU",
+      "category": "industry-vertical",
+      "file": "/blog/3d-printing-pharmaceutical-biotech-industry-distributor-guide.html",
+      "created": "2026-08-01",
+      "published": "2026-08-01"
+    },
+    {
+      "id": 60,
+      "title": "3D Printing for Semiconductor & Cleanroom — ESD-Safe Tooling & Fixtures",
+      "status": "published",
+      "score": 90,
+      "funnel": "MOFU",
+      "category": "industry-vertical",
+      "file": "/blog/3d-printing-semiconductor-cleanroom-industry-distributor-guide.html",
+      "created": "2026-08-01",
+      "published": "2026-08-01"
+    },
+    {
+      "id": 61,
+      "title": "3D Printing for Packaging — End-of-Arm Tooling, Grippers & Change Parts",
+      "status": "published",
+      "score": 87,
+      "funnel": "MOFU",
+      "category": "industry-vertical",
+      "file": "/blog/3d-printing-packaging-industry-distributor-guide.html",
+      "created": "2026-08-01",
+      "published": "2026-08-01"
     }
   ]
 }
