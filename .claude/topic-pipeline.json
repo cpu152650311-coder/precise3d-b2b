@@ -245,6 +245,36 @@
       "file": "/blog/3d-printing-furniture-industry-distributor-guide.html",
       "created": "2026-08-01",
       "published": "2026-08-01"
+    },
+    {
+      "id": 56,
+      "title": "SLS 3D Printing Technology — Nylon Powder Production Parts",
+      "status": "published",
+      "score": 74,
+      "funnel": "MOFU",
+      "file": "/blog/sls-3d-printing-technology-distributor-guide.html",
+      "created": "2026-08-01",
+      "published": "2026-08-01"
+    },
+    {
+      "id": 57,
+      "title": "3D Printing for Toys — Prototypes, Molds & Short Runs",
+      "status": "published",
+      "score": 72,
+      "funnel": "MOFU",
+      "file": "/blog/3d-printing-toys-industry-distributor-guide.html",
+      "created": "2026-08-01",
+      "published": "2026-08-01"
+    },
+    {
+      "id": 58,
+      "title": "3D Printing for Home Appliances — Custom Parts & Tooling",
+      "status": "published",
+      "score": 71,
+      "funnel": "MOFU",
+      "file": "/blog/3d-printing-home-appliances-industry-distributor-guide.html",
+      "created": "2026-08-01",
+      "published": "2026-08-01"
     }
   ]
 }
