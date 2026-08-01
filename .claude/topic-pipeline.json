@@ -212,6 +212,39 @@
       "file": "/blog/3d-printer-heat-set-inserts-threaded-fasteners-distributor-guide.html",
       "created": "2026-08-01",
       "published": "2026-08-01"
+    },
+    {
+      "id": 53,
+      "title": "3D Printing for Oil & Gas — Downhole Tooling, Valve Spares & Offshore Maintenance",
+      "status": "published",
+      "score": 88,
+      "funnel": "MOFU",
+      "category": "vertical-market",
+      "file": "/blog/3d-printing-oil-gas-industry-distributor-guide.html",
+      "created": "2026-08-01",
+      "published": "2026-08-01"
+    },
+    {
+      "id": 54,
+      "title": "Ceramic 3D Printing — Resin, Filament & Applications: A Distributor’s Guide",
+      "status": "published",
+      "score": 76,
+      "funnel": "TOFU",
+      "category": "materials",
+      "file": "/blog/ceramic-3d-printing-materials-distributor-guide.html",
+      "created": "2026-08-01",
+      "published": "2026-08-01"
+    },
+    {
+      "id": 55,
+      "title": "3D Printing for Furniture — Prototypes, Hardware & Custom Components",
+      "status": "published",
+      "score": 85,
+      "funnel": "MOFU",
+      "category": "vertical-market",
+      "file": "/blog/3d-printing-furniture-industry-distributor-guide.html",
+      "created": "2026-08-01",
+      "published": "2026-08-01"
     }
   ]
 }
