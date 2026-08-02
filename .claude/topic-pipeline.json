@@ -1,6 +1,6 @@
 {
   "site": "precise3d-b2b",
-  "updated": "2026-08-01",
+  "updated": "2026-08-02",
   "topics": [
     {
       "id": 33,
@@ -308,6 +308,39 @@
       "file": "/blog/3d-printing-packaging-industry-distributor-guide.html",
       "created": "2026-08-01",
       "published": "2026-08-01"
+    },
+    {
+      "id": 62,
+      "title": "3D Printing Tolerances & Dimensional Accuracy — FDM vs Resin vs SLS, Shrinkage & Fit",
+      "status": "writing",
+      "score": 86,
+      "funnel": "MOFU",
+      "category": "tech-comparison",
+      "file": "/blog/3d-printing-tolerances-dimensional-accuracy-distributor-guide.html",
+      "created": "2026-08-02",
+      "note": "HTML written, images blocked (AIHUBMIX quota exhausted 2026-08-02). Resume: run /tmp/gen_blog_images.py tolerance"
+    },
+    {
+      "id": 63,
+      "title": "3D Printing Infill Patterns — Strength vs Speed vs Material Use, Measured",
+      "status": "writing",
+      "score": 83,
+      "funnel": "MOFU",
+      "category": "tech-guide",
+      "file": "/blog/3d-printing-infill-patterns-strength-material-distributor-guide.html",
+      "created": "2026-08-02",
+      "note": "HTML written, images blocked (AIHUBMIX quota exhausted 2026-08-02). Resume: run /tmp/gen_blog_images.py infill"
+    },
+    {
+      "id": 64,
+      "title": "3D Printing for Eyewear & Optics — Frames, Lenses & Precision Fixtures",
+      "status": "writing",
+      "score": 81,
+      "funnel": "TOFU",
+      "category": "vertical-market",
+      "file": "/blog/3d-printing-eyewear-optics-industry-distributor-guide.html",
+      "created": "2026-08-02",
+      "note": "HTML written, images blocked (AIHUBMIX quota exhausted 2026-08-02). Resume: run /tmp/gen_blog_images.py eyewear"
     }
   ]
 }

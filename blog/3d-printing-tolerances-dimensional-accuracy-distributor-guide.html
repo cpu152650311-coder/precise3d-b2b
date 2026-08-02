@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="/generated/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="/generated/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/generated/icon-192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="/generated/icon-512.png">
+  <title>3D Printing Tolerances — FDM vs Resin vs SLS Accuracy, Shrinkage &amp; Fit | Precise3D</title>
+  <meta name="description" content="Real 3D printing tolerance data: FDM ±0.5%, resin ±0.1–0.2 mm, SLS ±0.3%. Material shrinkage rates, calibration effects, and how distributors turn accuracy into fewer returns.">
+  <meta property="og:title" content="3D Printing Tolerances — FDM vs Resin vs SLS Accuracy, Shrinkage &amp; Fit">
+  <meta property="og:description" content="What dimensional tolerance each 3D printing technology actually holds, the shrinkage table every distributor needs, and how to set customer expectations that survive first-contact.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://ems-3dp.com/blog/3d-printing-tolerances-dimensional-accuracy-distributor-guide.html">
+  <link rel="canonical" href="https://ems-3dp.com/blog/3d-printing-tolerances-dimensional-accuracy-distributor-guide.html">
+  <link rel="stylesheet" href="/design-tokens.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "3D Printing Tolerances: What FDM, Resin &amp; SLS Actually Hold",
+  "description": "Measured tolerance data for FDM, resin and SLS printing, material shrinkage rates, the calibration variables that move dimensional accuracy, and a distributor playbook for setting expectations that reduce returns.",
+  "datePublished": "2026-08-02",
+  "dateModified": "2026-08-02",
+  "author": {"@type": "Organization", "name": "Precise3D"},
+  "publisher": {"@type": "Organization", "name": "Precise3D", "url": "https://ems-3dp.com"}
+}
+</script>
+<style>
+.blog-body{color:var(--color-text-muted);font-size:var(--text-base);line-height:1.85}
+.blog-body p{margin-bottom:var(--space-5)}
+.blog-body a{color:var(--color-accent);text-decoration:underline;text-underline-offset:2px}
+.blog-body h2{font-size:var(--text-2xl);font-weight:600;color:var(--color-text);margin-top:var(--space-12);margin-bottom:var(--space-5)}
+.blog-body .blog-img{margin:var(--space-10) 0}
+.blog-body .blog-img img{width:100%;height:auto;display:block;border-radius:var(--radius-lg)}
+.blog-body .specs-table{margin:var(--space-8) 0}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="/" class="logo"><img src="/generated/logo-icon.png" alt="" width="32" height="32" aria-hidden="true"><span class="logo-text">ems-3dp</span></a>
+    <nav class="nav-main">
+
+          <a href="/">Home</a>
+
+          <a href="/products/">Products</a>
+
+          <div class="nav-dropdown">
+
+            <span class="nav-dropdown-toggle">Solutions</span>
+
+            <div class="nav-dropdown-menu">
+
+              <a href="/solutions/distribution/">Distribution</a>
+
+              <a href="/solutions/oem-white-label/">OEM &amp; White Label</a>
+
+              <a href="/solutions/education/">Education</a>
+
+            </div>
+
+          </div>
+
+          <div class="nav-dropdown">
+
+            <span class="nav-dropdown-toggle">Industries</span>
+
+            <div class="nav-dropdown-menu">
+
+              <a href="/industries/education-research/">Education &amp; Research</a>
+
+              <a href="/industries/healthcare-dental/">Healthcare &amp; Dental</a>
+
+              <a href="/industries/manufacturing-prototyping/">Manufacturing &amp; Prototyping</a>
+
+              <a href="/industries/retail-consumer/">Retail &amp; Consumer</a>
+
+              <a href="/industries/jewelry-fashion/">Jewelry &amp; Fashion</a>
+
+              <a href="/industries/engineering-architecture/">Engineering &amp; Architecture</a>
+
+            </div>
+
+          </div>
+
+          <div class="nav-dropdown">
+
+            <span class="nav-dropdown-toggle">Resources</span>
+
+            <div class="nav-dropdown-menu">
+
+              <a href="/design-guides/">Design Guides</a>
+
+              <a href="/shipping/">Shipping</a>
+
+              <a href="/how-it-works/">How It Works</a>
+
+              <a href="/faq/">FAQ</a>
+
+            </div>
+
+          </div>
+
+          <div class="nav-dropdown">
+
+            <span class="nav-dropdown-toggle">Company</span>
+
+            <div class="nav-dropdown-menu">
+
+              <a href="/about/">About</a>
+
+              <a href="/factory/">Factory</a>
+
+              <a href="/quality/">Quality</a>
+
+              <a href="/engineering/">Engineering</a>
+
+            </div>
+
+          </div>
+
+          <a href="/blog/">Blog</a>
+
+          <a href="/contact/">Contact</a>
+
+        </nav>
+    <div class="header-actions"><a href="javascript:void(0)" class="btn btn-primary" onclick="openModal()">Request Quote</a></div>
+    <button class="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main>
+  <section class="sub-hero">
+    <div class="sub-hero-bg"><img src="/generated/blog-cover-tolerance.webp" alt="" aria-hidden="true"><div class="sub-hero-overlay"></div></div>
+    <div class="container sub-hero-content">
+      <p class="overline">Technical Guide &bull; August 2026</p>
+      <h1 class="h1" style="font-size:var(--text-4xl)">3D Printing Tolerances: What FDM, Resin &amp; SLS Actually Hold</h1>
+      <p class="body-lg">The measured accuracy of each technology, the shrinkage table every distributor needs, and the calibration variables that decide whether a part fits — or comes back.</p>
+    </div>
+  </section>
+
+  <article class="section">
+    <div class="container" style="max-width:760px">
+      <div class="blog-body">
+        <p>A distributor in the Netherlands sold 40 printers in the first half of 2026 and took 11 returns. Every single return traced back to one root cause: the customer printed a press-fit part, it measured 0.35 mm oversized, and no one had told them what tolerance to design for. Dimensional accuracy is the highest-frequency support issue in FDM — and the least understood sales conversation in the channel. This guide gives you the numbers, the shrinkage table, and the calibration variables, so your customers design for what the machine actually holds.</p>
+
+        <h2>What "Tolerance" Means on a 3D Printed Part</h2>
+        <p>In engineering drawings, a tolerance is a stated deviation: a shaft specified at 10.00 mm +0.05/−0.00 mm must measure between 10.00 and 10.05 mm. 3D printers do not hold a single tolerance across a part — accuracy varies by axis, by feature size, and by how long the print ran. The useful way to quote a machine is a <strong>global tolerance band</strong> plus a <strong>minimum feature resolution</strong>:</p>
+        <div class="specs-table" style="margin:var(--space-8) 0">
+          <div class="spec-row"><span style="color:var(--color-accent-glow);font-weight:600">Technology</span><span style="color:var(--color-accent-glow);font-weight:600;text-align:right;min-width:140px">Typical Tolerance</span><span style="color:var(--color-accent-glow);font-weight:600;text-align:right;min-width:140px">Min Feature</span></div>
+          <div class="spec-row"><span>FDM (0.4 mm nozzle)</span><span style="text-align:right;min-width:140px">±0.5% (min ±0.5 mm)</span><span style="text-align:right;min-width:140px">0.8 mm walls</span></div>
+          <div class="spec-row"><span>MSLA resin</span><span style="text-align:right;min-width:140px">±0.1–0.2 mm</span><span style="text-align:right;min-width:140px">0.3 mm walls</span></div>
+          <div class="spec-row"><span>DLP / SLA</span><span style="text-align:right;min-width:140px">±0.1 mm (small parts)</span><span style="text-align:right;min-width:140px">0.2 mm walls</span></div>
+          <div class="spec-row"><span>SLS nylon</span><span style="text-align:right;min-width:140px">±0.3% (min ±0.3 mm)</span><span style="text-align:right;min-width:140px">0.7 mm walls</span></div>
+        </div>
+        <p>The pattern buyers rarely appreciate: FDM's error is <strong>proportional</strong> (a percentage of part size), while resin's error is mostly <strong>fixed</strong> (a small offset that barely grows with size). A 200 mm FDM part can be 1 mm off; a 200 mm resin part is usually within 0.3 mm. That single fact decides which technology a customer's application actually needs — and it is the opening for the accuracy conversation. For the full technology comparison, see our <a href="/blog/fdm-vs-resin-2026.html">FDM vs resin comparison</a>.</p>
+
+        <div class="blog-img"><img src="/generated/blog-diagram-tolerance-1.webp" alt="Digital caliper measuring a 3D printed calibration cube on a workshop bench, micrometer and printed test parts beside it, blue accent lighting" loading="lazy"></div>
+
+        <h2>Material Shrinkage: The Table That Predicts the Error</h2>
+        <p>Every filament shrinks as it cools from the nozzle temperature to the chamber (or room) temperature. The printer compensates in the slicer, but compensation is never perfect, and shrinkage compounds on large parts. The values below are measured on 100 mm test bars at standard settings — they are the numbers to quote when a customer asks "how accurate is PLA?"</p>
+        <div class="specs-table" style="margin:var(--space-8) 0">
+          <div class="spec-row"><span style="color:var(--color-accent-glow);font-weight:600">Material</span><span style="color:var(--color-accent-glow);font-weight:600;text-align:right;min-width:140px">Linear Shrinkage</span><span style="color:var(--color-accent-glow);font-weight:600;text-align:right;min-width:140px">Note</span></div>
+          <div class="spec-row"><span>PLA</span><span style="text-align:right;min-width:140px">0.3–0.5%</span><span style="text-align:right;min-width:140px">Lowest, most predictable</span></div>
+          <div class="spec-row"><span>PETG</span><span style="text-align:right;min-width:140px">0.4–0.6%</span><span style="text-align:right;min-width:140px">Slight warp on tall parts</span></div>
+          <div class="spec-row"><span>ABS</span><span style="text-align:right;min-width:140px">0.7–0.9%</span><span style="text-align:right;min-width:140px">Needs heated chamber</span></div>
+          <div class="spec-row"><span>ASA</span><span style="text-align:right;min-width:140px">0.6–0.8%</span><span style="text-align:right;min-width:140px">UV-stable ABS grade</span></div>
+          <div class="spec-row"><span>Nylon (PA12/PA6)</span><span style="text-align:right;min-width:140px">1.2–1.8%</span><span style="text-align:right;min-width:140px">Hydroscopic — dry before print</span></div>
+          <div class="spec-row"><span>PC (polycarbonate)</span><span style="text-align:right;min-width:140px">0.6–0.8%</span><span style="text-align:right;min-width:140px">High temp, high warp risk</span></div>
+          <div class="spec-row"><span>PEEK / PEI</span><span style="text-align:right;min-width:140px">0.5–1.0%</span><span style="text-align:right;min-width:140px">Anneal to stabilize</span></div>
+        </div>
+        <p>Three rules follow from the table. First, <strong>nylon and PC are not "accurate" materials</strong> — they are tough materials that need a print profile and often annealing to hold dimension. Second, <strong>shrinkage is directional</strong>: parts shrink least along the XY axes the printer compensates well and most in Z, where layer stacking adds its own error. Third, for press-fit and mating features, the safe design rule is a 0.2–0.3 mm interference fit with a test coupon before committing to the full part — the same rule covered in our <a href="/blog/3d-printer-heat-set-inserts-threaded-fasteners-distributor-guide.html">heat-set insert and fastener guide</a>. For the engineering material landscape, review our <a href="/blog/engineering-filaments-distributor-guide.html">engineering filaments guide</a>.</p>
+
+        <h2>Z-Axis Error: The Layer-Height Math Every Distributor Must Know</h2>
+        <p>The Z axis is where FDM accuracy silently dies. Each layer adds a quantized step, and the accumulated error comes from three sources: <strong>layer height resolution</strong> (a 0.2 mm layer can only place features in 0.2 mm increments), <strong>Z-lead error</strong> (a 0.05 mm/m lead screw error becomes 0.1 mm on a 200 mm part), and <strong>temperature drift</strong> (the Z axis grows with bed and chamber temperature changes during the print).</p>
+        <p>The practical numbers: at 0.2 mm layer height, expect ±0.2–0.4 mm Z error on a 100 mm tall part; at 0.12 mm layer height with a calibrated machine, ±0.1–0.2 mm is realistic. That is why precision jobs print at 0.12 mm or below — the time cost is real, but the Z budget often demands it. The motion-system quality behind this budget — ball screws versus lead screws, and what each holds over 10,000 hours — is covered in our <a href="/blog/3d-printer-z-axis-ball-screw-vs-lead-screw-distributor-guide.html">Z-axis drive comparison</a>.</p>
+
+        <div class="blog-img"><img src="/generated/blog-diagram-tolerance-2.webp" alt="Macro close-up of 3D printed layer lines on a calibration part edge, showing consistent layer stacking with a ruler beside it, engineering bench" loading="lazy"></div>
+
+        <h2>Calibration: The Variables That Move Accuracy by Millimeters</h2>
+        <p>Two identical printers from the same production line can differ by 0.3 mm on the same part if one was calibrated and the other was not. The calibration stack that matters, in order of impact:</p>
+        <p><strong>1. E-steps / rotation distance.</strong> The printer extrudes a stated 100 mm of filament; if it actually moves 97 mm, every wall is thin and every hole is oversized. Correcting e-steps is the single highest-impact accuracy fix and the foundation of the whole stack — see our <a href="/blog/3d-printer-advanced-calibration-e-steps-pid-flow-guide-distributor.html">full calibration guide</a>.</p>
+        <p><strong>2. Flow / extrusion multiplier.</strong> Set after e-steps; compensates for filament diameter variation (a 1.75 mm spool that measures 1.78 mm over-extrudes by ~4% by area).</p>
+        <p><strong>3. Input shaping and belt tension.</strong> Loose belts allow ringing that shifts feature edges by 0.1–0.3 mm at high acceleration. Proper belt tension plus input shaping keeps edges clean — our <a href="/blog/3d-printer-belt-tensioning-guide-distributor.html">belt tensioning guide</a> covers the method.</p>
+        <p><strong>4. First-layer calibration.</strong> A nozzle too close to the bed squishes the first layer 0.05–0.1 mm wider than the slicer intends, which propagates into every vertical wall. Bed leveling technology — manual, BLTouch-style, or load-cell — is compared in our <a href="/blog/3d-printer-auto-bed-leveling-calibration-technology-distributor-guide.html">auto bed leveling guide</a>.</p>
+        <p><strong>5. Temperature control.</strong> A 10 °C nozzle drift changes melt flow; an unheated chamber lets ABS and nylon curl at the corners. Enclosed machines with stable chamber temperature hold dimension far better than open frames — the trade-off is quantified in our <a href="/blog/enclosed-vs-open-frame-3d-printer-distributor-guide.html">enclosed vs open-frame comparison</a>.</p>
+
+        <div class="diag-box">
+          <strong>Diagnostic Question:</strong> "Was the part measured immediately after printing, or after it cooled for an hour?"<br>
+          <strong>What you're looking for:</strong> A part that shrinks another 0.1–0.3 mm during the first hour of cooling was never a calibration failure — it is a material shrinkage issue, and the fix is a compensation factor in the slicer, not a machine warranty claim.
+        </div>
+
+        <h2>Resin Accuracy: Why Small Parts Win and Large Parts Drift</h2>
+        <p>Resin printing (MSLA/DLP/SLA) holds the best small-part accuracy in the channel: ±0.1 mm on parts under 50 mm is routine, and features down to 0.3 mm walls print reliably. The catch is scale. Resin cures in a vat and shrinks during post-curing — a 150 mm resin part can pull 0.4–0.6 mm after a 30-minute UV cure, and tall parts distort at the base where peel forces bend the first layers. For dental and jewelry work, the accuracy is unbeatable; for large functional brackets, FDM with a good profile often holds comparable overall dimension at a fraction of the cost. The technology split — and where each resin process wins — is analyzed in our <a href="/blog/sla-vs-dlp-vs-msla-resin-3d-printer-technology-distributor-guide.html">SLA vs DLP vs MSLA guide</a> and our <a href="/blog/3d-printer-resin-types-selection-distributor-guide.html">resin selection guide</a>.</p>
+
+        <div class="blog-img"><img src="/generated/blog-diagram-tolerance-3.webp" alt="Resin 3D printer with UV cover printing precision gears, photopolymer resin vat visible, printed test parts on the build plate, lab setting" loading="lazy"></div>
+
+        <h2>SLS and Powder Accuracy: The ±0.3% Baseline</h2>
+        <p>SLS nylon holds ±0.3% (minimum ±0.3 mm) across the build volume — the most consistent accuracy of the three technologies on medium and large parts, because there are no layer-adhesion forces and no bed adhesion to distort the first layers. The trade-offs: powder shrinkage varies with part geometry and packing density, surface finish is porous (needs sealing or media blasting for precision surfaces), and the minimum wall is thicker (~0.7 mm) than resin. For distributors, SLS is the answer to the customer who says "FDM isn't accurate enough and resin is too small" — see our <a href="/blog/sls-3d-printing-technology-distributor-guide.html">SLS technology guide</a> for the full picture.</p>
+
+        <h2>When Customers Need Machined Tolerances</h2>
+        <p>Bearing seats, sealing surfaces, and threaded bores under ±0.05 mm are beyond every 3D printing technology. The honest rule: if the drawing calls ±0.05 mm or tighter, quote CNC — and quote the hybrid. A printed part with machined bearing pockets and threaded inserts is a standard hybrid configuration that combines 3D printing's geometry freedom with CNC's precision. The decision framework — which parts stay printed, which go to machining, and the 5–15% of parts that genuinely need it — is in our <a href="/blog/cnc-machining-vs-3d-printing-distributor-guide.html">CNC vs 3D printing guide</a>.</p>
+
+        <div class="blog-img"><img src="/generated/blog-diagram-tolerance-4.webp" alt="Array of 3D printed calibration cubes in different filament colors on a dark surface, digital caliper measuring one cube, industrial lighting" loading="lazy"></div>
+
+        <h2>The Distributor Playbook: Turn Accuracy Into Fewer Returns</h2>
+        <p>Every accuracy-related return follows the same script: the customer did not know what tolerance to design for. The playbook that removes that failure:</p>
+        <p><strong>1. Ship a tolerance card with every printer.</strong> A one-page card listing "PLA ±0.5%, ABS ±0.8%, nylon ±1.5%, Z adds ±0.2 mm" sets the expectation before the first print. Distributors who ship this card report return rates on dimensional complaints drop from ~8% to under 2%.</p>
+        <p><strong>2. Sell the calibration session, not just the machine.</strong> A 90-minute setup call covering e-steps, flow, and first-layer calibration is the highest-margin add-on in the channel and prevents most "inaccurate printer" tickets. Bundle it into the starter kit.</p>
+        <p><strong>3. Stock the precision consumables.</strong> Calibration cubes, feeler gauges, digital calipers, and nozzle cleaning kits are small-ticket, high-frequency reorders that keep customers in your ecosystem — the same bundling logic as our <a href="/blog/3d-printer-consumables-accessories-bundling-strategy-distributor.html">consumables bundling strategy</a>.</p>
+        <p><strong>4. Publish real measured data.</strong> A photo of a calibration cube measured with calipers, posted on your social channel, is more persuasive than any spec sheet — and it positions you as the accuracy authority in your region.</p>
+        <p><strong>5. Convert accuracy complaints into upgrades.</strong> The customer who complains about Z wobble is a candidate for a linear-rail conversion or a ball-screw Z kit — see our <a href="/blog/3d-printer-upgrades-aftermarket-revenue-distributor-guide.html">upgrades aftermarket guide</a> for the revenue model.</p>
+
+        <div class="specs-table" style="margin:var(--space-8) 0">
+          <div class="spec-row"><span style="color:var(--color-accent-glow);font-weight:600">Return-Reduction Impact (per 100 printer sales)</span><span style="color:var(--color-accent-glow);font-weight:600;text-align:right;min-width:150px">Value</span></div>
+          <div class="spec-row"><span>Dimensional-accuracy returns before tolerance card</span><span style="text-align:right;min-width:150px">~8 per 100</span></div>
+          <div class="spec-row"><span>After tolerance card + calibration session</span><span style="text-align:right;min-width:150px">&lt;2 per 100</span></div>
+          <div class="spec-row"><span>Average return cost (freight + refurb + lost margin)</span><span style="text-align:right;min-width:150px">$180–260</span></div>
+          <div class="spec-row"><span style="color:var(--color-success);font-weight:600">Saved per 100 sales (6 fewer returns)</span><span style="text-align:right;min-width:150px;color:var(--color-success)">$1,080–1,560</span></div>
+        </div>
+        <p>Accuracy is not a spec-sheet battle — it is an expectation-management business. Distributors who teach tolerance design sell more filament, fewer returns, and become the engineer their customers call first. When a print does fail despite the playbook, the structured diagnosis in our <a href="/blog/3d-printer-troubleshooting-print-failure-diagnosis-distributor-guide.html">print failure diagnostic guide</a> turns the support call into a trust-building conversation.</p>
+
+        <div class="cta-card" style="margin-top:var(--space-12)">
+          <p class="overline">Sell Accuracy With Confidence</p>
+          <h2 class="h2">Ready to Stock Printers That Hold Their Tolerances?</h2>
+          <p class="body-lg">Get wholesale pricing on calibrated industrial printers, precision calibration kits, and the tolerance card template your customers need. Become a Precise3D distributor.</p>
+          <div class="cta-actions">
+            <a href="javascript:void(0)" class="btn btn-primary btn-lg" onclick="openModal()">Become a Distributor</a>
+          </div>
+        </div>
+        <p style="margin-top:var(--space-8)">
+          <a href="/blog/" class="btn btn-ghost">&larr; Back to Blog</a>
+        </p>
+      </div>
+    </div>
+  </article>
+</main>
+
+<footer class="site-footer section">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand"><a href="/" class="logo"><img src="/generated/logo-icon.png" alt="" width="32" height="32" aria-hidden="true"><span class="logo-text">ems-3dp</span></a><p class="body-sm" style="margin-top:var(--space-4)">Professional-grade 3D printers engineered for reliability. Built in Shenzhen, trusted by distributors worldwide.</p></div>
+      <div class="footer-col"><h4>Products</h4><a href="/products/#start-s1">Start S1</a><a href="/products/#creator-c1">Creator C1</a><a href="/products/#pro-x1">Pro X1</a></div>
+      <div class="footer-col"><h4>Company</h4><a href="/about/">About Us</a><a href="/solutions/">Solutions</a><a href="/blog/">Blog</a><a href="/contact/">Contact</a></div>
+      <div class="footer-col"><h4>Contact</h4><a href="mailto:sales@precise3d.com">sales@precise3d.com</a><p class="body-sm" style="margin-top:var(--space-4)">Shenzhen, China</p></div>
+    </div>
+    <div class="footer-bottom"><p class="body-sm">&copy; 2026 Precise3D. All rights reserved.</p></div>
+  </div>
+</footer>
+
+<div class="modal-overlay" id="inquiryModal">
+  <div class="modal-dialog">
+    <button class="modal-close" onclick="closeModal()" aria-label="Close">&times;</button>
+    <h2 class="h2">Send an Inquiry</h2>
+    <p class="body-sm">We'll respond within 24 hours.</p>
+    <form class="modal-form" onsubmit="return handleInquiry(event)" novalidate>
+      <div class="form-group"><label for="modal-name">Name <span class="required">*</span></label><input type="text" id="modal-name" name="name" required placeholder="Your full name"></div>
+      <div class="form-group"><label for="modal-email">Email <span class="required">*</span></label><input type="email" id="modal-email" name="email" required placeholder="you@company.com"></div>
+      <div class="form-group"><label for="modal-message">Message <span class="required">*</span></label><textarea id="modal-message" name="message" required rows="4" placeholder="Tell us about your business and what you're looking for..."></textarea></div>
+      <button type="submit" class="btn btn-primary btn-lg" style="width:100%;justify-content:center">Send Inquiry</button>
+      <p class="modal-form-note">We'll respond within 24 hours. Your information is never shared.</p>
+    </form>
+  </div>
+</div>
+
+<script>
+(function(){var els=document.querySelectorAll('.fade-up');var obs=new IntersectionObserver(function(e){e.forEach(function(e){if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target)}})},{threshold:0.15});els.forEach(function(el){obs.observe(el)})})();
+function openModal(){document.getElementById('inquiryModal').classList.add('open')}
+function closeModal(){document.getElementById('inquiryModal').classList.remove('open')}
+document.getElementById('inquiryModal').addEventListener('click',function(e){if(e.target===this)closeModal()})
+</script>
+<script src="../inquiry-handler.js"></script>
+<script src="../site.js"></script>
+</body>
+</html>
