@@ -341,6 +341,33 @@
       "file": "/blog/3d-printing-eyewear-optics-industry-distributor-guide.html",
       "created": "2026-08-02",
       "note": "HTML written, images blocked (AIHUBMIX quota exhausted 2026-08-02). Resume: run /tmp/gen_blog_images.py eyewear"
+    },
+    {
+      "id": 65,
+      "title": "3D Printing for HVAC & Refrigeration — Custom Ducts, Damper Parts & Service Tooling",
+      "status": "writing",
+      "score": 82,
+      "funnel": "MOFU",
+      "file": "/blog/3d-printing-hvac-refrigeration-industry-distributor-guide.html",
+      "created": "2026-08-02"
+    },
+    {
+      "id": 66,
+      "title": "3D Printing for Data Centers — Liquid Cooling Manifolds & Rack Tooling",
+      "status": "writing",
+      "score": 84,
+      "funnel": "MOFU",
+      "file": "/blog/3d-printing-data-center-cooling-infrastructure-distributor-guide.html",
+      "created": "2026-08-02"
+    },
+    {
+      "id": 67,
+      "title": "3D Printing for Electronics Manufacturing — Solder Pallets & ESD Tooling",
+      "status": "writing",
+      "score": 83,
+      "funnel": "MOFU",
+      "file": "/blog/3d-printing-electronics-manufacturing-smt-tooling-distributor-guide.html",
+      "created": "2026-08-02"
     }
   ]
 }
