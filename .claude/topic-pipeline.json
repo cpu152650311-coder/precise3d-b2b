@@ -1,6 +1,6 @@
 {
   "site": "precise3d-b2b",
-  "updated": "2026-08-03",
+  "updated": "2026-08-04",
   "topics": [
     {
       "id": 33,
@@ -527,6 +527,36 @@
       "file": "/blog/3d-printing-craft-brewery-beverage-industry-distributor-guide.html",
       "created": "2026-08-03",
       "published": "2026-08-03"
+    },
+    {
+      "id": 83,
+      "title": "3D Printing for Museums & Cultural Heritage — Artifact Replicas, Exhibit Fabrication & Conservation Tooling",
+      "status": "published",
+      "score": 84,
+      "funnel": "MOFU",
+      "file": "/blog/3d-printing-museums-cultural-heritage-distributor-guide.html",
+      "created": "2026-08-04",
+      "published": "2026-08-04"
+    },
+    {
+      "id": 84,
+      "title": "3D Printing for Aquaculture & Fisheries — Aeration Components, Feed System Parts & Water Monitoring Hardware",
+      "status": "published",
+      "score": 82,
+      "funnel": "MOFU",
+      "file": "/blog/3d-printing-aquaculture-fisheries-distributor-guide.html",
+      "created": "2026-08-04",
+      "published": "2026-08-04"
+    },
+    {
+      "id": 85,
+      "title": "3D Printing for Amusement Parks & Attractions — Ride Spares, Animatronic Parts & Themed Fabrication",
+      "status": "published",
+      "score": 86,
+      "funnel": "MOFU",
+      "file": "/blog/3d-printing-amusement-parks-attractions-distributor-guide.html",
+      "created": "2026-08-04",
+      "published": "2026-08-04"
     }
   ]
 }
