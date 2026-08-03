@@ -557,6 +557,39 @@
       "file": "/blog/3d-printing-amusement-parks-attractions-distributor-guide.html",
       "created": "2026-08-04",
       "published": "2026-08-04"
+    },
+    {
+      "id": 86,
+      "title": "3D Printing for Pumps & Valves — Impellers, Wear Parts & Casting Replacements",
+      "status": "published",
+      "score": 85,
+      "funnel": "MOFU",
+      "category": "vertical-market",
+      "file": "/blog/3d-printing-pumps-valves-industry-distributor-guide.html",
+      "created": "2026-08-04",
+      "published": "2026-08-04"
+    },
+    {
+      "id": 87,
+      "title": "3D Printing for Elevators & Escalators — Legacy Spare Parts & Non-OEM Replacement Components",
+      "status": "published",
+      "score": 83,
+      "funnel": "MOFU",
+      "category": "vertical-market",
+      "file": "/blog/3d-printing-elevators-escalators-industry-distributor-guide.html",
+      "created": "2026-08-04",
+      "published": "2026-08-04"
+    },
+    {
+      "id": 88,
+      "title": "3D Printing for Lighting & Luminaires — LED Housings, Optics Holders & Custom Fixtures",
+      "status": "published",
+      "score": 84,
+      "funnel": "MOFU",
+      "category": "vertical-market",
+      "file": "/blog/3d-printing-lighting-luminaire-industry-distributor-guide.html",
+      "created": "2026-08-04",
+      "published": "2026-08-04"
     }
   ]
 }
