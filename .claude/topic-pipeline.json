@@ -494,6 +494,39 @@
       "file": "/blog/3d-printing-bicycle-ebike-manufacturing-distributor-guide.html",
       "created": "2026-08-03",
       "published": "2026-08-03"
+    },
+    {
+      "id": 80,
+      "title": "3D Printing for Veterinary Medicine — Surgical Guides, Implants & Animal Prosthetics",
+      "status": "published",
+      "score": 82,
+      "funnel": "MOFU",
+      "category": "vertical-market",
+      "file": "/blog/3d-printing-veterinary-animal-health-industry-distributor-guide.html",
+      "created": "2026-08-03",
+      "published": "2026-08-03"
+    },
+    {
+      "id": 81,
+      "title": "3D Printer Water Cooling — Liquid Cooling Kits for Hotends & Electronics",
+      "status": "published",
+      "score": 80,
+      "funnel": "MOFU",
+      "category": "hardware",
+      "file": "/blog/3d-printer-water-cooling-liquid-cooling-distributor-guide.html",
+      "created": "2026-08-03",
+      "published": "2026-08-03"
+    },
+    {
+      "id": 82,
+      "title": "3D Printing for Craft Breweries — Custom Brewery Parts & Line Tooling",
+      "status": "published",
+      "score": 78,
+      "funnel": "MOFU",
+      "category": "vertical-market",
+      "file": "/blog/3d-printing-craft-brewery-beverage-industry-distributor-guide.html",
+      "created": "2026-08-03",
+      "published": "2026-08-03"
     }
   ]
 }
