@@ -235,12 +235,15 @@ def main():
     
     # 1. Scan blog HTML files
     blog_dir = os.path.join(BLOG_DIR, 'blog')
-    files = sorted([
+    files = [
         f for f in os.listdir(blog_dir)
         if f.endswith('.html') 
         and f not in ('index.html', 'template.html')
         and not f.startswith('blog-page-')
-    ])
+    ]
+    # Sort by file mtime, newest first. Filenames are slugs (not dates),
+    # so alphabetical order would bury new posts on later pages.
+    files.sort(key=lambda f: os.path.getmtime(os.path.join(blog_dir, f)), reverse=True)
     
     print(f"Found {len(files)} blog articles")
     
@@ -251,9 +254,8 @@ def main():
         meta = extract_meta(path)
         articles.append(meta)
     
-    # Sort by filename (newest first based on naming convention)
-    # Most sites name blogs with dates or sequential numbers
-    articles.reverse()  # newest first
+    # Articles are already in mtime order (newest first) from the file sort above.
+    # Do NOT reverse here — filename order is not publication order.
     
     # 3. Read template
     head, tail = read_template()
