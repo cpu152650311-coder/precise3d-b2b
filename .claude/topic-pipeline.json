@@ -620,6 +620,36 @@
       "file": "/blog/3d-printing-construction-machinery-industry-distributor-guide.html",
       "created": "2026-08-04",
       "published": "2026-08-04"
+    },
+    {
+      "id": 92,
+      "title": "3D Printing for Motorcycle & Powersports — Legacy Parts, Custom Fairings & Small-Batch Production",
+      "status": "writing",
+      "score": 81,
+      "funnel": "MOFU",
+      "category": "vertical-market",
+      "file": "/blog/3d-printing-motorcycle-powersports-industry-distributor-guide.html",
+      "created": "2026-08-04"
+    },
+    {
+      "id": 93,
+      "title": "3D Printing for Power Tools & Outdoor Equipment — Housings, Gears & Service Parts",
+      "status": "writing",
+      "score": 82,
+      "funnel": "MOFU",
+      "category": "vertical-market",
+      "file": "/blog/3d-printing-power-tools-outdoor-equipment-industry-distributor-guide.html",
+      "created": "2026-08-04"
+    },
+    {
+      "id": 94,
+      "title": "3D Printing for Woodworking & Cabinetry — Jigs, Templates & Custom Hardware",
+      "status": "writing",
+      "score": 79,
+      "funnel": "MOFU",
+      "category": "vertical-market",
+      "file": "/blog/3d-printing-woodworking-cabinetry-industry-distributor-guide.html",
+      "created": "2026-08-04"
     }
   ]
 }
