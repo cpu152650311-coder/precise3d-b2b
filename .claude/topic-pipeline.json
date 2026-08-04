@@ -1,6 +1,6 @@
 {
   "site": "precise3d-b2b",
-  "updated": "2026-08-04",
+  "updated": "2026-08-05",
   "topics": [
     {
       "id": 33,
@@ -653,6 +653,39 @@
       "file": "/blog/3d-printing-woodworking-cabinetry-industry-distributor-guide.html",
       "created": "2026-08-04",
       "published": "2026-08-04"
+    },
+    {
+      "id": 95,
+      "title": "3D Print Farm Automation — Conveyor, Auto-Unload & Unattended Operation",
+      "status": "published",
+      "score": 84,
+      "funnel": "MOFU",
+      "category": "print-farm",
+      "file": "/blog/3d-print-farm-automation-unattended-operation-distributor-guide.html",
+      "created": "2026-08-05",
+      "published": "2026-08-05"
+    },
+    {
+      "id": 96,
+      "title": "3D Printer MAP Pricing & Gray Market Protection — Channel Strategy",
+      "status": "published",
+      "score": 82,
+      "funnel": "BOFU",
+      "category": "business-operations",
+      "file": "/blog/3d-printer-map-pricing-gray-market-channel-protection-distributor-guide.html",
+      "created": "2026-08-05",
+      "published": "2026-08-05"
+    },
+    {
+      "id": 97,
+      "title": "3D Printing for Film & TV Production — Props, Sets & Camera Rigs",
+      "status": "published",
+      "score": 78,
+      "funnel": "TOFU",
+      "category": "vertical-market",
+      "file": "/blog/3d-printing-film-tv-production-distributor-guide.html",
+      "created": "2026-08-05",
+      "published": "2026-08-05"
     }
   ]
 }
