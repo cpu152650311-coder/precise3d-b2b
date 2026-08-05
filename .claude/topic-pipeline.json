@@ -1,6 +1,6 @@
 {
   "site": "precise3d-b2b",
-  "updated": "2026-08-05",
+  "updated": "2026-08-06",
   "topics": [
     {
       "id": 33,
@@ -686,6 +686,39 @@
       "file": "/blog/3d-printing-film-tv-production-distributor-guide.html",
       "created": "2026-08-05",
       "published": "2026-08-05"
+    },
+    {
+      "id": 98,
+      "title": "3D Printing for Watchmaking & Horology — Cases, Prototypes & Movement Tooling",
+      "status": "published",
+      "score": 85,
+      "funnel": "MOFU",
+      "category": "industry-application",
+      "file": "/blog/3d-printing-watchmaking-horology-industry-distributor-guide.html",
+      "created": "2026-08-06",
+      "published": "2026-08-06"
+    },
+    {
+      "id": 99,
+      "title": "3D Printing for Fire & Safety Equipment — Nozzles, SCBA Parts & Tooling",
+      "status": "published",
+      "score": 84,
+      "funnel": "MOFU",
+      "category": "industry-application",
+      "file": "/blog/3d-printing-fire-safety-equipment-industry-distributor-guide.html",
+      "created": "2026-08-06",
+      "published": "2026-08-06"
+    },
+    {
+      "id": 100,
+      "title": "3D Printing for Pet Products — Toys, Feeders & Custom Accessories",
+      "status": "published",
+      "score": 83,
+      "funnel": "MOFU",
+      "category": "industry-application",
+      "file": "/blog/3d-printing-pet-products-industry-distributor-guide.html",
+      "created": "2026-08-06",
+      "published": "2026-08-06"
     }
   ]
 }
