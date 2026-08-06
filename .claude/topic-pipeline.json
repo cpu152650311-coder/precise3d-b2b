@@ -1,6 +1,6 @@
 {
   "site": "precise3d-b2b",
-  "updated": "2026-08-06",
+  "updated": "2026-08-07",
   "topics": [
     {
       "id": 33,
@@ -719,6 +719,36 @@
       "file": "/blog/3d-printing-pet-products-industry-distributor-guide.html",
       "created": "2026-08-06",
       "published": "2026-08-06"
+    },
+    {
+      "id": 101,
+      "title": "3D Printing for Cosmetics & Beauty — Packaging, Tooling & Retail Displays",
+      "status": "published",
+      "score": 72,
+      "funnel": "MOFU",
+      "file": "/blog/3d-printing-cosmetics-beauty-industry-distributor-guide.html",
+      "created": "2026-08-07",
+      "published": "2026-08-07"
+    },
+    {
+      "id": 102,
+      "title": "3D Printing for Promotional Products & Corporate Gifts — Short-Run Branded Merch",
+      "status": "published",
+      "score": 74,
+      "funnel": "MOFU",
+      "file": "/blog/3d-printing-promotional-products-corporate-gifts-distributor-guide.html",
+      "created": "2026-08-07",
+      "published": "2026-08-07"
+    },
+    {
+      "id": 103,
+      "title": "3D Printing for Office & Workplace — Desk Accessories, Cable Management & Facility Spares",
+      "status": "published",
+      "score": 68,
+      "funnel": "TOFU",
+      "file": "/blog/3d-printing-office-workplace-industry-distributor-guide.html",
+      "created": "2026-08-07",
+      "published": "2026-08-07"
     }
   ]
 }
